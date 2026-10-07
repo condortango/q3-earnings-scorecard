@@ -1,0 +1,69 @@
+name: Update scorecard
+
+on:
+  schedule:
+    # Twice per weekday. GitHub cron runs in UTC; times below are PDT (UTC-7) until Nov 1, 2026,
+    # then PST (UTC-8), one hour earlier in Pacific time.
+    # 14:47 UTC = 7:47 AM PDT / 6:47 AM PST, after the pre-market reporters (Mon-Fri).
+    - cron: "47 14 * * 1-5"
+    # 01:17 UTC = 6:17 PM PDT / 5:17 PM PST the previous day, after the after-close reporters.
+    # Tue-Sat in UTC covers Mon-Fri evenings in Pacific time.
+    - cron: "17 1 * * 2-6"
+  workflow_dispatch:
+
+permissions:
+  contents: write  # commit data/ and docs/ back to main
+  pages: write     # deploy to GitHub Pages
+  id-token: write  # required by actions/deploy-pages
+
+concurrency:
+  group: scorecard
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+
+      - name: Fetch FactSet report and results, build the page
+        env:
+          # Optional. Enables the revenue section. Add with: gh secret set FINNHUB_API_KEY
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: python scripts/update.py
+
+      - name: Commit data changes
+        run: |
+          git add data docs
+          if git diff --cached --quiet; then
+            echo "No data changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update scorecard data ($(TZ=America/Los_Angeles date '+%Y-%m-%d %H:%M %Z'))"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: docs
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

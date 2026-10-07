@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S&amp;P 500 Q3 2026 Earnings</title>
+<style>
+:root { --fg:#1f2328; --dim:#6b7280; --faint:#9ca3af; --line:#e5e7eb; --acc:#2563a8; --acc2:#a9c1e0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { background: #fff; color: var(--fg); font: 14px/1.4 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+a { color: var(--acc); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { height: 100vh; max-width: 1360px; margin: 0 auto; padding: 20px 32px 14px; display: flex; flex-direction: column; gap: 18px; }
+header { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+h1 { font-size: 22px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+.meta { font-size: 12.5px; color: var(--dim); margin-top: 3px; }
+.prog { width: 340px; max-width: 100%; }
+.prog .lbl { font-size: 12.5px; color: var(--dim); display: flex; justify-content: space-between; margin-bottom: 5px; }
+.prog .lbl b { color: var(--fg); font-weight: 600; }
+.bar { height: 8px; background: var(--line); display: flex; }
+.bar span { display: block; height: 100%; background: var(--acc); }
+.bar span.since { background: var(--acc2); }
+.warn { font-size: 12.5px; color: #7a5b00; border-left: 3px solid #d4a400; padding: 2px 10px; }
+.tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.tile { padding: 14px 20px 14px 0; }
+.tile + .tile { padding-left: 20px; border-left: 1px solid var(--line); }
+.tile .t { font-size: 12.5px; color: var(--dim); }
+.tile .v { font-size: 40px; font-weight: 600; line-height: 1.15; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; margin: 2px 0 2px; }
+.tile .v.na { color: var(--faint); font-size: 30px; line-height: 1.5; }
+.tile .s { font-size: 12.5px; color: var(--dim); font-variant-numeric: tabular-nums; }
+.tile .c { font-size: 12.5px; color: var(--fg); font-variant-numeric: tabular-nums; margin-top: 1px; }
+.charts { flex: 1 1 auto; min-height: 0; display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; }
+.panel { display: flex; flex-direction: column; min-height: 0; }
+.col { display: flex; flex-direction: column; gap: 22px; min-height: 0; }
+.col .panel.grow { flex: 1 1 auto; }
+.pt { font-size: 13.5px; font-weight: 600; }
+.pn { font-size: 12px; color: var(--dim); margin: 2px 0 8px; }
+.key { display: inline-flex; align-items: center; gap: 6px; margin-right: 14px; white-space: nowrap; }
+.sw { display: inline-block; width: 18px; height: 0; border-top: 2px solid var(--acc); }
+.sw.dot { border-top: 2px dotted var(--faint); }
+.sw.dash { border-top: 1px dashed var(--dim); }
+.cv { position: relative; flex: 1 1 auto; min-height: 0; }
+.cv canvas { position: absolute; inset: 0; }
+.stack { display: flex; height: 22px; margin-top: 4px; }
+.stack span { display: block; height: 100%; }
+.stack .b { background: var(--acc); } .stack .m { background: #c7ccd4; } .stack .x { background: #6b7280; }
+.slbl { display: flex; gap: 18px; font-size: 12.5px; margin-top: 6px; font-variant-numeric: tabular-nums; flex-wrap: wrap; }
+.slbl i { display: inline-block; width: 9px; height: 9px; margin-right: 5px; vertical-align: 0; }
+footer { font-size: 11.5px; color: var(--dim); border-top: 1px solid var(--line); padding-top: 8px; line-height: 1.5; }
+@media (max-height: 760px) {
+  .wrap { gap: 14px; padding-top: 16px; }
+  .tile { padding-top: 10px; padding-bottom: 10px; }
+  .tile .v { font-size: 34px; }
+  .tile .v.na { font-size: 26px; }
+}
+@media (max-width: 900px), (max-height: 540px) {
+  .wrap { height: auto; padding: 16px 16px 20px; }
+  .charts { grid-template-columns: 1fr; gap: 26px; }
+  .cv { flex: none; height: 240px; }
+  .charts > .panel .cv { height: 260px; }
+}
+@media (max-width: 640px) {
+  .tiles { grid-template-columns: 1fr 1fr; }
+  .tile { padding: 12px 12px 12px 0; }
+  .tile + .tile { padding-left: 12px; }
+  .tile:nth-child(3) { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
+  .tile:nth-child(4) { border-top: 1px solid var(--line); }
+  .tile .v { font-size: 32px; }
+  .prog { width: 100%; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <h1>S&amp;P 500 Q3 2026 Earnings</h1>
+    <div class="meta"><a href="https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100226.pdf">FactSet Earnings Insight, Oct 2</a> | updated Oct 6, 2026 4:01 PM PT</div>
+  </div>
+  <div class="prog">
+    <div class="lbl"><span><b>16 of 500</b> companies reported</span><span>3.2%</span></div>
+    <div class="bar"><span style="width:3.20%"></span><span class="since" style="width:0.00%"></span></div>
+  </div>
+</header>
+
+<section class="tiles"><div class="tile"><div class="t">EPS beat rate</div><div class="v">87.5%</div><div class="s">14 of 16 reporters</div><div class="c">5-yr avg 78%</div></div><div class="tile"><div class="t">Revenue beat rate</div><div class="v">75%</div><div class="s">12 of 16 reporters</div><div class="c">5-yr avg 70%</div></div><div class="tile"><div class="t">EPS growth, y/y (estimated)</div><div class="v">+29.5%</div><div class="s">Q3 2026 vs a year earlier</div><div class="c">5-yr avg +13.3%</div></div><div class="tile"><div class="t">Aggregate EPS surprise</div><div class="v na">n/a yet</div><div class="s">not in the Oct 2 report; running est. +5.9%</div><div class="c">5-yr avg +7.0%</div></div></section>
+<section class="charts">
+  <div class="col">
+    <div class="panel grow">
+      <div class="pt">EPS beat rate, season to date</div>
+      <div class="pn"><span class="key"><span class="sw"></span>FactSet, weekly</span><span class="key"><span class="sw dot"></span>Running estimate, daily</span><span class="key"><span class="sw dash"></span>FactSet 5-yr avg (78%)</span></div>
+      <div class="cv"><canvas id="c1" aria-label="EPS beat rate by week"></canvas></div>
+    </div>
+    <div class="panel">
+      <div class="pt">Beat, meet, miss</div>
+      <div class="pn">Running estimate (Nasdaq/Zacks, not FactSet), 16 reporters. Meet means within 1% of consensus.</div>
+      <div class="stack"><span class="b" style="width:75.00%"></span><span class="m" style="width:12.50%"></span><span class="x" style="width:12.50%"></span></div>
+      <div class="slbl"><span><i style="background:#2563a8"></i>Beat <b>75%</b></span><span><i style="background:#c7ccd4"></i>Meet <b>12.5%</b></span><span><i style="background:#6b7280"></i>Miss <b>12.5%</b></span></div>
+    </div>
+  </div>
+  <div class="panel">
+    <div class="pt">EPS beat rate by sector</div>
+    <div class="pn">Running estimate, not FactSet. Sectors with reporters only; (n) = companies reported.</div>
+    <div class="cv"><canvas id="c3" aria-label="EPS beat rate by sector"></canvas></div>
+  </div>
+</section>
+<footer>
+Source: <a href="https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100226.pdf">FactSet Earnings Insight, October 2, 2026</a> (John Butters, FactSet). Beat = actual above the mean estimate. 5-yr averages from FactSet Earnings Insight (August 28, 2026; October 2, 2026). Running estimate: company results from the Nasdaq earnings calendar (Zacks consensus), not FactSet.<br>
+<a href="details.html">Details, tables and methodology</a> | <a href="data/q3_2026.json">Raw data</a> | Not investment advice.
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+<script>
+const S = {"dates": ["2026-09-10", "2026-09-11", "2026-09-16", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-24", "2026-09-25", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-06"], "fs": [null, 100.0, null, 66.7, null, null, null, 77.8, null, null, null, 87.5, null], "nq": [50.0, null, 33.3, null, 50.0, 71.4, 66.7, null, 70.0, 76.9, 81.2, null, 81.2], "avg5": 78, "sec_lbl": ["Cons. Staples (3)", "Financials (1)", "Industrials (2)", "Info. Technology (5)", "Cons. Discretionary (5)"], "sec_val": [100.0, 100.0, 100.0, 80.0, 60.0]};
+const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const DAY = 86400000;
+const X = S.dates.map(d => Date.UTC(+d.slice(0, 4), +d.slice(5, 7) - 1, +d.slice(8, 10)) / DAY);
+const xy = arr => arr.map((v, i) => ({ x: X[i], y: v })).filter(p => p.y !== null);
+const fmtDay = v => { const t = new Date(v * DAY); return MON[t.getUTCMonth()] + ' ' + t.getUTCDate(); };
+if (window.Chart) {
+  Chart.defaults.font.family = getComputedStyle(document.body).fontFamily;
+  Chart.defaults.font.size = 11;
+  Chart.defaults.color = '#6b7280';
+  const pct = v => v + '%';
+  const tip = { callbacks: { label: c => c.dataset.label + ': ' + (c.parsed.y ?? c.parsed.x).toFixed(1) + '%' } };
+  const ds = [
+    { label: 'FactSet', data: xy(S.fs), borderColor: '#2563a8', backgroundColor: '#2563a8', borderWidth: 2, pointRadius: 3.5, spanGaps: true, clip: false },
+  ];
+  if (S.nq.some(v => v !== null)) ds.push({ label: 'Running estimate', data: xy(S.nq), borderColor: '#9ca3af', borderDash: [2, 3], borderWidth: 1.5, pointRadius: 0, spanGaps: true });
+  if (S.avg5 !== null) ds.push({ label: 'FactSet 5-yr avg', data: X.length ? [{ x: X[0], y: S.avg5 }, { x: X[X.length - 1], y: S.avg5 }] : [], borderColor: '#6b7280', borderDash: [5, 4], borderWidth: 1, pointRadius: 0 });
+  new Chart(document.getElementById('c1'), { type: 'line', data: { datasets: ds },
+    options: { responsive: true, maintainAspectRatio: false, animation: false, layout: { padding: { top: 6, right: 8 } },
+      interaction: { mode: 'nearest', axis: 'x', intersect: false },
+      plugins: { legend: { display: false }, tooltip: { callbacks: { title: it => it.length ? fmtDay(it[0].parsed.x) : '', label: tip.callbacks.label } } },
+      scales: { y: { min: 0, max: 100, ticks: { stepSize: 25, callback: pct }, grid: { color: '#f0f1f3' }, border: { display: false } },
+                x: { type: 'linear', min: X[0], max: X[X.length - 1], grid: { display: false }, ticks: { stepSize: 7, maxRotation: 0, callback: fmtDay } } } } });
+  const valueLabels = { id: 'valueLabels', afterDatasetsDraw(ch) {
+    const c = ch.ctx; c.save(); c.font = '11px ' + Chart.defaults.font.family; c.fillStyle = '#1f2328'; c.textBaseline = 'middle';
+    ch.getDatasetMeta(0).data.forEach((bar, i) => { const v = ch.data.datasets[0].data[i];
+      if (v === null) return; const t = v.toFixed(0) + '%'; const w = c.measureText(t).width;
+      if (bar.x + 6 + w > ch.chartArea.right) { c.fillStyle = '#fff'; c.fillText(t, bar.x - w - 6, bar.y); c.fillStyle = '#1f2328'; }
+      else c.fillText(t, bar.x + 6, bar.y); }); c.restore(); } };
+  new Chart(document.getElementById('c3'), { type: 'bar',
+    data: { labels: S.sec_lbl, datasets: [{ label: 'Beat rate', data: S.sec_val, backgroundColor: '#2563a8', barThickness: 'flex', maxBarThickness: 18 }] },
+    plugins: [valueLabels],
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, animation: false,
+      plugins: { legend: { display: false }, tooltip: tip },
+      scales: { x: { min: 0, max: 100, ticks: { stepSize: 50, callback: pct }, grid: { color: '#f0f1f3' }, border: { display: false } },
+                y: { grid: { display: false }, border: { display: false } } } } });
+}
+</script>
+</body>
+</html>

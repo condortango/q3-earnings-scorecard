@@ -1,0 +1,39 @@
+{
+  "season_label": "Q3 2026",
+  "window_start": "2026-09-01",
+  "window_end": "2026-12-15",
+  "fiscal_quarter_endings": [
+    "Aug/2026",
+    "Sep/2026",
+    "Oct/2026"
+  ],
+  "yearago_window_start": "2025-09-01",
+  "yearago_window_end": "2025-12-15",
+  "yearago_fiscal_quarter_endings": [
+    "Aug/2025",
+    "Sep/2025",
+    "Oct/2025"
+  ],
+  "meet_band_pct": 1.0,
+  "refetch_days_back": 10,
+  "min_growth_coverage": 350,
+  "rank_min_abs_estimate": 0.1,
+  "constituents_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+  "benchmarks_fallback": {
+    "source": "FactSet Earnings Insight, August 28, 2026",
+    "url": "https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_082826.pdf",
+    "note": "Fallback when the latest Earnings Insight does not state an average. FactSet counts a beat as actual above the mean estimate.",
+    "eps_beat_pct_5y": 78,
+    "eps_beat_pct_10y": 76,
+    "eps_surprise_pct_5y": 7.0,
+    "eps_surprise_pct_10y": 7.4,
+    "rev_beat_pct_5y": 70,
+    "rev_beat_pct_10y": 68,
+    "rev_surprise_pct_5y": 1.9,
+    "rev_surprise_pct_10y": 1.6
+  },
+  "factset": {
+    "lookback_days": 21,
+    "backfill_days": 42
+  }
+}
