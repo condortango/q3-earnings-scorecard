@@ -7926,9 +7926,9 @@
   {
    "cik": "16918",
    "date": "2026-10-06",
-   "eps_actual": null,
+   "eps_actual": 3.63,
    "eps_est": 3.62,
-   "eps_surprise_pct": null,
+   "eps_surprise_pct": 0.28,
    "eps_yearago": 3.63,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Aug/2026",
@@ -9513,18 +9513,18 @@
   "window_start": "2026-09-01"
  },
  "eps": {
-  "above": 13,
-  "above_pct": 81.2,
+  "above": 14,
+  "above_pct": 82.4,
   "agg_method": "share-weighted (EPS x shares outstanding)",
-  "agg_surprise_pct": 5.88,
+  "agg_surprise_pct": 5.81,
   "beat": 12,
-  "beat_pct": 75.0,
-  "median_surprise_pct": 3.65,
-  "meet": 2,
-  "meet_pct": 12.5,
+  "beat_pct": 70.6,
+  "median_surprise_pct": 3.13,
+  "meet": 3,
+  "meet_pct": 17.6,
   "miss": 2,
-  "miss_pct": 12.5,
-  "n": 16
+  "miss_pct": 11.8,
+  "n": 17
  },
  "factset": {
   "benchmarks": {
@@ -9739,19 +9739,19 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Oct 6, 2026 5:53 PM PT",
- "generated_at_utc": "2026-10-07T00:53:51+00:00",
+ "generated_at_pt": "Oct 7, 2026 12:17 AM PT",
+ "generated_at_utc": "2026-10-07T07:17:39+00:00",
  "growth": {
   "available": true,
   "coverage": 475,
   "min_coverage": 350,
-  "reporters_n": 16,
-  "reporters_pct": 187.6,
+  "reporters_n": 17,
+  "reporters_pct": 181.8,
   "value_pct": 23.7
  },
- "last_success_pt": "Oct 6, 2026 5:53 PM PT",
- "reported": 16,
- "reported_since_factset": 0,
+ "last_success_pt": "Oct 7, 2026 12:17 AM PT",
+ "reported": 17,
+ "reported_since_factset": 1,
  "revenue": {
   "above": 0,
   "above_pct": null,
@@ -9768,7 +9768,7 @@
   "n": 0,
   "status": "not_configured"
  },
- "scheduled": 463,
+ "scheduled": 462,
  "season": "Q3 2026",
  "sectors": [
   {
@@ -9800,11 +9800,11 @@
   {
    "companies": 33,
    "eps_above_pct": 100.0,
-   "eps_agg_surprise_pct": 2.86,
-   "eps_beat_pct": 100.0,
+   "eps_agg_surprise_pct": 2.47,
+   "eps_beat_pct": 75.0,
    "eps_miss_pct": 0.0,
-   "eps_n": 3,
-   "reported": 3,
+   "eps_n": 4,
+   "reported": 4,
    "rev_agg_surprise_pct": null,
    "rev_beat_pct": null,
    "rev_n": 0,
