@@ -13,8 +13,6 @@ on:
 
 permissions:
   contents: write  # commit data/ and docs/ back to main
-  pages: write     # deploy to GitHub Pages
-  id-token: write  # required by actions/deploy-pages
 
 concurrency:
   group: scorecard
@@ -26,6 +24,9 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v7
+        with:
+          # Full history so a rebase still works if another run pushed first.
+          fetch-depth: 0
 
       - uses: actions/setup-python@v7
         with:
@@ -53,17 +54,3 @@ jobs:
           git commit -m "Update scorecard data ($(TZ=America/Los_Angeles date '+%Y-%m-%d %H:%M %Z'))"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
-
-      - uses: actions/upload-pages-artifact@v5
-        with:
-          path: docs
-
-  deploy:
-    needs: update
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v5
