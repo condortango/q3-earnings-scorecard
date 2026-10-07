@@ -2,7 +2,7 @@
 
 A static page that tracks the Q3 2026 S&P 500 earnings season. FactSet's weekly Earnings Insight is the
 headline standard; a daily running estimate built from company-level results fills the days between
-FactSet reports. A GitHub Actions cron rebuilds the page twice each weekday and commits the updated data and site.
+FactSet reports. A GitHub Actions cron rebuilds the page twice each weekday and deploys it to GitHub Pages.
 
 ![preview](preview.png)
 
@@ -143,7 +143,7 @@ gh secret set FINNHUB_API_KEY
 | 01:17 Tue-Sat | 6:17 PM previous day | 5:17 PM previous day | after after-close reports |
 
 Also on demand (`workflow_dispatch`). Each run commits changed files in `data/` and `docs/` as
-`github-actions[bot]`. GitHub Pages is not used: a private repository on the free plan cannot enable it.
+`github-actions[bot]` and deploys `docs/` with `actions/deploy-pages`.
 
 ## Run locally
 
@@ -163,8 +163,8 @@ python3 -m http.server -d docs 8000
 - `data/factset.json`: every parsed FactSet report this season. `data/q3_2026.json`: the full computed
   scorecard. `data/history.csv`: daily running-estimate series. `data/nasdaq_days.json`, `data/shares.json`,
   `data/finnhub_rows.json`: source caches.
-- `publish.sh` commits, creates `condortango/q3-earnings-scorecard`, pushes, and starts the first run.
-  Run it only when you are ready.
+- `publish.sh` commits, creates `condortango/q3-earnings-scorecard`, pushes, enables Pages and starts the
+  first run. Run it only when you are ready.
 
 FactSet Earnings Insight is published by FactSet Research Systems; this page quotes its headline figures
 and links to the source report. Not investment advice.
