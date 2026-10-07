@@ -53,7 +53,16 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update scorecard data ($(TZ=America/Los_Angeles date '+%Y-%m-%d %H:%M %Z'))"
+          preview=""
+          if [ -f preview-url.txt ]; then preview=$(tr -d '\n' < preview-url.txt); fi
+          stamp="$(TZ=America/Los_Angeles date '+%Y-%m-%d %H:%M %Z')"
+          if [ -n "$preview" ]; then
+            git commit -m "Update scorecard data ($stamp)" -m "Discord preview: $preview"
+            echo "Discord preview: $preview"
+            echo "$preview" >> "$GITHUB_STEP_SUMMARY"
+          else
+            git commit -m "Update scorecard data ($stamp)"
+          fi
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
 

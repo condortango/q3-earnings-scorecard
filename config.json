@@ -1,5 +1,6 @@
 {
   "season_label": "Q3 2026",
+  "site_url": "https://condortango.github.io/q3-earnings-scorecard",
   "window_start": "2026-09-01",
   "window_end": "2026-12-15",
   "fiscal_quarter_endings": [

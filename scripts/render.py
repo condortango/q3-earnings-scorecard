@@ -333,7 +333,7 @@ if (window.Chart) {{
 </html>
 """
     (docs / "details.html").write_text(page)
-    render_index(out, hist, docs)
+    render_index(out, hist, docs, write_open_graph(out, cfg, docs))
     d = docs / "data"
     d.mkdir(exist_ok=True)
     root = docs.parent / "data"
@@ -435,7 +435,224 @@ def _pct(x, signed=False, dec=1):
     return s + "%"
 
 
-def render_index(out: dict, hist: list, docs: Path) -> None:
+# Homepage Open Graph image. A per-run copy lives under docs/p/<stamp>/ so a new
+# Discord paste can use a URL Discord has not cached.
+OG_W, OG_H = 1200, 630
+FG = (31, 35, 40)
+DIM = (107, 114, 128)
+LINE = (229, 231, 235)
+NA = (156, 163, 175)
+
+
+def site_base(cfg: dict) -> str:
+    repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
+    if "/" in repo:
+        owner, name = repo.split("/", 1)
+        return f"https://{owner}.github.io/{name}".rstrip("/")
+    return str(cfg.get("site_url") or "https://condortango.github.io/q3-earnings-scorecard").rstrip("/")
+
+
+def _load_font(size: int, bold: bool = False):
+    from PIL import ImageFont
+    name = "DejaVuSans-Bold.ttf" if bold else "DejaVuSans.ttf"
+    for folder in ("/usr/share/fonts/truetype/dejavu", "/usr/share/fonts/dejavu"):
+        path = Path(folder) / name
+        if path.exists():
+            return ImageFont.truetype(str(path), size)
+    raise FileNotFoundError(f"{name} not found; install fonts-dejavu-core")
+
+
+def _preview_copy(out: dict) -> dict:
+    """Words and figures for the Open Graph title, description, and card."""
+    from datetime import date, datetime
+    from zoneinfo import ZoneInfo
+
+    fsb = out.get("factset") or {}
+    fs = fsb.get("latest") or {}
+    b = fsb.get("benchmarks") or {}
+    season = out.get("season") or ""
+    updated = out.get("generated_at_pt") or ""
+    uni = out.get("universe") or 500
+    n_fs = fs.get("reported_n")
+    reported = n_fs if n_fs is not None else out.get("reported")
+    fs_short = date.fromisoformat(fs["file_date"]).strftime("%b %-d") if fs.get("file_date") else ""
+    beat = _pct(fs.get("eps_beat_pct"))
+    if beat:
+        title = f"S&P 500 {season}: {beat} EPS beat"
+    else:
+        title = f"S&P 500 {season} earnings"
+    parts = []
+    if updated:
+        parts.append(f"Updated {updated}.")
+    if beat:
+        parts.append(f"EPS beat rate {beat}.")
+    else:
+        parts.append("EPS beat rate n/a yet.")
+    if fs_short:
+        parts.append(f"FactSet Earnings Insight, {fs_short}.")
+    if reported is not None:
+        parts.append(f"{reported} of {uni} companies reported.")
+    description = " ".join(parts)
+
+    def avg(key, signed=False):
+        a = b.get(key + "_5y")
+        if not a:
+            return "5-yr avg n/a"
+        return "5-yr avg " + (_pct(a.get("value"), signed) or "n/a")
+
+    def of_n(key):
+        n = fs.get(key)
+        if n is None or not n_fs:
+            return ""
+        return f"{n} of {n_fs} reporters"
+
+    kind = fs.get("eps_growth_kind") or "blended"
+    if fs.get("eps_surprise_pct") is None and fs_short:
+        surp_sub = f"not in the {fs_short} report"
+    else:
+        surp_sub = "aggregate"
+    tiles = [
+        {"label": "EPS beat rate", "value": beat or "n/a yet", "na": beat is None,
+         "sub": of_n("eps_beat_n"), "avg": avg("eps_beat_pct")},
+        {"label": "Revenue beat rate", "value": _pct(fs.get("rev_beat_pct")) or "n/a yet",
+         "na": fs.get("rev_beat_pct") is None, "sub": of_n("rev_beat_n"), "avg": avg("rev_beat_pct")},
+        {"label": "EPS growth", "value": _pct(fs.get("eps_growth_pct"), True) or "n/a yet",
+         "na": fs.get("eps_growth_pct") is None, "sub": f"{kind}, year over year",
+         "avg": avg("eps_growth_pct", True)},
+        {"label": "EPS surprise", "value": _pct(fs.get("eps_surprise_pct"), True) or "n/a yet",
+         "na": fs.get("eps_surprise_pct") is None, "sub": surp_sub, "avg": avg("eps_surprise_pct", True)},
+    ]
+    if fs_short:
+        footer = f"FactSet Earnings Insight, {fs_short}"
+    else:
+        footer = "FactSet report not available"
+    if reported is not None:
+        footer += f"  ·  {reported} of {uni} companies reported"
+    footer += "  ·  Not investment advice"
+    utc = out.get("generated_at_utc")
+    if utc:
+        stamp = datetime.fromisoformat(utc).astimezone(ZoneInfo("America/Los_Angeles"))
+    else:
+        stamp = datetime.now(ZoneInfo("America/Los_Angeles"))
+    return {
+        "title": title,
+        "description": description,
+        "heading": f"S&P 500 {season} Earnings",
+        "updated": f"Updated {updated}" if updated else "",
+        "tiles": tiles,
+        "footer": footer,
+        "slug": stamp.strftime("%Y%m%d-%H%M"),
+    }
+
+
+def _og_meta(title: str, description: str, url: str, image: str) -> str:
+    tags = [
+        ("property", "og:type", "website"),
+        ("property", "og:title", title),
+        ("property", "og:description", description),
+        ("property", "og:url", url),
+        ("property", "og:image", image),
+        ("property", "og:image:width", "1200"),
+        ("property", "og:image:height", "630"),
+        ("property", "og:image:alt", title),
+        ("name", "twitter:card", "summary_large_image"),
+        ("name", "twitter:title", title),
+        ("name", "twitter:description", description),
+        ("name", "twitter:image", image),
+    ]
+    return "\n".join(
+        f'<meta {attr}="{key}" content="{esc(value)}">' for attr, key, value in tags
+    )
+
+
+def _draw_card(card: dict, path: Path) -> None:
+    from PIL import Image, ImageDraw
+    im = Image.new("RGB", (OG_W, OG_H), "white")
+    d = ImageDraw.Draw(im)
+    pad = 56
+    title_f = _load_font(34, True)
+    meta_f = _load_font(22)
+    label_f = _load_font(22)
+    sub_f = _load_font(18)
+    foot_f = _load_font(20)
+    d.text((pad, 44), card["heading"], font=title_f, fill=FG)
+    upd = card["updated"]
+    if upd:
+        d.text((OG_W - pad - d.textlength(upd, font=meta_f), 52), upd, font=meta_f, fill=DIM)
+    d.line([(pad, 112), (OG_W - pad, 112)], fill=LINE, width=2)
+
+    inner = OG_W - 2 * pad
+    col_w = inner / 4
+    inset = 22
+    max_w = col_w - inset - 16
+    value_f = _load_font(48, True)
+    for size in range(64, 40, -2):
+        candidate = _load_font(size, True)
+        if all(d.textlength(t["value"], font=candidate) <= max_w for t in card["tiles"]):
+            value_f = candidate
+            break
+    top = 148
+    for i, tile in enumerate(card["tiles"]):
+        x = pad + i * col_w
+        if i:
+            d.line([(x, top), (x, 520)], fill=LINE, width=1)
+        tx = x + inset
+        d.text((tx, top + 12), tile["label"], font=label_f, fill=DIM)
+        d.text((tx, top + 52), tile["value"], font=value_f, fill=NA if tile["na"] else FG)
+        sub_y = top + 52 + 78
+        if tile["sub"]:
+            d.text((tx, sub_y), tile["sub"], font=sub_f, fill=DIM)
+            sub_y += 28
+        d.text((tx, sub_y), tile["avg"], font=sub_f, fill=DIM)
+    d.line([(pad, 548), (OG_W - pad, 548)], fill=LINE, width=2)
+    d.text((pad, 568), card["footer"], font=foot_f, fill=DIM)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    im.save(path, "PNG")
+
+
+def write_open_graph(out: dict, cfg: dict, docs: Path) -> str:
+    """Write the homepage card and a one-time page. Return the homepage meta tags."""
+    card = _preview_copy(out)
+    base = site_base(cfg)
+    home = base + "/"
+    image = base + "/og.png"
+    _draw_card(card, docs / "og.png")
+    slug = card["slug"]
+    snap = docs / "p" / slug
+    _draw_card(card, snap / "og.png")
+    snap_url = f"{base}/p/{slug}/"
+    snap_image = snap_url + "og.png"
+    snap_meta = _og_meta(card["title"], card["description"], snap_url, snap_image)
+    page = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{esc(card["title"])}</title>
+{snap_meta}
+<style>
+body {{ margin: 0; background: #fff; color: #1f2328; font: 16px/1.45 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }}
+main {{ max-width: 1100px; margin: 0 auto; padding: 28px 20px 48px; }}
+img {{ width: 100%; height: auto; }}
+a {{ color: #2563a8; }}
+p {{ color: #6b7280; }}
+</style>
+</head>
+<body>
+<main>
+<p><a href="{esc(home)}">Live scorecard</a></p>
+<img src="og.png" width="1200" height="630" alt="{esc(card["title"])}">
+<p>{esc(card["description"])}</p>
+</main>
+</body>
+</html>
+"""
+    (snap / "index.html").write_text(page)
+    (docs.parent / "preview-url.txt").write_text(snap_url + "\n")
+    return _og_meta(card["title"], card["description"], home, image)
+
+
+def render_index(out: dict, hist: list, docs: Path, og_html: str = "") -> None:
     from datetime import date
     fsb = out.get("factset") or {}
     fs = fsb.get("latest") or {}
@@ -539,6 +756,7 @@ def render_index(out: dict, hist: list, docs: Path) -> None:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>S&amp;P 500 {season} Earnings</title>
+{og_html}
 <style>{INDEX_CSS}</style>
 </head>
 <body>
@@ -635,4 +853,6 @@ if __name__ == "__main__":
     hist = list(csv.DictReader(hp.open())) if hp.exists() else []
     cfg = json.loads((root / "config.json").read_text())
     render_site(out, hist, cfg, root / "docs")
-    print("rendered docs/index.html and docs/details.html")
+    link = (root / "preview-url.txt").read_text().strip()
+    print("rendered docs/index.html, docs/details.html, and docs/og.png")
+    print("Discord preview:", link)

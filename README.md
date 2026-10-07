@@ -145,6 +145,16 @@ gh secret set FINNHUB_API_KEY
 Also on demand (`workflow_dispatch`). Each run commits changed files in `data/` and `docs/` as
 `github-actions[bot]` and deploys `docs/` with `actions/deploy-pages`.
 
+## Discord preview
+
+The homepage carries Open Graph tags and a 1200×630 card (`docs/og.png`) with the four FactSet
+figures, the FactSet report date, companies reported, and the update time. Discord stores a preview
+the first time it fetches a URL, so a later paste of the homepage can still show an older card.
+
+Each run's commit message includes a one-time link,
+`https://condortango.github.io/q3-earnings-scorecard/p/<yyyymmdd-hhmm>/`. Pasting that link unfurls
+the card from that run. The same link is printed in the Actions log.
+
 ## Run locally
 
 ```
