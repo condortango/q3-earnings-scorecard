@@ -21,7 +21,7 @@
   },
   {
    "cik": "320193",
-   "date": "2026-10-29",
+   "date": "2026-11-02",
    "eps_actual": null,
    "eps_est": 1.98,
    "eps_surprise_pct": null,
@@ -36,7 +36,7 @@
    "sector": "Information Technology",
    "shares": 14594180000,
    "ticker": "AAPL",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "1551152",
@@ -80,12 +80,12 @@
    "cik": "1800",
    "date": "2026-10-21",
    "eps_actual": null,
-   "eps_est": 1.43,
+   "eps_est": 1.42,
    "eps_surprise_pct": null,
    "eps_yearago": 1.3,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 8,
+   "n_ests": 7,
    "name": "Abbott Laboratories",
    "rev_actual": null,
    "rev_est": null,
@@ -218,7 +218,7 @@
    "eps_yearago": 1.8,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Oct/2026",
-   "n_ests": 9,
+   "n_ests": 10,
    "name": "Autodesk",
    "rev_actual": null,
    "rev_est": null,
@@ -346,12 +346,12 @@
    "cik": "354190",
    "date": "2026-10-29",
    "eps_actual": null,
-   "eps_est": 3.02,
+   "eps_est": 3.01,
    "eps_surprise_pct": null,
    "eps_yearago": 2.32,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 7,
+   "n_ests": 8,
    "name": "Arthur J. Gallagher & Co.",
    "rev_actual": null,
    "rev_est": null,
@@ -378,18 +378,18 @@
    "sector": "Information Technology",
    "shares": 143716609,
    "ticker": "AKAM",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "915913",
    "date": "2026-11-04",
    "eps_actual": null,
-   "eps_est": 2.55,
+   "eps_est": 2.44,
    "eps_surprise_pct": null,
    "eps_yearago": -0.19,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 6,
+   "n_ests": 7,
    "name": "Albemarle Corporation",
    "rev_actual": null,
    "rev_est": null,
@@ -446,7 +446,7 @@
    "eps_yearago": 2.3,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 3,
+   "n_ests": 4,
    "name": "Allegion",
    "rev_actual": null,
    "rev_est": null,
@@ -498,12 +498,12 @@
    "cik": "2488",
    "date": "2026-11-03",
    "eps_actual": null,
-   "eps_est": 1.64,
+   "eps_est": 1.66,
    "eps_surprise_pct": null,
    "eps_yearago": 0.97,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 15,
+   "n_ests": 14,
    "name": "Advanced Micro Devices",
    "rev_actual": null,
    "rev_est": null,
@@ -522,7 +522,7 @@
    "eps_yearago": 1.89,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 4,
+   "n_ests": 5,
    "name": "Ametek",
    "rev_actual": null,
    "rev_est": null,
@@ -536,7 +536,7 @@
    "cik": "318154",
    "date": "2026-11-03",
    "eps_actual": null,
-   "eps_est": 5.69,
+   "eps_est": 5.7,
    "eps_surprise_pct": null,
    "eps_yearago": 5.64,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -669,7 +669,7 @@
    "cik": "1841666",
    "date": "2026-11-04",
    "eps_actual": null,
-   "eps_est": 1.18,
+   "eps_est": 1.19,
    "eps_surprise_pct": null,
    "eps_yearago": 0.93,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -682,7 +682,7 @@
    "sector": "Energy",
    "shares": 350351510,
    "ticker": "APA",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "2969",
@@ -758,11 +758,11 @@
    "sector": "Communication Services",
    "shares": 334651000,
    "ticker": "APP",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "1521332",
-   "date": "2026-10-29",
+   "date": "2026-11-03",
    "eps_actual": null,
    "eps_est": 1.33,
    "eps_surprise_pct": null,
@@ -777,7 +777,7 @@
    "sector": "Consumer Discretionary",
    "shares": 207633331,
    "ticker": "APTV",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "1035443",
@@ -973,12 +973,12 @@
    "cik": "70858",
    "date": "2026-10-14",
    "eps_actual": null,
-   "eps_est": 1.12,
+   "eps_est": 1.11,
    "eps_surprise_pct": null,
    "eps_yearago": 1.06,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 6,
+   "n_ests": 7,
    "name": "Bank of America",
    "rev_actual": null,
    "rev_est": null,
@@ -1024,7 +1024,7 @@
    "sector": "Health Care",
    "shares": 516995999,
    "ticker": "BAX",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "764478",
@@ -1104,14 +1104,14 @@
   },
   {
    "cik": "14693",
-   "date": null,
+   "date": "2026-12-03",
    "eps_actual": null,
-   "eps_est": null,
+   "eps_est": 0.46,
    "eps_surprise_pct": null,
    "eps_yearago": 0.47,
-   "eps_yearago_src": "nasdaq_2025_calendar",
-   "fiscal_quarter": null,
-   "n_ests": null,
+   "eps_yearago_src": "nasdaq_last_year_eps",
+   "fiscal_quarter": "Oct/2026",
+   "n_ests": 4,
    "name": "Brown-Forman",
    "rev_actual": null,
    "rev_est": null,
@@ -1119,7 +1119,7 @@
    "sector": "Consumer Staples",
    "shares": null,
    "ticker": "BF.B",
-   "time": null
+   "time": "not-supplied"
   },
   {
    "cik": "1996862",
@@ -1201,7 +1201,7 @@
    "cik": "2012383",
    "date": "2026-10-14",
    "eps_actual": null,
-   "eps_est": 14.04,
+   "eps_est": 14.01,
    "eps_surprise_pct": null,
    "eps_yearago": 11.55,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -1220,7 +1220,7 @@
    "cik": "14272",
    "date": "2026-10-29",
    "eps_actual": null,
-   "eps_est": 1.69,
+   "eps_est": 1.62,
    "eps_surprise_pct": null,
    "eps_yearago": 1.63,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -1239,12 +1239,12 @@
    "cik": "1390777",
    "date": "2026-10-15",
    "eps_actual": null,
-   "eps_est": 2.27,
+   "eps_est": 2.26,
    "eps_surprise_pct": null,
    "eps_yearago": 1.91,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 6,
+   "n_ests": 7,
    "name": "BNY Mellon",
    "rev_actual": null,
    "rev_est": null,
@@ -1296,12 +1296,12 @@
    "cik": "79282",
    "date": "2026-10-26",
    "eps_actual": null,
-   "eps_est": 1.08,
+   "eps_est": 1.09,
    "eps_surprise_pct": null,
    "eps_yearago": 1.05,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 6,
+   "n_ests": 7,
    "name": "Brown & Brown",
    "rev_actual": null,
    "rev_est": null,
@@ -1334,7 +1334,7 @@
    "cik": "1393818",
    "date": "2026-10-22",
    "eps_actual": null,
-   "eps_est": 1.34,
+   "eps_est": 1.33,
    "eps_surprise_pct": null,
    "eps_yearago": 1.52,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -1643,7 +1643,7 @@
    "eps_yearago": 1.05,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 7,
+   "n_ests": 8,
    "name": "Citizens Financial Group",
    "rev_actual": null,
    "rev_est": null,
@@ -1693,7 +1693,7 @@
   },
   {
    "cik": "1091667",
-   "date": "2026-10-30",
+   "date": "2026-11-06",
    "eps_actual": null,
    "eps_est": 10.13,
    "eps_surprise_pct": null,
@@ -1708,7 +1708,7 @@
    "sector": "Communication Services",
    "shares": 114577492,
    "ticker": "CHTR",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "1739940",
@@ -1801,7 +1801,7 @@
    "rev_est": null,
    "rev_surprise_pct": null,
    "sector": "Consumer Staples",
-   "shares": 120931005,
+   "shares": 120937502,
    "ticker": "CLX",
    "time": "not-supplied"
   },
@@ -1879,7 +1879,7 @@
    "sector": "Industrials",
    "shares": 137664487,
    "ticker": "CMI",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "811156",
@@ -1923,7 +1923,7 @@
    "cik": "1130310",
    "date": "2026-10-27",
    "eps_actual": null,
-   "eps_est": 0.49,
+   "eps_est": 0.5,
    "eps_surprise_pct": null,
    "eps_yearago": 0.5,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -1997,14 +1997,14 @@
   },
   {
    "cik": "711404",
-   "date": null,
+   "date": "2026-12-03",
    "eps_actual": null,
-   "eps_est": null,
+   "eps_est": 1.07,
    "eps_surprise_pct": null,
    "eps_yearago": 1.15,
-   "eps_yearago_src": "nasdaq_2025_calendar",
-   "fiscal_quarter": null,
-   "n_ests": null,
+   "eps_yearago_src": "nasdaq_last_year_eps",
+   "fiscal_quarter": "Oct/2026",
+   "n_ests": 7,
    "name": "Cooper Companies (The)",
    "rev_actual": null,
    "rev_est": null,
@@ -2012,13 +2012,13 @@
    "sector": "Health Care",
    "shares": 190155294,
    "ticker": "COO",
-   "time": null
+   "time": "not-supplied"
   },
   {
    "cik": "1163165",
    "date": "2026-11-05",
    "eps_actual": null,
-   "eps_est": 2.63,
+   "eps_est": 2.69,
    "eps_surprise_pct": null,
    "eps_yearago": 1.61,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -2067,7 +2067,7 @@
    "rev_est": 96756018064.0,
    "rev_surprise_pct": -1.07,
    "sector": "Consumer Staples",
-   "shares": 443478804,
+   "shares": 443129349,
    "ticker": "COST",
    "time": "not-supplied"
   },
@@ -2126,7 +2126,7 @@
    "sector": "Real Estate",
    "shares": 100539350,
    "ticker": "CPT",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "849395",
@@ -2208,7 +2208,7 @@
    "cik": "858877",
    "date": "2026-11-11",
    "eps_actual": null,
-   "eps_est": 1.14,
+   "eps_est": 1.15,
    "eps_surprise_pct": null,
    "eps_yearago": 0.81,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -2276,7 +2276,7 @@
    "rev_est": 3043574328.0,
    "rev_surprise_pct": -0.97,
    "sector": "Industrials",
-   "shares": 399516767,
+   "shares": 397075093,
    "ticker": "CTAS",
    "time": "not-supplied"
   },
@@ -2373,18 +2373,18 @@
    "sector": "Utilities",
    "shares": 879525949,
    "ticker": "D",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "27904",
    "date": "2026-10-09",
    "eps_actual": null,
-   "eps_est": 1.93,
+   "eps_est": 1.8,
    "eps_surprise_pct": null,
    "eps_yearago": 1.71,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 7,
+   "n_ests": 6,
    "name": "Delta Air Lines",
    "rev_actual": null,
    "rev_est": null,
@@ -2510,14 +2510,14 @@
   },
   {
    "cik": "29534",
-   "date": null,
+   "date": "2026-12-03",
    "eps_actual": null,
-   "eps_est": null,
+   "eps_est": 1.39,
    "eps_surprise_pct": null,
    "eps_yearago": 1.28,
-   "eps_yearago_src": "nasdaq_2025_calendar",
-   "fiscal_quarter": null,
-   "n_ests": null,
+   "eps_yearago_src": "nasdaq_last_year_eps",
+   "fiscal_quarter": "Oct/2026",
+   "n_ests": 12,
    "name": "Dollar General",
    "rev_actual": null,
    "rev_est": null,
@@ -2525,7 +2525,7 @@
    "sector": "Consumer Staples",
    "shares": 220616790,
    "ticker": "DG",
-   "time": null
+   "time": "not-supplied"
   },
   {
    "cik": "1022079",
@@ -2555,7 +2555,7 @@
    "eps_yearago": 3.04,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 18,
+   "n_ests": 19,
    "name": "D. R. Horton",
    "rev_actual": null,
    "rev_est": null,
@@ -2569,12 +2569,12 @@
    "cik": "313616",
    "date": "2026-10-21",
    "eps_actual": null,
-   "eps_est": 1.96,
+   "eps_est": 1.92,
    "eps_surprise_pct": null,
    "eps_yearago": 1.89,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 9,
+   "n_ests": 7,
    "name": "Danaher Corporation",
    "rev_actual": null,
    "rev_est": null,
@@ -2795,7 +2795,7 @@
   },
   {
    "cik": "1090012",
-   "date": "2026-11-04",
+   "date": "2026-11-05",
    "eps_actual": null,
    "eps_est": 1.2,
    "eps_surprise_pct": null,
@@ -2810,7 +2810,7 @@
    "sector": "Energy",
    "shares": 1100000000,
    "ticker": "DVN",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "1093557",
@@ -3030,7 +3030,7 @@
    "eps_yearago": 1.62,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 6,
+   "n_ests": 7,
    "name": "Emerson Electric",
    "rev_actual": null,
    "rev_est": null,
@@ -3080,7 +3080,7 @@
   },
   {
    "cik": "33213",
-   "date": "2026-10-20",
+   "date": "2026-10-27",
    "eps_actual": null,
    "eps_est": 0.43,
    "eps_surprise_pct": null,
@@ -3095,7 +3095,7 @@
    "sector": "Energy",
    "shares": 625516000,
    "ticker": "EQT",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "922621",
@@ -3163,7 +3163,7 @@
    "eps_yearago": 3.07,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 9,
+   "n_ests": 10,
    "name": "Eaton Corporation",
    "rev_actual": null,
    "rev_est": null,
@@ -3272,7 +3272,7 @@
    "cik": "746515",
    "date": "2026-11-03",
    "eps_actual": null,
-   "eps_est": 2.16,
+   "eps_est": 2.24,
    "eps_surprise_pct": null,
    "eps_yearago": 1.64,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3289,7 +3289,7 @@
   },
   {
    "cik": "1324424",
-   "date": "2026-11-05",
+   "date": "2026-11-04",
    "eps_actual": null,
    "eps_est": 8.09,
    "eps_surprise_pct": null,
@@ -3304,7 +3304,7 @@
    "sector": "Consumer Discretionary",
    "shares": 114495891,
    "ticker": "EXPE",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "1289490",
@@ -3391,7 +3391,7 @@
    "eps_yearago": 0.5,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 9,
+   "n_ests": 8,
    "name": "Freeport-McMoRan",
    "rev_actual": null,
    "rev_est": null,
@@ -3424,7 +3424,7 @@
    "cik": "1048911",
    "date": "2026-10-28",
    "eps_actual": null,
-   "eps_est": 3.51,
+   "eps_est": 3.45,
    "eps_surprise_pct": null,
    "eps_yearago": 3.83,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3612,7 +3612,7 @@
   },
   {
    "cik": "866374",
-   "date": "2026-11-04",
+   "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.97,
    "eps_surprise_pct": null,
@@ -3627,7 +3627,7 @@
    "sector": "Information Technology",
    "shares": 369460443,
    "ticker": "FLEX",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "1754301",
@@ -3652,7 +3652,7 @@
    "cik": "34903",
    "date": "2026-10-30",
    "eps_actual": null,
-   "eps_est": 1.86,
+   "eps_est": 1.85,
    "eps_surprise_pct": null,
    "eps_yearago": 1.77,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3671,7 +3671,7 @@
    "cik": "1274494",
    "date": "2026-10-29",
    "eps_actual": null,
-   "eps_est": 4.63,
+   "eps_est": 4.64,
    "eps_surprise_pct": null,
    "eps_yearago": 4.24,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3709,12 +3709,12 @@
    "cik": "1659166",
    "date": "2026-10-28",
    "eps_actual": null,
-   "eps_est": 0.69,
+   "eps_est": 0.7,
    "eps_surprise_pct": null,
    "eps_yearago": 0.68,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 4,
+   "n_ests": 5,
    "name": "Fortive",
    "rev_actual": null,
    "rev_est": null,
@@ -3823,12 +3823,12 @@
    "cik": "1996810",
    "date": "2026-10-28",
    "eps_actual": null,
-   "eps_est": 4.01,
+   "eps_est": 4.09,
    "eps_surprise_pct": null,
    "eps_yearago": 1.64,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 6,
+   "n_ests": 7,
    "name": "GE Vernova",
    "rev_actual": null,
    "rev_est": null,
@@ -3878,9 +3878,9 @@
   },
   {
    "cik": "320335",
-   "date": "2026-10-28",
+   "date": "2026-10-21",
    "eps_actual": null,
-   "eps_est": 4.89,
+   "eps_est": 4.87,
    "eps_surprise_pct": null,
    "eps_yearago": 4.81,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3893,7 +3893,7 @@
    "sector": "Financials",
    "shares": 76849447,
    "ticker": "GL",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "24741",
@@ -3937,12 +3937,12 @@
    "cik": "1474735",
    "date": "2026-11-04",
    "eps_actual": null,
-   "eps_est": 2.36,
+   "eps_est": 2.38,
    "eps_surprise_pct": null,
    "eps_yearago": 1.83,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 7,
+   "n_ests": 8,
    "name": "Generac",
    "rev_actual": null,
    "rev_est": null,
@@ -4197,7 +4197,7 @@
    "sector": "Industrials",
    "shares": 39404598,
    "ticker": "HII",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "1585689",
@@ -4222,12 +4222,12 @@
    "cik": "773840",
    "date": "2026-10-22",
    "eps_actual": null,
-   "eps_est": 2.16,
+   "eps_est": 2.17,
    "eps_surprise_pct": null,
    "eps_yearago": 5.64,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 4,
+   "n_ests": 5,
    "name": "Honeywell Technologies",
    "rev_actual": null,
    "rev_est": null,
@@ -4277,14 +4277,14 @@
   },
   {
    "cik": "1645590",
-   "date": null,
+   "date": "2026-12-03",
    "eps_actual": null,
-   "eps_est": null,
+   "eps_est": 1.16,
    "eps_surprise_pct": null,
    "eps_yearago": 0.54,
-   "eps_yearago_src": "nasdaq_2025_calendar",
-   "fiscal_quarter": null,
-   "n_ests": null,
+   "eps_yearago_src": "nasdaq_last_year_eps",
+   "fiscal_quarter": "Oct/2026",
+   "n_ests": 7,
    "name": "Hewlett Packard Enterprise",
    "rev_actual": null,
    "rev_est": null,
@@ -4292,7 +4292,7 @@
    "sector": "Information Technology",
    "shares": 1327464779,
    "ticker": "HPE",
-   "time": null
+   "time": "not-supplied"
   },
   {
    "cik": "47217",
@@ -4315,14 +4315,14 @@
   },
   {
    "cik": "48465",
-   "date": null,
+   "date": "2026-12-03",
    "eps_actual": null,
-   "eps_est": null,
+   "eps_est": 0.38,
    "eps_surprise_pct": null,
    "eps_yearago": 0.32,
-   "eps_yearago_src": "nasdaq_2025_calendar",
-   "fiscal_quarter": null,
-   "n_ests": null,
+   "eps_yearago_src": "nasdaq_last_year_eps",
+   "fiscal_quarter": "Oct/2026",
+   "n_ests": 5,
    "name": "Hormel Foods",
    "rev_actual": null,
    "rev_est": null,
@@ -4330,7 +4330,7 @@
    "sector": "Consumer Staples",
    "shares": 550350800,
    "ticker": "HRL",
-   "time": null
+   "time": "not-supplied"
   },
   {
    "cik": "1000228",
@@ -4581,7 +4581,7 @@
   },
   {
    "cik": "879169",
-   "date": "2026-10-27",
+   "date": "2026-10-29",
    "eps_actual": null,
    "eps_est": -3.87,
    "eps_surprise_pct": null,
@@ -4596,7 +4596,7 @@
    "sector": "Health Care",
    "shares": 202697746,
    "ticker": "INCY",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "50863",
@@ -4638,7 +4638,7 @@
   },
   {
    "cik": "1687229",
-   "date": "2026-11-04",
+   "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.47,
    "eps_surprise_pct": null,
@@ -4653,7 +4653,7 @@
    "sector": "Real Estate",
    "shares": 590623226,
    "ticker": "INVH",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "51434",
@@ -4710,7 +4710,7 @@
    "sector": "Industrials",
    "shares": 387999429,
    "ticker": "IR",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "1020569",
@@ -4778,7 +4778,7 @@
    "eps_yearago": 2.81,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 5,
+   "n_ests": 6,
    "name": "Illinois Tool Works",
    "rev_actual": null,
    "rev_est": null,
@@ -4906,12 +4906,12 @@
    "cik": "200406",
    "date": "2026-10-13",
    "eps_actual": null,
-   "eps_est": 2.82,
+   "eps_est": 2.53,
    "eps_surprise_pct": null,
    "eps_yearago": 2.8,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 7,
+   "n_ests": 5,
    "name": "Johnson & Johnson",
    "rev_actual": null,
    "rev_est": null,
@@ -5132,14 +5132,14 @@
   },
   {
    "cik": "56873",
-   "date": null,
+   "date": "2026-12-03",
    "eps_actual": null,
-   "eps_est": null,
+   "eps_est": 1.16,
    "eps_surprise_pct": null,
    "eps_yearago": 1.05,
-   "eps_yearago_src": "nasdaq_2025_calendar",
-   "fiscal_quarter": null,
-   "n_ests": null,
+   "eps_yearago_src": "nasdaq_last_year_eps",
+   "fiscal_quarter": "Oct/2026",
+   "n_ests": 8,
    "name": "Kroger",
    "rev_actual": null,
    "rev_est": null,
@@ -5147,7 +5147,7 @@
    "sector": "Consumer Staples",
    "shares": 590588700,
    "ticker": "KR",
-   "time": null
+   "time": "not-supplied"
   },
   {
    "cik": "1944048",
@@ -5177,7 +5177,7 @@
    "eps_yearago": 2.43,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 2,
+   "n_ests": 8,
    "name": "Loews Corporation",
    "rev_actual": null,
    "rev_est": null,
@@ -5191,7 +5191,7 @@
    "cik": "1336920",
    "date": "2026-11-03",
    "eps_actual": null,
-   "eps_est": 3.0,
+   "eps_est": 3.12,
    "eps_surprise_pct": null,
    "eps_yearago": 3.05,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5267,7 +5267,7 @@
    "cik": "1069202",
    "date": "2026-10-28",
    "eps_actual": null,
-   "eps_est": 7.41,
+   "eps_est": 7.34,
    "eps_surprise_pct": null,
    "eps_yearago": 6.98,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5280,7 +5280,7 @@
    "sector": "Industrials",
    "shares": 34560675,
    "ticker": "LII",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "1707925",
@@ -5531,7 +5531,7 @@
   },
   {
    "cik": "912595",
-   "date": "2026-11-04",
+   "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 2.1,
    "eps_surprise_pct": null,
@@ -5546,7 +5546,7 @@
    "sector": "Real Estate",
    "shares": 116021957,
    "ticker": "MAA",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "1048286",
@@ -5647,7 +5647,7 @@
    "cik": "1059556",
    "date": "2026-10-21",
    "eps_actual": null,
-   "eps_est": 4.26,
+   "eps_est": 4.24,
    "eps_surprise_pct": null,
    "eps_yearago": 3.92,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5717,7 +5717,7 @@
    "sector": "Financials",
    "shares": 635476927,
    "ticker": "MET",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "1326801",
@@ -5804,7 +5804,7 @@
    "eps_yearago": 2.19,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 4,
+   "n_ests": 5,
    "name": "3M",
    "rev_actual": null,
    "rev_est": null,
@@ -5812,7 +5812,7 @@
    "sector": "Industrials",
    "shares": 515722417,
    "ticker": "MMM",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "865752",
@@ -5875,7 +5875,7 @@
    "cik": "1510295",
    "date": "2026-11-03",
    "eps_actual": null,
-   "eps_est": 23.92,
+   "eps_est": 24.16,
    "eps_surprise_pct": null,
    "eps_yearago": 3.01,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5932,7 +5932,7 @@
    "cik": "1682852",
    "date": "2026-11-05",
    "eps_actual": null,
-   "eps_est": -1.08,
+   "eps_est": -1.1,
    "eps_surprise_pct": null,
    "eps_yearago": -0.51,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5989,7 +5989,7 @@
    "cik": "895421",
    "date": "2026-10-14",
    "eps_actual": null,
-   "eps_est": 2.88,
+   "eps_est": 2.83,
    "eps_surprise_pct": null,
    "eps_yearago": 2.8,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6008,7 +6008,7 @@
    "cik": "1408198",
    "date": "2026-10-20",
    "eps_actual": null,
-   "eps_est": 5.02,
+   "eps_est": 5.01,
    "eps_surprise_pct": null,
    "eps_yearago": 4.47,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6025,7 +6025,7 @@
   },
   {
    "cik": "789019",
-   "date": "2026-11-04",
+   "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 4.71,
    "eps_surprise_pct": null,
@@ -6040,7 +6040,7 @@
    "sector": "Information Technology",
    "shares": 7425545491,
    "ticker": "MSFT",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "68505",
@@ -6065,12 +6065,12 @@
    "cik": "36270",
    "date": "2026-10-16",
    "eps_actual": null,
-   "eps_est": 5.0,
+   "eps_est": 4.98,
    "eps_surprise_pct": null,
    "eps_yearago": 4.87,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 6,
+   "n_ests": 7,
    "name": "M&T Bank",
    "rev_actual": null,
    "rev_est": null,
@@ -6141,7 +6141,7 @@
    "cik": "1120193",
    "date": "2026-10-22",
    "eps_actual": null,
-   "eps_est": 1.03,
+   "eps_est": 1.02,
    "eps_surprise_pct": null,
    "eps_yearago": 0.88,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6198,7 +6198,7 @@
    "cik": "1164727",
    "date": "2026-10-22",
    "eps_actual": null,
-   "eps_est": 1.94,
+   "eps_est": 1.92,
    "eps_surprise_pct": null,
    "eps_yearago": 1.71,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6293,7 +6293,7 @@
    "cik": "1373715",
    "date": "2026-10-28",
    "eps_actual": null,
-   "eps_est": 0.57,
+   "eps_est": 0.56,
    "eps_surprise_pct": null,
    "eps_yearago": 0.59,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6614,7 +6614,7 @@
   },
   {
    "cik": "1781335",
-   "date": "2026-11-04",
+   "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 1.0,
    "eps_surprise_pct": null,
@@ -6629,7 +6629,7 @@
    "sector": "Industrials",
    "shares": 380669339,
    "ticker": "OTIS",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "797468",
@@ -6709,7 +6709,7 @@
   },
   {
    "cik": "75362",
-   "date": "2026-10-20",
+   "date": "2026-10-27",
    "eps_actual": null,
    "eps_est": 1.61,
    "eps_surprise_pct": null,
@@ -6724,7 +6724,7 @@
    "sector": "Industrials",
    "shares": 526364953,
    "ticker": "PCAR",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "1004980",
@@ -6767,9 +6767,9 @@
   {
    "cik": "77476",
    "date": "2026-10-08",
-   "eps_actual": 2.29,
+   "eps_actual": 2.34,
    "eps_est": 2.29,
-   "eps_surprise_pct": 0.0,
+   "eps_surprise_pct": 2.18,
    "eps_yearago": 2.29,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
@@ -6781,7 +6781,7 @@
    "sector": "Consumer Staples",
    "shares": 1364891558,
    "ticker": "PEP",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "78003",
@@ -6806,7 +6806,7 @@
    "cik": "1126328",
    "date": "2026-10-26",
    "eps_actual": null,
-   "eps_est": 2.54,
+   "eps_est": 2.52,
    "eps_surprise_pct": null,
    "eps_yearago": 2.1,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6842,7 +6842,7 @@
   },
   {
    "cik": "80661",
-   "date": "2026-10-21",
+   "date": "2026-10-14",
    "eps_actual": null,
    "eps_est": 4.37,
    "eps_surprise_pct": null,
@@ -6857,7 +6857,7 @@
    "sector": "Financials",
    "shares": 581371770,
    "ticker": "PGR",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "76334",
@@ -6868,7 +6868,7 @@
    "eps_yearago": 7.22,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 6,
+   "n_ests": 8,
    "name": "Parker Hannifin",
    "rev_actual": null,
    "rev_est": null,
@@ -7148,12 +7148,12 @@
    "cik": "857005",
    "date": "2026-11-04",
    "eps_actual": null,
-   "eps_est": 1.62,
+   "eps_est": 1.59,
    "eps_surprise_pct": null,
    "eps_yearago": 3.1,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 4,
+   "n_ests": 5,
    "name": "PTC Inc.",
    "rev_actual": null,
    "rev_est": null,
@@ -7395,12 +7395,12 @@
    "cik": "1024478",
    "date": "2026-11-05",
    "eps_actual": null,
-   "eps_est": 3.52,
+   "eps_est": 3.54,
    "eps_surprise_pct": null,
    "eps_yearago": 3.34,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 9,
+   "n_ests": 10,
    "name": "Rockwell Automation",
    "rev_actual": null,
    "rev_est": null,
@@ -7412,7 +7412,7 @@
   },
   {
    "cik": "84839",
-   "date": "2026-11-04",
+   "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 0.34,
    "eps_surprise_pct": null,
@@ -7427,18 +7427,18 @@
    "sector": "Industrials",
    "shares": 481145404,
    "ticker": "ROL",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "882835",
    "date": "2026-10-22",
    "eps_actual": null,
-   "eps_est": 5.78,
+   "eps_est": 5.79,
    "eps_surprise_pct": null,
    "eps_yearago": 5.14,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 6,
+   "n_ests": 7,
    "name": "Roper Technologies",
    "rev_actual": null,
    "rev_est": null,
@@ -7678,7 +7678,7 @@
   },
   {
    "cik": "91440",
-   "date": "2026-10-15",
+   "date": "2026-10-22",
    "eps_actual": null,
    "eps_est": 4.91,
    "eps_surprise_pct": null,
@@ -7693,7 +7693,7 @@
    "sector": "Industrials",
    "shares": 51727124,
    "ticker": "SNA",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "2023554",
@@ -7794,7 +7794,7 @@
    "cik": "64040",
    "date": "2026-10-27",
    "eps_actual": null,
-   "eps_est": 4.41,
+   "eps_est": 4.42,
    "eps_surprise_pct": null,
    "eps_yearago": 4.73,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -7875,7 +7875,7 @@
    "eps_yearago": 2.78,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 6,
+   "n_ests": 7,
    "name": "State Street Corporation",
    "rev_actual": null,
    "rev_est": null,
@@ -7919,7 +7919,7 @@
    "rev_est": 2568050876.0,
    "rev_surprise_pct": 2.53,
    "sector": "Consumer Staples",
-   "shares": 170778434,
+   "shares": 169198487,
    "ticker": "STZ",
    "time": "not-supplied"
   },
@@ -7984,7 +7984,7 @@
    "cik": "1601712",
    "date": "2026-10-20",
    "eps_actual": null,
-   "eps_est": 2.42,
+   "eps_est": 2.47,
    "eps_surprise_pct": null,
    "eps_yearago": 2.86,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8003,7 +8003,7 @@
    "cik": "310764",
    "date": "2026-10-29",
    "eps_actual": null,
-   "eps_est": 3.6,
+   "eps_est": 3.59,
    "eps_surprise_pct": null,
    "eps_yearago": 3.19,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8041,12 +8041,12 @@
    "cik": "732717",
    "date": "2026-10-21",
    "eps_actual": null,
-   "eps_est": 0.61,
+   "eps_est": 0.59,
    "eps_surprise_pct": null,
    "eps_yearago": 0.54,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 7,
+   "n_ests": 6,
    "name": "AT&T",
    "rev_actual": null,
    "rev_est": null,
@@ -8160,7 +8160,7 @@
    "eps_yearago": 1.04,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 8,
+   "n_ests": 9,
    "name": "Truist Financial",
    "rev_actual": null,
    "rev_est": null,
@@ -8343,7 +8343,7 @@
   },
   {
    "cik": "1113169",
-   "date": "2026-10-30",
+   "date": "2026-10-29",
    "eps_actual": null,
    "eps_est": 2.6,
    "eps_surprise_pct": null,
@@ -8358,7 +8358,7 @@
    "sector": "Financials",
    "shares": 213315850,
    "ticker": "TROW",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "86312",
@@ -8402,7 +8402,7 @@
    "cik": "1318605",
    "date": "2026-10-21",
    "eps_actual": null,
-   "eps_est": 0.24,
+   "eps_est": 0.23,
    "eps_surprise_pct": null,
    "eps_yearago": 0.37,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8453,7 +8453,7 @@
    "sector": "Industrials",
    "shares": 220023177,
    "ticker": "TT",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "946581",
@@ -8628,14 +8628,14 @@
   },
   {
    "cik": "1403568",
-   "date": null,
+   "date": "2026-12-03",
    "eps_actual": null,
-   "eps_est": null,
+   "eps_est": 5.6,
    "eps_surprise_pct": null,
    "eps_yearago": 5.14,
-   "eps_yearago_src": "nasdaq_2025_calendar",
-   "fiscal_quarter": null,
-   "n_ests": null,
+   "eps_yearago_src": "nasdaq_last_year_eps",
+   "fiscal_quarter": "Oct/2026",
+   "n_ests": 12,
    "name": "Ulta Beauty",
    "rev_actual": null,
    "rev_est": null,
@@ -8643,7 +8643,7 @@
    "sector": "Consumer Discretionary",
    "shares": 42757471,
    "ticker": "ULTA",
-   "time": null
+   "time": "not-supplied"
   },
   {
    "cik": "731766",
@@ -8704,7 +8704,7 @@
   },
   {
    "cik": "1067701",
-   "date": "2026-10-28",
+   "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 13.72,
    "eps_surprise_pct": null,
@@ -8719,18 +8719,18 @@
    "sector": "Industrials",
    "shares": 62242489,
    "ticker": "URI",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "36104",
    "date": "2026-10-15",
    "eps_actual": null,
-   "eps_est": 1.33,
+   "eps_est": 1.32,
    "eps_surprise_pct": null,
    "eps_yearago": 1.22,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 9,
+   "n_ests": 10,
    "name": "U.S. Bancorp",
    "rev_actual": null,
    "rev_est": null,
@@ -8801,7 +8801,7 @@
    "cik": "1035002",
    "date": "2026-10-22",
    "eps_actual": null,
-   "eps_est": 18.15,
+   "eps_est": 18.45,
    "eps_surprise_pct": null,
    "eps_yearago": 3.66,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8947,7 +8947,7 @@
    "sector": "Health Care",
    "shares": 253460924,
    "ticker": "VRTX",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "1692819",
@@ -9010,7 +9010,7 @@
    "cik": "2128626",
    "date": "2026-11-11",
    "eps_actual": null,
-   "eps_est": -0.42,
+   "eps_est": -0.44,
    "eps_surprise_pct": null,
    "eps_yearago": null,
    "eps_yearago_src": null,
@@ -9021,7 +9021,7 @@
    "rev_est": null,
    "rev_surprise_pct": null,
    "sector": "Consumer Staples",
-   "shares": 667196000,
+   "shares": 667302930,
    "ticker": "VYLR",
    "time": "after-hours"
   },
@@ -9103,7 +9103,7 @@
   },
   {
    "cik": "106040",
-   "date": "2026-10-29",
+   "date": "2026-10-22",
    "eps_actual": null,
    "eps_est": 3.97,
    "eps_surprise_pct": null,
@@ -9118,7 +9118,7 @@
    "sector": "Information Technology",
    "shares": 373567980,
    "ticker": "WDC",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "783325",
@@ -9274,7 +9274,7 @@
   },
   {
    "cik": "105770",
-   "date": "2026-10-22",
+   "date": "2026-10-29",
    "eps_actual": null,
    "eps_est": 2.18,
    "eps_surprise_pct": null,
@@ -9289,7 +9289,7 @@
    "sector": "Health Care",
    "shares": 70375762,
    "ticker": "WST",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "1140536",
@@ -9314,7 +9314,7 @@
    "cik": "106535",
    "date": "2026-10-29",
    "eps_actual": null,
-   "eps_est": 0.07,
+   "eps_est": 0.06,
    "eps_surprise_pct": null,
    "eps_yearago": 0.06,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -9365,7 +9365,7 @@
    "sector": "Utilities",
    "shares": 624634306,
    "ticker": "XEL",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "2115436",
@@ -9441,7 +9441,7 @@
    "sector": "Consumer Discretionary",
    "shares": 272901085,
    "ticker": "YUM",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "1136869",
@@ -9513,15 +9513,15 @@
   "window_start": "2026-09-01"
  },
  "eps": {
-  "above": 14,
-  "above_pct": 77.8,
+  "above": 15,
+  "above_pct": 83.3,
   "agg_method": "share-weighted (EPS x shares outstanding)",
-  "agg_surprise_pct": 5.52,
-  "beat": 13,
-  "beat_pct": 72.2,
+  "agg_surprise_pct": 5.65,
+  "beat": 14,
+  "beat_pct": 77.8,
   "median_surprise_pct": 3.22,
-  "meet": 3,
-  "meet_pct": 16.7,
+  "meet": 2,
+  "meet_pct": 11.1,
   "miss": 2,
   "miss_pct": 11.1,
   "n": 18
@@ -9539,13 +9539,13 @@
     "value": 78
    },
    "eps_growth_pct_10y": {
-    "source": "FactSet Earnings Insight, October 2, 2026",
-    "url": "https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100226.pdf",
+    "source": "FactSet Earnings Insight, October 9, 2026",
+    "url": "https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100926.pdf",
     "value": 12.6
    },
    "eps_growth_pct_5y": {
-    "source": "FactSet Earnings Insight, October 2, 2026",
-    "url": "https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100226.pdf",
+    "source": "FactSet Earnings Insight, October 9, 2026",
+    "url": "https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100926.pdf",
     "value": 13.3
    },
    "eps_surprise_pct_10y": {
@@ -9569,13 +9569,13 @@
     "value": 70
    },
    "rev_growth_pct_10y": {
-    "source": "FactSet Earnings Insight, October 2, 2026",
-    "url": "https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100226.pdf",
+    "source": "FactSet Earnings Insight, October 9, 2026",
+    "url": "https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100926.pdf",
     "value": 6.3
    },
    "rev_growth_pct_5y": {
-    "source": "FactSet Earnings Insight, October 2, 2026",
-    "url": "https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100226.pdf",
+    "source": "FactSet Earnings Insight, October 9, 2026",
+    "url": "https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100926.pdf",
     "value": 8.7
    },
    "rev_surprise_pct_10y": {
@@ -9705,6 +9705,35 @@
     "rev_surprise_pct": null,
     "season": "Q3 2026",
     "url": "https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100226.pdf"
+   },
+   {
+    "avg": {
+     "eps_growth_pct_10y": 12.6,
+     "eps_growth_pct_5y": 13.3,
+     "rev_growth_pct_10y": 6.3,
+     "rev_growth_pct_5y": 8.7
+    },
+    "derived_from_counts": true,
+    "eps_beat_n": 16,
+    "eps_beat_pct": 84.2,
+    "eps_below_pct": null,
+    "eps_equal_pct": null,
+    "eps_growth_kind": "estimated",
+    "eps_growth_pct": 29.6,
+    "eps_surprise_pct": null,
+    "fetched_at_utc": "2026-10-09T19:51:07+00:00",
+    "file_date": "2026-10-09",
+    "in_season": true,
+    "report_date": "2026-10-09",
+    "reported_n": 19,
+    "reported_pct": 3.8,
+    "rev_beat_n": 14,
+    "rev_beat_pct": 73.7,
+    "rev_growth_kind": "estimated",
+    "rev_growth_pct": 12.4,
+    "rev_surprise_pct": null,
+    "season": "Q3 2026",
+    "url": "https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100926.pdf"
    }
   ],
   "latest": {
@@ -9715,43 +9744,43 @@
     "rev_growth_pct_5y": 8.7
    },
    "derived_from_counts": true,
-   "eps_beat_n": 14,
-   "eps_beat_pct": 87.5,
+   "eps_beat_n": 16,
+   "eps_beat_pct": 84.2,
    "eps_below_pct": null,
    "eps_equal_pct": null,
    "eps_growth_kind": "estimated",
-   "eps_growth_pct": 29.5,
+   "eps_growth_pct": 29.6,
    "eps_surprise_pct": null,
-   "fetched_at_utc": "2026-10-06T23:00:09+00:00",
-   "file_date": "2026-10-02",
+   "fetched_at_utc": "2026-10-09T19:51:07+00:00",
+   "file_date": "2026-10-09",
    "in_season": true,
-   "report_date": "2026-10-02",
-   "reported_n": 16,
-   "reported_pct": 3.2,
-   "rev_beat_n": 12,
-   "rev_beat_pct": 75.0,
+   "report_date": "2026-10-09",
+   "reported_n": 19,
+   "reported_pct": 3.8,
+   "rev_beat_n": 14,
+   "rev_beat_pct": 73.7,
    "rev_growth_kind": "estimated",
-   "rev_growth_pct": 12.3,
+   "rev_growth_pct": 12.4,
    "rev_surprise_pct": null,
    "season": "Q3 2026",
-   "url": "https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100226.pdf"
+   "url": "https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_100926.pdf"
   },
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Oct 9, 2026 12:27 AM PT",
- "generated_at_utc": "2026-10-09T07:27:28+00:00",
+ "generated_at_pt": "Oct 9, 2026 12:51 PM PT",
+ "generated_at_utc": "2026-10-09T19:51:05+00:00",
  "growth": {
   "available": true,
-  "coverage": 480,
+  "coverage": 486,
   "min_coverage": 350,
   "reporters_n": 18,
-  "reporters_pct": 157.3,
-  "value_pct": 23.4
+  "reporters_pct": 157.6,
+  "value_pct": 23.3
  },
- "last_success_pt": "Oct 9, 2026 12:27 AM PT",
+ "last_success_pt": "Oct 9, 2026 12:51 PM PT",
  "reported": 18,
- "reported_since_factset": 2,
+ "reported_since_factset": 0,
  "revenue": {
   "above": 6,
   "above_pct": 35.3,
@@ -9768,7 +9797,7 @@
   "n": 17,
   "status": "ok"
  },
- "scheduled": 468,
+ "scheduled": 475,
  "season": "Q3 2026",
  "sectors": [
   {
@@ -9799,9 +9828,9 @@
   },
   {
    "companies": 34,
-   "eps_above_pct": 80.0,
-   "eps_agg_surprise_pct": 1.66,
-   "eps_beat_pct": 80.0,
+   "eps_above_pct": 100.0,
+   "eps_agg_surprise_pct": 2.6,
+   "eps_beat_pct": 100.0,
    "eps_miss_pct": 0.0,
    "eps_n": 5,
    "reported": 5,

@@ -78,11 +78,11 @@
  },
  "DAL|2026-10-09": {
   "date": "2026-10-09",
-  "epsActual": null,
+  "epsActual": 1.72,
   "epsEstimate": 1.9868,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 17585000000,
   "revenueEstimate": 17778762279,
   "symbol": "DAL",
   "year": 2026
