@@ -76,6 +76,17 @@
   "symbol": "CTAS",
   "year": 2027
  },
+ "C|2026-10-13": {
+  "date": "2026-10-13",
+  "epsActual": null,
+  "epsEstimate": 2.7311,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 24202452747,
+  "symbol": "C",
+  "year": 2026
+ },
  "DAL|2026-10-09": {
   "date": "2026-10-09",
   "epsActual": 1.72,
@@ -85,6 +96,17 @@
   "revenueActual": 17585000000,
   "revenueEstimate": 17778762279,
   "symbol": "DAL",
+  "year": 2026
+ },
+ "DPZ|2026-10-13": {
+  "date": "2026-10-13",
+  "epsActual": null,
+  "epsEstimate": 4.4127,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 1184388094,
+  "symbol": "DPZ",
   "year": 2026
  },
  "DRI|2026-09-24": {
@@ -120,6 +142,17 @@
   "symbol": "GIS",
   "year": 2027
  },
+ "GS|2026-10-13": {
+  "date": "2026-10-13",
+  "epsActual": null,
+  "epsEstimate": 15.0539,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 17518648518,
+  "symbol": "GS",
+  "year": 2026
+ },
  "JBL|2026-09-30": {
   "date": "2026-09-30",
   "epsActual": 4.4,
@@ -129,6 +162,28 @@
   "revenueActual": 10616000000,
   "revenueEstimate": 9808790740,
   "symbol": "JBL",
+  "year": 2026
+ },
+ "JNJ|2026-10-13": {
+  "date": "2026-10-13",
+  "epsActual": null,
+  "epsEstimate": 2.5881,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 25578220205,
+  "symbol": "JNJ",
+  "year": 2026
+ },
+ "JPM|2026-10-13": {
+  "date": "2026-10-13",
+  "epsActual": null,
+  "epsEstimate": 5.9185,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 51650095706,
+  "symbol": "JPM",
   "year": 2026
  },
  "KR|2026-09-11": {
@@ -229,5 +284,27 @@
   "revenueEstimate": 2568050876,
   "symbol": "STZ",
   "year": 2027
+ },
+ "UNH|2026-10-13": {
+  "date": "2026-10-13",
+  "epsActual": null,
+  "epsEstimate": 4.1893,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 112517286035,
+  "symbol": "UNH",
+  "year": 2026
+ },
+ "WFC|2026-10-13": {
+  "date": "2026-10-13",
+  "epsActual": null,
+  "epsEstimate": 1.8754,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 22605326382,
+  "symbol": "WFC",
+  "year": 2026
  }
 }
