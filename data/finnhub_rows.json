@@ -32,6 +32,28 @@
   "symbol": "AZO",
   "year": 2026
  },
+ "BAC|2026-10-14": {
+  "date": "2026-10-14",
+  "epsActual": null,
+  "epsEstimate": 1.1619,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 31315190571,
+  "symbol": "BAC",
+  "year": 2026
+ },
+ "BLK|2026-10-14": {
+  "date": "2026-10-14",
+  "epsActual": null,
+  "epsEstimate": 14.3954,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 7629624436,
+  "symbol": "BLK",
+  "year": 2026
+ },
  "CCL|2026-09-29": {
   "date": "2026-09-29",
   "epsActual": 1.43,
@@ -119,6 +141,17 @@
   "revenueEstimate": 3238528730,
   "symbol": "DRI",
   "year": 2027
+ },
+ "FAST|2026-10-14": {
+  "date": "2026-10-14",
+  "epsActual": null,
+  "epsEstimate": 0.3443,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 2485148553,
+  "symbol": "FAST",
+  "year": 2026
  },
  "FDS|2026-09-30": {
   "date": "2026-09-30",
@@ -219,6 +252,17 @@
   "symbol": "MKC",
   "year": 2026
  },
+ "MS|2026-10-14": {
+  "date": "2026-10-14",
+  "epsActual": null,
+  "epsEstimate": 3.1669,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 20872373838,
+  "symbol": "MS",
+  "year": 2026
+ },
  "MU|2026-09-30": {
   "date": "2026-09-30",
   "epsActual": 33.42,
@@ -272,6 +316,17 @@
   "revenueActual": 25274000000,
   "revenueEstimate": 25226779564,
   "symbol": "PEP",
+  "year": 2026
+ },
+ "STT|2026-10-14": {
+  "date": "2026-10-14",
+  "epsActual": null,
+  "epsEstimate": 3.6838,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 4059147277,
+  "symbol": "STT",
   "year": 2026
  },
  "STZ|2026-10-06": {
