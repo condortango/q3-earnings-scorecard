@@ -100,11 +100,11 @@
  },
  "C|2026-10-13": {
   "date": "2026-10-13",
-  "epsActual": null,
+  "epsActual": 2.85,
   "epsEstimate": 2.7311,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 23845000000,
   "revenueEstimate": 24202452747,
   "symbol": "C",
   "year": 2026
@@ -122,11 +122,11 @@
  },
  "DPZ|2026-10-13": {
   "date": "2026-10-13",
-  "epsActual": null,
+  "epsActual": 4.6,
   "epsEstimate": 4.4127,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 1185600000,
   "revenueEstimate": 1184388094,
   "symbol": "DPZ",
   "year": 2026
@@ -177,11 +177,11 @@
  },
  "GS|2026-10-13": {
   "date": "2026-10-13",
-  "epsActual": null,
+  "epsActual": 17.01,
   "epsEstimate": 15.0539,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 18679000000,
   "revenueEstimate": 17518648518,
   "symbol": "GS",
   "year": 2026
@@ -199,22 +199,22 @@
  },
  "JNJ|2026-10-13": {
   "date": "2026-10-13",
-  "epsActual": null,
+  "epsActual": 2.59,
   "epsEstimate": 2.5881,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 25399000000,
   "revenueEstimate": 25578220205,
   "symbol": "JNJ",
   "year": 2026
  },
  "JPM|2026-10-13": {
   "date": "2026-10-13",
-  "epsActual": null,
+  "epsActual": 5.75,
   "epsEstimate": 5.9185,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 50172000000,
   "revenueEstimate": 51650095706,
   "symbol": "JPM",
   "year": 2026
@@ -342,22 +342,22 @@
  },
  "UNH|2026-10-13": {
   "date": "2026-10-13",
-  "epsActual": null,
+  "epsActual": 4.69,
   "epsEstimate": 4.1893,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 112694000000,
   "revenueEstimate": 112517286035,
   "symbol": "UNH",
   "year": 2026
  },
  "WFC|2026-10-13": {
   "date": "2026-10-13",
-  "epsActual": null,
+  "epsActual": 1.87,
   "epsEstimate": 1.8754,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 21870000000,
   "revenueEstimate": 22605326382,
   "symbol": "WFC",
   "year": 2026
