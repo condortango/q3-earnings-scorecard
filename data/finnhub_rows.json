@@ -54,6 +54,17 @@
   "symbol": "BLK",
   "year": 2026
  },
+ "BNY|2026-10-15": {
+  "date": "2026-10-15",
+  "epsActual": null,
+  "epsEstimate": 2.2764,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 5595213331,
+  "symbol": "BNY",
+  "year": 2026
+ },
  "CCL|2026-09-29": {
   "date": "2026-09-29",
   "epsActual": 1.43,
@@ -186,6 +197,28 @@
   "symbol": "GS",
   "year": 2026
  },
+ "IBKR|2026-10-15": {
+  "date": "2026-10-15",
+  "epsActual": null,
+  "epsEstimate": 0.7021,
+  "hour": "amc",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 1936552620,
+  "symbol": "IBKR",
+  "year": 2026
+ },
+ "JBHT|2026-10-15": {
+  "date": "2026-10-15",
+  "epsActual": null,
+  "epsEstimate": 2.0227,
+  "hour": "amc",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 3626282977,
+  "symbol": "JBHT",
+  "year": 2026
+ },
  "JBL|2026-09-30": {
   "date": "2026-09-30",
   "epsActual": 4.4,
@@ -250,6 +283,17 @@
   "revenueActual": null,
   "revenueEstimate": 1997185291,
   "symbol": "MKC",
+  "year": 2026
+ },
+ "MRSH|2026-10-15": {
+  "date": "2026-10-15",
+  "epsActual": null,
+  "epsEstimate": 2.0132,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 6776004911,
+  "symbol": "MRSH",
   "year": 2026
  },
  "MS|2026-10-14": {
@@ -318,6 +362,39 @@
   "symbol": "PEP",
   "year": 2026
  },
+ "PLD|2026-10-15": {
+  "date": "2026-10-15",
+  "epsActual": null,
+  "epsEstimate": 0.8181,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 2307687723,
+  "symbol": "PLD",
+  "year": 2026
+ },
+ "PNC|2026-10-15": {
+  "date": "2026-10-15",
+  "epsActual": null,
+  "epsEstimate": 4.9782,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 6677570560,
+  "symbol": "PNC",
+  "year": 2026
+ },
+ "SCHW|2026-10-15": {
+  "date": "2026-10-15",
+  "epsActual": null,
+  "epsEstimate": 1.7013,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 7362808881,
+  "symbol": "SCHW",
+  "year": 2026
+ },
  "STT|2026-10-14": {
   "date": "2026-10-14",
   "epsActual": null,
@@ -349,6 +426,17 @@
   "revenueActual": 112694000000,
   "revenueEstimate": 112517286035,
   "symbol": "UNH",
+  "year": 2026
+ },
+ "USB|2026-10-15": {
+  "date": "2026-10-15",
+  "epsActual": null,
+  "epsEstimate": 1.3347,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 8076127559,
+  "symbol": "USB",
   "year": 2026
  },
  "WFC|2026-10-13": {
