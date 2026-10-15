@@ -56,11 +56,11 @@
  },
  "BNY|2026-10-15": {
   "date": "2026-10-15",
-  "epsActual": null,
+  "epsActual": 2.37,
   "epsEstimate": 2.2887,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 5676000000,
   "revenueEstimate": 5602338336,
   "symbol": "BNY",
   "year": 2026
@@ -309,11 +309,11 @@
  },
  "MRSH|2026-10-15": {
   "date": "2026-10-15",
-  "epsActual": null,
+  "epsActual": 2.03,
   "epsEstimate": 2.0133,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 6863000000,
   "revenueEstimate": 6772146057,
   "symbol": "MRSH",
   "year": 2026
@@ -408,22 +408,22 @@
  },
  "PLD|2026-10-15": {
   "date": "2026-10-15",
-  "epsActual": null,
+  "epsActual": 1.6,
   "epsEstimate": 0.8181,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 2205270000,
   "revenueEstimate": 2307687723,
   "symbol": "PLD",
   "year": 2026
  },
  "PNC|2026-10-15": {
   "date": "2026-10-15",
-  "epsActual": null,
+  "epsActual": 5.09,
   "epsEstimate": 4.9685,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 6588000000,
   "revenueEstimate": 6679512668,
   "symbol": "PNC",
   "year": 2026
@@ -441,11 +441,11 @@
  },
  "SCHW|2026-10-15": {
   "date": "2026-10-15",
-  "epsActual": null,
+  "epsActual": 1.69,
   "epsEstimate": 1.6927,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 7171000000,
   "revenueEstimate": 7332588943,
   "symbol": "SCHW",
   "year": 2026
@@ -507,11 +507,11 @@
  },
  "USB|2026-10-15": {
   "date": "2026-10-15",
-  "epsActual": null,
+  "epsActual": 1.34,
   "epsEstimate": 1.3407,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 7970000000,
   "revenueEstimate": 8087165243,
   "symbol": "USB",
   "year": 2026
