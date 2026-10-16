@@ -151,6 +151,14 @@ def parse(text: str, season: str = "Q3 2026") -> dict:
             out["eps_surprise_pct"] = -v if m.group(2) == "below" else v
             a5, a10 = _averages(_sentence_after(t, m.end(), 220))
             out["avg"]["eps_surprise_pct_5y"], out["avg"]["eps_surprise_pct_10y"] = a5, a10
+        # Early season: "In aggregate, actual earnings reported by these 19 companies have exceeded|fallen
+        # short of estimated earnings by 4.9%."
+        if out["eps_surprise_pct"] is None:
+            m = re.search(r"In aggregate, actual earnings reported by these \d+ companies have "
+                          r"(exceeded|fallen short of|trailed) estimated earnings by " + NUM + "%", t)
+            if m:
+                v = _f(m.group(2))
+                out["eps_surprise_pct"] = v if m.group(1) == "exceeded" else -v
         # "In terms of revenues, 85% of S&P 500 companies have reported actual revenues above estimates, ..."
         m = re.search(r"In terms of revenues, " + NUM + r"% of S&P 500 companies have reported actual revenues above estimates", t)
         if m:
