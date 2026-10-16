@@ -1467,7 +1467,7 @@
    "cik": "896159",
    "date": "2026-10-20",
    "eps_actual": null,
-   "eps_est": 6.53,
+   "eps_est": 6.42,
    "eps_surprise_pct": null,
    "eps_yearago": 7.49,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -2341,7 +2341,7 @@
    "cik": "93410",
    "date": "2026-10-30",
    "eps_actual": null,
-   "eps_est": 4.74,
+   "eps_est": 4.62,
    "eps_surprise_pct": null,
    "eps_yearago": 1.85,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3766,7 +3766,7 @@
    "cik": "40545",
    "date": "2026-10-20",
    "eps_actual": null,
-   "eps_est": 2.02,
+   "eps_est": 2.01,
    "eps_surprise_pct": null,
    "eps_yearago": 1.66,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -4449,9 +4449,9 @@
   {
    "cik": "1381197",
    "date": "2026-10-15",
-   "eps_actual": 0.57,
+   "eps_actual": 0.67,
    "eps_est": 0.67,
-   "eps_surprise_pct": -14.93,
+   "eps_surprise_pct": 0.0,
    "eps_yearago": 0.57,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
@@ -4463,7 +4463,7 @@
    "sector": "Financials",
    "shares": 453078171,
    "ticker": "IBKR",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "51143",
@@ -4829,9 +4829,9 @@
   {
    "cik": "728535",
    "date": "2026-10-15",
-   "eps_actual": 1.76,
+   "eps_actual": 1.82,
    "eps_est": 1.81,
-   "eps_surprise_pct": -2.76,
+   "eps_surprise_pct": 0.55,
    "eps_yearago": 1.76,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
@@ -4843,7 +4843,7 @@
    "sector": "Industrials",
    "shares": 93914939,
    "ticker": "JBHT",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "898293",
@@ -6635,7 +6635,7 @@
    "cik": "797468",
    "date": "2026-11-09",
    "eps_actual": null,
-   "eps_est": 1.45,
+   "eps_est": 1.39,
    "eps_surprise_pct": null,
    "eps_yearago": 0.64,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -7490,7 +7490,7 @@
    "cik": "101829",
    "date": "2026-10-20",
    "eps_actual": null,
-   "eps_est": 1.78,
+   "eps_est": 1.76,
    "eps_surprise_pct": null,
    "eps_yearago": 1.7,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -9371,7 +9371,7 @@
    "cik": "2115436",
    "date": "2026-10-30",
    "eps_actual": null,
-   "eps_est": 3.92,
+   "eps_est": 3.93,
    "eps_surprise_pct": null,
    "eps_yearago": 1.88,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -9513,17 +9513,17 @@
   "window_start": "2026-09-01"
  },
  "eps": {
-  "above": 32,
-  "above_pct": 80.0,
+  "above": 33,
+  "above_pct": 82.5,
   "agg_method": "share-weighted (EPS x shares outstanding)",
-  "agg_surprise_pct": 4.4,
+  "agg_surprise_pct": 4.44,
   "beat": 31,
   "beat_pct": 77.5,
   "median_surprise_pct": 2.95,
-  "meet": 2,
-  "meet_pct": 5.0,
-  "miss": 7,
-  "miss_pct": 17.5,
+  "meet": 4,
+  "meet_pct": 10.0,
+  "miss": 5,
+  "miss_pct": 12.5,
   "n": 40
  },
  "factset": {
@@ -9813,17 +9813,17 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Oct 16, 2026 11:26 AM PT",
- "generated_at_utc": "2026-10-16T18:26:01+00:00",
+ "generated_at_pt": "Oct 16, 2026 11:31 AM PT",
+ "generated_at_utc": "2026-10-16T18:31:29+00:00",
  "growth": {
   "available": true,
   "coverage": 492,
   "min_coverage": 350,
   "reporters_n": 40,
-  "reporters_pct": 52.7,
-  "value_pct": 24.4
+  "reporters_pct": 52.8,
+  "value_pct": 24.3
  },
- "last_success_pt": "Oct 16, 2026 11:26 AM PT",
+ "last_success_pt": "Oct 16, 2026 11:31 AM PT",
  "reported": 40,
  "reported_since_factset": 0,
  "revenue": {
@@ -9900,9 +9900,9 @@
   {
    "companies": 76,
    "eps_above_pct": 81.2,
-   "eps_agg_surprise_pct": 3.08,
+   "eps_agg_surprise_pct": 3.15,
    "eps_beat_pct": 81.2,
-   "eps_miss_pct": 18.8,
+   "eps_miss_pct": 12.5,
    "eps_n": 16,
    "reported": 16,
    "rev_agg_surprise_pct": -0.84,
@@ -9925,10 +9925,10 @@
   },
   {
    "companies": 83,
-   "eps_above_pct": 60.0,
-   "eps_agg_surprise_pct": -0.96,
+   "eps_above_pct": 80.0,
+   "eps_agg_surprise_pct": -0.75,
    "eps_beat_pct": 40.0,
-   "eps_miss_pct": 40.0,
+   "eps_miss_pct": 20.0,
    "eps_n": 5,
    "reported": 5,
    "rev_agg_surprise_pct": -1.07,
@@ -10102,16 +10102,6 @@
  ],
  "top_misses": [
   {
-   "date": "2026-10-15",
-   "eps_actual": 0.57,
-   "eps_est": 0.67,
-   "eps_surprise_pct": -14.93,
-   "name": "Interactive Brokers",
-   "rev_surprise_pct": -2.79,
-   "sector": "Financials",
-   "ticker": "IBKR"
-  },
-  {
    "date": "2026-09-16",
    "eps_actual": 1.23,
    "eps_est": 1.29,
@@ -10140,16 +10130,6 @@
    "rev_surprise_pct": -1.59,
    "sector": "Financials",
    "ticker": "JPM"
-  },
-  {
-   "date": "2026-10-15",
-   "eps_actual": 1.76,
-   "eps_est": 1.81,
-   "eps_surprise_pct": -2.76,
-   "name": "J.B. Hunt",
-   "rev_surprise_pct": 1.07,
-   "sector": "Industrials",
-   "ticker": "JBHT"
   },
   {
    "date": "2026-10-14",
