@@ -363,6 +363,8 @@ a:hover { text-decoration: underline; }
 header { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
 h1 { font-size: 22px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
 .meta { font-size: 12.5px; color: var(--dim); margin-top: 3px; }
+.share { font: inherit; color: var(--acc); background: none; border: 1px solid var(--line); padding: 1px 8px; margin-left: 4px; cursor: pointer; }
+.share:hover { border-color: var(--acc); }
 .prog { width: 340px; max-width: 100%; }
 .prog .lbl { font-size: 12.5px; color: var(--dim); display: flex; justify-content: space-between; margin-bottom: 5px; }
 .prog .lbl b { color: var(--fg); font-weight: 600; }
@@ -664,6 +666,8 @@ def render_index(out: dict, hist: list, docs: Path, og_html: str = "") -> None:
     season = esc(out["season"])
     fs_short = date.fromisoformat(fs["file_date"]).strftime("%b %-d") if fs else ""
     upd = esc(out.get("generated_at_pt") or "")
+    # Changes with every update, so a copied link is new to Discord and gets a fresh preview card.
+    share_tag = _preview_copy(out)["slug"]
 
     def avg(k, signed=False):
         a = b.get(k + "_5y")
@@ -690,7 +694,10 @@ def render_index(out: dict, hist: list, docs: Path, og_html: str = "") -> None:
         return f"{fs[k]} of {n_fs} reporters" if fs.get(k) is not None and n_fs else "&nbsp;"
 
     gk = (fs.get("eps_growth_kind") or "blended")
-    surp_sub = (f"not in the {fs_short} report" if fs else "no FactSet report")
+    if fs.get("eps_surprise_pct") is not None:
+        surp_sub = "actual earnings vs estimates"
+    else:
+        surp_sub = (f"not in the {fs_short} report" if fs else "no FactSet report")
     if fs.get("eps_surprise_pct") is None and e.get("agg_surprise_pct") is not None:
         surp_sub += f"; running est. {_pct(e['agg_surprise_pct'], True)}"
     tiles = "".join([
@@ -765,7 +772,7 @@ def render_index(out: dict, hist: list, docs: Path, og_html: str = "") -> None:
 <header>
   <div>
     <h1>S&amp;P 500 {season} Earnings</h1>
-    <div class="meta">{src_link} | updated {upd}</div>
+    <div class="meta">{src_link} | updated {upd} <button class="share" id="share" type="button">Copy link for Discord</button></div>
   </div>
   <div class="prog">
     <div class="lbl"><span><b>{rep_main} of {uni}</b> companies reported{since_txt}</span><span>{_pct(w1 + w2)}</span></div>
@@ -799,6 +806,14 @@ def render_index(out: dict, hist: list, docs: Path, og_html: str = "") -> None:
 <a href="details.html">Details, tables and methodology</a> | <a href="data/q3_2026.json">Raw data</a> | Not investment advice.
 </footer>
 </div>
+<script>
+document.getElementById('share').addEventListener('click', async e => {{
+  const b = e.currentTarget, url = location.origin + location.pathname + '?m={share_tag}';
+  try {{ await navigator.clipboard.writeText(url); b.textContent = 'Copied'; }}
+  catch (_) {{ prompt('Copy this link:', url); }}
+  setTimeout(() => {{ b.textContent = 'Copy link for Discord'; }}, 2000);
+}});
+</script>
 <script src="{CHART_JS}"></script>
 <script>
 const S = {json.dumps(series)};
