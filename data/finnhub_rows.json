@@ -210,22 +210,22 @@
  },
  "IBKR|2026-10-15": {
   "date": "2026-10-15",
-  "epsActual": null,
+  "epsActual": 0.67,
   "epsEstimate": 0.6899,
   "hour": "amc",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 1872000000,
   "revenueEstimate": 1925717160,
   "symbol": "IBKR",
   "year": 2026
  },
  "JBHT|2026-10-15": {
   "date": "2026-10-15",
-  "epsActual": null,
+  "epsActual": 1.82,
   "epsEstimate": 1.9246,
   "hour": "amc",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 3676810000,
   "revenueEstimate": 3637843321,
   "symbol": "JBHT",
   "year": 2026
