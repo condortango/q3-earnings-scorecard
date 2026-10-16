@@ -397,6 +397,11 @@ h1 { font-size: 22px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
 .stack .b { background: var(--acc); } .stack .m { background: #c7ccd4; } .stack .x { background: #6b7280; }
 .slbl { display: flex; gap: 18px; font-size: 12.5px; margin-top: 6px; font-variant-numeric: tabular-nums; flex-wrap: wrap; }
 .slbl i { display: inline-block; width: 9px; height: 9px; margin-right: 5px; vertical-align: 0; }
+.more { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 18px; border: 1px solid var(--acc); color: var(--fg); }
+.more:hover { background: #f3f7fc; text-decoration: none; }
+.more b { font-size: 15px; font-weight: 600; color: var(--acc); }
+.more span { font-size: 12.5px; color: var(--dim); }
+.more .go { font-size: 15px; font-weight: 600; color: var(--acc); white-space: nowrap; }
 footer { font-size: 11.5px; color: var(--dim); border-top: 1px solid var(--line); padding-top: 8px; line-height: 1.5; }
 @media (max-height: 760px) {
   .wrap { gap: 14px; padding-top: 16px; }
@@ -418,6 +423,7 @@ footer { font-size: 11.5px; color: var(--dim); border-top: 1px solid var(--line)
   .tile:nth-child(4) { border-top: 1px solid var(--line); }
   .tile .v { font-size: 32px; }
   .prog { width: 100%; }
+  .more { flex-direction: column; align-items: flex-start; gap: 6px; }
 }
 """
 
@@ -801,6 +807,10 @@ def render_index(out: dict, hist: list, docs: Path, og_html: str = "") -> None:
     <div class="cv"><canvas id="c3" aria-label="EPS beat rate by sector"></canvas></div>
   </div>
 </section>
+<a class="more" href="details.html">
+  <div><b>More details and methodology</b><br><span>Sector table, every company that has reported, FactSet vs running estimate side by side, surprise history, and how each number is calculated.</span></div>
+  <div class="go">View details &rarr;</div>
+</a>
 <footer>
 {fs_cite}{avg_cite}Running estimate: company results from the Nasdaq earnings calendar (Zacks consensus), not FactSet.<br>
 <a href="details.html">Details, tables and methodology</a> | <a href="data/q3_2026.json">Raw data</a> | Not investment advice.
