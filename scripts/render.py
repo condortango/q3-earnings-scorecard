@@ -615,7 +615,6 @@ def write_open_graph(out: dict, cfg: dict, docs: Path) -> str:
     card = _preview_copy(out)
     base = site_base(cfg)
     home = base + "/"
-    image = base + "/og.png"
     _draw_card(card, docs / "og.png")
     slug = card["slug"]
     snap = docs / "p" / slug
@@ -649,7 +648,9 @@ p {{ color: #6b7280; }}
 """
     (snap / "index.html").write_text(page)
     (docs.parent / "preview-url.txt").write_text(snap_url + "\n")
-    return _og_meta(card["title"], card["description"], home, image)
+    # Discord and others cache images by URL, so the homepage points at this run's snapshot image
+    # rather than the fixed /og.png, which would keep showing whatever was cached first.
+    return _og_meta(card["title"], card["description"], home, snap_image)
 
 
 def render_index(out: dict, hist: list, docs: Path, og_html: str = "") -> None:
