@@ -78,11 +78,11 @@
  },
  "CFG|2026-10-16": {
   "date": "2026-10-16",
-  "epsActual": null,
+  "epsActual": 1.41,
   "epsEstimate": 1.4007,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 2322000000,
   "revenueEstimate": 2359245152,
   "symbol": "CFG",
   "year": 2026
@@ -331,11 +331,11 @@
  },
  "MTB|2026-10-16": {
   "date": "2026-10-16",
-  "epsActual": null,
+  "epsActual": 5.08,
   "epsEstimate": 5.0071,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 2548000000,
   "revenueEstimate": 2558032383,
   "symbol": "MTB",
   "year": 2026
@@ -430,11 +430,11 @@
  },
  "RF|2026-10-16": {
   "date": "2026-10-16",
-  "epsActual": null,
+  "epsActual": 0.73,
   "epsEstimate": 0.6833,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 1973000000,
   "revenueEstimate": 2045974551,
   "symbol": "RF",
   "year": 2026
@@ -474,22 +474,22 @@
  },
  "TFC|2026-10-16": {
   "date": "2026-10-16",
-  "epsActual": null,
+  "epsActual": 1.16,
   "epsEstimate": 1.1183,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 5194000000,
   "revenueEstimate": 5407923042,
   "symbol": "TFC",
   "year": 2026
  },
  "TRV|2026-10-16": {
   "date": "2026-10-16",
-  "epsActual": null,
+  "epsActual": 9.18,
   "epsEstimate": 7.4909,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 12446000000,
   "revenueEstimate": 11490115186,
   "symbol": "TRV",
   "year": 2026
