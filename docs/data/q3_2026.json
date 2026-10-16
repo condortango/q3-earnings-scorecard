@@ -289,7 +289,7 @@
    "cik": "4977",
    "date": "2026-11-04",
    "eps_actual": null,
-   "eps_est": 1.8,
+   "eps_est": 1.79,
    "eps_surprise_pct": null,
    "eps_yearago": 2.49,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -422,7 +422,7 @@
    "cik": "899051",
    "date": "2026-11-04",
    "eps_actual": null,
-   "eps_est": 6.71,
+   "eps_est": 6.75,
    "eps_surprise_pct": null,
    "eps_yearago": 11.17,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -669,7 +669,7 @@
    "cik": "1841666",
    "date": "2026-11-04",
    "eps_actual": null,
-   "eps_est": 1.22,
+   "eps_est": 1.27,
    "eps_surprise_pct": null,
    "eps_yearago": 0.93,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -1446,7 +1446,7 @@
   },
   {
    "cik": "18230",
-   "date": "2026-11-04",
+   "date": "2026-10-29",
    "eps_actual": null,
    "eps_est": 6.95,
    "eps_surprise_pct": null,
@@ -1461,7 +1461,7 @@
    "sector": "Industrials",
    "shares": 459674889,
    "ticker": "CAT",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "896159",
@@ -1974,7 +1974,7 @@
    "sector": "Information Technology",
    "shares": 196934659,
    "ticker": "COHR",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "1679788",
@@ -2130,9 +2130,9 @@
   },
   {
    "cik": "849395",
-   "date": "2026-11-04",
+   "date": "2026-10-29",
    "eps_actual": null,
-   "eps_est": 2.2,
+   "eps_est": 2.14,
    "eps_surprise_pct": null,
    "eps_yearago": 2.21,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -2145,13 +2145,13 @@
    "sector": "Materials",
    "shares": 669339432,
    "ticker": "CRH",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "1100682",
    "date": "2026-11-04",
    "eps_actual": null,
-   "eps_est": 2.97,
+   "eps_est": 2.98,
    "eps_surprise_pct": null,
    "eps_yearago": 2.43,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -2434,14 +2434,14 @@
   },
   {
    "cik": "1561550",
-   "date": null,
+   "date": "2026-11-04",
    "eps_actual": null,
-   "eps_est": null,
+   "eps_est": 0.18,
    "eps_surprise_pct": null,
    "eps_yearago": 0.11,
    "eps_yearago_src": "nasdaq_last_year_eps",
-   "fiscal_quarter": null,
-   "n_ests": null,
+   "fiscal_quarter": "Sep/2026",
+   "n_ests": 9,
    "name": "Datadog",
    "rev_actual": null,
    "rev_est": null,
@@ -2449,7 +2449,7 @@
    "sector": "Information Technology",
    "shares": 359075024,
    "ticker": "DDOG",
-   "time": null
+   "time": "pre-market"
   },
   {
    "cik": "315189",
@@ -2833,7 +2833,7 @@
   },
   {
    "cik": "1065088",
-   "date": "2026-11-04",
+   "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 1.11,
    "eps_surprise_pct": null,
@@ -2848,7 +2848,7 @@
    "sector": "Consumer Discretionary",
    "shares": 445000000,
    "ticker": "EBAY",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "1415404",
@@ -5704,7 +5704,7 @@
    "cik": "1099219",
    "date": "2026-11-04",
    "eps_actual": null,
-   "eps_est": 2.65,
+   "eps_est": 2.69,
    "eps_surprise_pct": null,
    "eps_yearago": 2.34,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6234,7 +6234,7 @@
   },
   {
    "cik": "1111711",
-   "date": "2026-11-04",
+   "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.22,
    "eps_surprise_pct": null,
@@ -6249,7 +6249,7 @@
    "sector": "Utilities",
    "shares": 479560100,
    "ticker": "NI",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "320187",
@@ -7224,7 +7224,7 @@
    "cik": "804328",
    "date": "2026-11-04",
    "eps_actual": null,
-   "eps_est": 1.47,
+   "eps_est": 1.46,
    "eps_surprise_pct": null,
    "eps_yearago": 2.56,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -9813,17 +9813,17 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Oct 16, 2026 10:59 AM PT",
- "generated_at_utc": "2026-10-16T17:59:58+00:00",
+ "generated_at_pt": "Oct 16, 2026 11:26 AM PT",
+ "generated_at_utc": "2026-10-16T18:26:01+00:00",
  "growth": {
   "available": true,
-  "coverage": 491,
+  "coverage": 492,
   "min_coverage": 350,
   "reporters_n": 40,
   "reporters_pct": 52.7,
   "value_pct": 24.4
  },
- "last_success_pt": "Oct 16, 2026 10:59 AM PT",
+ "last_success_pt": "Oct 16, 2026 11:26 AM PT",
  "reported": 40,
  "reported_since_factset": 0,
  "revenue": {
@@ -9842,7 +9842,7 @@
   "n": 40,
   "status": "ok"
  },
- "scheduled": 458,
+ "scheduled": 459,
  "season": "Q3 2026",
  "sectors": [
   {
