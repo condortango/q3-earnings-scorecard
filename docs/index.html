@@ -6,16 +6,16 @@
 <title>S&amp;P 500 Q3 2026 Earnings</title>
 <meta property="og:type" content="website">
 <meta property="og:title" content="S&amp;P 500 Q3 2026: 84% EPS beat">
-<meta property="og:description" content="Updated Oct 16, 2026 11:31 AM PT. EPS beat rate 84%. FactSet Earnings Insight, Oct 16. 40 of 500 companies reported.">
+<meta property="og:description" content="Updated Oct 16, 2026 11:46 AM PT. EPS beat rate 84%. FactSet Earnings Insight, Oct 16. 40 of 500 companies reported.">
 <meta property="og:url" content="https://condortango.github.io/q3-earnings-scorecard/">
-<meta property="og:image" content="https://condortango.github.io/q3-earnings-scorecard/p/20261016-1131/og.png">
+<meta property="og:image" content="https://condortango.github.io/q3-earnings-scorecard/p/20261016-1146/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="S&amp;P 500 Q3 2026: 84% EPS beat">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="S&amp;P 500 Q3 2026: 84% EPS beat">
-<meta name="twitter:description" content="Updated Oct 16, 2026 11:31 AM PT. EPS beat rate 84%. FactSet Earnings Insight, Oct 16. 40 of 500 companies reported.">
-<meta name="twitter:image" content="https://condortango.github.io/q3-earnings-scorecard/p/20261016-1131/og.png">
+<meta name="twitter:description" content="Updated Oct 16, 2026 11:46 AM PT. EPS beat rate 84%. FactSet Earnings Insight, Oct 16. 40 of 500 companies reported.">
+<meta name="twitter:image" content="https://condortango.github.io/q3-earnings-scorecard/p/20261016-1146/og.png">
 <style>
 :root { --fg:#1f2328; --dim:#6b7280; --faint:#9ca3af; --line:#e5e7eb; --acc:#2563a8; --acc2:#a9c1e0; }
 * { box-sizing: border-box; }
@@ -27,6 +27,8 @@ a:hover { text-decoration: underline; }
 header { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
 h1 { font-size: 22px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
 .meta { font-size: 12.5px; color: var(--dim); margin-top: 3px; }
+.share { font: inherit; color: var(--acc); background: none; border: 1px solid var(--line); padding: 1px 8px; margin-left: 4px; cursor: pointer; }
+.share:hover { border-color: var(--acc); }
 .prog { width: 340px; max-width: 100%; }
 .prog .lbl { font-size: 12.5px; color: var(--dim); display: flex; justify-content: space-between; margin-bottom: 5px; }
 .prog .lbl b { color: var(--fg); font-weight: 600; }
@@ -88,7 +90,7 @@ footer { font-size: 11.5px; color: var(--dim); border-top: 1px solid var(--line)
 <header>
   <div>
     <h1>S&amp;P 500 Q3 2026 Earnings</h1>
-    <div class="meta"><a href="https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_101626.pdf">FactSet Earnings Insight, Oct 16</a> | updated Oct 16, 2026 11:31 AM PT</div>
+    <div class="meta"><a href="https://go.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_101626.pdf">FactSet Earnings Insight, Oct 16</a> | updated Oct 16, 2026 11:46 AM PT <button class="share" id="share" type="button">Copy link for Discord</button></div>
   </div>
   <div class="prog">
     <div class="lbl"><span><b>40 of 500</b> companies reported</span><span>8.0%</span></div>
@@ -96,7 +98,7 @@ footer { font-size: 11.5px; color: var(--dim); border-top: 1px solid var(--line)
   </div>
 </header>
 
-<section class="tiles"><div class="tile"><div class="t">EPS beat rate</div><div class="v">84%</div><div class="s">&nbsp;</div><div class="c">5-yr avg 78%</div></div><div class="tile"><div class="t">Revenue beat rate</div><div class="v">67%</div><div class="s">&nbsp;</div><div class="c">5-yr avg 70%</div></div><div class="tile"><div class="t">EPS growth, y/y (blended)</div><div class="v">+29%</div><div class="s">Q3 2026 vs a year earlier</div><div class="c">5-yr avg +13.3%</div></div><div class="tile"><div class="t">Aggregate EPS surprise</div><div class="v">+2.6%</div><div class="s">not in the Oct 16 report</div><div class="c">5-yr avg +7.5%</div></div></section>
+<section class="tiles"><div class="tile"><div class="t">EPS beat rate</div><div class="v">84%</div><div class="s">&nbsp;</div><div class="c">5-yr avg 78%</div></div><div class="tile"><div class="t">Revenue beat rate</div><div class="v">67%</div><div class="s">&nbsp;</div><div class="c">5-yr avg 70%</div></div><div class="tile"><div class="t">EPS growth, y/y (blended)</div><div class="v">+29%</div><div class="s">Q3 2026 vs a year earlier</div><div class="c">5-yr avg +13.3%</div></div><div class="tile"><div class="t">Aggregate EPS surprise</div><div class="v">+2.6%</div><div class="s">actual earnings vs estimates</div><div class="c">5-yr avg +7.5%</div></div></section>
 <section class="charts">
   <div class="col">
     <div class="panel grow">
@@ -122,6 +124,14 @@ Source: <a href="https://go.factset.com/hubfs/Website/Resources%20Section/Resear
 <a href="details.html">Details, tables and methodology</a> | <a href="data/q3_2026.json">Raw data</a> | Not investment advice.
 </footer>
 </div>
+<script>
+document.getElementById('share').addEventListener('click', async e => {
+  const b = e.currentTarget, url = location.origin + location.pathname + '?m=20261016-1146';
+  try { await navigator.clipboard.writeText(url); b.textContent = 'Copied'; }
+  catch (_) { prompt('Copy this link:', url); }
+  setTimeout(() => { b.textContent = 'Copy link for Discord'; }, 2000);
+});
+</script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
 <script>
 const S = {"dates": ["2026-09-10", "2026-09-11", "2026-09-16", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-24", "2026-09-25", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16"], "fs": [null, 100.0, null, 66.7, null, null, null, 77.8, null, null, null, 87.5, null, null, null, 84.2, null, null, null, null, null, 84.0], "nq": [50.0, null, 33.3, null, 50.0, 71.4, 66.7, null, 70.0, 76.9, 81.2, null, 81.2, 82.4, 82.4, 83.3, 78.9, 78.9, 78.9, 80.8, 81.2, 82.5], "avg5": 78.0, "sec_lbl": ["Cons. Staples (5)", "Health Care (2)", "Real Estate (1)", "Financials (16)", "Industrials (5)", "Info. Technology (5)", "Cons. Discretionary (6)"], "sec_val": [100.0, 100.0, 100.0, 81.2, 80.0, 80.0, 66.7]};
