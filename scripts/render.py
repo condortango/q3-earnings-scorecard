@@ -666,7 +666,7 @@ def render_index(out: dict, hist: list, docs: Path, og_html: str = "") -> None:
     season = esc(out["season"])
     fs_short = date.fromisoformat(fs["file_date"]).strftime("%b %-d") if fs else ""
     upd = esc(out.get("generated_at_pt") or "")
-    # Changes with every update, so a copied link is new to Discord and gets a fresh preview card.
+    # Changes with every update, so a copied link is new to link-preview caches (Discord, Slack...) and gets a fresh card.
     share_tag = _preview_copy(out)["slug"]
 
     def avg(k, signed=False):
@@ -772,7 +772,7 @@ def render_index(out: dict, hist: list, docs: Path, og_html: str = "") -> None:
 <header>
   <div>
     <h1>S&amp;P 500 {season} Earnings</h1>
-    <div class="meta">{src_link} | updated {upd} <button class="share" id="share" type="button">Copy link for Discord</button></div>
+    <div class="meta">{src_link} | updated {upd} <button class="share" id="share" type="button">Copy Link</button></div>
   </div>
   <div class="prog">
     <div class="lbl"><span><b>{rep_main} of {uni}</b> companies reported{since_txt}</span><span>{_pct(w1 + w2)}</span></div>
@@ -811,7 +811,7 @@ document.getElementById('share').addEventListener('click', async e => {{
   const b = e.currentTarget, url = location.origin + location.pathname + '?m={share_tag}';
   try {{ await navigator.clipboard.writeText(url); b.textContent = 'Copied'; }}
   catch (_) {{ prompt('Copy this link:', url); }}
-  setTimeout(() => {{ b.textContent = 'Copy link for Discord'; }}, 2000);
+  setTimeout(() => {{ b.textContent = 'Copy Link'; }}, 2000);
 }});
 </script>
 <script src="{CHART_JS}"></script>
