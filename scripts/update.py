@@ -415,7 +415,9 @@ def refresh_factset(cfg: dict, today: date) -> dict:
 def refresh_factset_seasons(cfg: dict, st: dict, today: date) -> dict:
     """Weekly Earnings Insight reports for the compare seasons, for the season-vs-season growth
     chart: every weekday of each season window is tried once, parsed for that season's label, and
-    the in-season reports are kept in factset.json under "seasons" (never refetched)."""
+    every report stating the season's growth rate is kept in factset.json under "seasons" (never
+    refetched). Early reports carry only the estimated growth rate, before FactSet starts the
+    scorecard; they are kept too, so each season's line starts with its first reporters."""
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import factset
     seasons = st.setdefault("seasons", {})
@@ -437,7 +439,7 @@ def refresh_factset_seasons(cfg: dict, st: dict, today: date) -> dict:
             except Exception as e:
                 log(f"factset: {label} {d} parse error {e}")
                 continue
-            if p.get("in_season") and p.get("eps_growth_pct") is not None:
+            if p.get("eps_growth_pct") is not None:
                 p["url"], p["file_date"] = u, d.isoformat()
                 p["fetched_at_utc"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
                 reps[d.isoformat()] = p

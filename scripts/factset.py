@@ -23,21 +23,24 @@ MONTHS = "January|February|March|April|May|June|July|August|September|October|No
 NUM = r"(-?\d+(?:\.\d+)?)"
 
 
-def url_for(d: date, host: str = HOSTS[0]) -> str:
-    return host + PATH.format(d=d.strftime("%m%d%y"))
+def url_for(d: date, host: str = HOSTS[0], suffix: str = "") -> str:
+    return host + PATH.format(d=d.strftime("%m%d%y")).replace(".pdf", suffix + ".pdf")
 
 
 def fetch_pdf(d: date, session: requests.Session | None = None):
-    """Returns (url, bytes) for the report dated d, or (None, None) if it does not exist."""
+    """Returns (url, bytes) for the report dated d, or (None, None) if it does not exist. FactSet
+    occasionally files a report under a suffixed name (EarningsInsight_041026A.pdf), so the plain
+    name and the "A" variant are both tried on every host."""
     s = session or requests
     for host in HOSTS:
-        u = url_for(d, host)
-        try:
-            r = s.get(u, headers=UA, timeout=40)
-        except requests.RequestException:
-            continue
-        if r.status_code == 200 and r.content[:4] == b"%PDF":
-            return u.replace(host, HOSTS[0]), r.content
+        for suffix in ("", "A"):
+            u = url_for(d, host, suffix)
+            try:
+                r = s.get(u, headers=UA, timeout=40)
+            except requests.RequestException:
+                continue
+            if r.status_code == 200 and r.content[:5] == b"%PDF-":
+                return u, r.content
     return None, None
 
 
