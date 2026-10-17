@@ -66,6 +66,14 @@ reported this season:
   is the first report date under the fiscal-quarter rule, so every line starts there; the marker on each
   line is the first big-bank report (`kickoff_tickers`). Earlier seasons are listed in `config.json` under
   `compare_seasons` and fetched from the Nasdaq calendar once, then cached like everything else.
+  A third overlay tracks earnings dollars above consensus (actual minus consensus EPS, times shares
+  outstanding, summed over reporters so far) as a share of the season's total expected earnings, so 0 is in
+  line with pre-report consensus and the line rises as companies beat. A company whose surprise is beyond
+  plus or minus `surprise_max_abs_pct` (50%) of consensus is left out of that line and listed under the
+  chart: that is nearly always a GAAP actual against an adjusted consensus (Alphabet's investment gains
+  added 5 and 11 points to the Q1 and Q2 2026 lines before this rule) or a near-zero estimate. Consensus EPS per company is also
+  snapshotted every run day in `data/consensus_<season>.json` (changes only, replay in order), so a later
+  version can measure the season against quarter-start expectations, estimate revisions included.
 - sector table (GICS), top 10 EPS beats and misses, and every reporter (running estimate data)
 - last updated time in Pacific time and source attribution
 
@@ -176,8 +184,9 @@ python3 -m http.server -d docs 8000
   `python scripts/render.py` re-renders from the saved data without fetching anything.
 - `config.json`: season window, quarter mapping, meet band, FactSet lookback, fallback averages.
 - `data/factset.json`: every parsed FactSet report this season. `data/q3_2026.json`: the full computed
-  scorecard. `data/history.csv`: daily running-estimate series. `data/nasdaq_days.json`, `data/shares.json`,
-  `data/finnhub_rows.json`: source caches.
+  scorecard. `data/history.csv`: daily running-estimate series. `data/consensus_<season>.json`: daily consensus
+  EPS per company, stored as changes. `data/nasdaq_days.json`, `data/shares.json`, `data/finnhub_rows.json`:
+  source caches.
 - `publish.sh` commits, creates `condortango/q3-earnings-scorecard`, pushes, enables Pages and starts the
   first run. Run it only when you are ready.
 

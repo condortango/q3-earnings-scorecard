@@ -253,13 +253,49 @@ def render_site(out: dict, hist: list, cfg: dict, docs: Path) -> None:
     season_colors = ["#6f5fb8", "#c2641a", "#2563a8"]  # Q1, Q2, Q3 (current season darkest)
     seasons = [{"label": c["label"], "day0": c["day0"], "last": c["last"], "kickoff_day": c["kickoff_day"],
                 "reported": c["reported"], "beats": c["beats"], "beat_pct": c["beat_pct"],
+                "surprise_pct": c.get("surprise_pct") or [], "agg_surprise_pct": c.get("agg_surprise_pct") or [],
+                "top": c.get("top") or [], "expected_n": c.get("expected_n", 0), "weighted_n": c.get("weighted_n", 0),
+                "excluded": c.get("excluded") or [],
                 "color": season_colors[(i - len(curves)) % len(season_colors)], "current": i == len(curves) - 1}
                for i, c in enumerate(curves)]
+    has_surprise = any(s["surprise_pct"] and s["surprise_pct"][-1] is not None for s in seasons)
+    last_of = lambda xs: xs[-1] if xs else None
+    sp2 = lambda v: "n/a" if v is None else f"{v:+.2f}%"
     season_rows = "".join(
         f"<tr><td>{esc(s['label'])}</td><td>{sdate(s['day0'])}</td>"
         f"<td>{'day ' + str(s['kickoff_day']) if s['kickoff_day'] is not None else 'n/a'}</td>"
         f"<td>{len(s['reported']) - 1}</td><td>{s['reported'][-1]}</td><td>{s['beats'][-1]}</td>"
-        f"<td>{f1(s['beat_pct'][-1])}</td></tr>" for s in seasons)
+        f"<td>{f1(s['beat_pct'][-1])}</td>"
+        + (f"<td class='{cls(last_of(s['agg_surprise_pct']))}'>{sp2(last_of(s['agg_surprise_pct']))}</td>"
+           f"<td class='{cls(last_of(s['surprise_pct']))}'>{sp2(last_of(s['surprise_pct']))}</td>"
+           f"<td>{s['weighted_n']} / {s['expected_n']}</td>" if has_surprise else "")
+        + "</tr>" for s in seasons)
+    season_extra_th = ("<th>Agg. surprise</th><th>% of season est.</th><th>In $ line</th>"
+                       if has_surprise else "")
+    surprise_html = ('''<h3>Earnings vs consensus, season to date</h3>
+<p class="dim small">Earnings dollars above consensus so far (actual minus consensus EPS, times shares outstanding, summed over
+reporters), as a share of the season's total expected earnings (consensus EPS times shares for every company with a calendar
+row). 0 is in line with consensus: the line rises as companies beat and falls as they miss, and ends the season at the
+aggregate EPS surprise for the whole index. Consensus is the Zacks figure on report day, so an estimate raised earlier in
+the quarter is part of the baseline, not the beat. Hover for the running aggregate surprise among reporters and the day's
+biggest contributor.</p>
+<div class="chart tall"><canvas id="c5"></canvas></div>''' if has_surprise else "")
+    max_abs = out.get("config", {}).get("surprise_max_abs_pct", 50)
+
+    def excl_txt(s):
+        ex = s["excluded"]
+        big = [x for x in ex if abs(x["pp"]) >= 0.1]
+        if not ex:
+            return f"{esc(s['label'])}: none"
+        named = ", ".join(f"{esc(x['t'])} {x['pct']:+d}% ({x['pp']:+.1f} points)" if x["pct"] is not None
+                          else f"{esc(x['t'])} (zero estimate, {x['pp']:+.1f} points)" for x in big)
+        return (f"{esc(s['label'])}: {len(ex)} compan{'y' if len(ex) == 1 else 'ies'}"
+                + (f", of which {named}" if named else ", none worth 0.1 points"))
+    if has_surprise:
+        surprise_html += (f'<p class="dim small">Left out of this chart, in numerator and denominator: companies whose EPS surprise is beyond '
+                          f'plus or minus {max_abs:g}% of consensus or whose consensus is zero. A gap that size is almost always a GAAP actual '
+                          f'against an adjusted consensus, or a near-zero estimate, rather than a beat, and one such row can move this '
+                          f'index-level line by several points. {"; ".join(excl_txt(s) for s in seasons)}.</p>')
     has_replay = any(h.get("method") == "replay" for h in hist)
     no_fs_surp = fsh and all(h.get("eps_surprise_pct") is None for h in fsh)
 
@@ -302,12 +338,15 @@ the plus or minus {band:g}% beat / meet / miss split is shown as detail. Expect 
 {f'''<h2>Season vs season: EPS beats by day</h2>
 <p class="dim small">Running estimate, not FactSet. Each season is indexed to day 0 = its first S&amp;P 500 reporter under the
 fiscal-quarter rule (Oracle and Adobe open every season), so every line starts on the day of its first reporter. Calendar days; weekends
-show as flat steps. Top: companies with EPS above consensus (cumulative count). Bottom: that count as a share of reporters so far.
-The marker on each line is the day the first big bank reported.</p>
+show as flat steps. First chart: companies with EPS above consensus (cumulative count). Second: that count as a share of
+reporters so far. The marker on each line is the day the first big bank reported.</p>
 <div class="chart tall"><canvas id="c3"></canvas></div>
 <div class="chart tall"><canvas id="c4"></canvas></div>
-<table class="seasons"><tr><th>Season</th><th>Day 0</th><th>Banks kick off</th><th>Days shown</th><th>Reported</th><th>Beats</th><th>Beat rate</th></tr>{season_rows}</table>
-<p class="dim small">Earlier seasons use the same Nasdaq calendar rows (Zacks consensus) and today's S&amp;P 500 membership. {esc(out["season"])} extends with every update; a finished season ends at its last reporter.</p>''' if seasons else ''}
+{surprise_html}
+<table class="seasons"><tr><th>Season</th><th>Day 0</th><th>Banks kick off</th><th>Days shown</th><th>Reported</th><th>Beats</th><th>Beat rate</th>{season_extra_th}</tr>{season_rows}</table>
+<p class="dim small">Earlier seasons use the same Nasdaq calendar rows (Zacks consensus) and today's S&amp;P 500 membership and shares
+outstanding. Dollar surprises are dominated by the largest companies. {esc(out["season"])} extends with every update; a finished
+season ends at its last reporter.</p>''' if seasons else ''}
 <h2>By sector (GICS), running estimate</h2>
 <table><tr><th>Sector</th><th>Reported</th><th>Above est.</th><th>Beat (band)</th><th>Miss (band)</th><th>Agg. EPS surprise</th><th>Revenue above est.</th></tr>{sec_rows}</table>
 <div class="two">
@@ -372,6 +411,29 @@ if (window.Chart && SEASONS.length) {{
       x: {{ title: {{ display: true, text: 'Days since first reporter' }}, grid: {{ display: false }}, ticks: {{ maxTicksLimit: 12, maxRotation: 0 }} }} }} }});
   new Chart(document.getElementById('c3'), {{ type: 'line', data: {{ labels: days, datasets: ds('beats') }}, options: sopts('Companies with EPS above consensus', undefined) }});
   new Chart(document.getElementById('c4'), {{ type: 'line', data: {{ labels: days, datasets: ds('beat_pct') }}, options: sopts('% of reporters above consensus', 100) }});
+  if (document.getElementById('c5')) {{
+    // starts at (-1, 0): before the first report the season is, by definition, in line with consensus
+    const pts = s => [{{ x: -1, y: 0 }}].concat(s.surprise_pct.map((v, i) => ({{ x: i, y: v }})));
+    const sgn = v => (v > 0 ? '+' : '') + v.toFixed(2);
+    const ds3 = SEASONS.map(s => ({{ label: s.label, data: pts(s), borderColor: s.color, backgroundColor: s.color,
+      borderWidth: s.current ? 2.5 : 1.5, pointRadius: pts(s).map((_, i) => i - 1 === s.kickoff_day ? 4 : 0),
+      pointHoverRadius: 4, pointStyle: 'rectRot', spanGaps: false }}));
+    new Chart(document.getElementById('c5'), {{ type: 'line', data: {{ datasets: ds3 }}, options: {{
+      responsive: true, maintainAspectRatio: false, animation: false, interaction: {{ mode: 'index', intersect: false }},
+      plugins: {{ legend: {{ labels: {{ boxWidth: 14, font: {{ size: 12 }}, usePointStyle: false }} }},
+        tooltip: {{ callbacks: {{
+          title: it => it.length ? (it[0].parsed.x < 0 ? 'Before the first report' : 'Day ' + it[0].parsed.x) : '',
+          label: c => {{ const s = SEASONS[c.datasetIndex], i = c.parsed.x;
+            if (i < 0) return s.label + ': in line with consensus';
+            const t = s.top[i], g = s.agg_surprise_pct[i];
+            return s.label + ' (' + fmt(s, i) + '): ' + sgn(s.surprise_pct[i]) + '% of expected season earnings'
+              + (g == null ? '' : ', reporters so far ' + sgn(g) + '% vs consensus')
+              + (t ? ', biggest ' + t.t + ' ' + sgn(t.pp) + 'pp' : '') + (i === s.kickoff_day ? ', banks kick off' : ''); }} }} }} }},
+      scales: {{ y: {{ title: {{ display: true, text: '% of season expected earnings' }}, grid: {{ color: '#eeeeee' }},
+                      ticks: {{ callback: v => sgn(v) + '%' }} }},
+        x: {{ type: 'linear', min: -1, max: maxDay, title: {{ display: true, text: 'Days since first reporter' }}, grid: {{ display: false }},
+             ticks: {{ maxTicksLimit: 12, maxRotation: 0, callback: v => v < 0 ? '' : v }} }} }} }} }});
+  }}
 }}
 </script>
 </body>

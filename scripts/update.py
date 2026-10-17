@@ -624,58 +624,142 @@ def compute(cfg, recs, finn_status):
 
 # ---------------------------------------------------------------- season vs season
 
-def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today, kickoff, skip=frozenset()):
-    """Cumulative EPS beats by calendar day since a season's first reporter.
+def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today, kickoff,
+                 skip=frozenset(), shares=None, max_abs_pct=50.0):
+    """Season-to-date series by calendar day since a season's first reporter.
 
     Day 0 is the first report date under the fiscal-quarter mapping (the same rule as the
     scorecard), so every season's line starts on the day of its first reporter. One company
     counts once (its last calendar row with an actual); a beat is actual above consensus
-    (FactSet's definition). Rows in `skip` {(cik, date)} are actuals held as pending."""
+    (FactSet's definition). Rows in `skip` {(cik, date)} are actuals held as pending.
+
+    Besides the beat count, the curve carries earnings dollars above consensus (EPS x shares,
+    summed over reporters so far) as a share of the season's total expected earnings (consensus
+    EPS x shares over every company with a calendar row in the season), so 0 means in line with
+    pre-report consensus and the line rises with beats. `shares` is {cik: shares outstanding}.
+    A company whose surprise is beyond +/- `max_abs_pct` of consensus (or whose consensus is zero) is
+    left out of the dollar series and listed in `excluded`: that size of gap is almost always a GAAP
+    actual against an adjusted consensus (Alphabet's investment gains) or a near-zero estimate, not a
+    beat, and one such row can move the index-level line by ten points."""
+    shares = shares or {}
     ws, we = date.fromisoformat(window_start), date.fromisoformat(window_end)
     end = min(we, today)
-    by_cik: dict[str, tuple] = {}
+    by_cik: dict[str, tuple] = {}   # reporters: cik -> (date, symbol, actual, estimate, cik)
+    latest: dict[str, tuple] = {}   # every company in the season: cik -> (date, estimate)
     for k, v in cache.items():
         d = date.fromisoformat(k)
-        if not (ws <= d <= end):
+        if not (ws <= d <= we):
             continue
         for r in v["rows"]:
             cik = sym2cik.get(r["symbol"])
-            a, e = money(r.get("eps")), money(r.get("epsForecast"))
-            if (cik, k) in skip:
+            if not cik or r.get("fiscalQuarterEnding") not in fq_set:
                 continue
-            if cik and r.get("fiscalQuarterEnding") in fq_set and a is not None and e is not None:
-                if cik not in by_cik or d > by_cik[cik][0]:
-                    by_cik[cik] = (d, r["symbol"], a, e)
+            a, e = money(r.get("eps")), money(r.get("epsForecast"))
+            if e is not None and (cik not in latest or d > latest[cik][0]):
+                latest[cik] = (d, e)
+            if (cik, k) in skip or d > end or a is None or e is None:
+                continue
+            if cik not in by_cik or d > by_cik[cik][0]:
+                by_cik[cik] = (d, r["symbol"], a, e, cik)
     out = {"label": label, "day0": None, "last": None, "kickoff_day": None,
-           "reported": [], "beats": [], "beat_pct": []}
+           "reported": [], "beats": [], "beat_pct": [],
+           "surprise_pct": [], "agg_surprise_pct": [], "top": [], "expected_n": 0, "weighted_n": 0,
+           "excluded": []}
     if not by_cik:
         return out
     reps = sorted(by_cik.values(), key=lambda x: x[0])
     day0 = reps[0][0]
     last = reps[-1][0] if we <= today else end  # a finished season stops at its last reporter
-    kick = [d for d, s, _, _ in reps if s in kickoff]
+    kick = [d for d, s, _, _, _ in reps if s in kickoff]
     out.update({"day0": day0.isoformat(), "last": last.isoformat(),
                 "kickoff_day": (min(kick) - day0).days if kick else None})
-    i, n, beats = 0, 0, 0
+    # basis mismatches: out of the dollar series (numerator and denominator), listed for the page
+    ex = [(sym, surprise_pct(a, e), cik) for _, sym, a, e, cik in reps
+          if surprise_pct(a, e) is None or abs(surprise_pct(a, e)) > max_abs_pct]
+    ex_ciks = {cik for _, _, cik in ex}
+    # denominator: the season's expected earnings, with reporters at their pre-report consensus
+    expected = {cik: e for cik, (_, e) in latest.items() if cik not in ex_ciks}
+    expected.update({cik: e for cik, (_, _, _, e, _) in by_cik.items() if cik not in ex_ciks})
+    denom = abs(sum(e * shares[cik] for cik, e in expected.items() if shares.get(cik)))
+    # what each excluded company would have added to the line, in points, largest first
+    ex_pp = {cik: 100.0 * (a - e) * shares[cik] / denom for _, _, a, e, cik in reps
+             if cik in ex_ciks and shares.get(cik) and denom}
+    out["excluded"] = sorted(({"t": sym, "pct": None if sp is None else round(sp), "pp": round(ex_pp.get(cik, 0.0), 2)}
+                              for sym, sp, cik in ex), key=lambda x: -abs(x["pp"]))
+    out["expected_n"] = sum(1 for cik in expected if shares.get(cik))
+    i, n, beats, dollars, exp_rep, weighted = 0, 0, 0, 0.0, 0.0, 0
     for day in range((last - day0).days + 1):
         d = day0 + timedelta(days=day)
+        top = None
         while i < len(reps) and reps[i][0] <= d:
+            _, sym, a, e, cik = reps[i]
             n += 1
-            beats += reps[i][2] > reps[i][3]
+            beats += a > e
+            sh = shares.get(cik) if cik not in ex_ciks else None
+            if sh:
+                contrib = (a - e) * sh
+                dollars += contrib
+                exp_rep += e * sh
+                weighted += 1
+                if top is None or abs(contrib) > abs(top[1]):
+                    top = (sym, contrib)
             i += 1
         out["reported"].append(n)
         out["beats"].append(beats)
         out["beat_pct"].append(pct(beats, n))
+        out["surprise_pct"].append(round(100.0 * dollars / denom, 3) if denom else None)
+        out["agg_surprise_pct"].append(round(100.0 * dollars / abs(exp_rep), 2) if exp_rep else None)
+        out["top"].append({"t": top[0], "pp": round(100.0 * top[1] / denom, 3)} if top and denom else None)
+    out["weighted_n"] = weighted
     return out
 
 
 def season_curves(cfg, sym2cik, cache, today, recs=()):
     kick = set(cfg.get("kickoff_tickers", []))
     skip = {(r["cik"], r["eps_pending"]["date"]) for r in recs if r.get("eps_pending")}
+    shares = {r["cik"]: r["shares"] for r in recs if r.get("shares")}
+    max_abs = float(cfg.get("surprise_max_abs_pct", 50))
     seasons = [(s["label"], s["window_start"], s["window_end"], set(s["fiscal_quarter_endings"]))
                for s in cfg.get("compare_seasons", [])]
     seasons.append((cfg["season_label"], cfg["window_start"], cfg["window_end"], set(cfg["fiscal_quarter_endings"])))
-    return [season_curve(lab, ws, we, fq, sym2cik, cache, today, kick, skip) for lab, ws, we, fq in seasons]
+    return [season_curve(lab, ws, we, fq, sym2cik, cache, today, kick, skip, shares, max_abs)
+            for lab, ws, we, fq in seasons]
+
+
+# ---------------------------------------------------------------- consensus snapshots
+
+CONSENSUS_NOTE = ("Consensus EPS (Nasdaq calendar, Zacks) by company CIK, one entry per run day in Eastern time. "
+                  "Each day lists only the estimates that changed since the previous day (the first day in "
+                  "full); null means the company no longer has an estimate. Replay the days in order to "
+                  "rebuild the consensus as of any date.")
+
+
+def consensus_path(cfg):
+    return DATA / ("consensus_" + cfg["season_label"].lower().replace(" ", "_") + ".json")
+
+
+def record_consensus(cfg, recs, today):
+    """Daily record of consensus EPS per company for the season, stored as changes against the
+    previous day, so estimate revisions during the quarter can be measured later (beats against
+    quarter-start expectations, not only against the consensus on report day)."""
+    path = consensus_path(cfg)
+    st = load_json(path, {"season": cfg["season_label"], "note": CONSENSUS_NOTE, "days": {}})
+    days = st.setdefault("days", {})
+    state: dict = {}
+    for d in sorted(days):
+        if d >= today.isoformat():
+            continue  # the last run of the day wins: rebuild today's entry from scratch
+        for cik, v in days[d].items():
+            if v is None:
+                state.pop(cik, None)
+            else:
+                state[cik] = v
+    cur = {r["cik"]: r["eps_est"] for r in recs if r["eps_est"] is not None}
+    delta = {cik: v for cik, v in cur.items() if state.get(cik) != v}
+    delta.update({cik: None for cik in state if cik not in cur})
+    days[today.isoformat()] = dict(sorted(delta.items()))
+    write_json(path, st)
+    log(f"consensus: {len(cur)} estimates recorded, {len(delta)} changed since the previous day")
 
 
 # ---------------------------------------------------------------- history
@@ -761,6 +845,7 @@ def main() -> int:
 
     recs = build_records(cfg, companies, sym2cik, cal["cache"], prev, shares, finn["rows"], today)
     m = compute(cfg, recs, finn["status"])
+    record_consensus(cfg, recs, today)
     lat = fs_block["latest"] or {}
     since = None
     if lat.get("file_date"):

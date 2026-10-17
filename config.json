@@ -34,6 +34,7 @@
   "refetch_days_back": 10,
   "min_growth_coverage": 350,
   "rank_min_abs_estimate": 0.1,
+  "surprise_max_abs_pct": 50,
   "constituents_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
   "benchmarks_fallback": {
     "source": "FactSet Earnings Insight, August 28, 2026",
