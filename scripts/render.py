@@ -250,7 +250,9 @@ def render_site(out: dict, hist: list, cfg: dict, docs: Path) -> None:
     }
     # season vs season: cumulative beats by day since each season's first reporter
     curves = [c for c in out.get("season_curves", []) if c.get("day0")]
-    season_colors = ["#6f5fb8", "#c2641a", "#2563a8"]  # Q1, Q2, Q3 (current season darkest)
+    # Okabe-Ito bluish green, vermillion, blue: passes CVD separation (worst pair dE 11.0 deutan, 8.6 tritan),
+    # the normal-vision floor and 3:1 contrast on white; the current season gets the blue (site accent).
+    season_colors = ["#009E73", "#D55E00", "#0072B2"]  # Q1, Q2, Q3 (current season last)
     seasons = [{"label": c["label"], "day0": c["day0"], "last": c["last"], "kickoff_day": c["kickoff_day"],
                 "reported": c["reported"], "beats": c["beats"], "beat_pct": c["beat_pct"],
                 "growth_pct": c.get("growth_pct") or [], "reporters_growth_pct": c.get("reporters_growth_pct") or [],
@@ -290,7 +292,7 @@ estimate by day (Nasdaq calendar, Zacks consensus, EPS times shares outstanding)
 estimates implied and moves as actuals replace estimates; it does not replay estimate revisions, so it tracks the
 results-driven part of the move. Dashed: FactSet's estimate as of the quarter end (or quarter start, until the quarter ends).'''
                    + (f''' Dotted: the running estimate {ex_label} ({esc(gx.get("note") or "")}).''' if has_ex else "")
-                   + f''' Hover for details.</p>
+                   + f''' The running lines start hidden; click a legend entry to show or hide it. Hover for details.</p>
 <div class="chart tall"><canvas id="c5"></canvas></div>
 <p class="dim small">Year-ago EPS for the running line: Nasdaq's split-adjusted year-ago figure for the current season, the year-ago
 calendar actuals adjusted for later stock splits for earlier seasons. Unusual items stay in both series, as in FactSet's headline
@@ -421,10 +423,11 @@ if (window.Chart && SEASONS.length) {{
     const fsd = SEASONS.filter(s => s.factset.length).map(s => ({{ kind: 'fs', s, label: s.label + ' FactSet',
       data: s.factset.map(p => ({{ x: p.day, y: p.growth_pct }})), borderColor: s.color, backgroundColor: s.color,
       borderWidth: s.current ? 2.5 : 2, pointRadius: 3.5, pointHoverRadius: 5, spanGaps: true }}));
-    const run = SEASONS.map(s => ({{ kind: 'run', s, label: s.label + ' running', data: pts(s),
+    // running and ex lines start hidden: FactSet's series is the default view; the legend toggles the rest on
+    const run = SEASONS.map(s => ({{ kind: 'run', s, hidden: true, label: s.label + ' running', data: pts(s),
       borderColor: s.color + '77', backgroundColor: s.color + '77', borderWidth: s.current ? 2 : 1.25,
       pointRadius: pts(s).map((_, i) => i - 1 === s.kickoff_day ? 4 : 0), pointHoverRadius: 3, pointStyle: 'rectRot', spanGaps: false }}));
-    const exs = SEASONS.filter(s => s.growth_ex_pct.length).map(s => ({{ kind: 'ex', s, label: s.label + ' running ' + EXL,
+    const exs = SEASONS.filter(s => s.growth_ex_pct.length).map(s => ({{ kind: 'ex', s, hidden: true, label: s.label + ' running ' + EXL,
       data: [{{ x: -1, y: s.expected_growth_ex_pct }}].concat(s.growth_ex_pct.map((v, i) => ({{ x: i, y: v }}))),
       borderColor: s.color + '77', borderDash: [2, 3], borderWidth: s.current ? 1.75 : 1.25, pointRadius: 0, pointHoverRadius: 0, spanGaps: false }}));
     const refs = SEASONS.filter(s => (s.factset_qend_pct ?? s.expected_growth_pct) != null).map(s => {{
