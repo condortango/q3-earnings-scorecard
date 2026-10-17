@@ -9813,8 +9813,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Oct 17, 2026 1:54 PM PT",
- "generated_at_utc": "2026-10-17T20:54:44+00:00",
+ "generated_at_pt": "Oct 17, 2026 2:28 PM PT",
+ "generated_at_utc": "2026-10-17T21:28:04+00:00",
  "growth": {
   "available": true,
   "coverage": 492,
@@ -9823,7 +9823,7 @@
   "reporters_pct": 50.8,
   "value_pct": 24.5
  },
- "last_success_pt": "Oct 17, 2026 1:54 PM PT",
+ "last_success_pt": "Oct 17, 2026 2:28 PM PT",
  "reported": 45,
  "reported_since_factset": 5,
  "revenue": {
@@ -9840,7 +9840,7 @@
   "miss": 24,
   "miss_pct": 53.3,
   "n": 45,
-  "status": "not_configured"
+  "status": "ok"
  },
  "scheduled": 454,
  "season": "Q3 2026",
@@ -10724,7 +10724,7 @@
   "constituents": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
   "eps": "Nasdaq earnings calendar (api.nasdaq.com), consensus as shown by Nasdaq",
   "headline": "FactSet Earnings Insight (weekly PDF)",
-  "revenue": null,
+  "revenue": "Finnhub earnings calendar",
   "shares": "Nasdaq stock screener (market cap / last sale)"
  },
  "stale_reason": null,
