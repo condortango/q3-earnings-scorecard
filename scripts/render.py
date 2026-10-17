@@ -376,7 +376,7 @@ Aggregate surprise weights EPS by shares outstanding (total earnings dollars), a
 const S = {json.dumps(series)};
 const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const LBL = S.dates.map(d => MON[+d.slice(5, 7) - 1] + ' ' + (+d.slice(8, 10)));
-const ref = (v, label) => v == null ? null : ({{ label, data: S.dates.map(() => v), borderColor: '#9aa0a6', borderDash: [5, 4], borderWidth: 1, pointRadius: 0, fill: false }});
+const ref = (v, label) => v == null ? null : ({{ label, data: S.dates.map(() => v), borderColor: '#6b7280', borderDash: [5, 4], borderWidth: 1, pointRadius: 0, fill: false }});
 const official = (label, data) => ({{ label, data, borderColor: '#1a1a1a', backgroundColor: '#1a1a1a', borderWidth: 2, pointRadius: 4, pointHoverRadius: 5, spanGaps: true }});
 const light = (label, data) => ({{ label, data, borderColor: '#8fb0d6', backgroundColor: '#8fb0d6', borderWidth: 1.5, pointRadius: 1.5, spanGaps: true }});
 const opts = (yl) => ({{ responsive: true, maintainAspectRatio: false, animation: false,
@@ -513,8 +513,9 @@ h1 { font-size: 22px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
 .pt { font-size: 13.5px; font-weight: 600; }
 .pn { font-size: 12px; color: var(--dim); margin: 2px 0 8px; }
 .key { display: inline-flex; align-items: center; gap: 6px; margin-right: 14px; white-space: nowrap; }
-.sw { display: inline-block; width: 18px; height: 0; border-top: 2px solid var(--acc); }
-.sw.dot { border-top: 2px dotted var(--faint); }
+/* series: dark = FactSet (official), light blue = running estimate, gray dash = averages; same scheme as the details page */
+.sw { display: inline-block; width: 18px; height: 0; border-top: 2px solid #1a1a1a; }
+.sw.dot { border-top: 2px solid #8fb0d6; }
 .sw.dash { border-top: 1px dashed var(--dim); }
 .cv { position: relative; flex: 1 1 auto; min-height: 0; }
 .cv canvas { position: absolute; inset: 0; }
@@ -815,7 +816,7 @@ def render_index(out: dict, hist: list, docs: Path, og_html: str = "") -> None:
         since_txt = f" + {since} since {fs_short} (running count)" if since else ""
     else:
         rep_main, extra = out["reported"], 0
-        since_txt = f" ({since} on or after {fs_short})" if fs and since else ""
+        since_txt = f" ({since} on/after {fs_short})" if fs and since else ""
     w1 = 100.0 * rep_main / uni
     w2 = 100.0 * extra / uni
     src_link = (f'<a href="{esc(fs["url"])}">FactSet Earnings Insight, {fs_short}</a>' if fs
@@ -913,7 +914,7 @@ def render_index(out: dict, hist: list, docs: Path, og_html: str = "") -> None:
     <div class="meta">{src_link} | updated {upd} <button class="share" id="share" type="button">Copy Link</button></div>
   </div>
   <div class="prog">
-    <div class="lbl"><span><b>{rep_main} of {uni}</b> companies reported{since_txt}</span><span>{_pct(w1 + w2)}</span></div>
+    <div class="lbl"><span><b>{rep_main} of {uni}</b> reported{since_txt}</span><span>{_pct(w1 + w2)}</span></div>
     <div class="bar"><span style="width:{w1:.2f}%"></span><span class="since" style="width:{w2:.2f}%"></span></div>
   </div>
 </header>
@@ -972,9 +973,9 @@ if (window.Chart) {{
   const tip = {{ callbacks: {{ label: c => c.dataset.label + ': ' + c.parsed.y.toFixed(1) + '%' }} }};
   const htip = {{ callbacks: {{ label: c => c.dataset.label + ': ' + c.parsed.x.toFixed(1) + '%' }} }};  // horizontal bars: value is x
   const ds = [
-    {{ label: 'FactSet', data: xy(S.fs), borderColor: '{ACCENT}', backgroundColor: '{ACCENT}', borderWidth: 2, pointRadius: 3.5, spanGaps: true, clip: false }},
+    {{ label: 'FactSet', data: xy(S.fs), borderColor: '#1a1a1a', backgroundColor: '#1a1a1a', borderWidth: 2, pointRadius: 3.5, spanGaps: true, clip: false }},
   ];
-  if (S.nq.some(v => v !== null)) ds.push({{ label: 'Running estimate', data: xy(S.nq), borderColor: '#9ca3af', borderDash: [2, 3], borderWidth: 1.5, pointRadius: 0, spanGaps: true }});
+  if (S.nq.some(v => v !== null)) ds.push({{ label: 'Running estimate', data: xy(S.nq), borderColor: '#8fb0d6', borderWidth: 1.5, pointRadius: 0, spanGaps: true }});
   if (S.avg5 !== null) ds.push({{ label: 'FactSet 5-yr avg', data: X.length ? [{{ x: X[0], y: S.avg5 }}, {{ x: X[X.length - 1], y: S.avg5 }}] : [], borderColor: '#6b7280', borderDash: [5, 4], borderWidth: 1, pointRadius: 0 }});
   new Chart(document.getElementById('c1'), {{ type: 'line', data: {{ datasets: ds }},
     options: {{ responsive: true, maintainAspectRatio: false, animation: false, layout: {{ padding: {{ top: 6, right: 8 }} }},
