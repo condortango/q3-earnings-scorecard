@@ -766,15 +766,21 @@ def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today,
            "growth_pct": [], "reporters_growth_pct": [], "top": [],
            "expected_growth_pct": None, "growth_n": 0, "growth_universe": 0,
            "growth_ex_pct": [], "expected_growth_ex_pct": None,
-           "factset": [], "factset_qend_pct": None, "factset_qend_date": None}
+           "factset": [], "factset_qend_pct": None, "factset_qend_date": None,
+           "fs_day0": None, "fs_offset": 0}
     if not by_cik:
         return out
     reps = sorted(by_cik.values(), key=lambda x: x[0])
     day0 = reps[0][0]
-    for p in factset_reports:
-        if p.get("eps_growth_pct") is None or not p.get("file_date"):
-            continue
-        out["factset"].append({"day": (date.fromisoformat(p["file_date"]) - day0).days, "date": p["file_date"],
+    # The growth chart is indexed to FactSet's first report of the season (its own day 0), since FactSet
+    # publishes weekly and the first reporter rarely reports on a Friday; the running series is shifted
+    # onto that axis by fs_offset (running day i sits at x = i + fs_offset).
+    fs_reports = sorted((p for p in factset_reports if p.get("eps_growth_pct") is not None and p.get("file_date")),
+                        key=lambda p: p["file_date"])
+    fs_day0 = date.fromisoformat(fs_reports[0]["file_date"]) if fs_reports else day0
+    out["fs_day0"], out["fs_offset"] = fs_day0.isoformat(), (day0 - fs_day0).days
+    for p in fs_reports:
+        out["factset"].append({"day": (date.fromisoformat(p["file_date"]) - fs_day0).days, "date": p["file_date"],
                                "growth_pct": p["eps_growth_pct"], "kind": p.get("eps_growth_kind"),
                                "reported_pct": p.get("reported_pct"), "url": p.get("url")})
         if p.get("eps_growth_qend_pct") is not None:  # the latest report's reference date wins (quarter end once past)

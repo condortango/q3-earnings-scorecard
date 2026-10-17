@@ -261,6 +261,7 @@ def render_site(out: dict, hist: list, cfg: dict, docs: Path) -> None:
                 "growth_ex_pct": c.get("growth_ex_pct") or [], "expected_growth_ex_pct": c.get("expected_growth_ex_pct"),
                 "factset": c.get("factset") or [], "factset_qend_pct": c.get("factset_qend_pct"),
                 "factset_qend_date": c.get("factset_qend_date"),
+                "fs_day0": c.get("fs_day0"), "fs_offset": c.get("fs_offset", 0),
                 "color": season_colors[(i - len(curves)) % len(season_colors)], "current": i == len(curves) - 1}
                for i, c in enumerate(curves)]
     has_growth = any(s["growth_pct"] and s["growth_pct"][-1] is not None for s in seasons)
@@ -287,7 +288,9 @@ def render_site(out: dict, hist: list, cfg: dict, docs: Path) -> None:
     coverage_txt = "; ".join(f"{esc(s['label'])} {s['growth_n']} of {s['growth_universe']}" for s in seasons)
     growth_html = ('''<h3>Earnings growth, year over year, season to date</h3>
 <p class="dim small">Blended growth: actual EPS for companies that have reported, consensus for the rest, against the year-ago quarter.
-Dark points: FactSet's weekly Earnings Insight, the official series, one point per report. Light line: this site's running
+Dark points: FactSet's weekly Earnings Insight, the official series, one point per report; day 0 here is FactSet's first
+report of each season (FactSet publishes on Fridays, so the first reporter's own day sits a few days either side of it, and
+the running line is shifted onto the same axis). Light line: this site's running
 estimate by day (Nasdaq calendar, Zacks consensus, EPS times shares outstanding), which starts at the growth its own
 estimates implied and moves as actuals replace estimates; it does not replay estimate revisions, so it tracks the
 results-driven part of the move. Dashed: FactSet's estimate as of the quarter end (or quarter start, until the quarter ends).'''
@@ -415,11 +418,13 @@ if (window.Chart && SEASONS.length) {{
   new Chart(document.getElementById('c3'), {{ type: 'line', data: {{ labels: days, datasets: ds('beats') }}, options: sopts('Companies with EPS above consensus', undefined) }});
   new Chart(document.getElementById('c4'), {{ type: 'line', data: {{ labels: days, datasets: ds('beat_pct') }}, options: sopts('% of reporters above consensus', 100) }});
   if (document.getElementById('c5')) {{
+    // x = days since FactSet's first report of the season; running day i sits at x = i + fs_offset
     const g1 = v => (v > 0 ? '+' : '') + v.toFixed(1), g2 = v => (v > 0 ? '+' : '') + v.toFixed(2);
     const EXL = {json.dumps(gx.get("label") or "")};
-    const xmin = Math.min(-1, ...SEASONS.flatMap(s => s.factset.map(p => p.day)));
-    // running estimate starts at (-1, expected growth): before the first report the season is at its own estimate
-    const pts = s => [{{ x: -1, y: s.expected_growth_pct }}].concat(s.growth_pct.map((v, i) => ({{ x: i, y: v }})));
+    const fmtx = (s, x) => {{ const t = new Date(Date.parse((s.fs_day0 || s.day0) + 'T00:00:00Z') + x * 86400000); return MON[t.getUTCMonth()] + ' ' + t.getUTCDate(); }};
+    const xmax = Math.max(...SEASONS.flatMap(s => [s.growth_pct.length - 1 + s.fs_offset].concat(s.factset.map(p => p.day))));
+    // running estimate starts one day before its first reporter at its own expected growth
+    const pts = s => [{{ x: s.fs_offset - 1, y: s.expected_growth_pct }}].concat(s.growth_pct.map((v, i) => ({{ x: i + s.fs_offset, y: v }})));
     const fsd = SEASONS.filter(s => s.factset.length).map(s => ({{ kind: 'fs', s, label: s.label + ' FactSet',
       data: s.factset.map(p => ({{ x: p.day, y: p.growth_pct }})), borderColor: s.color, backgroundColor: s.color,
       borderWidth: s.current ? 2.5 : 2, pointRadius: 3.5, pointHoverRadius: 5, spanGaps: true }}));
@@ -428,30 +433,31 @@ if (window.Chart && SEASONS.length) {{
       borderColor: s.color + '77', backgroundColor: s.color + '77', borderWidth: s.current ? 2 : 1.25,
       pointRadius: pts(s).map((_, i) => i - 1 === s.kickoff_day ? 4 : 0), pointHoverRadius: 3, pointStyle: 'rectRot', spanGaps: false }}));
     const exs = SEASONS.filter(s => s.growth_ex_pct.length).map(s => ({{ kind: 'ex', s, hidden: true, label: s.label + ' running ' + EXL,
-      data: [{{ x: -1, y: s.expected_growth_ex_pct }}].concat(s.growth_ex_pct.map((v, i) => ({{ x: i, y: v }}))),
+      data: [{{ x: s.fs_offset - 1, y: s.expected_growth_ex_pct }}].concat(s.growth_ex_pct.map((v, i) => ({{ x: i + s.fs_offset, y: v }}))),
       borderColor: s.color + '77', borderDash: [2, 3], borderWidth: s.current ? 1.75 : 1.25, pointRadius: 0, pointHoverRadius: 0, spanGaps: false }}));
     const refs = SEASONS.filter(s => (s.factset_qend_pct ?? s.expected_growth_pct) != null).map(s => {{
       const y = s.factset_qend_pct ?? s.expected_growth_pct;
-      return {{ kind: 'ref', s, label: s.label + ' expected', data: [{{ x: xmin, y }}, {{ x: s.growth_pct.length - 1, y }}],
+      const xe = Math.max(s.growth_pct.length - 1 + s.fs_offset, ...s.factset.map(p => p.day));
+      return {{ kind: 'ref', s, label: s.label + ' expected', data: [{{ x: 0, y }}, {{ x: xe, y }}],
         borderColor: s.color, borderDash: [4, 4], borderWidth: 1, pointRadius: 0, pointHoverRadius: 0 }}; }});
     new Chart(document.getElementById('c5'), {{ type: 'line', data: {{ datasets: fsd.concat(run, exs, refs) }}, options: {{
       responsive: true, maintainAspectRatio: false, animation: false, interaction: {{ mode: 'x', intersect: false }},
       plugins: {{ legend: {{ labels: {{ boxWidth: 14, font: {{ size: 12 }}, usePointStyle: false, filter: it => !it.text.endsWith(' expected') }} }},
         tooltip: {{ filter: it => it.dataset.kind !== 'ref', callbacks: {{
-          title: it => it.length ? (it[0].parsed.x === -1 ? 'Before the first report' : 'Day ' + it[0].parsed.x) : '',
-          label: c => {{ const d = c.dataset, s = d.s, i = c.parsed.x;
-            if (d.kind === 'fs') {{ const p = s.factset.find(p => p.day === i);
-              return s.label + ' FactSet (' + fmt(s, i) + '): ' + g1(p.growth_pct) + '% ' + (p.kind || '') + (p.reported_pct == null ? '' : ', ' + p.reported_pct + '% reported'); }}
+          title: it => it.length ? 'Day ' + it[0].parsed.x : '',
+          label: c => {{ const d = c.dataset, s = d.s, x = c.parsed.x, i = x - s.fs_offset;
+            if (d.kind === 'fs') {{ const p = s.factset.find(p => p.day === x);
+              return s.label + ' FactSet (' + fmtx(s, x) + '): ' + g1(p.growth_pct) + '% ' + (p.kind || '') + (p.reported_pct == null ? '' : ', ' + p.reported_pct + '% reported'); }}
             if (d.kind === 'ex') return s.label + ' running ' + EXL + ': ' + g1(c.parsed.y) + '%';
-            if (i < 0) return s.label + ' running: expected ' + g1(s.expected_growth_pct) + '%';
+            if (i < 0) return s.label + ' running: expected ' + g1(s.expected_growth_pct) + '% before its first reporter';
             const t = s.top[i], r = s.reporters_growth_pct[i];
-            return s.label + ' running (' + fmt(s, i) + '): ' + g1(s.growth_pct[i]) + '%'
+            return s.label + ' running (' + fmtx(s, x) + '): ' + g1(s.growth_pct[i]) + '%'
               + (r == null ? '' : ', reporters so far ' + g1(r) + '% (' + s.reported[i] + ')')
               + (t ? ', biggest ' + t.t + ' ' + g2(t.pp) + 'pp' : '') + (i === s.kickoff_day ? ', banks kick off' : ''); }} }} }} }},
       scales: {{ y: {{ title: {{ display: true, text: 'EPS growth, y/y, blended' }}, grid: {{ color: '#eeeeee' }},
                       ticks: {{ callback: v => g1(v) + '%' }} }},
-        x: {{ type: 'linear', min: xmin, max: maxDay, title: {{ display: true, text: 'Days since first reporter' }}, grid: {{ display: false }},
-             ticks: {{ maxTicksLimit: 12, maxRotation: 0, callback: v => v < 0 ? '' : v }} }} }} }} }});
+        x: {{ type: 'linear', min: 0, max: xmax, title: {{ display: true, text: "Days since FactSet's first report of the season" }}, grid: {{ display: false }},
+             ticks: {{ maxTicksLimit: 12, maxRotation: 0 }} }} }} }} }});
   }}
 }}
 </script>
