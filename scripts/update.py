@@ -182,6 +182,8 @@ def refresh_calendar(cfg: dict, sp_syms: set[str], today: date) -> dict:
     # earlier seasons of the year, for the season-vs-season chart; fetched once, then served from cache
     for s in cfg.get("compare_seasons", []):
         windows.append((date.fromisoformat(s["window_start"]), date.fromisoformat(s["window_end"])))
+        if s.get("yearago_window_start"):  # year-ago actuals for the growth overlay
+            windows.append((date.fromisoformat(s["yearago_window_start"]), date.fromisoformat(s["yearago_window_end"])))
     recent = today - timedelta(days=int(cfg.get("refetch_days_back", 10)))
     for start, end in windows:
         for d in weekdays(start, end):
@@ -625,7 +627,7 @@ def compute(cfg, recs, finn_status):
 # ---------------------------------------------------------------- season vs season
 
 def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today, kickoff,
-                 skip=frozenset(), shares=None, max_abs_pct=50.0):
+                 skip=frozenset(), shares=None, yearago=None, exclude=frozenset()):
     """Season-to-date series by calendar day since a season's first reporter.
 
     Day 0 is the first report date under the fiscal-quarter mapping (the same rule as the
@@ -633,15 +635,14 @@ def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today,
     counts once (its last calendar row with an actual); a beat is actual above consensus
     (FactSet's definition). Rows in `skip` {(cik, date)} are actuals held as pending.
 
-    Besides the beat count, the curve carries earnings dollars above consensus (EPS x shares,
-    summed over reporters so far) as a share of the season's total expected earnings (consensus
-    EPS x shares over every company with a calendar row in the season), so 0 means in line with
-    pre-report consensus and the line rises with beats. `shares` is {cik: shares outstanding}.
-    A company whose surprise is beyond +/- `max_abs_pct` of consensus (or whose consensus is zero) is
-    left out of the dollar series and listed in `excluded`: that size of gap is almost always a GAAP
-    actual against an adjusted consensus (Alphabet's investment gains) or a near-zero estimate, not a
-    beat, and one such row can move the index-level line by ten points."""
-    shares = shares or {}
+    Besides the beat count, the curve carries blended year-over-year earnings growth by day:
+    actual EPS for companies that have reported by that day, consensus for the rest, times shares
+    outstanding, against the same companies' year-ago EPS. It starts at the growth analysts
+    expected (all estimates) and moves as actuals replace estimates. Estimate revisions are not
+    replayed: reporters sit at their pre-report consensus, the rest at the latest one.
+    `shares` and `yearago` are {cik: value}; a company needs both to count toward growth.
+    `exclude` (ciks) gives a second growth series without those companies (growth_ex_pct)."""
+    shares, yearago = shares or {}, yearago or {}
     ws, we = date.fromisoformat(window_start), date.fromisoformat(window_end)
     end = min(we, today)
     by_cik: dict[str, tuple] = {}   # reporters: cik -> (date, symbol, actual, estimate, cik)
@@ -663,8 +664,9 @@ def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today,
                 by_cik[cik] = (d, r["symbol"], a, e, cik)
     out = {"label": label, "day0": None, "last": None, "kickoff_day": None,
            "reported": [], "beats": [], "beat_pct": [],
-           "surprise_pct": [], "agg_surprise_pct": [], "top": [], "expected_n": 0, "weighted_n": 0,
-           "excluded": []}
+           "growth_pct": [], "reporters_growth_pct": [], "top": [],
+           "expected_growth_pct": None, "growth_n": 0, "growth_universe": 0,
+           "growth_ex_pct": [], "expected_growth_ex_pct": None}
     if not by_cik:
         return out
     reps = sorted(by_cik.values(), key=lambda x: x[0])
@@ -673,21 +675,22 @@ def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today,
     kick = [d for d, s, _, _, _ in reps if s in kickoff]
     out.update({"day0": day0.isoformat(), "last": last.isoformat(),
                 "kickoff_day": (min(kick) - day0).days if kick else None})
-    # basis mismatches: out of the dollar series (numerator and denominator), listed for the page
-    ex = [(sym, surprise_pct(a, e), cik) for _, sym, a, e, cik in reps
-          if surprise_pct(a, e) is None or abs(surprise_pct(a, e)) > max_abs_pct]
-    ex_ciks = {cik for _, _, cik in ex}
-    # denominator: the season's expected earnings, with reporters at their pre-report consensus
-    expected = {cik: e for cik, (_, e) in latest.items() if cik not in ex_ciks}
-    expected.update({cik: e for cik, (_, _, _, e, _) in by_cik.items() if cik not in ex_ciks})
-    denom = abs(sum(e * shares[cik] for cik, e in expected.items() if shares.get(cik)))
-    # what each excluded company would have added to the line, in points, largest first
-    ex_pp = {cik: 100.0 * (a - e) * shares[cik] / denom for _, _, a, e, cik in reps
-             if cik in ex_ciks and shares.get(cik) and denom}
-    out["excluded"] = sorted(({"t": sym, "pct": None if sp is None else round(sp), "pp": round(ex_pp.get(cik, 0.0), 2)}
-                              for sym, sp, cik in ex), key=lambda x: -abs(x["pp"]))
-    out["expected_n"] = sum(1 for cik in expected if shares.get(cik))
-    i, n, beats, dollars, exp_rep, weighted = 0, 0, 0, 0.0, 0.0, 0
+    # growth universe: every company in the season with an estimate, shares and year-ago EPS;
+    # reporters at their pre-report consensus, the rest at the latest consensus
+    est_by = {cik: e for cik, (_, e) in latest.items()}
+    est_by.update({cik: e for cik, (_, _, _, e, _) in by_cik.items()})
+    use = {cik for cik in est_by if shares.get(cik) and yearago.get(cik) is not None}
+    ya_total = sum(yearago[c] * shares[c] for c in use)
+    est_total = sum(est_by[c] * shares[c] for c in use)
+    out["growth_universe"], out["growth_n"] = len(est_by), len(use)
+    if ya_total > 0:
+        out["expected_growth_pct"] = round(100.0 * (est_total - ya_total) / ya_total, 1)
+    use_ex = use - set(exclude)
+    ya_ex = sum(yearago[c] * shares[c] for c in use_ex)
+    est_ex = sum(est_by[c] * shares[c] for c in use_ex)
+    if exclude and ya_ex > 0:
+        out["expected_growth_ex_pct"] = round(100.0 * (est_ex - ya_ex) / ya_ex, 1)
+    i, n, beats, cur, cur_ex, rep_cur, rep_ya = 0, 0, 0, 0.0, 0.0, 0.0, 0.0
     for day in range((last - day0).days + 1):
         d = day0 + timedelta(days=day)
         top = None
@@ -695,35 +698,57 @@ def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today,
             _, sym, a, e, cik = reps[i]
             n += 1
             beats += a > e
-            sh = shares.get(cik) if cik not in ex_ciks else None
-            if sh:
-                contrib = (a - e) * sh
-                dollars += contrib
-                exp_rep += e * sh
-                weighted += 1
-                if top is None or abs(contrib) > abs(top[1]):
-                    top = (sym, contrib)
+            if cik in use:
+                sh = shares[cik]
+                cur += (a - e) * sh
+                cur_ex += (a - e) * sh if cik in use_ex else 0.0
+                rep_cur += a * sh
+                rep_ya += yearago[cik] * sh
+                if top is None or abs((a - e) * sh) > abs(top[1]):
+                    top = (sym, (a - e) * sh)
             i += 1
         out["reported"].append(n)
         out["beats"].append(beats)
         out["beat_pct"].append(pct(beats, n))
-        out["surprise_pct"].append(round(100.0 * dollars / denom, 3) if denom else None)
-        out["agg_surprise_pct"].append(round(100.0 * dollars / abs(exp_rep), 2) if exp_rep else None)
-        out["top"].append({"t": top[0], "pp": round(100.0 * top[1] / denom, 3)} if top and denom else None)
-    out["weighted_n"] = weighted
+        out["growth_pct"].append(round(100.0 * (est_total + cur - ya_total) / ya_total, 1) if ya_total > 0 else None)
+        out["reporters_growth_pct"].append(round(100.0 * (rep_cur - rep_ya) / rep_ya, 1) if rep_ya > 0 else None)
+        if exclude:
+            out["growth_ex_pct"].append(round(100.0 * (est_ex + cur_ex - ya_ex) / ya_ex, 1) if ya_ex > 0 else None)
+        out["top"].append({"t": top[0], "pp": round(100.0 * top[1] / ya_total, 2)} if top and ya_total > 0 else None)
     return out
+
+
+def yearago_from_calendar(cache, sym2cik, window_start, window_end, fq_set):
+    """Year-ago EPS per company from the year-ago season's calendar rows (actual EPS as reported
+    then; not split-adjusted). Used for earlier seasons, where Nasdaq's split-adjusted lastYearEPS
+    is no longer shown because every row is post-report."""
+    out: dict[str, tuple] = {}
+    for k, v in cache.items():
+        if not (window_start <= k <= window_end):
+            continue
+        for r in v["rows"]:
+            cik = sym2cik.get(r["symbol"])
+            a = money(r.get("eps"))
+            if cik and a is not None and r.get("fiscalQuarterEnding") in fq_set and (cik not in out or k > out[cik][0]):
+                out[cik] = (k, a)
+    return {cik: a for cik, (_, a) in out.items()}
 
 
 def season_curves(cfg, sym2cik, cache, today, recs=()):
     kick = set(cfg.get("kickoff_tickers", []))
     skip = {(r["cik"], r["eps_pending"]["date"]) for r in recs if r.get("eps_pending")}
     shares = {r["cik"]: r["shares"] for r in recs if r.get("shares")}
-    max_abs = float(cfg.get("surprise_max_abs_pct", 50))
-    seasons = [(s["label"], s["window_start"], s["window_end"], set(s["fiscal_quarter_endings"]))
-               for s in cfg.get("compare_seasons", [])]
-    seasons.append((cfg["season_label"], cfg["window_start"], cfg["window_end"], set(cfg["fiscal_quarter_endings"])))
-    return [season_curve(lab, ws, we, fq, sym2cik, cache, today, kick, skip, shares, max_abs)
-            for lab, ws, we, fq in seasons]
+    ex = {sym2cik[t] for t in (cfg.get("growth_ex") or {}).get("tickers", []) if t in sym2cik}
+    curves = []
+    for s in cfg.get("compare_seasons", []):
+        ya = (yearago_from_calendar(cache, sym2cik, s["yearago_window_start"], s["yearago_window_end"],
+                                    set(s["yearago_fiscal_quarter_endings"])) if s.get("yearago_window_start") else {})
+        curves.append(season_curve(s["label"], s["window_start"], s["window_end"], set(s["fiscal_quarter_endings"]),
+                                   sym2cik, cache, today, kick, skip, shares, ya, ex))
+    ya_now = {r["cik"]: r["eps_yearago"] for r in recs if r.get("eps_yearago") is not None}
+    curves.append(season_curve(cfg["season_label"], cfg["window_start"], cfg["window_end"],
+                               set(cfg["fiscal_quarter_endings"]), sym2cik, cache, today, kick, skip, shares, ya_now, ex))
+    return curves
 
 
 # ---------------------------------------------------------------- consensus snapshots

@@ -20,21 +20,31 @@
       "label": "Q1 2026",
       "window_start": "2026-03-01",
       "window_end": "2026-06-15",
-      "fiscal_quarter_endings": ["Feb/2026", "Mar/2026", "Apr/2026"]
+      "fiscal_quarter_endings": ["Feb/2026", "Mar/2026", "Apr/2026"],
+      "yearago_window_start": "2025-03-01",
+      "yearago_window_end": "2025-06-15",
+      "yearago_fiscal_quarter_endings": ["Feb/2025", "Mar/2025", "Apr/2025"]
     },
     {
       "label": "Q2 2026",
       "window_start": "2026-06-01",
       "window_end": "2026-09-15",
-      "fiscal_quarter_endings": ["May/2026", "Jun/2026", "Jul/2026"]
+      "fiscal_quarter_endings": ["May/2026", "Jun/2026", "Jul/2026"],
+      "yearago_window_start": "2025-06-01",
+      "yearago_window_end": "2025-09-15",
+      "yearago_fiscal_quarter_endings": ["May/2025", "Jun/2025", "Jul/2025"]
     }
   ],
   "kickoff_tickers": ["JPM", "C", "GS", "WFC", "BAC", "MS"],
+  "growth_ex": {
+    "tickers": ["GOOGL", "AMZN"],
+    "label": "ex-Alphabet & Amazon",
+    "note": "gains on their Anthropic stakes dominate their reported EPS; FactSet footnotes the same exclusion"
+  },
   "meet_band_pct": 1.0,
   "refetch_days_back": 10,
   "min_growth_coverage": 350,
   "rank_min_abs_estimate": 0.1,
-  "surprise_max_abs_pct": 50,
   "constituents_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
   "benchmarks_fallback": {
     "source": "FactSet Earnings Insight, August 28, 2026",
