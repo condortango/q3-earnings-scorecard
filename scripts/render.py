@@ -213,7 +213,7 @@ def render_site(out: dict, hist: list, cfg: dict, docs: Path) -> None:
         f"<tr><td>{esc(s['sector'])}</td><td>{s['reported']} / {s['companies']}</td>"
         f"<td>{f1(s['eps_above_pct'])}</td><td>{f1(s['eps_beat_pct'])}</td><td>{f1(s['eps_miss_pct'])}</td>"
         f"<td class='{cls(s['eps_agg_surprise_pct'])}'>{f1(s['eps_agg_surprise_pct'], signed=True)}</td>"
-        f"<td>{f1(s['rev_beat_pct']) if s['rev_n'] else 'n/a'}</td></tr>"
+        f"<td>{f1(s.get('rev_above_pct')) if s['rev_n'] else 'n/a'}</td></tr>"
         for s in out["sectors"])
 
     def top_table(rows, title):
@@ -301,7 +301,7 @@ the plus or minus {band:g}% beat / meet / miss split is shown as detail. Expect 
 <p class="dim small">Dark points: FactSet, one per weekly report. Light line: running estimate, one point per day{' (days before the first scheduled run were rebuilt from report dates)' if has_replay else ''}. Dashed: FactSet 5-yr and 10-yr averages.</p>
 {f'''<h2>Season vs season: EPS beats by day</h2>
 <p class="dim small">Running estimate, not FactSet. Each season is indexed to day 0 = its first S&amp;P 500 reporter under the
-fiscal-quarter rule (Oracle and Adobe open every season), so all lines start at 0 companies, 0 beats. Calendar days; weekends
+fiscal-quarter rule (Oracle and Adobe open every season), so every line starts on the day of its first reporter. Calendar days; weekends
 show as flat steps. Top: companies with EPS above consensus (cumulative count). Bottom: that count as a share of reporters so far.
 The marker on each line is the day the first big bank reported.</p>
 <div class="chart tall"><canvas id="c3"></canvas></div>
@@ -309,7 +309,7 @@ The marker on each line is the day the first big bank reported.</p>
 <table class="seasons"><tr><th>Season</th><th>Day 0</th><th>Banks kick off</th><th>Days shown</th><th>Reported</th><th>Beats</th><th>Beat rate</th></tr>{season_rows}</table>
 <p class="dim small">Earlier seasons use the same Nasdaq calendar rows (Zacks consensus) and today's S&amp;P 500 membership. {esc(out["season"])} extends with every update; a finished season ends at its last reporter.</p>''' if seasons else ''}
 <h2>By sector (GICS), running estimate</h2>
-<table><tr><th>Sector</th><th>Reported</th><th>Above est.</th><th>Beat (band)</th><th>Miss (band)</th><th>Agg. EPS surprise</th><th>Revenue beat</th></tr>{sec_rows}</table>
+<table><tr><th>Sector</th><th>Reported</th><th>Above est.</th><th>Beat (band)</th><th>Miss (band)</th><th>Agg. EPS surprise</th><th>Revenue above est.</th></tr>{sec_rows}</table>
 <div class="two">
 {top_table(out["top_beats"], "Top 10 EPS beats")}
 {top_table(out["top_misses"], "Top 10 EPS misses")}
@@ -727,10 +727,16 @@ def render_index(out: dict, hist: list, docs: Path, og_html: str = "") -> None:
     # ---------------------------------------------------------------- header / progress
     n_fs = fs.get("reported_n")
     since = out.get("reported_since_factset") or 0
-    rep_main = n_fs if n_fs is not None else out["reported"]
+    # With a FactSet count, the bar is that count plus reporters since its report. Without one the
+    # bar is the running total, which already includes those reporters, so nothing is added.
+    if fs and n_fs is not None:
+        rep_main, extra = n_fs, since
+        since_txt = f" + {since} since {fs_short} (running count)" if since else ""
+    else:
+        rep_main, extra = out["reported"], 0
+        since_txt = f" ({since} on or after {fs_short})" if fs and since else ""
     w1 = 100.0 * rep_main / uni
-    w2 = 100.0 * since / uni if fs else 0.0
-    since_txt = f" + {since} since {fs_short} (running count)" if fs and since else ""
+    w2 = 100.0 * extra / uni
     src_link = (f'<a href="{esc(fs["url"])}">FactSet Earnings Insight, {fs_short}</a>' if fs
                 else "FactSet Earnings Insight not available")
 
@@ -882,7 +888,8 @@ if (window.Chart) {{
   Chart.defaults.font.size = 11;
   Chart.defaults.color = '#6b7280';
   const pct = v => v + '%';
-  const tip = {{ callbacks: {{ label: c => c.dataset.label + ': ' + (c.parsed.y ?? c.parsed.x).toFixed(1) + '%' }} }};
+  const tip = {{ callbacks: {{ label: c => c.dataset.label + ': ' + c.parsed.y.toFixed(1) + '%' }} }};
+  const htip = {{ callbacks: {{ label: c => c.dataset.label + ': ' + c.parsed.x.toFixed(1) + '%' }} }};  // horizontal bars: value is x
   const ds = [
     {{ label: 'FactSet', data: xy(S.fs), borderColor: '{ACCENT}', backgroundColor: '{ACCENT}', borderWidth: 2, pointRadius: 3.5, spanGaps: true, clip: false }},
   ];
@@ -904,7 +911,7 @@ if (window.Chart) {{
     data: {{ labels: S.sec_lbl, datasets: [{{ label: 'Beat rate', data: S.sec_val, backgroundColor: '{ACCENT}', barThickness: 'flex', maxBarThickness: 18 }}] }},
     plugins: [valueLabels],
     options: {{ indexAxis: 'y', responsive: true, maintainAspectRatio: false, animation: false,
-      plugins: {{ legend: {{ display: false }}, tooltip: tip }},
+      plugins: {{ legend: {{ display: false }}, tooltip: htip }},
       scales: {{ x: {{ min: 0, max: 100, ticks: {{ stepSize: 50, callback: pct }}, grid: {{ color: '#f0f1f3' }}, border: {{ display: false }} }},
                 y: {{ grid: {{ display: false }}, border: {{ display: false }} }} }} }} }});
 }}

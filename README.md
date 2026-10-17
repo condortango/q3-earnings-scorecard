@@ -63,7 +63,7 @@ reported this season:
   official series (dark), the daily running estimate as a lighter line, and the averages as dashed lines
 - season vs season: cumulative EPS beats by day since each season's first reporter (count and share of
   reporters), Q1 2026 and Q2 2026 as overlays against the current season, which extends on every run. Day 0
-  is the first report date under the fiscal-quarter rule, so every line starts at 0,0; the marker on each
+  is the first report date under the fiscal-quarter rule, so every line starts there; the marker on each
   line is the first big-bank report (`kickoff_tickers`). Earlier seasons are listed in `config.json` under
   `compare_seasons` and fetched from the Nasdaq calendar once, then cached like everything else.
 - sector table (GICS), top 10 EPS beats and misses, and every reporter (running estimate data)

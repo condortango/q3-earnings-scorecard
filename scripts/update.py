@@ -429,8 +429,33 @@ def scorecard(recs, akey, ekey, band, weight=None):
     return out
 
 
+def finnhub_eps(finn_by_sym, symbols, d, days=4):
+    """Finnhub's EPS actual for a report dated d (closest row within +/- days), or None."""
+    best = None
+    for s in symbols:
+        for fr in finn_by_sym.get(s, []):
+            try:
+                gap = abs((date.fromisoformat(fr["date"]) - d).days)
+            except (TypeError, ValueError):
+                continue
+            if gap <= days and fr.get("epsActual") is not None and (best is None or gap < best[0]):
+                best = (gap, float(fr["epsActual"]))
+    return best[1] if best else None
+
+
+def placeholder_eps(eps, year_ago, d, today, recent_days, finn_eps):
+    """True when a Nasdaq "actual" looks like the prior-year figure Nasdaq shows in the eps field
+    on report day before the real number lands (Oct 16, 2026: CFG, MTB, RF, TFC, TRV all came
+    through as last year's EPS and were corrected the next day). Only recent rows can be
+    placeholders, and Finnhub reporting the same number confirms a genuine repeat."""
+    if eps is None or year_ago is None or eps != year_ago or (today - d).days > recent_days:
+        return False
+    return finn_eps is None or abs(finn_eps - eps) >= 0.005
+
+
 def build_records(cfg, companies, sym2cik, cache, prev, shares, finn_rows, today):
     q3_fq = set(cfg["fiscal_quarter_endings"])
+    recent_days = int(cfg.get("refetch_days_back", 10))
     ya_fq = set(cfg["yearago_fiscal_quarter_endings"])
     ws, we = date.fromisoformat(cfg["window_start"]), date.fromisoformat(cfg["window_end"])
     ys, ye = date.fromisoformat(cfg["yearago_window_start"]), date.fromisoformat(cfg["yearago_window_end"])
@@ -459,14 +484,32 @@ def build_records(cfg, companies, sym2cik, cache, prev, shares, finn_rows, today
         rec = {"cik": cik, "ticker": c["ticker"], "name": c["name"], "sector": c["sector"],
                "date": None, "time": None, "fiscal_quarter": None, "eps_actual": None,
                "eps_est": None, "n_ests": None, "eps_yearago": None, "eps_yearago_src": None,
-               "rev_actual": None, "rev_est": None, "shares": None}
+               "rev_actual": None, "rev_est": None, "shares": None, "eps_pending": None}
         rows = sorted(q3_rows.get(cik, []), key=lambda x: x[0])
-        reported = [(d, r) for d, r in rows if money(r.get("eps")) is not None and d <= today]
-        pick = reported[-1] if reported else (rows[-1] if rows else None)
+        pv = prev_by_cik.get(cik, {})
         last_year_eps = None
         for d, r in rows:
             if money(r.get("lastYearEPS")) is not None:
                 last_year_eps = money(r.get("lastYearEPS"))
+        # Nasdaq blanks lastYearEPS on the report-day row, so the year-ago figure to compare a new
+        # actual against usually comes from the pre-report row captured on an earlier run.
+        ya_hint = last_year_eps if last_year_eps is not None else (
+            pv.get("eps_yearago") if pv.get("eps_yearago_src") == "nasdaq_last_year_eps" else None)
+        reported, held = [], []
+        for d, r in rows:
+            a = money(r.get("eps"))
+            if a is None or d > today:
+                continue
+            if placeholder_eps(a, ya_hint, d, today, recent_days, finnhub_eps(finn_by_sym, c["symbols"], d)):
+                held.append((d, r))
+            else:
+                reported.append((d, r))
+        if held and not reported:
+            d, r = held[-1]
+            rec["eps_pending"] = {"date": d.isoformat(), "eps": money(r.get("eps")),
+                                  "reason": "equals year-ago EPS; not confirmed by Finnhub"}
+            log(f"pending: {r['symbol']} {d} eps {money(r.get('eps'))} equals year-ago EPS, not confirmed by Finnhub; held")
+        pick = reported[-1] if reported else (rows[-1] if rows else None)
         if pick:
             d, r = pick
             rec.update({"date": d.isoformat(), "time": (r.get("time") or "").replace("time-", "") or None,
@@ -480,7 +523,6 @@ def build_records(cfg, companies, sym2cik, cache, prev, shares, finn_rows, today
         #  2. the same value captured on an earlier run, before the company reported
         #  3. the actual EPS on the year-ago season's calendar row (not split-adjusted; used only
         #     for companies that had already reported before this repo started collecting)
-        pv = prev_by_cik.get(cik, {})
         ya = sorted(ya_rows.get(cik, []), key=lambda x: x[0])
         ya = [(d, r) for d, r in ya if money(r.get("eps")) is not None]
         if last_year_eps is not None:
@@ -491,16 +533,15 @@ def build_records(cfg, companies, sym2cik, cache, prev, shares, finn_rows, today
             want = (rec["fiscal_quarter"] or "").replace("2026", "2025")
             match = [x for x in ya if x[1].get("fiscalQuarterEnding") == want] or ya
             rec["eps_yearago"], rec["eps_yearago_src"] = money(match[-1][1].get("eps")), "nasdaq_2025_calendar"
-        # keep a previously captured result if the calendar row vanished (source hiccup)
+        # keep a previously captured result if the calendar row vanished (source hiccup),
+        # but not when the row is there and deliberately held as pending
         p = prev_by_cik.get(cik)
-        if rec["eps_actual"] is None and p and p.get("eps_actual") is not None:
+        if rec["eps_actual"] is None and rec["eps_pending"] is None and p and p.get("eps_actual") is not None:
             for k in ("date", "time", "fiscal_quarter", "eps_actual", "eps_est", "n_ests"):
                 rec[k] = p.get(k)
-        rec["shares"] = next((shares[s] for s in c["symbols"] if s in shares), None)
-        if len(c["symbols"]) > 1:
-            # dual share classes: use combined share count so earnings dollars are complete
-            tot = sum(shares.get(s, 0) for s in c["symbols"])
-            rec["shares"] = tot or rec["shares"]
+        # The screener's market cap is company-wide, so every share class of a company yields
+        # the same total (GOOG and GOOGL both 12.23bn). Take one count; summing doubled Alphabet.
+        rec["shares"] = max((shares[s] for s in c["symbols"] if shares.get(s)), default=None)
         # revenue from Finnhub, matched to the Nasdaq report date (+/- 4 days)
         if rec["eps_actual"] is not None and rec["date"]:
             rd = date.fromisoformat(rec["date"])
@@ -564,7 +605,7 @@ def compute(cfg, recs, finn_status):
         sectors.append({"sector": sec, "companies": len(sr), "reported": len(srep),
                         "eps_n": se["n"], "eps_beat_pct": se["beat_pct"], "eps_above_pct": se["above_pct"],
                         "eps_miss_pct": se["miss_pct"], "eps_agg_surprise_pct": se["agg_surprise_pct"],
-                        "rev_n": sv["n"], "rev_beat_pct": sv["beat_pct"],
+                        "rev_n": sv["n"], "rev_above_pct": sv["above_pct"], "rev_beat_pct": sv["beat_pct"],
                         "rev_agg_surprise_pct": sv["agg_surprise_pct"]})
     min_est = float(cfg.get("rank_min_abs_estimate", 0.10))
     rankable = [r for r in reported if r["eps_surprise_pct"] is not None and abs(r["eps_est"]) >= min_est]
@@ -583,12 +624,13 @@ def compute(cfg, recs, finn_status):
 
 # ---------------------------------------------------------------- season vs season
 
-def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today, kickoff):
+def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today, kickoff, skip=frozenset()):
     """Cumulative EPS beats by calendar day since a season's first reporter.
 
     Day 0 is the first report date under the fiscal-quarter mapping (the same rule as the
-    scorecard), so every season starts at 0 reported, 0 beats. One company counts once (its
-    last calendar row with an actual); a beat is actual above consensus (FactSet's definition)."""
+    scorecard), so every season's line starts on the day of its first reporter. One company
+    counts once (its last calendar row with an actual); a beat is actual above consensus
+    (FactSet's definition). Rows in `skip` {(cik, date)} are actuals held as pending."""
     ws, we = date.fromisoformat(window_start), date.fromisoformat(window_end)
     end = min(we, today)
     by_cik: dict[str, tuple] = {}
@@ -599,6 +641,8 @@ def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today,
         for r in v["rows"]:
             cik = sym2cik.get(r["symbol"])
             a, e = money(r.get("eps")), money(r.get("epsForecast"))
+            if (cik, k) in skip:
+                continue
             if cik and r.get("fiscalQuarterEnding") in fq_set and a is not None and e is not None:
                 if cik not in by_cik or d > by_cik[cik][0]:
                     by_cik[cik] = (d, r["symbol"], a, e)
@@ -625,12 +669,13 @@ def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today,
     return out
 
 
-def season_curves(cfg, sym2cik, cache, today):
+def season_curves(cfg, sym2cik, cache, today, recs=()):
     kick = set(cfg.get("kickoff_tickers", []))
+    skip = {(r["cik"], r["eps_pending"]["date"]) for r in recs if r.get("eps_pending")}
     seasons = [(s["label"], s["window_start"], s["window_end"], set(s["fiscal_quarter_endings"]))
                for s in cfg.get("compare_seasons", [])]
     seasons.append((cfg["season_label"], cfg["window_start"], cfg["window_end"], set(cfg["fiscal_quarter_endings"])))
-    return [season_curve(lab, ws, we, fq, sym2cik, cache, today, kick) for lab, ws, we, fq in seasons]
+    return [season_curve(lab, ws, we, fq, sym2cik, cache, today, kick, skip) for lab, ws, we, fq in seasons]
 
 
 # ---------------------------------------------------------------- history
@@ -740,7 +785,7 @@ def main() -> int:
         },
         "factset": fs_block,
         "reported_since_factset": since,
-        "season_curves": season_curves(cfg, sym2cik, cal["cache"], today),
+        "season_curves": season_curves(cfg, sym2cik, cal["cache"], today, recs),
         **m,
         "companies": sorted(recs, key=lambda r: r["ticker"]),
     }
@@ -748,6 +793,9 @@ def main() -> int:
     hist = update_history(cfg, recs, m, today, finn["status"])
     render(out, hist, cfg)
     e = m["eps"]
+    pend = [r["ticker"] for r in recs if r.get("eps_pending")]
+    if pend:
+        log(f"pending actuals held ({len(pend)}): {' '.join(sorted(pend))}")
     log(f"done: {m['reported']}/{m['universe']} reported; EPS beat {e['beat_pct']}% meet {e['meet_pct']}% "
         f"miss {e['miss_pct']}% (above est {e['above_pct']}%); agg surprise {e['agg_surprise_pct']}%; "
         f"median {e['median_surprise_pct']}%; revenue n={m['revenue']['n']} ({finn['status']}); "
