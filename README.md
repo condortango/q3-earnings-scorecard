@@ -66,16 +66,18 @@ reported this season:
   is the first report date under the fiscal-quarter rule, so every line starts there; the marker on each
   line is the first big-bank report (`kickoff_tickers`). Earlier seasons are listed in `config.json` under
   `compare_seasons` and fetched from the Nasdaq calendar once, then cached like everything else.
-  A third overlay shows blended year-over-year EPS growth by day (FactSet's measure: actuals for reporters,
-  consensus for the rest, times shares outstanding, against the same companies' year-ago EPS). Each line
-  starts at the growth analysts expected before the first report (dashed reference) and moves as actuals
-  replace estimates. Estimate revisions are not replayed. A dotted line per season repeats the growth without
-  the tickers in `growth_ex` (Alphabet and Amazon, whose Anthropic stake gains dominate their reported EPS; the
-  same exclusion FactSet footnotes). Earlier seasons need year-ago actuals, fetched from
-  the year-ago calendar windows listed per season in `compare_seasons` (`yearago_window_*`,
-  `yearago_fiscal_quarter_endings`); those are as reported then and not split-adjusted. Consensus EPS per
-  company is also snapshotted every run day in `data/consensus_<season>.json` (changes only, replay in
-  order), so a later version can add the estimate-revision part of the move.
+  A third overlay shows blended year-over-year EPS growth through each season. The official series is
+  FactSet's weekly Earnings Insight (dark points, one per report), with FactSet's quarter-end estimate as a
+  dashed reference; the weekly reports of earlier seasons are fetched once (every weekday of the season window
+  is tried) and kept in `data/factset.json` under `seasons`. The light line is this repo's running estimate
+  by day (actuals for reporters, consensus for the rest, times shares outstanding, against year-ago EPS),
+  which moves as actuals replace estimates and does not replay estimate revisions; a dotted line repeats it
+  without the tickers in `growth_ex` (Alphabet and Amazon, whose Anthropic stake gains dominate reported EPS;
+  FactSet footnotes the same exclusion). Earlier seasons' year-ago EPS comes from the year-ago calendar
+  windows listed per season in `compare_seasons` (`yearago_window_*`, `yearago_fiscal_quarter_endings`),
+  divided by later stock splits from `data/splits.json` (Yahoo Finance chart events, each symbol rechecked
+  monthly). Consensus EPS per company is also snapshotted every run day in `data/consensus_<season>.json`
+  (changes only, replay in order), so a later version can add the estimate-revision part of the move.
 - sector table (GICS), top 10 EPS beats and misses, and every reporter (running estimate data)
 - last updated time in Pacific time and source attribution
 
@@ -187,8 +189,8 @@ python3 -m http.server -d docs 8000
 - `config.json`: season window, quarter mapping, meet band, FactSet lookback, fallback averages.
 - `data/factset.json`: every parsed FactSet report this season. `data/q3_2026.json`: the full computed
   scorecard. `data/history.csv`: daily running-estimate series. `data/consensus_<season>.json`: daily consensus
-  EPS per company, stored as changes. `data/nasdaq_days.json`, `data/shares.json`, `data/finnhub_rows.json`:
-  source caches.
+  EPS per company, stored as changes. `data/nasdaq_days.json`, `data/shares.json`, `data/splits.json`,
+  `data/finnhub_rows.json`: source caches.
 - `publish.sh` commits, creates `condortango/q3-earnings-scorecard`, pushes, enables Pages and starts the
   first run. Run it only when you are ready.
 

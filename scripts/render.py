@@ -257,38 +257,45 @@ def render_site(out: dict, hist: list, cfg: dict, docs: Path) -> None:
                 "top": c.get("top") or [], "expected_growth_pct": c.get("expected_growth_pct"),
                 "growth_n": c.get("growth_n", 0), "growth_universe": c.get("growth_universe", 0),
                 "growth_ex_pct": c.get("growth_ex_pct") or [], "expected_growth_ex_pct": c.get("expected_growth_ex_pct"),
+                "factset": c.get("factset") or [], "factset_qend_pct": c.get("factset_qend_pct"),
+                "factset_qend_date": c.get("factset_qend_date"),
                 "color": season_colors[(i - len(curves)) % len(season_colors)], "current": i == len(curves) - 1}
                for i, c in enumerate(curves)]
     has_growth = any(s["growth_pct"] and s["growth_pct"][-1] is not None for s in seasons)
     gx = cfg.get("growth_ex") or {}
     ex_label = esc(gx.get("label") or "") if gx.get("tickers") else ""
     has_ex = bool(ex_label) and any(s["growth_ex_pct"] for s in seasons)
+    has_fs = any(s["factset"] for s in seasons)
     last_of = lambda xs: xs[-1] if xs else None
     g1 = lambda v: "n/a" if v is None else f"{v:+.1f}%"
+    fs_last = lambda s: s["factset"][-1]["growth_pct"] if s["factset"] else None
     season_rows = "".join(
         f"<tr><td>{esc(s['label'])}</td><td>{sdate(s['day0'])}</td>"
-        f"<td>{'day ' + str(s['kickoff_day']) if s['kickoff_day'] is not None else 'n/a'}</td>"
-        f"<td>{len(s['reported']) - 1}</td><td>{s['reported'][-1]}</td><td>{s['beats'][-1]}</td>"
-        f"<td>{f1(s['beat_pct'][-1])}</td>"
-        + (f"<td>{g1(s['expected_growth_pct'])}</td>"
+        f"<td>{s['reported'][-1]}</td><td>{f1(s['beat_pct'][-1])}</td>"
+        + ((f"<td>{g1(s['factset_qend_pct'])}{' (' + sdate(s['factset_qend_date']) + ')' if s['factset_qend_date'] else ''}</td>"
+            f"<td class='{cls(fs_last(s))}'>{g1(fs_last(s))}</td>" if has_fs else "")
+           + f"<td>{g1(s['expected_growth_pct'])}</td>"
            f"<td class='{cls(last_of(s['growth_pct']))}'>{g1(last_of(s['growth_pct']))}</td>"
            + (f"<td class='{cls(last_of(s['growth_ex_pct']))}'>{g1(last_of(s['growth_ex_pct']))}</td>" if has_ex else "")
-           + f"<td class='{cls(last_of(s['reporters_growth_pct']))}'>{g1(last_of(s['reporters_growth_pct']))}</td>" if has_growth else "")
+           if has_growth else "")
         + "</tr>" for s in seasons)
-    season_extra_th = ("<th>Expected</th><th>Blended</th>" + (f"<th>{ex_label}</th>" if has_ex else "") + "<th>Reporters</th>"
-                       if has_growth else "")
+    season_extra_th = ((("<th>FactSet est. as of</th><th>FactSet</th>" if has_fs else "")
+                        + "<th>Running est.</th><th>Running</th>"
+                        + (f"<th>Running {ex_label}</th>" if has_ex else "")) if has_growth else "")
     coverage_txt = "; ".join(f"{esc(s['label'])} {s['growth_n']} of {s['growth_universe']}" for s in seasons)
     growth_html = ('''<h3>Earnings growth, year over year, season to date</h3>
-<p class="dim small">Blended growth, FactSet's measure: actual EPS for companies that have reported by that day, consensus for the rest,
-times shares outstanding, against the same companies' year-ago EPS. Each line starts at the growth analysts expected before
-the first report (dashed, kept for reference) and moves as actuals replace estimates: up when companies beat, down when
-they miss. Estimate revisions during the quarter are not replayed, so this is the results-driven part of the move. Hover
-for the growth among reporters alone and the day's biggest mover.'''
-                   + (f''' Dotted: the same growth {ex_label} ({esc(gx.get("note") or "")}).''' if has_ex else "") + f'''</p>
+<p class="dim small">Blended growth: actual EPS for companies that have reported, consensus for the rest, against the year-ago quarter.
+Dark points: FactSet's weekly Earnings Insight, the official series, one point per report. Light line: this site's running
+estimate by day (Nasdaq calendar, Zacks consensus, EPS times shares outstanding), which starts at the growth its own
+estimates implied and moves as actuals replace estimates; it does not replay estimate revisions, so it tracks the
+results-driven part of the move. Dashed: FactSet's estimate as of the quarter end (or quarter start, until the quarter ends).'''
+                   + (f''' Dotted: the running estimate {ex_label} ({esc(gx.get("note") or "")}).''' if has_ex else "")
+                   + f''' Hover for details.</p>
 <div class="chart tall"><canvas id="c5"></canvas></div>
-<p class="dim small">Year-ago EPS for earlier seasons is the actual on the year-ago calendar row and is not split-adjusted; the current
-season uses Nasdaq's split-adjusted year-ago figure where it was captured before the report. Unusual items stay in the main
-line, as in FactSet's headline figure. Companies with shares and year-ago EPS, the growth table columns' basis: {coverage_txt}.</p>''' if has_growth else "")
+<p class="dim small">Year-ago EPS for the running line: Nasdaq's split-adjusted year-ago figure for the current season, the year-ago
+calendar actuals adjusted for later stock splits for earlier seasons. Unusual items stay in both series, as in FactSet's headline
+(Alphabet's investment gains in Q2 2026). Running-estimate coverage, companies with shares and year-ago EPS: {coverage_txt}.</p>''' if has_growth else "")
+    has_replay = any(h.get("method") == "replay" for h in hist)
     has_replay = any(h.get("method") == "replay" for h in hist)
     has_replay = any(h.get("method") == "replay" for h in hist)
     no_fs_surp = fsh and all(h.get("eps_surprise_pct") is None for h in fsh)
@@ -337,7 +344,7 @@ reporters so far. The marker on each line is the day the first big bank reported
 <div class="chart tall"><canvas id="c3"></canvas></div>
 <div class="chart tall"><canvas id="c4"></canvas></div>
 {growth_html}
-<table class="seasons"><tr><th>Season</th><th>Day 0</th><th>Banks kick off</th><th>Days shown</th><th>Reported</th><th>Beats</th><th>Beat rate</th>{season_extra_th}</tr>{season_rows}</table>
+<table class="seasons"><tr><th>Season</th><th>Day 0</th><th>Reported</th><th>Beat rate</th>{season_extra_th}</tr>{season_rows}</table>
 <p class="dim small">Earlier seasons use the same Nasdaq calendar rows (Zacks consensus) and today's S&amp;P 500 membership and shares
 outstanding; growth is share-weighted, so the largest companies dominate it. {esc(out["season"])} extends with every update; a finished
 season ends at its last reporter.</p>''' if seasons else ''}
@@ -406,35 +413,41 @@ if (window.Chart && SEASONS.length) {{
   new Chart(document.getElementById('c3'), {{ type: 'line', data: {{ labels: days, datasets: ds('beats') }}, options: sopts('Companies with EPS above consensus', undefined) }});
   new Chart(document.getElementById('c4'), {{ type: 'line', data: {{ labels: days, datasets: ds('beat_pct') }}, options: sopts('% of reporters above consensus', 100) }});
   if (document.getElementById('c5')) {{
-    // starts at (-1, expected growth): before the first report the season is, by definition, at analysts' estimate
     const g1 = v => (v > 0 ? '+' : '') + v.toFixed(1), g2 = v => (v > 0 ? '+' : '') + v.toFixed(2);
-    const pts = s => [{{ x: -1, y: s.expected_growth_pct }}].concat(s.growth_pct.map((v, i) => ({{ x: i, y: v }})));
-    const lines = SEASONS.map(s => ({{ label: s.label, data: pts(s), borderColor: s.color, backgroundColor: s.color,
-      borderWidth: s.current ? 2.5 : 1.5, pointRadius: pts(s).map((_, i) => i - 1 === s.kickoff_day ? 4 : 0),
-      pointHoverRadius: 4, pointStyle: 'rectRot', spanGaps: false }}));
     const EXL = {json.dumps(gx.get("label") or "")};
-    const exs = SEASONS.filter(s => s.growth_ex_pct.length).map(s => ({{ label: s.label + ' ' + EXL,
+    const xmin = Math.min(-1, ...SEASONS.flatMap(s => s.factset.map(p => p.day)));
+    // running estimate starts at (-1, expected growth): before the first report the season is at its own estimate
+    const pts = s => [{{ x: -1, y: s.expected_growth_pct }}].concat(s.growth_pct.map((v, i) => ({{ x: i, y: v }})));
+    const fsd = SEASONS.filter(s => s.factset.length).map(s => ({{ kind: 'fs', s, label: s.label + ' FactSet',
+      data: s.factset.map(p => ({{ x: p.day, y: p.growth_pct }})), borderColor: s.color, backgroundColor: s.color,
+      borderWidth: s.current ? 2.5 : 2, pointRadius: 3.5, pointHoverRadius: 5, spanGaps: true }}));
+    const run = SEASONS.map(s => ({{ kind: 'run', s, label: s.label + ' running', data: pts(s),
+      borderColor: s.color + '77', backgroundColor: s.color + '77', borderWidth: s.current ? 2 : 1.25,
+      pointRadius: pts(s).map((_, i) => i - 1 === s.kickoff_day ? 4 : 0), pointHoverRadius: 3, pointStyle: 'rectRot', spanGaps: false }}));
+    const exs = SEASONS.filter(s => s.growth_ex_pct.length).map(s => ({{ kind: 'ex', s, label: s.label + ' running ' + EXL,
       data: [{{ x: -1, y: s.expected_growth_ex_pct }}].concat(s.growth_ex_pct.map((v, i) => ({{ x: i, y: v }}))),
-      borderColor: s.color, borderDash: [2, 3], borderWidth: s.current ? 2 : 1.25, pointRadius: 0, pointHoverRadius: 0, spanGaps: false }}));
-    const refs = SEASONS.filter(s => s.expected_growth_pct != null).map(s => ({{ label: s.label + ' expected',
-      data: [{{ x: -1, y: s.expected_growth_pct }}, {{ x: s.growth_pct.length - 1, y: s.expected_growth_pct }}],
-      borderColor: s.color, borderDash: [4, 4], borderWidth: 1, pointRadius: 0, pointHoverRadius: 0 }}));
-    new Chart(document.getElementById('c5'), {{ type: 'line', data: {{ datasets: lines.concat(exs, refs) }}, options: {{
-      responsive: true, maintainAspectRatio: false, animation: false, interaction: {{ mode: 'index', intersect: false }},
+      borderColor: s.color + '77', borderDash: [2, 3], borderWidth: s.current ? 1.75 : 1.25, pointRadius: 0, pointHoverRadius: 0, spanGaps: false }}));
+    const refs = SEASONS.filter(s => (s.factset_qend_pct ?? s.expected_growth_pct) != null).map(s => {{
+      const y = s.factset_qend_pct ?? s.expected_growth_pct;
+      return {{ kind: 'ref', s, label: s.label + ' expected', data: [{{ x: xmin, y }}, {{ x: s.growth_pct.length - 1, y }}],
+        borderColor: s.color, borderDash: [4, 4], borderWidth: 1, pointRadius: 0, pointHoverRadius: 0 }}; }});
+    new Chart(document.getElementById('c5'), {{ type: 'line', data: {{ datasets: fsd.concat(run, exs, refs) }}, options: {{
+      responsive: true, maintainAspectRatio: false, animation: false, interaction: {{ mode: 'x', intersect: false }},
       plugins: {{ legend: {{ labels: {{ boxWidth: 14, font: {{ size: 12 }}, usePointStyle: false, filter: it => !it.text.endsWith(' expected') }} }},
-        tooltip: {{ filter: it => it.datasetIndex < SEASONS.length, callbacks: {{
-          title: it => it.length ? (it[0].parsed.x < 0 ? 'Before the first report' : 'Day ' + it[0].parsed.x) : '',
-          label: c => {{ const s = SEASONS[c.datasetIndex], i = c.parsed.x;
-            if (i < 0) return s.label + ': expected ' + g1(s.expected_growth_pct) + '% y/y';
+        tooltip: {{ filter: it => it.dataset.kind !== 'ref', callbacks: {{
+          title: it => it.length ? (it[0].parsed.x === -1 ? 'Before the first report' : 'Day ' + it[0].parsed.x) : '',
+          label: c => {{ const d = c.dataset, s = d.s, i = c.parsed.x;
+            if (d.kind === 'fs') {{ const p = s.factset.find(p => p.day === i);
+              return s.label + ' FactSet (' + fmt(s, i) + '): ' + g1(p.growth_pct) + '% ' + (p.kind || '') + (p.reported_pct == null ? '' : ', ' + p.reported_pct + '% reported'); }}
+            if (d.kind === 'ex') return s.label + ' running ' + EXL + ': ' + g1(c.parsed.y) + '%';
+            if (i < 0) return s.label + ' running: expected ' + g1(s.expected_growth_pct) + '%';
             const t = s.top[i], r = s.reporters_growth_pct[i];
-            const x = s.growth_ex_pct[i];
-            return s.label + ' (' + fmt(s, i) + '): ' + g1(s.growth_pct[i]) + '% y/y blended, expected ' + g1(s.expected_growth_pct) + '%'
-              + (x == null ? '' : ', ' + EXL + ' ' + g1(x) + '%')
+            return s.label + ' running (' + fmt(s, i) + '): ' + g1(s.growth_pct[i]) + '%'
               + (r == null ? '' : ', reporters so far ' + g1(r) + '% (' + s.reported[i] + ')')
               + (t ? ', biggest ' + t.t + ' ' + g2(t.pp) + 'pp' : '') + (i === s.kickoff_day ? ', banks kick off' : ''); }} }} }} }},
       scales: {{ y: {{ title: {{ display: true, text: 'EPS growth, y/y, blended' }}, grid: {{ color: '#eeeeee' }},
                       ticks: {{ callback: v => g1(v) + '%' }} }},
-        x: {{ type: 'linear', min: -1, max: maxDay, title: {{ display: true, text: 'Days since first reporter' }}, grid: {{ display: false }},
+        x: {{ type: 'linear', min: xmin, max: maxDay, title: {{ display: true, text: 'Days since first reporter' }}, grid: {{ display: false }},
              ticks: {{ maxTicksLimit: 12, maxRotation: 0, callback: v => v < 0 ? '' : v }} }} }} }} }});
   }}
 }}

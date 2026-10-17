@@ -239,6 +239,61 @@ def refresh_shares(sp_syms: set[str]) -> dict:
     return cached.get("shares", {})
 
 
+# ---------------------------------------------------------------- stock splits (Yahoo Finance chart events)
+
+YAHOO_CHART_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}"
+
+
+def refresh_splits(sp_syms: set[str], today: date, max_age_days: int = 30) -> dict:
+    """{SYM: [{"date", "ratio"}]} for splits in the last two years, from Yahoo Finance's chart
+    events; each symbol is rechecked every `max_age_days`. Year-ago EPS taken from an old calendar
+    row is as reported then, so a later split (Netflix 10:1, Booking 25:1, O'Reilly 15:1 ...) has
+    to be divided out before it is compared with today's EPS and share count."""
+    path = DATA / "splits.json"
+    st = load_json(path, {"note": "Stock splits from Yahoo Finance chart events, last two years; ratio = new shares per old share.",
+                          "checked": {}, "splits": {}})
+    due = sorted(s for s in sp_syms
+                 if (today - date.fromisoformat(st["checked"].get(s, "2000-01-01"))).days > max_age_days)
+    ok = fail = 0
+    http = requests.Session()
+    http.headers.update({"User-Agent": NASDAQ_HEADERS["User-Agent"]})
+    for sym in due:
+        try:
+            r = http.get(YAHOO_CHART_URL.format(sym=sym.replace(".", "-")),
+                         params={"range": "2y", "interval": "1mo", "events": "splits"}, timeout=20)
+            if r.status_code != 200:
+                fail += 1
+                continue
+            res = (r.json().get("chart") or {}).get("result") or []
+            ev = ((res[0].get("events") or {}).get("splits") or {}) if res else {}
+            st["splits"][sym] = sorted(
+                ({"date": datetime.fromtimestamp(int(v["date"]), timezone.utc).date().isoformat(),
+                  "ratio": float(v["numerator"]) / float(v["denominator"])}
+                 for v in ev.values() if v.get("numerator") and v.get("denominator")), key=lambda x: x["date"])
+            st["checked"][sym] = today.isoformat()
+            ok += 1
+        except (requests.RequestException, ValueError, KeyError, IndexError, TypeError):
+            fail += 1
+        if fail >= 25 and ok == 0:
+            log("splits: source not answering, keeping the cached splits")
+            break
+        time.sleep(0.1)
+    if due:
+        write_json(path, st)
+        log(f"splits: {ok} symbols checked, {fail} failed; "
+            f"{sum(1 for v in st['splits'].values() if v)} symbols with a split in the last two years")
+    return st["splits"]
+
+
+def split_factor(splits: dict, sym: str, after: str) -> float:
+    """Product of split ratios for `sym` dated after `after` (ISO date); 1.0 if none."""
+    f = 1.0
+    for s in (splits or {}).get(sym, []):
+        if s["date"] > after and s.get("ratio"):
+            f *= s["ratio"]
+    return f
+
+
 # ---------------------------------------------------------------- Finnhub (optional, revenue)
 
 def refresh_finnhub(cfg: dict, sp_syms: set[str], today: date) -> dict:
@@ -357,6 +412,44 @@ def refresh_factset(cfg: dict, today: date) -> dict:
     return st
 
 
+def refresh_factset_seasons(cfg: dict, st: dict, today: date) -> dict:
+    """Weekly Earnings Insight reports for the compare seasons, for the season-vs-season growth
+    chart: every weekday of each season window is tried once, parsed for that season's label, and
+    the in-season reports are kept in factset.json under "seasons" (never refetched)."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import factset
+    seasons = st.setdefault("seasons", {})
+    changed = False
+    http = requests.Session()
+    for s in cfg.get("compare_seasons", []):
+        label = s["label"]
+        if st.get("backfilled_" + label):
+            continue
+        start = date.fromisoformat(s["window_start"])
+        end = min(date.fromisoformat(s["window_end"]) + timedelta(days=14), today)
+        reps = {}
+        for d in weekdays(start, end):
+            u, data = factset.fetch_pdf(d, http)
+            if not data:
+                continue
+            try:
+                p = factset.parse(factset.pdf_text(data), label)
+            except Exception as e:
+                log(f"factset: {label} {d} parse error {e}")
+                continue
+            if p.get("in_season") and p.get("eps_growth_pct") is not None:
+                p["url"], p["file_date"] = u, d.isoformat()
+                p["fetched_at_utc"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+                reps[d.isoformat()] = p
+        seasons[label] = [reps[k] for k in sorted(reps)]
+        st["backfilled_" + label] = True
+        changed = True
+        log(f"factset: {label}: {len(reps)} weekly reports kept")
+    if changed:
+        write_json(DATA / "factset.json", st)
+    return seasons
+
+
 def benchmarks(cfg: dict, fs: dict) -> dict:
     """5-yr / 10-yr averages: from the latest FactSet report when it states them, else the cited fallback."""
     fb = cfg.get("benchmarks_fallback") or {}
@@ -455,7 +548,7 @@ def placeholder_eps(eps, year_ago, d, today, recent_days, finn_eps):
     return finn_eps is None or abs(finn_eps - eps) >= 0.005
 
 
-def build_records(cfg, companies, sym2cik, cache, prev, shares, finn_rows, today):
+def build_records(cfg, companies, sym2cik, cache, prev, shares, finn_rows, today, splits=None):
     q3_fq = set(cfg["fiscal_quarter_endings"])
     recent_days = int(cfg.get("refetch_days_back", 10))
     ya_fq = set(cfg["yearago_fiscal_quarter_endings"])
@@ -534,7 +627,9 @@ def build_records(cfg, companies, sym2cik, cache, prev, shares, finn_rows, today
         elif ya:
             want = (rec["fiscal_quarter"] or "").replace("2026", "2025")
             match = [x for x in ya if x[1].get("fiscalQuarterEnding") == want] or ya
-            rec["eps_yearago"], rec["eps_yearago_src"] = money(match[-1][1].get("eps")), "nasdaq_2025_calendar"
+            yd, yr = match[-1]
+            rec["eps_yearago"] = money(yr.get("eps")) / split_factor(splits, yr["symbol"], yd.isoformat())
+            rec["eps_yearago_src"] = "nasdaq_2025_calendar"
         # keep a previously captured result if the calendar row vanished (source hiccup),
         # but not when the row is there and deliberately held as pending
         p = prev_by_cik.get(cik)
@@ -627,7 +722,7 @@ def compute(cfg, recs, finn_status):
 # ---------------------------------------------------------------- season vs season
 
 def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today, kickoff,
-                 skip=frozenset(), shares=None, yearago=None, exclude=frozenset()):
+                 skip=frozenset(), shares=None, yearago=None, exclude=frozenset(), factset_reports=()):
     """Season-to-date series by calendar day since a season's first reporter.
 
     Day 0 is the first report date under the fiscal-quarter mapping (the same rule as the
@@ -641,7 +736,9 @@ def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today,
     expected (all estimates) and moves as actuals replace estimates. Estimate revisions are not
     replayed: reporters sit at their pre-report consensus, the rest at the latest one.
     `shares` and `yearago` are {cik: value}; a company needs both to count toward growth.
-    `exclude` (ciks) gives a second growth series without those companies (growth_ex_pct)."""
+    `exclude` (ciks) gives a second growth series without those companies (growth_ex_pct).
+    `factset_reports` (parsed weekly Earnings Insight reports for the season) become the official
+    series: one point per report, placed on the same day axis, plus FactSet's quarter-end estimate."""
     shares, yearago = shares or {}, yearago or {}
     ws, we = date.fromisoformat(window_start), date.fromisoformat(window_end)
     end = min(we, today)
@@ -666,11 +763,20 @@ def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today,
            "reported": [], "beats": [], "beat_pct": [],
            "growth_pct": [], "reporters_growth_pct": [], "top": [],
            "expected_growth_pct": None, "growth_n": 0, "growth_universe": 0,
-           "growth_ex_pct": [], "expected_growth_ex_pct": None}
+           "growth_ex_pct": [], "expected_growth_ex_pct": None,
+           "factset": [], "factset_qend_pct": None, "factset_qend_date": None}
     if not by_cik:
         return out
     reps = sorted(by_cik.values(), key=lambda x: x[0])
     day0 = reps[0][0]
+    for p in factset_reports:
+        if p.get("eps_growth_pct") is None or not p.get("file_date"):
+            continue
+        out["factset"].append({"day": (date.fromisoformat(p["file_date"]) - day0).days, "date": p["file_date"],
+                               "growth_pct": p["eps_growth_pct"], "kind": p.get("eps_growth_kind"),
+                               "reported_pct": p.get("reported_pct"), "url": p.get("url")})
+        if p.get("eps_growth_qend_pct") is not None:  # the latest report's reference date wins (quarter end once past)
+            out["factset_qend_pct"], out["factset_qend_date"] = p["eps_growth_qend_pct"], p.get("eps_growth_qend_date")
     last = reps[-1][0] if we <= today else end  # a finished season stops at its last reporter
     kick = [d for d, s, _, _, _ in reps if s in kickoff]
     out.update({"day0": day0.isoformat(), "last": last.isoformat(),
@@ -718,10 +824,10 @@ def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today,
     return out
 
 
-def yearago_from_calendar(cache, sym2cik, window_start, window_end, fq_set):
+def yearago_from_calendar(cache, sym2cik, window_start, window_end, fq_set, splits=None):
     """Year-ago EPS per company from the year-ago season's calendar rows (actual EPS as reported
-    then; not split-adjusted). Used for earlier seasons, where Nasdaq's split-adjusted lastYearEPS
-    is no longer shown because every row is post-report."""
+    then, divided by any later split). Used for earlier seasons, where Nasdaq's split-adjusted
+    lastYearEPS is no longer shown because every row is post-report."""
     out: dict[str, tuple] = {}
     for k, v in cache.items():
         if not (window_start <= k <= window_end):
@@ -730,24 +836,27 @@ def yearago_from_calendar(cache, sym2cik, window_start, window_end, fq_set):
             cik = sym2cik.get(r["symbol"])
             a = money(r.get("eps"))
             if cik and a is not None and r.get("fiscalQuarterEnding") in fq_set and (cik not in out or k > out[cik][0]):
-                out[cik] = (k, a)
+                out[cik] = (k, a / split_factor(splits, r["symbol"], k))
     return {cik: a for cik, (_, a) in out.items()}
 
 
-def season_curves(cfg, sym2cik, cache, today, recs=()):
+def season_curves(cfg, sym2cik, cache, today, recs=(), fs=None, splits=None):
     kick = set(cfg.get("kickoff_tickers", []))
     skip = {(r["cik"], r["eps_pending"]["date"]) for r in recs if r.get("eps_pending")}
     shares = {r["cik"]: r["shares"] for r in recs if r.get("shares")}
     ex = {sym2cik[t] for t in (cfg.get("growth_ex") or {}).get("tickers", []) if t in sym2cik}
+    fs = fs or {}
     curves = []
     for s in cfg.get("compare_seasons", []):
         ya = (yearago_from_calendar(cache, sym2cik, s["yearago_window_start"], s["yearago_window_end"],
-                                    set(s["yearago_fiscal_quarter_endings"])) if s.get("yearago_window_start") else {})
+                                    set(s["yearago_fiscal_quarter_endings"]), splits) if s.get("yearago_window_start") else {})
         curves.append(season_curve(s["label"], s["window_start"], s["window_end"], set(s["fiscal_quarter_endings"]),
-                                   sym2cik, cache, today, kick, skip, shares, ya, ex))
+                                   sym2cik, cache, today, kick, skip, shares, ya, ex,
+                                   (fs.get("seasons") or {}).get(s["label"], [])))
     ya_now = {r["cik"]: r["eps_yearago"] for r in recs if r.get("eps_yearago") is not None}
     curves.append(season_curve(cfg["season_label"], cfg["window_start"], cfg["window_end"],
-                               set(cfg["fiscal_quarter_endings"]), sym2cik, cache, today, kick, skip, shares, ya_now, ex))
+                               set(cfg["fiscal_quarter_endings"]), sym2cik, cache, today, kick, skip, shares, ya_now, ex,
+                               [h for h in fs.get("history", []) if h.get("season") == cfg["season_label"]]))
     return curves
 
 
@@ -841,8 +950,10 @@ def main() -> int:
     stamp = now_utc.astimezone(PT).strftime("%b %-d, %Y %-I:%M %p PT")
 
     fs = refresh_factset(cfg, today)
+    refresh_factset_seasons(cfg, fs, today)
     fs_block = {"latest": fs.get("latest"), "history": fs.get("history", []), "status": fs.get("status"),
-                "stale_reason": fs.get("stale_reason"), "benchmarks": benchmarks(cfg, fs)}
+                "stale_reason": fs.get("stale_reason"), "benchmarks": benchmarks(cfg, fs),
+                "seasons": fs.get("seasons", {})}
 
     constituents = load_constituents(cfg)
     companies, sym2cik = build_universe(constituents)
@@ -851,6 +962,7 @@ def main() -> int:
 
     cal = refresh_calendar(cfg, sp_syms, today)
     shares = refresh_shares(sp_syms)
+    splits = refresh_splits(sp_syms, today)
     finn = refresh_finnhub(cfg, sp_syms, today)
 
     # source health: if nothing could be fetched this run, keep the previous output and flag it stale
@@ -868,7 +980,7 @@ def main() -> int:
         render(prev, hist, cfg)
         return 0
 
-    recs = build_records(cfg, companies, sym2cik, cal["cache"], prev, shares, finn["rows"], today)
+    recs = build_records(cfg, companies, sym2cik, cal["cache"], prev, shares, finn["rows"], today, splits)
     m = compute(cfg, recs, finn["status"])
     record_consensus(cfg, recs, today)
     lat = fs_block["latest"] or {}
@@ -895,7 +1007,7 @@ def main() -> int:
         },
         "factset": fs_block,
         "reported_since_factset": since,
-        "season_curves": season_curves(cfg, sym2cik, cal["cache"], today, recs),
+        "season_curves": season_curves(cfg, sym2cik, cal["cache"], today, recs, fs, splits),
         **m,
         "companies": sorted(recs, key=lambda r: r["ticker"]),
     }

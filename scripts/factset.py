@@ -89,6 +89,7 @@ def parse(text: str, season: str = "Q3 2026") -> dict:
            "rev_beat_pct": None, "rev_beat_n": None,
            "eps_surprise_pct": None, "rev_surprise_pct": None,
            "eps_growth_pct": None, "eps_growth_kind": None,
+           "eps_growth_qend_pct": None, "eps_growth_qend_date": None,
            "rev_growth_pct": None, "rev_growth_kind": None,
            "derived_from_counts": False,
            "avg": {}}
@@ -183,6 +184,17 @@ def parse(text: str, season: str = "Q3 2026") -> dict:
         if out["eps_growth_pct"] is None:
             out["eps_growth_kind"], out["eps_growth_pct"] = m.group(1), _f(m.group(2))
         out["avg"]["eps_growth_pct_5y"], out["avg"]["eps_growth_pct_10y"] = _averages(_sentence_after(t, m.end(), 260))
+
+    # Quarter-end expectation (Earnings Revisions): "On June 30, the estimated (year-over-year) earnings
+    # growth rate for the S&P 500 for Q2 2026 was 23.1%"
+    m = re.search(rf"On (({MONTHS}) \d{{1,2}}), the estimated \(year-over-year\) earnings growth rate for the "
+                  rf"S&P 500 for Q{qn} {year} was {NUM}%", t)
+    if m:
+        out["eps_growth_qend_pct"] = _f(m.group(3))
+        try:
+            out["eps_growth_qend_date"] = datetime.strptime(f"{m.group(1)} {year}", "%B %d %Y").date().isoformat()
+        except ValueError:
+            pass
 
     # Revenue growth
     for pat, kind in (
