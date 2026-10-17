@@ -179,6 +179,9 @@ def refresh_calendar(cfg: dict, sp_syms: set[str], today: date) -> dict:
         (date.fromisoformat(cfg["window_start"]), date.fromisoformat(cfg["window_end"])),
         (date.fromisoformat(cfg["yearago_window_start"]), date.fromisoformat(cfg["yearago_window_end"])),
     ]
+    # earlier seasons of the year, for the season-vs-season chart; fetched once, then served from cache
+    for s in cfg.get("compare_seasons", []):
+        windows.append((date.fromisoformat(s["window_start"]), date.fromisoformat(s["window_end"])))
     recent = today - timedelta(days=int(cfg.get("refetch_days_back", 10)))
     for start, end in windows:
         for d in weekdays(start, end):
@@ -578,6 +581,58 @@ def compute(cfg, recs, finn_status):
     }
 
 
+# ---------------------------------------------------------------- season vs season
+
+def season_curve(label, window_start, window_end, fq_set, sym2cik, cache, today, kickoff):
+    """Cumulative EPS beats by calendar day since a season's first reporter.
+
+    Day 0 is the first report date under the fiscal-quarter mapping (the same rule as the
+    scorecard), so every season starts at 0 reported, 0 beats. One company counts once (its
+    last calendar row with an actual); a beat is actual above consensus (FactSet's definition)."""
+    ws, we = date.fromisoformat(window_start), date.fromisoformat(window_end)
+    end = min(we, today)
+    by_cik: dict[str, tuple] = {}
+    for k, v in cache.items():
+        d = date.fromisoformat(k)
+        if not (ws <= d <= end):
+            continue
+        for r in v["rows"]:
+            cik = sym2cik.get(r["symbol"])
+            a, e = money(r.get("eps")), money(r.get("epsForecast"))
+            if cik and r.get("fiscalQuarterEnding") in fq_set and a is not None and e is not None:
+                if cik not in by_cik or d > by_cik[cik][0]:
+                    by_cik[cik] = (d, r["symbol"], a, e)
+    out = {"label": label, "day0": None, "last": None, "kickoff_day": None,
+           "reported": [], "beats": [], "beat_pct": []}
+    if not by_cik:
+        return out
+    reps = sorted(by_cik.values(), key=lambda x: x[0])
+    day0 = reps[0][0]
+    last = reps[-1][0] if we <= today else end  # a finished season stops at its last reporter
+    kick = [d for d, s, _, _ in reps if s in kickoff]
+    out.update({"day0": day0.isoformat(), "last": last.isoformat(),
+                "kickoff_day": (min(kick) - day0).days if kick else None})
+    i, n, beats = 0, 0, 0
+    for day in range((last - day0).days + 1):
+        d = day0 + timedelta(days=day)
+        while i < len(reps) and reps[i][0] <= d:
+            n += 1
+            beats += reps[i][2] > reps[i][3]
+            i += 1
+        out["reported"].append(n)
+        out["beats"].append(beats)
+        out["beat_pct"].append(pct(beats, n))
+    return out
+
+
+def season_curves(cfg, sym2cik, cache, today):
+    kick = set(cfg.get("kickoff_tickers", []))
+    seasons = [(s["label"], s["window_start"], s["window_end"], set(s["fiscal_quarter_endings"]))
+               for s in cfg.get("compare_seasons", [])]
+    seasons.append((cfg["season_label"], cfg["window_start"], cfg["window_end"], set(cfg["fiscal_quarter_endings"])))
+    return [season_curve(lab, ws, we, fq, sym2cik, cache, today, kick) for lab, ws, we, fq in seasons]
+
+
 # ---------------------------------------------------------------- history
 
 HIST_FIELDS = ["date", "method", "reported", "eps_n", "eps_beat_pct", "eps_meet_pct", "eps_miss_pct",
@@ -685,6 +740,7 @@ def main() -> int:
         },
         "factset": fs_block,
         "reported_since_factset": since,
+        "season_curves": season_curves(cfg, sym2cik, cal["cache"], today),
         **m,
         "companies": sorted(recs, key=lambda r: r["ticker"]),
     }

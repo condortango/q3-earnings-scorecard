@@ -61,6 +61,11 @@ reported this season:
 - a side-by-side table: FactSet, running estimate, FactSet 5-yr and 10-yr averages
 - season-to-date charts of the EPS beat rate and aggregate EPS surprise: FactSet's weekly points as the
   official series (dark), the daily running estimate as a lighter line, and the averages as dashed lines
+- season vs season: cumulative EPS beats by day since each season's first reporter (count and share of
+  reporters), Q1 2026 and Q2 2026 as overlays against the current season, which extends on every run. Day 0
+  is the first report date under the fiscal-quarter rule, so every line starts at 0,0; the marker on each
+  line is the first big-bank report (`kickoff_tickers`). Earlier seasons are listed in `config.json` under
+  `compare_seasons` and fetched from the Nasdaq calendar once, then cached like everything else.
 - sector table (GICS), top 10 EPS beats and misses, and every reporter (running estimate data)
 - last updated time in Pacific time and source attribution
 

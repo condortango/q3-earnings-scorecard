@@ -34,6 +34,8 @@ td.name { text-align: left; white-space: normal; color: var(--dim); }
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 @media (max-width: 800px) { .two { grid-template-columns: 1fr; } }
 .chart { position: relative; height: 280px; }
+.chart.tall { height: 300px; margin-top: 10px; }
+table.seasons { margin-top: 12px; }
 footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 13px; color: var(--dim); }
 footer p { margin: 6px 0; }
 a { color: #1a4f8b; }
@@ -246,6 +248,18 @@ def render_site(out: dict, hist: list, cfg: dict, docs: Path) -> None:
         "b": {k: (b[k]["value"] if k in b else None) for k in
               ("eps_beat_pct_5y", "eps_beat_pct_10y", "eps_surprise_pct_5y", "eps_surprise_pct_10y")},
     }
+    # season vs season: cumulative beats by day since each season's first reporter
+    curves = [c for c in out.get("season_curves", []) if c.get("day0")]
+    season_colors = ["#6f5fb8", "#c2641a", "#2563a8"]  # Q1, Q2, Q3 (current season darkest)
+    seasons = [{"label": c["label"], "day0": c["day0"], "last": c["last"], "kickoff_day": c["kickoff_day"],
+                "reported": c["reported"], "beats": c["beats"], "beat_pct": c["beat_pct"],
+                "color": season_colors[(i - len(curves)) % len(season_colors)], "current": i == len(curves) - 1}
+               for i, c in enumerate(curves)]
+    season_rows = "".join(
+        f"<tr><td>{esc(s['label'])}</td><td>{sdate(s['day0'])}</td>"
+        f"<td>{'day ' + str(s['kickoff_day']) if s['kickoff_day'] is not None else 'n/a'}</td>"
+        f"<td>{len(s['reported']) - 1}</td><td>{s['reported'][-1]}</td><td>{s['beats'][-1]}</td>"
+        f"<td>{f1(s['beat_pct'][-1])}</td></tr>" for s in seasons)
     has_replay = any(h.get("method") == "replay" for h in hist)
     no_fs_surp = fsh and all(h.get("eps_surprise_pct") is None for h in fsh)
 
@@ -285,6 +299,15 @@ the plus or minus {band:g}% beat / meet / miss split is shown as detail. Expect 
   <div><div class="chart"><canvas id="c2"></canvas></div><p class="dim small">Aggregate EPS surprise.{' FactSet does not state an aggregate surprise this early in the season.' if no_fs_surp else ''}</p></div>
 </div>
 <p class="dim small">Dark points: FactSet, one per weekly report. Light line: running estimate, one point per day{' (days before the first scheduled run were rebuilt from report dates)' if has_replay else ''}. Dashed: FactSet 5-yr and 10-yr averages.</p>
+{f'''<h2>Season vs season: EPS beats by day</h2>
+<p class="dim small">Running estimate, not FactSet. Each season is indexed to day 0 = its first S&amp;P 500 reporter under the
+fiscal-quarter rule (Oracle and Adobe open every season), so all lines start at 0 companies, 0 beats. Calendar days; weekends
+show as flat steps. Top: companies with EPS above consensus (cumulative count). Bottom: that count as a share of reporters so far.
+The marker on each line is the day the first big bank reported.</p>
+<div class="chart tall"><canvas id="c3"></canvas></div>
+<div class="chart tall"><canvas id="c4"></canvas></div>
+<table class="seasons"><tr><th>Season</th><th>Day 0</th><th>Banks kick off</th><th>Days shown</th><th>Reported</th><th>Beats</th><th>Beat rate</th></tr>{season_rows}</table>
+<p class="dim small">Earlier seasons use the same Nasdaq calendar rows (Zacks consensus) and today's S&amp;P 500 membership. {esc(out["season"])} extends with every update; a finished season ends at its last reporter.</p>''' if seasons else ''}
 <h2>By sector (GICS), running estimate</h2>
 <table><tr><th>Sector</th><th>Reported</th><th>Above est.</th><th>Beat (band)</th><th>Miss (band)</th><th>Agg. EPS surprise</th><th>Revenue beat</th></tr>{sec_rows}</table>
 <div class="two">
@@ -327,6 +350,28 @@ if (window.Chart) {{
     official('FactSet (weekly)', S.fs_surp), light('Running estimate (daily)', S.nq_agg),
     ref(S.b.eps_surprise_pct_5y, 'FactSet 5-yr avg'), ref(S.b.eps_surprise_pct_10y, 'FactSet 10-yr avg')
   ].filter(Boolean) }}, options: opts('% vs estimate') }});
+}}
+const SEASONS = {json.dumps(seasons)};
+if (window.Chart && SEASONS.length) {{
+  const maxDay = Math.max(...SEASONS.map(s => s.reported.length - 1));
+  const days = Array.from({{ length: maxDay + 1 }}, (_, i) => i);
+  const fmt = (s, i) => {{ const t = new Date(Date.parse(s.day0 + 'T00:00:00Z') + i * 86400000); return MON[t.getUTCMonth()] + ' ' + t.getUTCDate(); }};
+  const ds = (key) => SEASONS.map(s => ({{
+    label: s.label, data: s[key], borderColor: s.color, backgroundColor: s.color,
+    borderWidth: s.current ? 2.5 : 1.5, pointRadius: s[key].map((_, i) => i === s.kickoff_day ? 4 : 0),
+    pointHoverRadius: 4, pointStyle: 'rectRot', stepped: false, spanGaps: false }}));
+  const sopts = (yl, max) => ({{ responsive: true, maintainAspectRatio: false, animation: false,
+    interaction: {{ mode: 'index', intersect: false }},
+    plugins: {{ legend: {{ labels: {{ boxWidth: 14, font: {{ size: 12 }}, usePointStyle: false }} }},
+      tooltip: {{ callbacks: {{
+        title: it => it.length ? 'Day ' + it[0].dataIndex : '',
+        label: c => {{ const s = SEASONS[c.datasetIndex], i = c.dataIndex;
+          return s.label + ' (' + fmt(s, i) + '): ' + s.beats[i] + ' of ' + s.reported[i] + ' reported'
+            + (s.beat_pct[i] == null ? '' : ', ' + s.beat_pct[i].toFixed(1) + '%') + (i === s.kickoff_day ? ', banks kick off' : ''); }} }} }} }},
+    scales: {{ y: {{ min: 0, max, title: {{ display: true, text: yl }}, grid: {{ color: '#eeeeee' }} }},
+      x: {{ title: {{ display: true, text: 'Days since first reporter' }}, grid: {{ display: false }}, ticks: {{ maxTicksLimit: 12, maxRotation: 0 }} }} }} }});
+  new Chart(document.getElementById('c3'), {{ type: 'line', data: {{ labels: days, datasets: ds('beats') }}, options: sopts('Companies with EPS above consensus', undefined) }});
+  new Chart(document.getElementById('c4'), {{ type: 'line', data: {{ labels: days, datasets: ds('beat_pct') }}, options: sopts('% of reporters above consensus', 100) }});
 }}
 </script>
 </body>

@@ -15,6 +15,21 @@
     "Sep/2025",
     "Oct/2025"
   ],
+  "compare_seasons": [
+    {
+      "label": "Q1 2026",
+      "window_start": "2026-03-01",
+      "window_end": "2026-06-15",
+      "fiscal_quarter_endings": ["Feb/2026", "Mar/2026", "Apr/2026"]
+    },
+    {
+      "label": "Q2 2026",
+      "window_start": "2026-06-01",
+      "window_end": "2026-09-15",
+      "fiscal_quarter_endings": ["May/2026", "Jun/2026", "Jul/2026"]
+    }
+  ],
+  "kickoff_tickers": ["JPM", "C", "GS", "WFC", "BAC", "MS"],
   "meet_band_pct": 1.0,
   "refetch_days_back": 10,
   "min_growth_coverage": 350,
