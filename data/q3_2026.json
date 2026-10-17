@@ -11161,8 +11161,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Oct 17, 2026 4:06 PM PT",
- "generated_at_utc": "2026-10-17T23:06:58+00:00",
+ "generated_at_pt": "Oct 17, 2026 4:13 PM PT",
+ "generated_at_utc": "2026-10-17T23:13:37+00:00",
  "growth": {
   "available": true,
   "coverage": 492,
@@ -11171,7 +11171,7 @@
   "reporters_pct": 50.8,
   "value_pct": 25.7
  },
- "last_success_pt": "Oct 17, 2026 4:06 PM PT",
+ "last_success_pt": "Oct 17, 2026 4:13 PM PT",
  "reported": 45,
  "reported_since_factset": 5,
  "revenue": {
@@ -11402,7 +11402,7 @@
    "factset": [
     {
      "date": "2026-03-06",
-     "day": 3,
+     "day": 0,
      "growth_pct": 11.5,
      "kind": "estimated",
      "reported_pct": null,
@@ -11410,7 +11410,7 @@
     },
     {
      "date": "2026-03-12",
-     "day": 9,
+     "day": 6,
      "growth_pct": 11.6,
      "kind": "estimated",
      "reported_pct": null,
@@ -11418,7 +11418,7 @@
     },
     {
      "date": "2026-03-19",
-     "day": 16,
+     "day": 13,
      "growth_pct": 12.5,
      "kind": "estimated",
      "reported_pct": null,
@@ -11426,7 +11426,7 @@
     },
     {
      "date": "2026-03-27",
-     "day": 24,
+     "day": 21,
      "growth_pct": 13.0,
      "kind": "estimated",
      "reported_pct": null,
@@ -11434,7 +11434,7 @@
     },
     {
      "date": "2026-04-02",
-     "day": 30,
+     "day": 27,
      "growth_pct": 13.2,
      "kind": "estimated",
      "reported_pct": null,
@@ -11442,7 +11442,7 @@
     },
     {
      "date": "2026-04-10",
-     "day": 38,
+     "day": 35,
      "growth_pct": 12.6,
      "kind": "estimated",
      "reported_pct": 4.0,
@@ -11450,7 +11450,7 @@
     },
     {
      "date": "2026-04-17",
-     "day": 45,
+     "day": 42,
      "growth_pct": 13.2,
      "kind": "blended",
      "reported_pct": 10.0,
@@ -11458,7 +11458,7 @@
     },
     {
      "date": "2026-04-24",
-     "day": 52,
+     "day": 49,
      "growth_pct": 15.1,
      "kind": "blended",
      "reported_pct": 28.0,
@@ -11466,7 +11466,7 @@
     },
     {
      "date": "2026-05-01",
-     "day": 59,
+     "day": 56,
      "growth_pct": 27.1,
      "kind": "blended",
      "reported_pct": 63.0,
@@ -11474,7 +11474,7 @@
     },
     {
      "date": "2026-05-08",
-     "day": 66,
+     "day": 63,
      "growth_pct": 27.7,
      "kind": "blended",
      "reported_pct": 89.0,
@@ -11482,7 +11482,7 @@
     },
     {
      "date": "2026-05-15",
-     "day": 73,
+     "day": 70,
      "growth_pct": 27.7,
      "kind": "blended",
      "reported_pct": 91.0,
@@ -11490,7 +11490,7 @@
     },
     {
      "date": "2026-05-21",
-     "day": 79,
+     "day": 76,
      "growth_pct": 28.4,
      "kind": "blended",
      "reported_pct": 94.0,
@@ -11498,7 +11498,7 @@
     },
     {
      "date": "2026-05-29",
-     "day": 87,
+     "day": 84,
      "growth_pct": 28.6,
      "kind": "blended",
      "reported_pct": 97.0,
@@ -11507,6 +11507,8 @@
    ],
    "factset_qend_date": "2026-03-31",
    "factset_qend_pct": 13.1,
+   "fs_day0": "2026-03-06",
+   "fs_offset": -3,
    "growth_ex_pct": [
     11.7,
     11.7,
@@ -12349,7 +12351,7 @@
    "factset": [
     {
      "date": "2026-06-05",
-     "day": -5,
+     "day": 0,
      "growth_pct": 21.7,
      "kind": "estimated",
      "reported_pct": 0.4,
@@ -12357,7 +12359,7 @@
     },
     {
      "date": "2026-06-12",
-     "day": 2,
+     "day": 7,
      "growth_pct": 21.9,
      "kind": "estimated",
      "reported_pct": 1.0,
@@ -12365,7 +12367,7 @@
     },
     {
      "date": "2026-06-18",
-     "day": 8,
+     "day": 13,
      "growth_pct": 22.0,
      "kind": "estimated",
      "reported_pct": 1.4,
@@ -12373,7 +12375,7 @@
     },
     {
      "date": "2026-06-26",
-     "day": 16,
+     "day": 21,
      "growth_pct": 23.1,
      "kind": "estimated",
      "reported_pct": null,
@@ -12381,7 +12383,7 @@
     },
     {
      "date": "2026-07-02",
-     "day": 22,
+     "day": 27,
      "growth_pct": 23.3,
      "kind": "estimated",
      "reported_pct": null,
@@ -12389,7 +12391,7 @@
     },
     {
      "date": "2026-07-10",
-     "day": 30,
+     "day": 35,
      "growth_pct": 23.6,
      "kind": "estimated",
      "reported_pct": 4.0,
@@ -12397,7 +12399,7 @@
     },
     {
      "date": "2026-07-17",
-     "day": 37,
+     "day": 42,
      "growth_pct": 24.7,
      "kind": "blended",
      "reported_pct": 10.0,
@@ -12405,7 +12407,7 @@
     },
     {
      "date": "2026-07-24",
-     "day": 44,
+     "day": 49,
      "growth_pct": 37.9,
      "kind": "blended",
      "reported_pct": 27.0,
@@ -12413,7 +12415,7 @@
     },
     {
      "date": "2026-07-31",
-     "day": 51,
+     "day": 56,
      "growth_pct": 47.4,
      "kind": "blended",
      "reported_pct": 61.0,
@@ -12421,7 +12423,7 @@
     },
     {
      "date": "2026-08-07",
-     "day": 58,
+     "day": 63,
      "growth_pct": 50.4,
      "kind": "blended",
      "reported_pct": 88.0,
@@ -12429,7 +12431,7 @@
     },
     {
      "date": "2026-08-28",
-     "day": 79,
+     "day": 84,
      "growth_pct": 52.0,
      "kind": "blended",
      "reported_pct": 97.0,
@@ -12438,6 +12440,8 @@
    ],
    "factset_qend_date": "2026-06-30",
    "factset_qend_pct": 23.1,
+   "fs_day0": "2026-06-05",
+   "fs_offset": 5,
    "growth_ex_pct": [
     25.1,
     25.1,
@@ -13152,7 +13156,7 @@
    "factset": [
     {
      "date": "2026-09-11",
-     "day": 1,
+     "day": 0,
      "growth_pct": 28.7,
      "kind": "estimated",
      "reported_pct": 0.4,
@@ -13160,7 +13164,7 @@
     },
     {
      "date": "2026-09-18",
-     "day": 8,
+     "day": 7,
      "growth_pct": 28.9,
      "kind": "estimated",
      "reported_pct": 0.6,
@@ -13168,7 +13172,7 @@
     },
     {
      "date": "2026-09-25",
-     "day": 15,
+     "day": 14,
      "growth_pct": 29.1,
      "kind": "estimated",
      "reported_pct": 1.8,
@@ -13176,7 +13180,7 @@
     },
     {
      "date": "2026-10-02",
-     "day": 22,
+     "day": 21,
      "growth_pct": 29.5,
      "kind": "estimated",
      "reported_pct": 3.2,
@@ -13184,7 +13188,7 @@
     },
     {
      "date": "2026-10-09",
-     "day": 29,
+     "day": 28,
      "growth_pct": 29.6,
      "kind": "estimated",
      "reported_pct": 3.8,
@@ -13192,7 +13196,7 @@
     },
     {
      "date": "2026-10-16",
-     "day": 36,
+     "day": 35,
      "growth_pct": 29.0,
      "kind": "blended",
      "reported_pct": 9.0,
@@ -13201,6 +13205,8 @@
    ],
    "factset_qend_date": "2026-09-30",
    "factset_qend_pct": 29.2,
+   "fs_day0": "2026-09-11",
+   "fs_offset": -1,
    "growth_ex_pct": [
     26.9,
     26.9,
