@@ -29780,11 +29780,11 @@
   ]
  },
  "2026-10-12": {
-  "fetched_at": "2026-10-20T18:46:25+00:00",
+  "fetched_at": "2026-10-21T06:05:55+00:00",
   "rows": []
  },
  "2026-10-13": {
-  "fetched_at": "2026-10-20T18:46:29+00:00",
+  "fetched_at": "2026-10-21T06:05:58+00:00",
   "rows": [
    {
     "eps": "$5.75",
@@ -29866,7 +29866,7 @@
   ]
  },
  "2026-10-14": {
-  "fetched_at": "2026-10-20T18:46:32+00:00",
+  "fetched_at": "2026-10-21T06:06:01+00:00",
   "rows": [
    {
     "eps": "$1.08",
@@ -29937,7 +29937,7 @@
   ]
  },
  "2026-10-15": {
-  "fetched_at": "2026-10-20T18:46:33+00:00",
+  "fetched_at": "2026-10-21T06:06:02+00:00",
   "rows": [
    {
     "eps": "$1.69",
@@ -30030,7 +30030,7 @@
   ]
  },
  "2026-10-16": {
-  "fetched_at": "2026-10-20T18:46:37+00:00",
+  "fetched_at": "2026-10-21T06:06:05+00:00",
   "rows": [
    {
     "eps": "$9.18",
@@ -30090,7 +30090,7 @@
   ]
  },
  "2026-10-19": {
-  "fetched_at": "2026-10-20T18:46:39+00:00",
+  "fetched_at": "2026-10-21T06:06:09+00:00",
   "rows": [
    {
     "eps": "$1.13",
@@ -30128,210 +30128,210 @@
   ]
  },
  "2026-10-20": {
-  "fetched_at": "2026-10-20T18:46:43+00:00",
+  "fetched_at": "2026-10-21T06:06:10+00:00",
   "rows": [
    {
+    "eps": "$1.66",
     "epsForecast": "$2.02",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.66",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$322,972,451,000",
     "name": "GE Aerospace",
     "noOfEsts": "7",
+    "surprise": "N/A",
     "symbol": "GE",
     "time": "time-pre-market"
    },
    {
+    "eps": "$0.59",
     "epsForecast": "$0.82",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.59",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$290,851,193,000",
     "name": "Netflix, Inc.",
     "noOfEsts": "13",
+    "surprise": "N/A",
     "symbol": "NFLX",
     "time": "time-after-hours"
    },
    {
+    "eps": "$1.70",
     "epsForecast": "$1.78",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.70",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$258,917,810,000",
     "name": "RTX Corporation",
     "noOfEsts": "5",
+    "surprise": "N/A",
     "symbol": "RTX",
     "time": "time-pre-market"
    },
    {
+    "eps": "$1.96",
     "epsForecast": "$2.13",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.96",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$153,032,983,000",
     "name": "Intuitive Surgical, Inc.",
     "noOfEsts": "8",
+    "surprise": "N/A",
     "symbol": "ISRG",
     "time": "time-after-hours"
    },
    {
+    "eps": "$7.49",
     "epsForecast": "$6.53",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$7.49",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$137,448,915,000",
     "name": "Chubb Limited",
     "noOfEsts": "10",
+    "surprise": "N/A",
     "symbol": "CB",
     "time": "time-after-hours"
    },
    {
+    "eps": "$5.95",
     "epsForecast": "$5.45",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$5.95",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$122,592,674,000",
     "name": "Capital One Financial Corporation",
     "noOfEsts": "8",
+    "surprise": "N/A",
     "symbol": "COF",
     "time": "time-after-hours"
    },
    {
+    "eps": "$2.19",
     "epsForecast": "$2.41",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.19",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$83,552,190,000",
     "name": "3M Company",
     "noOfEsts": "5",
+    "surprise": "N/A",
     "symbol": "MMM",
     "time": "time-pre-market"
    },
    {
+    "eps": "$2.80",
     "epsForecast": "$3.55",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.80",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$72,609,112,000",
     "name": "General Motors Company",
     "noOfEsts": "6",
+    "surprise": "N/A",
     "symbol": "GM",
     "time": "time-pre-market"
    },
    {
+    "eps": "$7.67",
     "epsForecast": "$7.22",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$7.67",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$72,544,485,000",
     "name": "Northrop Grumman Corporation",
     "noOfEsts": "6",
+    "surprise": "N/A",
     "symbol": "NOC",
     "time": "time-pre-market"
    },
    {
+    "eps": "$4.47",
     "epsForecast": "$4.98",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$4.47",
-    "lastYearRptDt": "10/28/2025",
     "marketCap": "$40,965,722,000",
     "name": "MSCI Inc.",
     "noOfEsts": "6",
+    "surprise": "N/A",
     "symbol": "MSCI",
     "time": "time-pre-market"
    },
    {
+    "eps": "$2.78",
     "epsForecast": "$2.60",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.78",
-    "lastYearRptDt": "10/15/2025",
     "marketCap": "$31,030,208,500",
     "name": "United Airlines Holdings, Inc.",
     "noOfEsts": "7",
+    "surprise": "N/A",
     "symbol": "UAL",
     "time": "time-after-hours"
    },
    {
+    "eps": "$2.86",
     "epsForecast": "$2.48",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.86",
-    "lastYearRptDt": "10/15/2025",
     "marketCap": "$27,621,552,100",
     "name": "Synchrony Financial",
     "noOfEsts": "6",
+    "surprise": "N/A",
     "symbol": "SYF",
     "time": "time-pre-market"
    },
    {
+    "eps": "$0.58",
     "epsForecast": "$0.58",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.58",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$27,476,639,700",
     "name": "Halliburton Company",
     "noOfEsts": "9",
+    "surprise": "N/A",
     "symbol": "HAL",
     "time": "time-pre-market"
    },
    {
+    "eps": "$2.24",
     "epsForecast": "$2.68",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.24",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$21,794,043,900",
     "name": "Omnicom Group Inc.",
     "noOfEsts": "3",
+    "surprise": "N/A",
     "symbol": "OMC",
     "time": "time-not-supplied"
    },
    {
+    "eps": "$0.41",
     "epsForecast": "$0.46",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.41",
-    "lastYearRptDt": "10/16/2025",
     "marketCap": "$21,257,201,700",
     "name": "KeyCorp",
     "noOfEsts": "7",
+    "surprise": "N/A",
     "symbol": "KEY",
     "time": "time-pre-market"
    },
    {
+    "eps": "$2.04",
     "epsForecast": "$2.19",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.04",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$18,629,580,800",
     "name": "Equifax, Inc.",
     "noOfEsts": "9",
+    "surprise": "N/A",
     "symbol": "EFX",
     "time": "time-pre-market"
    },
    {
+    "eps": "$1.98",
     "epsForecast": "$2.09",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.98",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$17,946,583,000",
     "name": "Genuine Parts Company",
     "noOfEsts": "5",
+    "surprise": "N/A",
     "symbol": "GPC",
     "time": "time-pre-market"
    },
    {
+    "eps": "$1.68",
     "epsForecast": "$1.86",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.68",
-    "lastYearRptDt": "10/23/2025",
     "marketCap": "$13,891,469,300",
     "name": "Hasbro, Inc.",
     "noOfEsts": "5",
+    "surprise": "N/A",
     "symbol": "HAS",
     "time": "time-pre-market"
    }
   ]
  },
  "2026-10-21": {
-  "fetched_at": "2026-10-20T18:46:46+00:00",
+  "fetched_at": "2026-10-21T06:06:13+00:00",
   "rows": [
    {
     "epsForecast": "$6.54",
@@ -30622,7 +30622,7 @@
   ]
  },
  "2026-10-22": {
-  "fetched_at": "2026-10-20T18:46:49+00:00",
+  "fetched_at": "2026-10-21T06:06:15+00:00",
   "rows": [
    {
     "epsForecast": "$1.89",
@@ -30913,7 +30913,7 @@
   ]
  },
  "2026-10-23": {
-  "fetched_at": "2026-10-20T18:46:53+00:00",
+  "fetched_at": "2026-10-21T06:06:16+00:00",
   "rows": [
    {
     "epsForecast": "$4.47",
@@ -30940,7 +30940,7 @@
   ]
  },
  "2026-10-26": {
-  "fetched_at": "2026-10-20T18:46:55+00:00",
+  "fetched_at": "2026-10-21T06:06:19+00:00",
   "rows": [
    {
     "epsForecast": "$1.27",
@@ -31055,7 +31055,7 @@
   ]
  },
  "2026-10-27": {
-  "fetched_at": "2026-10-20T18:46:57+00:00",
+  "fetched_at": "2026-10-21T06:06:22+00:00",
   "rows": [
    {
     "epsForecast": "$3.43",
@@ -31555,7 +31555,7 @@
   ]
  },
  "2026-10-28": {
-  "fetched_at": "2026-10-20T18:47:00+00:00",
+  "fetched_at": "2026-10-21T06:06:24+00:00",
   "rows": [
    {
     "epsForecast": "$2.94",
@@ -32099,7 +32099,7 @@
   ]
  },
  "2026-10-29": {
-  "fetched_at": "2026-10-20T18:47:03+00:00",
+  "fetched_at": "2026-10-21T06:06:26+00:00",
   "rows": [
    {
     "epsForecast": "$2.01",
@@ -32786,7 +32786,7 @@
   ]
  },
  "2026-10-30": {
-  "fetched_at": "2026-10-20T18:47:07+00:00",
+  "fetched_at": "2026-10-21T06:06:27+00:00",
   "rows": [
    {
     "epsForecast": "$3.92",
@@ -32923,7 +32923,7 @@
   ]
  },
  "2026-11-02": {
-  "fetched_at": "2026-10-20T18:47:09+00:00",
+  "fetched_at": "2026-10-21T06:06:28+00:00",
   "rows": [
    {
     "epsForecast": "$2",
@@ -33137,7 +33137,7 @@
   ]
  },
  "2026-11-03": {
-  "fetched_at": "2026-10-20T18:47:12+00:00",
+  "fetched_at": "2026-10-21T06:06:30+00:00",
   "rows": [
    {
     "epsForecast": "$1.67",
@@ -33604,7 +33604,7 @@
   ]
  },
  "2026-11-04": {
-  "fetched_at": "2026-10-20T18:47:16+00:00",
+  "fetched_at": "2026-10-21T06:06:33+00:00",
   "rows": [
    {
     "epsForecast": "$1.18",
@@ -34104,7 +34104,7 @@
   ]
  },
  "2026-11-05": {
-  "fetched_at": "2026-10-20T18:47:18+00:00",
+  "fetched_at": "2026-10-21T06:06:36+00:00",
   "rows": [
    {
     "epsForecast": "$2.86",
@@ -34538,7 +34538,7 @@
   ]
  },
  "2026-11-06": {
-  "fetched_at": "2026-10-20T18:47:21+00:00",
+  "fetched_at": "2026-10-21T06:06:37+00:00",
   "rows": [
    {
     "epsForecast": "$5.91",
@@ -34620,7 +34620,7 @@
   ]
  },
  "2026-11-09": {
-  "fetched_at": "2026-10-20T18:47:24+00:00",
+  "fetched_at": "2026-10-21T06:06:40+00:00",
   "rows": [
    {
     "epsForecast": "$1.44",
@@ -34658,11 +34658,11 @@
   ]
  },
  "2026-11-10": {
-  "fetched_at": "2026-10-20T18:47:25+00:00",
+  "fetched_at": "2026-10-21T06:06:42+00:00",
   "rows": []
  },
  "2026-11-11": {
-  "fetched_at": "2026-10-20T18:47:27+00:00",
+  "fetched_at": "2026-10-21T06:06:43+00:00",
   "rows": [
    {
     "epsForecast": "$1.15",
@@ -34700,7 +34700,7 @@
   ]
  },
  "2026-11-12": {
-  "fetched_at": "2026-10-20T18:47:29+00:00",
+  "fetched_at": "2026-10-21T06:06:47+00:00",
   "rows": [
    {
     "epsForecast": "$4.06",
@@ -34716,11 +34716,11 @@
   ]
  },
  "2026-11-13": {
-  "fetched_at": "2026-10-20T18:47:31+00:00",
+  "fetched_at": "2026-10-21T06:06:48+00:00",
   "rows": []
  },
  "2026-11-16": {
-  "fetched_at": "2026-10-20T18:47:34+00:00",
+  "fetched_at": "2026-10-21T06:06:51+00:00",
   "rows": [
    {
     "epsForecast": "$0.65",
@@ -34736,7 +34736,7 @@
   ]
  },
  "2026-11-17": {
-  "fetched_at": "2026-10-20T18:47:36+00:00",
+  "fetched_at": "2026-10-21T06:06:53+00:00",
   "rows": [
    {
     "epsForecast": "$3.86",
@@ -34774,7 +34774,7 @@
   ]
  },
  "2026-11-18": {
-  "fetched_at": "2026-10-20T18:47:39+00:00",
+  "fetched_at": "2026-10-21T06:06:55+00:00",
   "rows": [
    {
     "epsForecast": "$2.49",
@@ -34845,7 +34845,7 @@
   ]
  },
  "2026-11-19": {
-  "fetched_at": "2026-10-20T18:47:42+00:00",
+  "fetched_at": "2026-10-21T06:06:58+00:00",
   "rows": [
    {
     "epsForecast": "$0.63",
@@ -34916,11 +34916,11 @@
   ]
  },
  "2026-11-20": {
-  "fetched_at": "2026-10-20T18:47:43+00:00",
+  "fetched_at": "2026-10-21T06:07:01+00:00",
   "rows": []
  },
  "2026-11-23": {
-  "fetched_at": "2026-10-20T18:47:47+00:00",
+  "fetched_at": "2026-10-21T06:07:03+00:00",
   "rows": [
    {
     "epsForecast": "$3.09",
@@ -34947,7 +34947,7 @@
   ]
  },
  "2026-11-24": {
-  "fetched_at": "2026-10-20T18:47:50+00:00",
+  "fetched_at": "2026-10-21T06:07:06+00:00",
   "rows": [
    {
     "epsForecast": "$6.41",
@@ -35040,7 +35040,7 @@
   ]
  },
  "2026-11-25": {
-  "fetched_at": "2026-10-20T18:47:54+00:00",
+  "fetched_at": "2026-10-21T06:07:07+00:00",
   "rows": [
    {
     "epsForecast": "$4.07",
@@ -35056,19 +35056,19 @@
   ]
  },
  "2026-11-26": {
-  "fetched_at": "2026-10-20T18:47:56+00:00",
+  "fetched_at": "2026-10-21T06:07:11+00:00",
   "rows": []
  },
  "2026-11-27": {
-  "fetched_at": "2026-10-20T18:47:57+00:00",
+  "fetched_at": "2026-10-21T06:07:13+00:00",
   "rows": []
  },
  "2026-11-30": {
-  "fetched_at": "2026-10-20T18:48:01+00:00",
+  "fetched_at": "2026-10-21T06:07:16+00:00",
   "rows": []
  },
  "2026-12-01": {
-  "fetched_at": "2026-10-20T18:48:04+00:00",
+  "fetched_at": "2026-10-21T06:07:19+00:00",
   "rows": [
    {
     "epsForecast": "$0",
@@ -35106,7 +35106,7 @@
   ]
  },
  "2026-12-02": {
-  "fetched_at": "2026-10-20T18:48:06+00:00",
+  "fetched_at": "2026-10-21T06:07:21+00:00",
   "rows": [
    {
     "epsForecast": "$2.41",
@@ -35133,7 +35133,7 @@
   ]
  },
  "2026-12-03": {
-  "fetched_at": "2026-10-20T18:48:07+00:00",
+  "fetched_at": "2026-10-21T06:07:25+00:00",
   "rows": [
    {
     "epsForecast": "$1.16",
@@ -35215,15 +35215,15 @@
   ]
  },
  "2026-12-04": {
-  "fetched_at": "2026-10-20T18:48:10+00:00",
+  "fetched_at": "2026-10-21T06:07:28+00:00",
   "rows": []
  },
  "2026-12-07": {
-  "fetched_at": "2026-10-20T18:48:12+00:00",
+  "fetched_at": "2026-10-21T06:07:29+00:00",
   "rows": []
  },
  "2026-12-08": {
-  "fetched_at": "2026-10-20T18:48:14+00:00",
+  "fetched_at": "2026-10-21T06:07:32+00:00",
   "rows": [
    {
     "epsForecast": "$36.41",
@@ -35250,7 +35250,7 @@
   ]
  },
  "2026-12-09": {
-  "fetched_at": "2026-10-20T18:48:17+00:00",
+  "fetched_at": "2026-10-21T06:07:35+00:00",
   "rows": [
    {
     "epsForecast": "$1.57",
@@ -35299,7 +35299,7 @@
   ]
  },
  "2026-12-10": {
-  "fetched_at": "2026-10-20T18:48:19+00:00",
+  "fetched_at": "2026-10-21T06:07:37+00:00",
   "rows": [
    {
     "epsForecast": "$3.45",
@@ -35348,15 +35348,15 @@
   ]
  },
  "2026-12-11": {
-  "fetched_at": "2026-10-20T18:48:22+00:00",
+  "fetched_at": "2026-10-21T06:07:40+00:00",
   "rows": []
  },
  "2026-12-14": {
-  "fetched_at": "2026-10-20T18:48:24+00:00",
+  "fetched_at": "2026-10-21T06:07:41+00:00",
   "rows": []
  },
  "2026-12-15": {
-  "fetched_at": "2026-10-20T18:48:27+00:00",
+  "fetched_at": "2026-10-21T06:07:43+00:00",
   "rows": []
  }
 }
