@@ -85,7 +85,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 1.43,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 1.3,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.3,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -1552,9 +1556,9 @@
    "fiscal_quarter": "Sep/2026",
    "n_ests": 10,
    "name": "Chubb Limited",
-   "rev_actual": 16812000000.0,
+   "rev_actual": 13183000000.0,
    "rev_est": 13855102226.0,
-   "rev_surprise_pct": 21.34,
+   "rev_surprise_pct": -4.85,
    "sector": "Financials",
    "shares": 385799859,
    "ticker": "CB",
@@ -1605,7 +1609,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 1.16,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 1.12,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.12,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -1925,7 +1933,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 2.98,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 2.68,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.68,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -2365,7 +2377,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 0.52,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 0.44,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.44,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -2705,7 +2721,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 1.92,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 1.89,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.89,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3145,7 +3165,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 4.66,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 6.03,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 6.03,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3972,9 +3996,9 @@
    "fiscal_quarter": "Sep/2026",
    "n_ests": 7,
    "name": "GE Aerospace",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 13285000000.0,
+   "rev_est": 13260144511.0,
+   "rev_surprise_pct": 0.19,
    "sector": "Industrials",
    "shares": 1037562513,
    "ticker": "GE",
@@ -4085,7 +4109,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 4.87,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 4.81,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 4.81,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -4192,7 +4220,7 @@
    "fiscal_quarter": "Sep/2026",
    "n_ests": 5,
    "name": "Genuine Parts Company",
-   "rev_actual": 6521310000.0,
+   "rev_actual": 6521308000.0,
    "rev_est": 6588469036.0,
    "rev_surprise_pct": -1.02,
    "sector": "Consumer Discretionary",
@@ -4705,7 +4733,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 2.88,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 2.65,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.65,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5365,7 +5397,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 0.33,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 0.29,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.29,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5685,7 +5721,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 2.17,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 1.26,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.26,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5725,7 +5765,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 0.61,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 0.11,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.11,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5745,7 +5789,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 0.72,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 0.78,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.78,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5945,7 +5993,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 4.25,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 3.92,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 3.92,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6025,7 +6077,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 4.98,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 7.25,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 7.25,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6505,7 +6561,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 1.2,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 1.13,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.13,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6552,7 +6612,7 @@
    "fiscal_quarter": "Sep/2026",
    "n_ests": 13,
    "name": "Netflix",
-   "rev_actual": 12874180000.0,
+   "rev_actual": 12874176000.0,
    "rev_est": 13130968612.0,
    "rev_surprise_pct": -1.96,
    "sector": "Communication Services",
@@ -6705,7 +6765,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 2.86,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 2.29,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.29,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -7265,7 +7329,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 2.95,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 2.73,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.73,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -7325,7 +7393,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 2.3,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 2.24,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.24,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -7771,7 +7843,7 @@
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 5,
-   "name": "ResMed|",
+   "name": "ResMed",
    "rev_actual": null,
    "rev_est": null,
    "rev_surprise_pct": null,
@@ -7805,7 +7877,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 0.34,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 0.35,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.35,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8465,7 +8541,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 0.61,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 0.54,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.54,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8505,7 +8585,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 6.15,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 5.57,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 5.57,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8665,7 +8749,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 6.4,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 5.79,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 5.79,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8845,7 +8933,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 0.22,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 0.37,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.37,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8945,7 +9037,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 2.4,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 1.48,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.48,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -9013,8 +9109,8 @@
    "n_ests": 7,
    "name": "United Airlines Holdings",
    "rev_actual": 17875000000.0,
-   "rev_est": 18069216948.0,
-   "rev_surprise_pct": -1.07,
+   "rev_est": 18080768823.0,
+   "rev_surprise_pct": -1.14,
    "sector": "Industrials",
    "shares": 324583772,
    "ticker": "UAL",
@@ -9165,7 +9261,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 13.83,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 11.7,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 11.7,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -9525,7 +9625,11 @@
    "date": "2026-10-21",
    "eps_actual": null,
    "eps_est": 2.72,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-21",
+    "eps": 2.32,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.32,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -11161,8 +11265,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Oct 21, 2026 11:58 AM PT",
- "generated_at_utc": "2026-10-21T18:58:45+00:00",
+ "generated_at_pt": "Oct 21, 2026 11:09 PM PT",
+ "generated_at_utc": "2026-10-22T06:09:15+00:00",
  "growth": {
   "available": true,
   "coverage": 492,
@@ -11171,23 +11275,23 @@
   "reporters_pct": 44.6,
   "value_pct": 25.7
  },
- "last_success_pt": "Oct 21, 2026 11:58 AM PT",
+ "last_success_pt": "Oct 21, 2026 11:09 PM PT",
  "reported": 65,
  "reported_since_factset": 25,
  "revenue": {
   "above": 19,
-  "above_pct": 29.7,
+  "above_pct": 29.2,
   "agg_method": "sum of values",
-  "agg_surprise_pct": 0.12,
+  "agg_surprise_pct": -0.28,
   "available": true,
-  "beat": 16,
-  "beat_pct": 25.0,
-  "median_surprise_pct": -1.0,
-  "meet": 16,
-  "meet_pct": 25.0,
-  "miss": 32,
-  "miss_pct": 50.0,
-  "n": 64,
+  "beat": 15,
+  "beat_pct": 23.1,
+  "median_surprise_pct": -1.02,
+  "meet": 17,
+  "meet_pct": 26.2,
+  "miss": 33,
+  "miss_pct": 50.8,
+  "n": 65,
   "status": "ok"
  },
  "scheduled": 434,
@@ -13112,6 +13216,7 @@
     82.2,
     81.2,
     83.1,
+    83.1,
     83.1
    ],
    "beats": [
@@ -13155,6 +13260,7 @@
     37,
     37,
     39,
+    54,
     54,
     54
    ],
@@ -13257,6 +13363,7 @@
     27.3,
     27.4,
     27.9,
+    27.9,
     27.9
    ],
    "growth_n": 492,
@@ -13302,12 +13409,13 @@
     25.2,
     25.2,
     25.7,
+    25.7,
     25.7
    ],
    "growth_universe": 497,
    "kickoff_day": 33,
    "label": "Q3 2026",
-   "last": "2026-10-21",
+   "last": "2026-10-22",
    "reported": [
     2,
     2,
@@ -13349,6 +13457,7 @@
     45,
     45,
     48,
+    65,
     65,
     65
    ],
@@ -13393,6 +13502,7 @@
     50.8,
     50.8,
     50.5,
+    44.6,
     44.6,
     44.6
    ],
@@ -13489,6 +13599,7 @@
      "pp": 0.12,
      "t": "COF"
     },
+    null,
     null
    ]
   }
@@ -13558,9 +13669,9 @@
    "eps_miss_pct": 7.1,
    "eps_n": 28,
    "reported": 28,
-   "rev_above_pct": 17.9,
-   "rev_agg_surprise_pct": 0.07,
-   "rev_beat_pct": 17.9,
+   "rev_above_pct": 14.3,
+   "rev_agg_surprise_pct": -1.1,
+   "rev_beat_pct": 14.3,
    "rev_n": 28,
    "sector": "Financials"
   },
@@ -13586,10 +13697,10 @@
    "eps_miss_pct": 18.2,
    "eps_n": 11,
    "reported": 11,
-   "rev_above_pct": 20.0,
-   "rev_agg_surprise_pct": -0.1,
-   "rev_beat_pct": 20.0,
-   "rev_n": 10,
+   "rev_above_pct": 27.3,
+   "rev_agg_surprise_pct": -0.07,
+   "rev_beat_pct": 18.2,
+   "rev_n": 11,
    "sector": "Industrials"
   },
   {
@@ -13725,7 +13836,7 @@
    "eps_est": 6.53,
    "eps_surprise_pct": 17.3,
    "name": "Chubb Limited",
-   "rev_surprise_pct": 21.34,
+   "rev_surprise_pct": -4.85,
    "sector": "Financials",
    "ticker": "CB"
   },
@@ -13817,7 +13928,7 @@
    "eps_est": 2.6,
    "eps_surprise_pct": -2.31,
    "name": "United Airlines Holdings",
-   "rev_surprise_pct": -1.07,
+   "rev_surprise_pct": -1.14,
    "sector": "Industrials",
    "ticker": "UAL"
   },

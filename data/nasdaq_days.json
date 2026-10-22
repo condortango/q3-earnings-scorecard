@@ -29780,11 +29780,11 @@
   ]
  },
  "2026-10-12": {
-  "fetched_at": "2026-10-21T18:58:49+00:00",
+  "fetched_at": "2026-10-22T06:09:21+00:00",
   "rows": []
  },
  "2026-10-13": {
-  "fetched_at": "2026-10-21T18:58:52+00:00",
+  "fetched_at": "2026-10-22T06:09:22+00:00",
   "rows": [
    {
     "eps": "$5.75",
@@ -29866,7 +29866,7 @@
   ]
  },
  "2026-10-14": {
-  "fetched_at": "2026-10-21T18:58:55+00:00",
+  "fetched_at": "2026-10-22T06:09:25+00:00",
   "rows": [
    {
     "eps": "$1.08",
@@ -29937,7 +29937,7 @@
   ]
  },
  "2026-10-15": {
-  "fetched_at": "2026-10-21T18:58:58+00:00",
+  "fetched_at": "2026-10-22T06:09:29+00:00",
   "rows": [
    {
     "eps": "$1.69",
@@ -30030,7 +30030,7 @@
   ]
  },
  "2026-10-16": {
-  "fetched_at": "2026-10-21T18:58:59+00:00",
+  "fetched_at": "2026-10-22T06:09:30+00:00",
   "rows": [
    {
     "eps": "$9.18",
@@ -30090,7 +30090,7 @@
   ]
  },
  "2026-10-19": {
-  "fetched_at": "2026-10-21T18:59:01+00:00",
+  "fetched_at": "2026-10-22T06:09:32+00:00",
   "rows": [
    {
     "eps": "$1.13",
@@ -30128,7 +30128,7 @@
   ]
  },
  "2026-10-20": {
-  "fetched_at": "2026-10-21T18:59:03+00:00",
+  "fetched_at": "2026-10-22T06:09:33+00:00",
   "rows": [
    {
     "eps": "$2.25",
@@ -30320,298 +30320,298 @@
   ]
  },
  "2026-10-21": {
-  "fetched_at": "2026-10-21T18:59:07+00:00",
+  "fetched_at": "2026-10-22T06:09:35+00:00",
   "rows": [
    {
+    "eps": "$7.25",
     "epsForecast": "$4.98",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$7.25",
-    "lastYearRptDt": "10/29/2025",
     "marketCap": "$1,768,606,140,000",
     "name": "Meta Platforms, Inc.",
     "noOfEsts": "12",
+    "surprise": "N/A",
     "symbol": "META",
     "time": "time-after-hours"
    },
    {
+    "eps": "$0.37",
     "epsForecast": "$0.22",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.37",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$1,477,144,350,000",
     "name": "Tesla, Inc. ",
     "noOfEsts": "10",
+    "surprise": "N/A",
     "symbol": "TSLA",
     "time": "time-after-hours"
    },
    {
+    "eps": "$1.26",
     "epsForecast": "$2.17",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.26",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$329,687,761,000",
     "name": "Lam Research Corporation",
     "noOfEsts": "9",
+    "surprise": "N/A",
     "symbol": "LRCX",
     "time": "time-after-hours"
    },
    {
+    "eps": "$2.24",
     "epsForecast": "$2.30",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.24",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$311,566,828,000",
     "name": "Philip Morris International Inc",
     "noOfEsts": "4",
+    "surprise": "N/A",
     "symbol": "PM",
     "time": "time-pre-market"
    },
    {
+    "eps": "$5.79",
     "epsForecast": "$6.40",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$5.79",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$254,153,196,000",
     "name": "Thermo Fisher Scientific Inc",
     "noOfEsts": "8",
+    "surprise": "N/A",
     "symbol": "TMO",
     "time": "time-pre-market"
    },
    {
+    "eps": "$1.48",
     "epsForecast": "$2.40",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.48",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$253,681,943,000",
     "name": "Texas Instruments Incorporated",
     "noOfEsts": "9",
+    "surprise": "N/A",
     "symbol": "TXN",
     "time": "time-after-hours"
    },
    {
+    "eps": "$2.65",
     "epsForecast": "$2.88",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.65",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$227,921,150,000",
     "name": "International Business Machines Corporation",
     "noOfEsts": "6",
+    "surprise": "N/A",
     "symbol": "IBM",
     "time": "time-after-hours"
    },
    {
+    "eps": "$1.30",
     "epsForecast": "$1.43",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.30",
-    "lastYearRptDt": "10/15/2025",
     "marketCap": "$177,277,764,000",
     "name": "Abbott Laboratories",
     "noOfEsts": "8",
+    "surprise": "N/A",
     "symbol": "ABT",
     "time": "time-pre-market"
    },
    {
+    "eps": "$1.13",
     "epsForecast": "$1.20",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.13",
-    "lastYearRptDt": "10/28/2025",
     "marketCap": "$164,500,242,000",
     "name": "NextEra Energy, Inc.",
     "noOfEsts": "5",
+    "surprise": "N/A",
     "symbol": "NEE",
     "time": "time-pre-market"
    },
    {
+    "eps": "$0.54",
     "epsForecast": "$0.61",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.54",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$160,482,869,000",
     "name": "AT&T Inc.",
     "noOfEsts": "7",
+    "surprise": "N/A",
     "symbol": "T",
     "time": "time-pre-market"
    },
    {
+    "eps": "$1.89",
     "epsForecast": "$1.92",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.89",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$157,637,591,000",
     "name": "Danaher Corporation",
     "noOfEsts": "7",
+    "surprise": "N/A",
     "symbol": "DHR",
     "time": "time-pre-market"
    },
    {
+    "eps": "$2.68",
     "epsForecast": "$2.98",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.68",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$106,187,350,000",
     "name": "CME Group Inc.",
     "noOfEsts": "8",
+    "surprise": "N/A",
     "symbol": "CME",
     "time": "time-pre-market"
    },
    {
+    "eps": "$6.03",
     "epsForecast": "$4.66",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$6.03",
-    "lastYearRptDt": "10/21/2025",
     "marketCap": "$95,461,523,000",
     "name": "Elevance Health, Inc.",
     "noOfEsts": "9",
+    "surprise": "N/A",
     "symbol": "ELV",
     "time": "time-pre-market"
    },
    {
+    "eps": "$0.44",
     "epsForecast": "$0.52",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.44",
-    "lastYearRptDt": "10/16/2025",
     "marketCap": "$89,066,996,000",
     "name": "CSX Corporation",
     "noOfEsts": "8",
+    "surprise": "N/A",
     "symbol": "CSX",
     "time": "time-after-hours"
    },
    {
+    "eps": "$3.92",
     "epsForecast": "$4.25",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$3.92",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$82,330,624,000",
     "name": "Moody's Corporation",
     "noOfEsts": "8",
+    "surprise": "N/A",
     "symbol": "MCO",
     "time": "time-pre-market"
    },
    {
+    "eps": "$0.29",
     "epsForecast": "$0.33",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.29",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$74,753,745,000",
     "name": "Kinder Morgan, Inc.",
     "noOfEsts": "9",
+    "surprise": "N/A",
     "symbol": "KMI",
     "time": "time-after-hours"
    },
    {
+    "eps": "$11.70",
     "epsForecast": "$13.83",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$11.70",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$64,973,066,000",
     "name": "United Rentals, Inc.",
     "noOfEsts": "6",
+    "surprise": "N/A",
     "symbol": "URI",
     "time": "time-after-hours"
    },
    {
+    "eps": "$2.32",
     "epsForecast": "$2.72",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.32",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$47,874,404,000",
     "name": "Westinghouse Air Brake Technologies Corporation",
     "noOfEsts": "4",
+    "surprise": "N/A",
     "symbol": "WAB",
     "time": "time-pre-market"
    },
    {
+    "eps": "$1.12",
     "epsForecast": "$1.16",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.12",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$34,521,453,000",
     "name": "Crown Castle Inc.",
     "noOfEsts": "5",
+    "surprise": "N/A",
     "symbol": "CCI",
     "time": "time-after-hours"
    },
    {
+    "eps": "$2.29",
     "epsForecast": "$2.86",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.29",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$30,268,182,500",
     "name": "Northern Trust Corporation",
     "noOfEsts": "5",
+    "surprise": "N/A",
     "symbol": "NTRS",
     "time": "time-pre-market"
    },
    {
+    "eps": "$5.57",
     "epsForecast": "$6.15",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$5.57",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$29,306,519,600",
     "name": "Teledyne Technologies Incorporated",
     "noOfEsts": "4",
+    "surprise": "N/A",
     "symbol": "TDY",
     "time": "time-pre-market"
    },
    {
+    "eps": "$0.78",
     "epsForecast": "$0.72",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.78",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$24,722,753,500",
     "name": "Las Vegas Sands Corp.",
     "noOfEsts": "8",
+    "surprise": "N/A",
     "symbol": "LVS",
     "time": "time-after-hours"
    },
    {
+    "eps": "$2.73",
     "epsForecast": "$2.95",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.73",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$21,287,364,600",
     "name": "Packaging Corporation of America",
     "noOfEsts": "4",
+    "surprise": "N/A",
     "symbol": "PKG",
     "time": "time-after-hours"
    },
    {
+    "eps": "$0.11",
     "epsForecast": "$0.61",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.11",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$19,397,105,700",
     "name": "Southwest Airlines Company",
     "noOfEsts": "9",
+    "surprise": "N/A",
     "symbol": "LUV",
     "time": "time-after-hours"
    },
    {
+    "eps": "$0.35",
     "epsForecast": "$0.34",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.35",
-    "lastYearRptDt": "10/29/2025",
     "marketCap": "$16,041,388,000",
     "name": "Rollins, Inc.",
     "noOfEsts": "6",
+    "surprise": "N/A",
     "symbol": "ROL",
     "time": "time-after-hours"
    },
    {
+    "eps": "$4.81",
     "epsForecast": "$4.87",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$4.81",
-    "lastYearRptDt": "10/22/2025",
     "marketCap": "$13,042,887,700",
     "name": "Globe Life Inc.",
     "noOfEsts": "5",
+    "surprise": "N/A",
     "symbol": "GL",
     "time": "time-after-hours"
    }
   ]
  },
  "2026-10-22": {
-  "fetched_at": "2026-10-21T18:59:09+00:00",
+  "fetched_at": "2026-10-22T06:09:37+00:00",
   "rows": [
    {
     "epsForecast": "$1.89",
@@ -30913,7 +30913,7 @@
   ]
  },
  "2026-10-23": {
-  "fetched_at": "2026-10-21T18:59:11+00:00",
+  "fetched_at": "2026-10-22T06:09:38+00:00",
   "rows": [
    {
     "epsForecast": "$4.47",
@@ -30940,7 +30940,7 @@
   ]
  },
  "2026-10-26": {
-  "fetched_at": "2026-10-21T18:59:13+00:00",
+  "fetched_at": "2026-10-22T06:09:41+00:00",
   "rows": [
    {
     "epsForecast": "$1.27",
@@ -31055,7 +31055,7 @@
   ]
  },
  "2026-10-27": {
-  "fetched_at": "2026-10-21T18:59:14+00:00",
+  "fetched_at": "2026-10-22T06:09:45+00:00",
   "rows": [
    {
     "epsForecast": "$3.43",
@@ -31544,7 +31544,7 @@
   ]
  },
  "2026-10-28": {
-  "fetched_at": "2026-10-21T18:59:17+00:00",
+  "fetched_at": "2026-10-22T06:09:48+00:00",
   "rows": [
    {
     "epsForecast": "$2.94",
@@ -32099,7 +32099,7 @@
   ]
  },
  "2026-10-29": {
-  "fetched_at": "2026-10-21T18:59:19+00:00",
+  "fetched_at": "2026-10-22T06:09:52+00:00",
   "rows": [
    {
     "epsForecast": "$2.02",
@@ -32786,7 +32786,7 @@
   ]
  },
  "2026-10-30": {
-  "fetched_at": "2026-10-21T18:59:20+00:00",
+  "fetched_at": "2026-10-22T06:09:53+00:00",
   "rows": [
    {
     "epsForecast": "$3.93",
@@ -32923,7 +32923,7 @@
   ]
  },
  "2026-11-02": {
-  "fetched_at": "2026-10-21T18:59:24+00:00",
+  "fetched_at": "2026-10-22T06:09:54+00:00",
   "rows": [
    {
     "epsForecast": "$2",
@@ -33148,7 +33148,7 @@
   ]
  },
  "2026-11-03": {
-  "fetched_at": "2026-10-21T18:59:26+00:00",
+  "fetched_at": "2026-10-22T06:09:58+00:00",
   "rows": [
    {
     "epsForecast": "$1.68",
@@ -33626,7 +33626,7 @@
   ]
  },
  "2026-11-04": {
-  "fetched_at": "2026-10-21T18:59:27+00:00",
+  "fetched_at": "2026-10-22T06:10:01+00:00",
   "rows": [
    {
     "epsForecast": "$1.46",
@@ -34093,7 +34093,7 @@
   ]
  },
  "2026-11-05": {
-  "fetched_at": "2026-10-21T18:59:31+00:00",
+  "fetched_at": "2026-10-22T06:10:04+00:00",
   "rows": [
    {
     "epsForecast": "$2.86",
@@ -34538,7 +34538,7 @@
   ]
  },
  "2026-11-06": {
-  "fetched_at": "2026-10-21T18:59:34+00:00",
+  "fetched_at": "2026-10-22T06:10:08+00:00",
   "rows": [
    {
     "epsForecast": "$5.91",
@@ -34620,7 +34620,7 @@
   ]
  },
  "2026-11-09": {
-  "fetched_at": "2026-10-21T18:59:38+00:00",
+  "fetched_at": "2026-10-22T06:10:11+00:00",
   "rows": [
    {
     "epsForecast": "$1.43",
@@ -34658,11 +34658,11 @@
   ]
  },
  "2026-11-10": {
-  "fetched_at": "2026-10-21T18:59:39+00:00",
+  "fetched_at": "2026-10-22T06:10:13+00:00",
   "rows": []
  },
  "2026-11-11": {
-  "fetched_at": "2026-10-21T18:59:41+00:00",
+  "fetched_at": "2026-10-22T06:10:15+00:00",
   "rows": [
    {
     "epsForecast": "$1.15",
@@ -34700,7 +34700,7 @@
   ]
  },
  "2026-11-12": {
-  "fetched_at": "2026-10-21T18:59:44+00:00",
+  "fetched_at": "2026-10-22T06:10:16+00:00",
   "rows": [
    {
     "epsForecast": "$4.06",
@@ -34716,11 +34716,11 @@
   ]
  },
  "2026-11-13": {
-  "fetched_at": "2026-10-21T18:59:47+00:00",
+  "fetched_at": "2026-10-22T06:10:20+00:00",
   "rows": []
  },
  "2026-11-16": {
-  "fetched_at": "2026-10-21T18:59:50+00:00",
+  "fetched_at": "2026-10-22T06:10:22+00:00",
   "rows": [
    {
     "epsForecast": "$0.65",
@@ -34736,7 +34736,7 @@
   ]
  },
  "2026-11-17": {
-  "fetched_at": "2026-10-21T18:59:52+00:00",
+  "fetched_at": "2026-10-22T06:10:23+00:00",
   "rows": [
    {
     "epsForecast": "$3.86",
@@ -34774,7 +34774,7 @@
   ]
  },
  "2026-11-18": {
-  "fetched_at": "2026-10-21T18:59:54+00:00",
+  "fetched_at": "2026-10-22T06:10:27+00:00",
   "rows": [
    {
     "epsForecast": "$2.49",
@@ -34845,7 +34845,7 @@
   ]
  },
  "2026-11-19": {
-  "fetched_at": "2026-10-21T18:59:58+00:00",
+  "fetched_at": "2026-10-22T06:10:28+00:00",
   "rows": [
    {
     "epsForecast": "$0.64",
@@ -34916,11 +34916,11 @@
   ]
  },
  "2026-11-20": {
-  "fetched_at": "2026-10-21T19:00:01+00:00",
+  "fetched_at": "2026-10-22T06:10:29+00:00",
   "rows": []
  },
  "2026-11-23": {
-  "fetched_at": "2026-10-21T19:00:04+00:00",
+  "fetched_at": "2026-10-22T06:10:31+00:00",
   "rows": [
    {
     "epsForecast": "$3.09",
@@ -34947,7 +34947,7 @@
   ]
  },
  "2026-11-24": {
-  "fetched_at": "2026-10-21T19:00:05+00:00",
+  "fetched_at": "2026-10-22T06:10:32+00:00",
   "rows": [
    {
     "epsForecast": "$6.41",
@@ -35040,7 +35040,7 @@
   ]
  },
  "2026-11-25": {
-  "fetched_at": "2026-10-21T19:00:06+00:00",
+  "fetched_at": "2026-10-22T06:10:34+00:00",
   "rows": [
    {
     "epsForecast": "$4.07",
@@ -35056,19 +35056,19 @@
   ]
  },
  "2026-11-26": {
-  "fetched_at": "2026-10-21T19:00:10+00:00",
+  "fetched_at": "2026-10-22T06:10:36+00:00",
   "rows": []
  },
  "2026-11-27": {
-  "fetched_at": "2026-10-21T19:00:11+00:00",
+  "fetched_at": "2026-10-22T06:10:37+00:00",
   "rows": []
  },
  "2026-11-30": {
-  "fetched_at": "2026-10-21T19:00:12+00:00",
+  "fetched_at": "2026-10-22T06:10:39+00:00",
   "rows": []
  },
  "2026-12-01": {
-  "fetched_at": "2026-10-21T19:00:16+00:00",
+  "fetched_at": "2026-10-22T06:10:40+00:00",
   "rows": [
    {
     "epsForecast": "$0",
@@ -35106,7 +35106,7 @@
   ]
  },
  "2026-12-02": {
-  "fetched_at": "2026-10-21T19:00:18+00:00",
+  "fetched_at": "2026-10-22T06:10:41+00:00",
   "rows": [
    {
     "epsForecast": "$2.41",
@@ -35133,7 +35133,7 @@
   ]
  },
  "2026-12-03": {
-  "fetched_at": "2026-10-21T19:00:20+00:00",
+  "fetched_at": "2026-10-22T06:10:45+00:00",
   "rows": [
    {
     "epsForecast": "$1.16",
@@ -35215,15 +35215,15 @@
   ]
  },
  "2026-12-04": {
-  "fetched_at": "2026-10-21T19:00:21+00:00",
+  "fetched_at": "2026-10-22T06:10:47+00:00",
   "rows": []
  },
  "2026-12-07": {
-  "fetched_at": "2026-10-21T19:00:23+00:00",
+  "fetched_at": "2026-10-22T06:10:49+00:00",
   "rows": []
  },
  "2026-12-08": {
-  "fetched_at": "2026-10-21T19:00:25+00:00",
+  "fetched_at": "2026-10-22T06:10:52+00:00",
   "rows": [
    {
     "epsForecast": "$36.41",
@@ -35250,7 +35250,7 @@
   ]
  },
  "2026-12-09": {
-  "fetched_at": "2026-10-21T19:00:27+00:00",
+  "fetched_at": "2026-10-22T06:10:55+00:00",
   "rows": [
    {
     "epsForecast": "$1.57",
@@ -35299,7 +35299,7 @@
   ]
  },
  "2026-12-10": {
-  "fetched_at": "2026-10-21T19:00:30+00:00",
+  "fetched_at": "2026-10-22T06:10:58+00:00",
   "rows": [
    {
     "epsForecast": "$3.45",
@@ -35348,15 +35348,15 @@
   ]
  },
  "2026-12-11": {
-  "fetched_at": "2026-10-21T19:00:32+00:00",
+  "fetched_at": "2026-10-22T06:11:01+00:00",
   "rows": []
  },
  "2026-12-14": {
-  "fetched_at": "2026-10-21T19:00:34+00:00",
+  "fetched_at": "2026-10-22T06:11:03+00:00",
   "rows": []
  },
  "2026-12-15": {
-  "fetched_at": "2026-10-21T19:00:36+00:00",
+  "fetched_at": "2026-10-22T06:11:07+00:00",
   "rows": [
    {
     "epsForecast": "$1.46",
