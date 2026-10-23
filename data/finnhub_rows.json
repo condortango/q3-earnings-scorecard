@@ -45,11 +45,11 @@
  },
  "AXP|2026-10-23": {
   "date": "2026-10-23",
-  "epsActual": null,
+  "epsActual": 4.68,
   "epsEstimate": 4.5287,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 20062000000,
   "revenueEstimate": 20323276176,
   "symbol": "AXP",
   "year": 2026
@@ -1167,11 +1167,11 @@
  },
  "SLB|2026-10-23": {
   "date": "2026-10-23",
-  "epsActual": null,
+  "epsActual": 0.64,
   "epsEstimate": 0.6216,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 9449000000,
   "revenueEstimate": 9373008827,
   "symbol": "SLB",
   "year": 2026
@@ -1214,11 +1214,11 @@
   "epsActual": 3.74,
   "epsEstimate": 3.5977,
   "hour": "amc",
-  "quarter": 2,
+  "quarter": 3,
   "revenueActual": 2633000000,
   "revenueEstimate": 2568455946,
   "symbol": "STZ",
-  "year": 2027
+  "year": 2026
  },
  "SYF|2026-10-20": {
   "date": "2026-10-20",
