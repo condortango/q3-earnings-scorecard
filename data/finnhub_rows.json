@@ -78,11 +78,11 @@
  },
  "BE|2026-10-22": {
   "date": "2026-10-22",
-  "epsActual": null,
+  "epsActual": 0.94,
   "epsEstimate": 0.7016,
   "hour": "amc",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 1235840000,
   "revenueEstimate": 1092404661,
   "symbol": "BE",
   "year": 2026
@@ -287,11 +287,11 @@
  },
  "DECK|2026-10-22": {
   "date": "2026-10-22",
-  "epsActual": null,
+  "epsActual": 2.03,
   "epsEstimate": 1.8303,
   "hour": "amc",
   "quarter": 2,
-  "revenueActual": null,
+  "revenueActual": 1480550000,
   "revenueEstimate": 1536510925,
   "symbol": "DECK",
   "year": 2027
@@ -441,11 +441,11 @@
  },
  "FIX|2026-10-22": {
   "date": "2026-10-22",
-  "epsActual": null,
+  "epsActual": 13.91,
   "epsEstimate": 12.9993,
   "hour": "amc",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 3766300000,
   "revenueEstimate": 3435126251,
   "symbol": "FIX",
   "year": 2026
@@ -881,11 +881,11 @@
  },
  "NEM|2026-10-22": {
   "date": "2026-10-22",
-  "epsActual": null,
+  "epsActual": 2.2,
   "epsEstimate": 2.1057,
   "hour": "amc",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 6363000000,
   "revenueEstimate": 6340300027,
   "symbol": "NEM",
   "year": 2026
@@ -969,11 +969,11 @@
  },
  "OMC|2026-10-22": {
   "date": "2026-10-22",
-  "epsActual": null,
+  "epsActual": 2.73,
   "epsEstimate": 2.6567,
   "hour": "amc",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 6422800000,
   "revenueEstimate": 6292708211,
   "symbol": "OMC",
   "year": 2026
@@ -1387,11 +1387,11 @@
  },
  "VRSN|2026-10-22": {
   "date": "2026-10-22",
-  "epsActual": null,
+  "epsActual": 2.41,
   "epsEstimate": 2.4577,
   "hour": "amc",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 443000000,
   "revenueEstimate": 449384205,
   "symbol": "VRSN",
   "year": 2026
@@ -1409,11 +1409,11 @@
  },
  "WDC|2026-10-22": {
   "date": "2026-10-22",
-  "epsActual": null,
+  "epsActual": 4.64,
   "epsEstimate": 4.128,
   "hour": "amc",
   "quarter": 1,
-  "revenueActual": null,
+  "revenueActual": 4381000000,
   "revenueEstimate": 4176880957,
   "symbol": "WDC",
   "year": 2027
