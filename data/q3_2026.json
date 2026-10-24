@@ -965,7 +965,11 @@
    "date": "2026-10-23",
    "eps_actual": null,
    "eps_est": 4.47,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-23",
+    "eps": 4.14,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 4.14,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8045,7 +8049,11 @@
    "date": "2026-10-23",
    "eps_actual": null,
    "eps_est": 0.62,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-23",
+    "eps": 0.69,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.69,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -11200,8 +11208,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Oct 23, 2026 11:45 AM PT",
- "generated_at_utc": "2026-10-23T18:45:23+00:00",
+ "generated_at_pt": "Oct 23, 2026 10:57 PM PT",
+ "generated_at_utc": "2026-10-24T05:57:29+00:00",
  "growth": {
   "available": true,
   "coverage": 492,
@@ -11210,7 +11218,7 @@
   "reporters_pct": 34.0,
   "value_pct": 27.3
  },
- "last_success_pt": "Oct 23, 2026 11:45 AM PT",
+ "last_success_pt": "Oct 23, 2026 10:57 PM PT",
  "reported": 119,
  "reported_since_factset": 0,
  "revenue": {
@@ -13153,6 +13161,7 @@
     83.1,
     81.3,
     80.7,
+    80.7,
     80.7
    ],
    "beats": [
@@ -13198,6 +13207,7 @@
     39,
     54,
     74,
+    96,
     96,
     96
    ],
@@ -13310,6 +13320,7 @@
     28.6,
     29.3,
     29.7,
+    29.7,
     29.7
    ],
    "growth_n": 492,
@@ -13357,12 +13368,13 @@
     26.3,
     26.9,
     27.3,
+    27.3,
     27.3
    ],
    "growth_universe": 497,
    "kickoff_day": 33,
    "label": "Q3 2026",
-   "last": "2026-10-23",
+   "last": "2026-10-24",
    "reported": [
     2,
     2,
@@ -13406,6 +13418,7 @@
     48,
     65,
     91,
+    119,
     119,
     119
    ],
@@ -13452,6 +13465,7 @@
     50.5,
     44.6,
     34.7,
+    34.0,
     34.0,
     34.0
    ],
@@ -13556,6 +13570,7 @@
      "pp": 0.12,
      "t": "VLO"
     },
+    null,
     null
    ]
   }
