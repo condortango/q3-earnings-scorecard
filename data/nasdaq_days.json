@@ -30090,7 +30090,7 @@
   ]
  },
  "2026-10-19": {
-  "fetched_at": "2026-10-26T20:11:22+00:00",
+  "fetched_at": "2026-10-27T06:21:34+00:00",
   "rows": [
    {
     "eps": "$1.13",
@@ -30128,7 +30128,7 @@
   ]
  },
  "2026-10-20": {
-  "fetched_at": "2026-10-26T20:11:23+00:00",
+  "fetched_at": "2026-10-27T06:21:36+00:00",
   "rows": [
    {
     "eps": "$2.25",
@@ -30320,7 +30320,7 @@
   ]
  },
  "2026-10-21": {
-  "fetched_at": "2026-10-26T20:11:25+00:00",
+  "fetched_at": "2026-10-27T06:21:39+00:00",
   "rows": [
    {
     "eps": "$7.40",
@@ -30611,7 +30611,7 @@
   ]
  },
  "2026-10-22": {
-  "fetched_at": "2026-10-26T20:11:28+00:00",
+  "fetched_at": "2026-10-27T06:21:41+00:00",
   "rows": [
    {
     "eps": "$2",
@@ -30924,7 +30924,7 @@
   ]
  },
  "2026-10-23": {
-  "fetched_at": "2026-10-26T20:11:31+00:00",
+  "fetched_at": "2026-10-27T06:21:44+00:00",
   "rows": [
    {
     "eps": "$4.68",
@@ -30951,122 +30951,122 @@
   ]
  },
  "2026-10-26": {
-  "fetched_at": "2026-10-26T20:11:34+00:00",
+  "fetched_at": "2026-10-27T06:21:45+00:00",
   "rows": [
    {
+    "eps": "$1.21",
     "epsForecast": "$1.27",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.21",
-    "lastYearRptDt": "10/29/2025",
     "marketCap": "$185,552,257,000",
     "name": "Verizon Communications Inc.",
     "noOfEsts": "7",
+    "surprise": "N/A",
     "symbol": "VZ",
     "time": "time-pre-market"
    },
    {
+    "eps": "$1.34",
     "epsForecast": "$1.64",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.34",
-    "lastYearRptDt": "10/27/2025",
     "marketCap": "$171,047,191,000",
     "name": "Welltower Inc.",
     "noOfEsts": "6",
+    "surprise": "N/A",
     "symbol": "WELL",
     "time": "time-after-hours"
    },
    {
+    "eps": "$1.51",
     "epsForecast": "$1.61",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.51",
-    "lastYearRptDt": "10/27/2025",
     "marketCap": "$87,159,128,000",
     "name": "Cadence Design Systems, Inc.",
     "noOfEsts": "6",
+    "surprise": "N/A",
     "symbol": "CDNS",
     "time": "time-after-hours"
    },
    {
+    "eps": "$2.63",
     "epsForecast": "$5.71",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.63",
-    "lastYearRptDt": "10/27/2025",
     "marketCap": "$58,558,882,000",
     "name": "Nucor Corporation",
     "noOfEsts": "4",
+    "surprise": "N/A",
     "symbol": "NUE",
     "time": "time-after-hours"
    },
    {
+    "eps": "$4.31",
     "epsForecast": "$4.27",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$4.31",
-    "lastYearRptDt": "10/29/2025",
     "marketCap": "$57,903,657,000",
     "name": "Public Storage",
     "noOfEsts": "5",
+    "surprise": "N/A",
     "symbol": "PSA",
     "time": "time-after-hours"
    },
    {
+    "eps": "$3.78",
     "epsForecast": "$3.15",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$3.78",
-    "lastYearRptDt": "10/27/2025",
     "marketCap": "$37,044,453,000",
     "name": "The Hartford Insurance Group, Inc.",
     "noOfEsts": "10",
+    "surprise": "N/A",
     "symbol": "HIG",
     "time": "time-after-hours"
    },
    {
+    "eps": "$2.85",
     "epsForecast": "$1.99",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.85",
-    "lastYearRptDt": "10/27/2025",
     "marketCap": "$27,058,180,100",
     "name": "Cincinnati Financial Corporation",
     "noOfEsts": "8",
+    "surprise": "N/A",
     "symbol": "CINF",
     "time": "time-after-hours"
    },
    {
+    "eps": "$1.05",
     "epsForecast": "$1.08",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.05",
-    "lastYearRptDt": "10/27/2025",
     "marketCap": "$24,416,518,100",
     "name": "Brown & Brown, Inc.",
     "noOfEsts": "8",
+    "surprise": "N/A",
     "symbol": "BRO",
     "time": "time-after-hours"
    },
    {
+    "eps": "$2.10",
     "epsForecast": "$2.46",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.10",
-    "lastYearRptDt": "10/27/2025",
     "marketCap": "$23,244,269,600",
     "name": "Principal Financial Group Inc",
     "noOfEsts": "5",
+    "surprise": "N/A",
     "symbol": "PFG",
     "time": "time-after-hours"
    },
    {
+    "eps": "$2.22",
     "epsForecast": "$1.52",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.22",
-    "lastYearRptDt": "10/27/2025",
     "marketCap": "$7,496,130,600",
     "name": "Alexandria Real Estate Equities, Inc.",
     "noOfEsts": "4",
+    "surprise": "N/A",
     "symbol": "ARE",
     "time": "time-after-hours"
    }
   ]
  },
  "2026-10-27": {
-  "fetched_at": "2026-10-26T20:11:37+00:00",
+  "fetched_at": "2026-10-27T06:21:48+00:00",
   "rows": [
    {
     "epsForecast": "$3.43",
@@ -31555,7 +31555,7 @@
   ]
  },
  "2026-10-28": {
-  "fetched_at": "2026-10-26T20:11:40+00:00",
+  "fetched_at": "2026-10-27T06:21:51+00:00",
   "rows": [
    {
     "epsForecast": "$2.94",
@@ -32110,7 +32110,7 @@
   ]
  },
  "2026-10-29": {
-  "fetched_at": "2026-10-26T20:11:43+00:00",
+  "fetched_at": "2026-10-27T06:21:52+00:00",
   "rows": [
    {
     "epsForecast": "$2.01",
@@ -32797,7 +32797,7 @@
   ]
  },
  "2026-10-30": {
-  "fetched_at": "2026-10-26T20:11:45+00:00",
+  "fetched_at": "2026-10-27T06:21:55+00:00",
   "rows": [
    {
     "epsForecast": "$3.90",
@@ -32945,7 +32945,7 @@
   ]
  },
  "2026-11-02": {
-  "fetched_at": "2026-10-26T20:11:48+00:00",
+  "fetched_at": "2026-10-27T06:21:56+00:00",
   "rows": [
    {
     "epsForecast": "$2",
@@ -33159,7 +33159,7 @@
   ]
  },
  "2026-11-03": {
-  "fetched_at": "2026-10-26T20:11:50+00:00",
+  "fetched_at": "2026-10-27T06:21:58+00:00",
   "rows": [
    {
     "epsForecast": "$1.68",
@@ -33560,7 +33560,7 @@
   ]
  },
  "2026-11-04": {
-  "fetched_at": "2026-10-26T20:11:52+00:00",
+  "fetched_at": "2026-10-27T06:22:01+00:00",
   "rows": [
    {
     "epsForecast": "$1.46",
@@ -34060,7 +34060,7 @@
   ]
  },
  "2026-11-05": {
-  "fetched_at": "2026-10-26T20:11:56+00:00",
+  "fetched_at": "2026-10-27T06:22:04+00:00",
   "rows": [
    {
     "epsForecast": "$2.95",
@@ -34516,7 +34516,7 @@
   ]
  },
  "2026-11-06": {
-  "fetched_at": "2026-10-26T20:11:59+00:00",
+  "fetched_at": "2026-10-27T06:22:08+00:00",
   "rows": [
    {
     "epsForecast": "$5.91",
@@ -34598,7 +34598,7 @@
   ]
  },
  "2026-11-09": {
-  "fetched_at": "2026-10-26T20:12:02+00:00",
+  "fetched_at": "2026-10-27T06:22:11+00:00",
   "rows": [
    {
     "epsForecast": "$3.91",
@@ -34658,11 +34658,11 @@
   ]
  },
  "2026-11-10": {
-  "fetched_at": "2026-10-26T20:12:05+00:00",
+  "fetched_at": "2026-10-27T06:22:12+00:00",
   "rows": []
  },
  "2026-11-11": {
-  "fetched_at": "2026-10-26T20:12:07+00:00",
+  "fetched_at": "2026-10-27T06:22:16+00:00",
   "rows": [
    {
     "epsForecast": "$1.15",
@@ -34700,7 +34700,7 @@
   ]
  },
  "2026-11-12": {
-  "fetched_at": "2026-10-26T20:12:09+00:00",
+  "fetched_at": "2026-10-27T06:22:17+00:00",
   "rows": [
    {
     "epsForecast": "$4.06",
@@ -34716,11 +34716,11 @@
   ]
  },
  "2026-11-13": {
-  "fetched_at": "2026-10-26T20:12:12+00:00",
+  "fetched_at": "2026-10-27T06:22:21+00:00",
   "rows": []
  },
  "2026-11-16": {
-  "fetched_at": "2026-10-26T20:12:15+00:00",
+  "fetched_at": "2026-10-27T06:22:23+00:00",
   "rows": [
    {
     "epsForecast": "$0.65",
@@ -34736,7 +34736,7 @@
   ]
  },
  "2026-11-17": {
-  "fetched_at": "2026-10-26T20:12:18+00:00",
+  "fetched_at": "2026-10-27T06:22:26+00:00",
   "rows": [
    {
     "epsForecast": "$3.86",
@@ -34774,7 +34774,7 @@
   ]
  },
  "2026-11-18": {
-  "fetched_at": "2026-10-26T20:12:19+00:00",
+  "fetched_at": "2026-10-27T06:22:28+00:00",
   "rows": [
    {
     "epsForecast": "$2.49",
@@ -34845,7 +34845,7 @@
   ]
  },
  "2026-11-19": {
-  "fetched_at": "2026-10-26T20:12:22+00:00",
+  "fetched_at": "2026-10-27T06:22:31+00:00",
   "rows": [
    {
     "epsForecast": "$0.64",
@@ -34916,11 +34916,11 @@
   ]
  },
  "2026-11-20": {
-  "fetched_at": "2026-10-26T20:12:25+00:00",
+  "fetched_at": "2026-10-27T06:22:34+00:00",
   "rows": []
  },
  "2026-11-23": {
-  "fetched_at": "2026-10-26T20:12:26+00:00",
+  "fetched_at": "2026-10-27T06:22:37+00:00",
   "rows": [
    {
     "epsForecast": "$3.09",
@@ -34947,7 +34947,7 @@
   ]
  },
  "2026-11-24": {
-  "fetched_at": "2026-10-26T20:12:29+00:00",
+  "fetched_at": "2026-10-27T06:22:40+00:00",
   "rows": [
    {
     "epsForecast": "$6.41",
@@ -35040,7 +35040,7 @@
   ]
  },
  "2026-11-25": {
-  "fetched_at": "2026-10-26T20:12:31+00:00",
+  "fetched_at": "2026-10-27T06:22:44+00:00",
   "rows": [
    {
     "epsForecast": "$4.07",
@@ -35056,19 +35056,19 @@
   ]
  },
  "2026-11-26": {
-  "fetched_at": "2026-10-26T20:12:33+00:00",
+  "fetched_at": "2026-10-27T06:22:47+00:00",
   "rows": []
  },
  "2026-11-27": {
-  "fetched_at": "2026-10-26T20:12:37+00:00",
+  "fetched_at": "2026-10-27T06:22:49+00:00",
   "rows": []
  },
  "2026-11-30": {
-  "fetched_at": "2026-10-26T20:12:40+00:00",
+  "fetched_at": "2026-10-27T06:22:51+00:00",
   "rows": []
  },
  "2026-12-01": {
-  "fetched_at": "2026-10-26T20:12:41+00:00",
+  "fetched_at": "2026-10-27T06:22:54+00:00",
   "rows": [
    {
     "epsForecast": "$0",
@@ -35106,7 +35106,7 @@
   ]
  },
  "2026-12-02": {
-  "fetched_at": "2026-10-26T20:12:43+00:00",
+  "fetched_at": "2026-10-27T06:22:56+00:00",
   "rows": [
    {
     "epsForecast": "$2.41",
@@ -35133,7 +35133,7 @@
   ]
  },
  "2026-12-03": {
-  "fetched_at": "2026-10-26T20:12:44+00:00",
+  "fetched_at": "2026-10-27T06:23:00+00:00",
   "rows": [
    {
     "epsForecast": "$1.16",
@@ -35215,15 +35215,15 @@
   ]
  },
  "2026-12-04": {
-  "fetched_at": "2026-10-26T20:12:45+00:00",
+  "fetched_at": "2026-10-27T06:23:02+00:00",
   "rows": []
  },
  "2026-12-07": {
-  "fetched_at": "2026-10-26T20:12:48+00:00",
+  "fetched_at": "2026-10-27T06:23:05+00:00",
   "rows": []
  },
  "2026-12-08": {
-  "fetched_at": "2026-10-26T20:12:50+00:00",
+  "fetched_at": "2026-10-27T06:23:08+00:00",
   "rows": [
    {
     "epsForecast": "$36.41",
@@ -35250,7 +35250,7 @@
   ]
  },
  "2026-12-09": {
-  "fetched_at": "2026-10-26T20:12:54+00:00",
+  "fetched_at": "2026-10-27T06:23:09+00:00",
   "rows": [
    {
     "epsForecast": "$1.57",
@@ -35299,7 +35299,7 @@
   ]
  },
  "2026-12-10": {
-  "fetched_at": "2026-10-26T20:12:57+00:00",
+  "fetched_at": "2026-10-27T06:23:11+00:00",
   "rows": [
    {
     "epsForecast": "$3.45",
@@ -35348,15 +35348,15 @@
   ]
  },
  "2026-12-11": {
-  "fetched_at": "2026-10-26T20:12:58+00:00",
+  "fetched_at": "2026-10-27T06:23:12+00:00",
   "rows": []
  },
  "2026-12-14": {
-  "fetched_at": "2026-10-26T20:13:01+00:00",
+  "fetched_at": "2026-10-27T06:23:14+00:00",
   "rows": []
  },
  "2026-12-15": {
-  "fetched_at": "2026-10-26T20:13:02+00:00",
+  "fetched_at": "2026-10-27T06:23:17+00:00",
   "rows": [
    {
     "epsForecast": "$1.47",
