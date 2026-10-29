@@ -205,7 +205,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 2.78,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 2.49,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.49,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -265,7 +269,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 2.04,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 1.8,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.8,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -425,7 +433,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 2.32,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 2.07,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.07,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -665,7 +677,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 3.34,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 3.05,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 3.05,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -745,7 +761,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.73,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.47,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.47,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -925,7 +945,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 2.11,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 1.94,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.94,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -1205,7 +1229,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 2.06,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 4.81,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 4.81,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -1385,7 +1413,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.73,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.75,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.75,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -1765,7 +1797,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 1.72,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 1.4,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.4,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -1945,7 +1981,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.29,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.29,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.29,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -2425,7 +2465,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.47,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.21,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.21,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -2985,7 +3029,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 1.11,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 1.1,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.1,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3085,7 +3133,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 9.38,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 7.54,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 7.54,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3225,7 +3277,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 9.28,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 9.83,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 9.83,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3505,7 +3561,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.39,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.45,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.45,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3605,7 +3665,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 3.24,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 3.83,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 3.83,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3805,7 +3869,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.97,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.7,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.7,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3885,7 +3953,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.77,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.65,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.65,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3905,7 +3977,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.7,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.68,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.68,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -3985,7 +4061,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 1.21,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 1.07,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.07,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -4005,7 +4085,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.65,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.53,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.53,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -4025,7 +4109,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 4.03,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 1.64,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.64,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -4145,7 +4233,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 2.38,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 1.83,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.83,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -4165,7 +4257,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 2.94,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 2.87,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.87,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -4225,7 +4321,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 2.38,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 1.99,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.99,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -4765,7 +4865,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 2.23,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 2.03,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.03,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -4885,7 +4989,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.47,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.47,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.47,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -4905,7 +5013,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.3,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": -0.43,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": -0.43,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5325,7 +5437,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 1.18,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.88,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.88,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5505,7 +5621,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 4.65,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 4.18,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 4.18,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5545,7 +5665,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 7.18,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 6.98,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 6.98,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5825,7 +5949,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 2.1,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 2.16,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.16,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5865,7 +5993,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 1.01,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.97,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.97,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6045,7 +6177,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.15,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.24,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.24,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6345,7 +6481,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 4.71,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 4.13,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 4.13,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6565,7 +6705,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.22,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.19,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.19,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6625,7 +6769,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.56,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.59,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.59,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6845,7 +6993,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 1.61,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 1.28,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.28,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6945,7 +7097,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.92,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.85,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.85,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6963,18 +7119,18 @@
   {
    "cik": "1781335",
    "date": "2026-10-28",
-   "eps_actual": null,
+   "eps_actual": 1.05,
    "eps_est": 1.0,
    "eps_pending": null,
-   "eps_surprise_pct": null,
+   "eps_surprise_pct": 5.0,
    "eps_yearago": 1.05,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 4,
    "name": "Otis Worldwide",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 3914000000.0,
+   "rev_est": 3951999618.0,
+   "rev_surprise_pct": -0.96,
    "sector": "Industrials",
    "shares": 380669339,
    "ticker": "OTIS",
@@ -7505,7 +7661,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 11.97,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 2.52,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.52,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -7725,7 +7885,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 3.28,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 3.11,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 3.11,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8345,7 +8509,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.6,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.58,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.58,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8545,7 +8713,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 3.08,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 2.44,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.44,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8685,7 +8857,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 2.86,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 2.59,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.59,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8985,7 +9161,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 2.7,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 2.32,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 2.32,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -9245,7 +9425,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 0.62,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 0.6,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.6,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -9385,7 +9569,11 @@
    "date": "2026-10-28",
    "eps_actual": null,
    "eps_est": 1.82,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-10-28",
+    "eps": 1.24,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.24,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -10013,18 +10201,18 @@
   "window_start": "2026-09-01"
  },
  "eps": {
-  "above": 139,
-  "above_pct": 79.4,
+  "above": 140,
+  "above_pct": 79.5,
   "agg_method": "share-weighted (EPS x shares outstanding)",
   "agg_surprise_pct": 6.13,
-  "beat": 135,
-  "beat_pct": 77.1,
-  "median_surprise_pct": 3.57,
+  "beat": 136,
+  "beat_pct": 77.3,
+  "median_surprise_pct": 3.62,
   "meet": 18,
-  "meet_pct": 10.3,
+  "meet_pct": 10.2,
   "miss": 22,
-  "miss_pct": 12.6,
-  "n": 175
+  "miss_pct": 12.5,
+  "n": 176
  },
  "factset": {
   "benchmarks": {
@@ -11200,36 +11388,36 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Oct 28, 2026 12:54 PM PT",
- "generated_at_utc": "2026-10-28T19:54:44+00:00",
+ "generated_at_pt": "Oct 29, 2026 12:10 AM PT",
+ "generated_at_utc": "2026-10-29T07:10:41+00:00",
  "growth": {
   "available": true,
   "coverage": 493,
   "min_coverage": 350,
-  "reporters_n": 175,
-  "reporters_pct": 33.5,
+  "reporters_n": 176,
+  "reporters_pct": 33.4,
   "value_pct": 27.6
  },
- "last_success_pt": "Oct 28, 2026 12:54 PM PT",
- "reported": 175,
- "reported_since_factset": 56,
+ "last_success_pt": "Oct 29, 2026 12:10 AM PT",
+ "reported": 176,
+ "reported_since_factset": 57,
  "revenue": {
   "above": 65,
-  "above_pct": 37.6,
+  "above_pct": 37.4,
   "agg_method": "sum of values",
   "agg_surprise_pct": -0.05,
   "available": true,
   "beat": 41,
-  "beat_pct": 23.7,
+  "beat_pct": 23.6,
   "median_surprise_pct": -0.87,
-  "meet": 52,
-  "meet_pct": 30.1,
+  "meet": 53,
+  "meet_pct": 30.5,
   "miss": 80,
-  "miss_pct": 46.2,
-  "n": 173,
+  "miss_pct": 46.0,
+  "n": 174,
   "status": "ok"
  },
- "scheduled": 325,
+ "scheduled": 324,
  "season": "Q3 2026",
  "season_curves": [
   {
@@ -13158,7 +13346,8 @@
     81.0,
     80.2,
     79.4,
-    79.4
+    79.5,
+    79.5
    ],
    "beats": [
     1,
@@ -13209,7 +13398,8 @@
     98,
     105,
     139,
-    139
+    140,
+    140
    ],
    "day0": "2026-09-10",
    "expected_growth_ex_pct": 27.0,
@@ -13325,6 +13515,7 @@
     29.6,
     29.7,
     30.1,
+    30.1,
     30.1
    ],
    "growth_n": 493,
@@ -13377,12 +13568,13 @@
     27.3,
     27.3,
     27.6,
+    27.6,
     27.6
    ],
    "growth_universe": 498,
    "kickoff_day": 33,
    "label": "Q3 2026",
-   "last": "2026-10-28",
+   "last": "2026-10-29",
    "reported": [
     2,
     2,
@@ -13432,7 +13624,8 @@
     121,
     131,
     175,
-    175
+    176,
+    176
    ],
    "reporters_growth_pct": [
     27.9,
@@ -13483,7 +13676,8 @@
     33.6,
     32.5,
     33.5,
-    33.5
+    33.4,
+    33.4
    ],
    "top": [
     {
@@ -13600,6 +13794,10 @@
      "pp": 0.07,
      "t": "OKE"
     },
+    {
+     "pp": 0.0,
+     "t": "OTIS"
+    },
     null
    ]
   }
@@ -13691,16 +13889,16 @@
   },
   {
    "companies": 83,
-   "eps_above_pct": 76.5,
-   "eps_agg_surprise_pct": 6.07,
-   "eps_beat_pct": 67.6,
-   "eps_miss_pct": 20.6,
-   "eps_n": 34,
-   "reported": 34,
-   "rev_above_pct": 41.2,
-   "rev_agg_surprise_pct": -0.25,
-   "rev_beat_pct": 23.5,
-   "rev_n": 34,
+   "eps_above_pct": 77.1,
+   "eps_agg_surprise_pct": 6.06,
+   "eps_beat_pct": 68.6,
+   "eps_miss_pct": 20.0,
+   "eps_n": 35,
+   "reported": 35,
+   "rev_above_pct": 40.0,
+   "rev_agg_surprise_pct": -0.26,
+   "rev_beat_pct": 22.9,
+   "rev_n": 35,
    "sector": "Industrials"
   },
   {
