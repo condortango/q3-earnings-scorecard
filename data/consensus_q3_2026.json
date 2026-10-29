@@ -1214,7 +1214,28 @@
    "915913": 2.41,
    "935703": 0.88
   },
-  "2026-10-29": {}
+  "2026-10-29": {
+   "1002910": 2.29,
+   "1037038": 4.26,
+   "1058290": 1.46,
+   "1070750": 0.38,
+   "107263": 0.55,
+   "1116132": 1.56,
+   "1140859": 4.55,
+   "1163165": 2.97,
+   "1285785": -0.03,
+   "1324404": 2.93,
+   "1324424": 8.09,
+   "1389170": 2.74,
+   "1396009": 2.83,
+   "1692819": 2.26,
+   "1711269": 2.3,
+   "1713445": 1.31,
+   "1841666": 1.44,
+   "38777": 0.78,
+   "797468": 1.43,
+   "915913": 2.56
+  }
  },
  "note": "Consensus EPS (Nasdaq calendar, Zacks) by company CIK, one entry per run day in Eastern time. Each day lists only the estimates that changed since the previous day (the first day in full); null means the company no longer has an estimate. Replay the days in order to rebuild the consensus as of any date.",
  "season": "Q3 2026"
