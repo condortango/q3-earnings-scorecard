@@ -30320,7 +30320,7 @@
   ]
  },
  "2026-10-21": {
-  "fetched_at": "2026-10-30T22:48:38+00:00",
+  "fetched_at": "2026-10-31T07:02:00+00:00",
   "rows": [
    {
     "eps": "$7.40",
@@ -30611,7 +30611,7 @@
   ]
  },
  "2026-10-22": {
-  "fetched_at": "2026-10-30T22:48:40+00:00",
+  "fetched_at": "2026-10-31T07:02:02+00:00",
   "rows": [
    {
     "eps": "$2",
@@ -30924,7 +30924,7 @@
   ]
  },
  "2026-10-23": {
-  "fetched_at": "2026-10-30T22:48:43+00:00",
+  "fetched_at": "2026-10-31T07:02:04+00:00",
   "rows": [
    {
     "eps": "$4.68",
@@ -30951,7 +30951,7 @@
   ]
  },
  "2026-10-26": {
-  "fetched_at": "2026-10-30T22:48:47+00:00",
+  "fetched_at": "2026-10-31T07:02:07+00:00",
   "rows": [
    {
     "eps": "$1.31",
@@ -31066,7 +31066,7 @@
   ]
  },
  "2026-10-27": {
-  "fetched_at": "2026-10-30T22:48:48+00:00",
+  "fetched_at": "2026-10-31T07:02:10+00:00",
   "rows": [
    {
     "eps": "$3.48",
@@ -31555,7 +31555,7 @@
   ]
  },
  "2026-10-28": {
-  "fetched_at": "2026-10-30T22:48:50+00:00",
+  "fetched_at": "2026-10-31T07:02:13+00:00",
   "rows": [
    {
     "eps": "$4.89",
@@ -32110,7 +32110,7 @@
   ]
  },
  "2026-10-29": {
-  "fetched_at": "2026-10-30T22:48:52+00:00",
+  "fetched_at": "2026-10-31T07:02:15+00:00",
   "rows": [
    {
     "eps": "$1.89",
@@ -32808,155 +32808,155 @@
   ]
  },
  "2026-10-30": {
-  "fetched_at": "2026-10-30T22:48:53+00:00",
+  "fetched_at": "2026-10-31T07:02:17+00:00",
   "rows": [
    {
+    "eps": "$4.23",
     "epsForecast": "$3.90",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.88",
-    "lastYearRptDt": "10/31/2025",
     "marketCap": "$753,672,320,000",
     "name": "ExxonMobil Holdings Corporation",
     "noOfEsts": "6",
+    "surprise": "8.46",
     "symbol": "XOM",
-    "time": "time-pre-market"
+    "time": "time-not-supplied"
    },
    {
+    "eps": "$3.82",
     "epsForecast": "$3.74",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.86",
-    "lastYearRptDt": "10/31/2025",
     "marketCap": "$513,860,043,000",
     "name": "AbbVie Inc.",
     "noOfEsts": "5",
+    "surprise": "2.14",
     "symbol": "ABBV",
-    "time": "time-pre-market"
+    "time": "time-not-supplied"
    },
    {
+    "eps": "$5.28",
     "epsForecast": "$4.78",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.85",
-    "lastYearRptDt": "10/31/2025",
     "marketCap": "$457,312,010,000",
     "name": "Chevron Corporation",
     "noOfEsts": "7",
+    "surprise": "10.46",
     "symbol": "CVX",
-    "time": "time-pre-market"
+    "time": "time-not-supplied"
    },
    {
+    "eps": "$4.49",
     "epsForecast": "$4.14",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$3.88",
-    "lastYearRptDt": "10/24/2025",
     "marketCap": "$100,328,022,000",
     "name": "General Dynamics Corporation",
     "noOfEsts": "8",
+    "surprise": "8.45",
     "symbol": "GD",
-    "time": "time-pre-market"
+    "time": "time-not-supplied"
    },
    {
+    "eps": "$18.43",
     "epsForecast": "$13.76",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$9.63",
-    "lastYearRptDt": "10/28/2025",
     "marketCap": "$84,296,458,000",
     "name": "Regeneron Pharmaceuticals, Inc.",
     "noOfEsts": "6",
+    "surprise": "33.94",
     "symbol": "REGN",
-    "time": "time-pre-market"
+    "time": "time-not-supplied"
    },
    {
+    "eps": "$0.97",
     "epsForecast": "$0.92",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.91",
-    "lastYearRptDt": "10/31/2025",
     "marketCap": "$74,264,617,000",
     "name": "Colgate-Palmolive Company",
     "noOfEsts": "9",
+    "surprise": "5.43",
     "symbol": "CL",
-    "time": "time-pre-market"
+    "time": "time-not-supplied"
    },
    {
+    "eps": "$1.28",
     "epsForecast": "$1.20",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.06",
-    "lastYearRptDt": "10/31/2025",
     "marketCap": "$57,274,728,000",
     "name": "Dominion Energy, Inc.",
     "noOfEsts": "4",
+    "surprise": "6.67",
     "symbol": "D",
-    "time": "time-pre-market"
+    "time": "time-not-supplied"
    },
    {
+    "eps": "$0.87",
     "epsForecast": "$0.80",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.86",
-    "lastYearRptDt": "11/04/2025",
     "marketCap": "$47,390,781,000",
     "name": "Exelon Corporation",
     "noOfEsts": "5",
+    "surprise": "8.75",
     "symbol": "EXC",
-    "time": "time-pre-market"
+    "time": "time-not-supplied"
    },
    {
+    "eps": "$0.29",
     "epsForecast": "$0.28",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.28",
-    "lastYearRptDt": "11/03/2025",
     "marketCap": "$37,570,331,000",
     "name": "Kenvue Inc.",
     "noOfEsts": "4",
+    "surprise": "3.57",
     "symbol": "KVUE",
-    "time": "time-pre-market"
+    "time": "time-not-supplied"
    },
    {
+    "eps": "$0.92",
     "epsForecast": "$0.90",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$0.81",
-    "lastYearRptDt": "10/31/2025",
     "marketCap": "$25,143,613,400",
     "name": "Church & Dwight Company, Inc.",
     "noOfEsts": "9",
+    "surprise": "2.22",
     "symbol": "CHD",
-    "time": "time-pre-market"
+    "time": "time-not-supplied"
    },
    {
+    "eps": "$2.54",
     "epsForecast": "$2.73",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.01",
-    "lastYearRptDt": "10/31/2025",
     "marketCap": "$21,116,991,500",
     "name": "LyondellBasell Industries NV",
     "noOfEsts": "6",
+    "surprise": "-6.96",
     "symbol": "LYB",
-    "time": "time-pre-market"
+    "time": "time-not-supplied"
    },
    {
+    "eps": "$3.63",
     "epsForecast": "$3.43",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$2.67",
-    "lastYearRptDt": "10/31/2025",
     "marketCap": "$11,636,977,312",
     "name": "Cboe Global Markets, Inc.",
     "noOfEsts": "10",
+    "surprise": "5.83",
     "symbol": "CBOE",
-    "time": "time-pre-market"
+    "time": "time-not-supplied"
    },
    {
+    "eps": "$1.87",
     "epsForecast": "$1.85",
     "fiscalQuarterEnding": "Sep/2026",
-    "lastYearEPS": "$1.77",
-    "lastYearRptDt": "10/31/2025",
     "marketCap": "$9,682,924,500",
     "name": "Federal Realty Investment Trust",
     "noOfEsts": "7",
+    "surprise": "1.08",
     "symbol": "FRT",
-    "time": "time-pre-market"
+    "time": "time-not-supplied"
    }
   ]
  },
  "2026-11-02": {
-  "fetched_at": "2026-10-30T22:48:56+00:00",
+  "fetched_at": "2026-10-31T07:02:19+00:00",
   "rows": [
    {
     "epsForecast": "$1.98",
@@ -33170,7 +33170,7 @@
   ]
  },
  "2026-11-03": {
-  "fetched_at": "2026-10-30T22:48:59+00:00",
+  "fetched_at": "2026-10-31T07:02:20+00:00",
   "rows": [
    {
     "epsForecast": "$1.68",
@@ -33571,7 +33571,7 @@
   ]
  },
  "2026-11-04": {
-  "fetched_at": "2026-10-30T22:49:01+00:00",
+  "fetched_at": "2026-10-31T07:02:22+00:00",
   "rows": [
    {
     "epsForecast": "$1.46",
@@ -34060,7 +34060,7 @@
   ]
  },
  "2026-11-05": {
-  "fetched_at": "2026-10-30T22:49:05+00:00",
+  "fetched_at": "2026-10-31T07:02:24+00:00",
   "rows": [
    {
     "epsForecast": "$2.97",
@@ -34505,7 +34505,7 @@
   ]
  },
  "2026-11-06": {
-  "fetched_at": "2026-10-30T22:49:06+00:00",
+  "fetched_at": "2026-10-31T07:02:26+00:00",
   "rows": [
    {
     "epsForecast": "$5.91",
@@ -34587,7 +34587,7 @@
   ]
  },
  "2026-11-09": {
-  "fetched_at": "2026-10-30T22:49:07+00:00",
+  "fetched_at": "2026-10-31T07:02:29+00:00",
   "rows": [
    {
     "epsForecast": "$3.90",
@@ -34669,11 +34669,11 @@
   ]
  },
  "2026-11-10": {
-  "fetched_at": "2026-10-30T22:49:09+00:00",
+  "fetched_at": "2026-10-31T07:02:30+00:00",
   "rows": []
  },
  "2026-11-11": {
-  "fetched_at": "2026-10-30T22:49:11+00:00",
+  "fetched_at": "2026-10-31T07:02:31+00:00",
   "rows": [
    {
     "epsForecast": "$1.15",
@@ -34711,7 +34711,7 @@
   ]
  },
  "2026-11-12": {
-  "fetched_at": "2026-10-30T22:49:13+00:00",
+  "fetched_at": "2026-10-31T07:02:34+00:00",
   "rows": [
    {
     "epsForecast": "$4.06",
@@ -34727,11 +34727,11 @@
   ]
  },
  "2026-11-13": {
-  "fetched_at": "2026-10-30T22:49:14+00:00",
+  "fetched_at": "2026-10-31T07:02:35+00:00",
   "rows": []
  },
  "2026-11-16": {
-  "fetched_at": "2026-10-30T22:49:15+00:00",
+  "fetched_at": "2026-10-31T07:02:36+00:00",
   "rows": [
    {
     "epsForecast": "$0.65",
@@ -34747,7 +34747,7 @@
   ]
  },
  "2026-11-17": {
-  "fetched_at": "2026-10-30T22:49:19+00:00",
+  "fetched_at": "2026-10-31T07:02:40+00:00",
   "rows": [
    {
     "epsForecast": "$2.49",
@@ -34796,7 +34796,7 @@
   ]
  },
  "2026-11-18": {
-  "fetched_at": "2026-10-30T22:49:20+00:00",
+  "fetched_at": "2026-10-31T07:02:41+00:00",
   "rows": [
    {
     "epsForecast": "$0.52",
@@ -34867,7 +34867,7 @@
   ]
  },
  "2026-11-19": {
-  "fetched_at": "2026-10-30T22:49:22+00:00",
+  "fetched_at": "2026-10-31T07:02:44+00:00",
   "rows": [
    {
     "epsForecast": "$0.64",
@@ -34938,11 +34938,11 @@
   ]
  },
  "2026-11-20": {
-  "fetched_at": "2026-10-30T22:49:25+00:00",
+  "fetched_at": "2026-10-31T07:02:46+00:00",
   "rows": []
  },
  "2026-11-23": {
-  "fetched_at": "2026-10-30T22:49:28+00:00",
+  "fetched_at": "2026-10-31T07:02:47+00:00",
   "rows": [
    {
     "epsForecast": "$1.72",
@@ -34969,7 +34969,7 @@
   ]
  },
  "2026-11-24": {
-  "fetched_at": "2026-10-30T22:49:32+00:00",
+  "fetched_at": "2026-10-31T07:02:50+00:00",
   "rows": [
    {
     "epsForecast": "$6.41",
@@ -35051,7 +35051,7 @@
   ]
  },
  "2026-11-25": {
-  "fetched_at": "2026-10-30T22:49:35+00:00",
+  "fetched_at": "2026-10-31T07:02:51+00:00",
   "rows": [
    {
     "epsForecast": "$4.07",
@@ -35067,19 +35067,19 @@
   ]
  },
  "2026-11-26": {
-  "fetched_at": "2026-10-30T22:49:38+00:00",
+  "fetched_at": "2026-10-31T07:02:52+00:00",
   "rows": []
  },
  "2026-11-27": {
-  "fetched_at": "2026-10-30T22:49:41+00:00",
+  "fetched_at": "2026-10-31T07:02:55+00:00",
   "rows": []
  },
  "2026-11-30": {
-  "fetched_at": "2026-10-30T22:49:43+00:00",
+  "fetched_at": "2026-10-31T07:02:56+00:00",
   "rows": []
  },
  "2026-12-01": {
-  "fetched_at": "2026-10-30T22:49:45+00:00",
+  "fetched_at": "2026-10-31T07:02:58+00:00",
   "rows": [
    {
     "epsForecast": "$0",
@@ -35117,7 +35117,7 @@
   ]
  },
  "2026-12-02": {
-  "fetched_at": "2026-10-30T22:49:47+00:00",
+  "fetched_at": "2026-10-31T07:03:02+00:00",
   "rows": [
    {
     "epsForecast": "$2.41",
@@ -35144,7 +35144,7 @@
   ]
  },
  "2026-12-03": {
-  "fetched_at": "2026-10-30T22:49:50+00:00",
+  "fetched_at": "2026-10-31T07:03:04+00:00",
   "rows": [
    {
     "epsForecast": "$1.17",
@@ -35226,15 +35226,15 @@
   ]
  },
  "2026-12-04": {
-  "fetched_at": "2026-10-30T22:49:53+00:00",
+  "fetched_at": "2026-10-31T07:03:07+00:00",
   "rows": []
  },
  "2026-12-07": {
-  "fetched_at": "2026-10-30T22:49:56+00:00",
+  "fetched_at": "2026-10-31T07:03:08+00:00",
   "rows": []
  },
  "2026-12-08": {
-  "fetched_at": "2026-10-30T22:49:58+00:00",
+  "fetched_at": "2026-10-31T07:03:09+00:00",
   "rows": [
    {
     "epsForecast": "$36.06",
@@ -35261,7 +35261,7 @@
   ]
  },
  "2026-12-09": {
-  "fetched_at": "2026-10-30T22:49:59+00:00",
+  "fetched_at": "2026-10-31T07:03:11+00:00",
   "rows": [
    {
     "epsForecast": "$1.57",
@@ -35310,7 +35310,7 @@
   ]
  },
  "2026-12-10": {
-  "fetched_at": "2026-10-30T22:50:00+00:00",
+  "fetched_at": "2026-10-31T07:03:14+00:00",
   "rows": [
    {
     "epsForecast": "$3.45",
@@ -35359,15 +35359,15 @@
   ]
  },
  "2026-12-11": {
-  "fetched_at": "2026-10-30T22:50:03+00:00",
+  "fetched_at": "2026-10-31T07:03:16+00:00",
   "rows": []
  },
  "2026-12-14": {
-  "fetched_at": "2026-10-30T22:50:06+00:00",
+  "fetched_at": "2026-10-31T07:03:20+00:00",
   "rows": []
  },
  "2026-12-15": {
-  "fetched_at": "2026-10-30T22:50:08+00:00",
+  "fetched_at": "2026-10-31T07:03:22+00:00",
   "rows": [
    {
     "epsForecast": "$1.47",
