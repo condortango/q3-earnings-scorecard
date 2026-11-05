@@ -11239,8 +11239,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 4, 2026 12:57 PM PT",
- "generated_at_utc": "2026-11-04T20:57:55+00:00",
+ "generated_at_pt": "Nov 4, 2026 5:37 PM PT",
+ "generated_at_utc": "2026-11-05T01:37:45+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11249,7 +11249,7 @@
   "reporters_pct": 27.9,
   "value_pct": 28.8
  },
- "last_success_pt": "Nov 4, 2026 12:57 PM PT",
+ "last_success_pt": "Nov 4, 2026 5:37 PM PT",
  "reported": 355,
  "reported_since_factset": 68,
  "revenue": {
