@@ -36,7 +36,7 @@
    "rev_est": 115660327009.0,
    "rev_surprise_pct": -1.02,
    "sector": "Information Technology",
-   "shares": 14594180000,
+   "shares": 14532182000,
    "ticker": "AAPL",
    "time": "not-supplied"
   },
@@ -56,7 +56,7 @@
    "rev_est": 17659984383.0,
    "rev_surprise_pct": -1.45,
    "sector": "Health Care",
-   "shares": 1767117285,
+   "shares": 1767616306,
    "ticker": "ABBV",
    "time": "not-supplied"
   },
@@ -196,7 +196,7 @@
    "rev_est": 22412505798.0,
    "rev_surprise_pct": -0.35,
    "sector": "Consumer Staples",
-   "shares": 481959583,
+   "shares": 475919192,
    "ticker": "ADM",
    "time": "not-supplied"
   },
@@ -296,33 +296,29 @@
    "rev_est": null,
    "rev_surprise_pct": null,
    "sector": "Utilities",
-   "shares": 713438630,
+   "shares": 713564658,
    "ticker": "AES",
    "time": "not-supplied"
   },
   {
    "cik": "4977",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 2.43,
    "eps_est": 1.8,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 2.49,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 35.0,
    "eps_yearago": 2.49,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 6,
    "name": "Aflac",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 4297000000.0,
+   "rev_est": 4162761793.0,
+   "rev_surprise_pct": 3.22,
    "sector": "Financials",
    "shares": 501343298,
    "ticker": "AFL",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "5272",
@@ -407,26 +403,22 @@
   {
    "cik": "915913",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 2.58,
    "eps_est": 2.56,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": -0.19,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 0.78,
    "eps_yearago": -0.19,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 6,
    "name": "Albemarle Corporation",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 1553100000.0,
+   "rev_est": 1531790411.0,
+   "rev_surprise_pct": 1.39,
    "sector": "Materials",
    "shares": 118005057,
    "ticker": "ALB",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1097149",
@@ -451,26 +443,22 @@
   {
    "cik": "899051",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 9.76,
    "eps_est": 7.03,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 11.17,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 38.83,
    "eps_yearago": 11.17,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 10,
    "name": "Allstate",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 17893000000.0,
+   "rev_est": 16224261250.0,
+   "rev_surprise_pct": 10.29,
    "sector": "Financials",
    "shares": 252857950,
    "ticker": "ALL",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1579241",
@@ -530,7 +518,7 @@
    "sector": "Materials",
    "shares": 462345690,
    "ticker": "AMCR",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "2488",
@@ -568,7 +556,7 @@
    "rev_est": 2146682471.0,
    "rev_surprise_pct": 3.43,
    "sector": "Industrials",
-   "shares": 229261244,
+   "shares": 229317998,
    "ticker": "AME",
    "time": "not-supplied"
   },
@@ -715,26 +703,22 @@
   {
    "cik": "1841666",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 1.94,
    "eps_est": 1.44,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 0.93,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 34.72,
    "eps_yearago": 0.93,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 8,
    "name": "APA Corporation",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 2812000000.0,
+   "rev_est": 2528307962.0,
+   "rev_surprise_pct": 11.22,
    "sector": "Energy",
    "shares": 350351510,
    "ticker": "APA",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "2969",
@@ -799,26 +783,22 @@
   {
    "cik": "1751008",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 4.3,
    "eps_est": 3.94,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 2.45,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 9.14,
    "eps_yearago": 2.45,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 9,
    "name": "AppLovin",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 2184820000.0,
+   "rev_est": 2098611572.0,
+   "rev_surprise_pct": 4.11,
    "sector": "Communication Services",
    "shares": 334651000,
    "ticker": "APP",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1521332",
@@ -836,7 +816,7 @@
    "rev_est": 3235006816.0,
    "rev_surprise_pct": -1.11,
    "sector": "Consumer Discretionary",
-   "shares": 207633331,
+   "shares": 202430074,
    "ticker": "APTV",
    "time": "not-supplied"
   },
@@ -883,14 +863,10 @@
   {
    "cik": "731802",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 1.17,
    "eps_est": 1.14,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 1.06,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 2.63,
    "eps_yearago": 1.06,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
@@ -902,7 +878,7 @@
    "sector": "Utilities",
    "shares": 168988553,
    "ticker": "ATO",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1730168",
@@ -940,7 +916,7 @@
    "rev_est": 2285871188.0,
    "rev_surprise_pct": 2.0,
    "sector": "Materials",
-   "shares": 75788142,
+   "shares": 75511437,
    "ticker": "AVY",
    "time": "not-supplied"
   },
@@ -1080,7 +1056,7 @@
    "rev_est": 3859708050.0,
    "rev_surprise_pct": 8.51,
    "sector": "Materials",
-   "shares": 264703357,
+   "shares": 260291542,
    "ticker": "BALL",
    "time": "not-supplied"
   },
@@ -1202,7 +1178,7 @@
    "sector": "Consumer Staples",
    "shares": null,
    "ticker": "BF.B",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "1996862",
@@ -1260,7 +1236,7 @@
    "rev_est": 9738989712.0,
    "rev_surprise_pct": -8.69,
    "sector": "Consumer Discretionary",
-   "shares": 751380500,
+   "shares": 743701257,
    "ticker": "BKNG",
    "time": "not-supplied"
   },
@@ -1360,7 +1336,7 @@
    "rev_est": 1697406154.0,
    "rev_surprise_pct": -1.69,
    "sector": "Industrials",
-   "shares": 112900032,
+   "shares": 113106236,
    "ticker": "BR",
    "time": "not-supplied"
   },
@@ -1687,26 +1663,22 @@
   {
    "cik": "1402057",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 3.09,
    "eps_est": 2.77,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 2.55,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 11.55,
    "eps_yearago": 2.55,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 5,
    "name": "CDW Corporation",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 6754500000.0,
+   "rev_est": 6281020208.0,
+   "rev_surprise_pct": 7.54,
    "sector": "Information Technology",
    "shares": 125017426,
    "ticker": "CDW",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "1868275",
@@ -1731,26 +1703,22 @@
   {
    "cik": "1324404",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 2.87,
    "eps_est": 2.93,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 2.19,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": -2.05,
    "eps_yearago": 2.19,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 6,
    "name": "CF Industries",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 1860000000.0,
+   "rev_est": 1838691583.0,
+   "rev_surprise_pct": 1.16,
    "sector": "Materials",
    "shares": 151338130,
    "ticker": "CF",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "759944",
@@ -2088,33 +2056,29 @@
    "rev_est": 16428738547.0,
    "rev_surprise_pct": -0.52,
    "sector": "Financials",
-   "shares": 613484836,
+   "shares": 601533153,
    "ticker": "COF",
    "time": "not-supplied"
   },
   {
    "cik": "820318",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 1.8,
    "eps_est": 1.8,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 0.93,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 0.0,
    "eps_yearago": 0.93,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 8,
    "name": "Coherent Corp.",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 2370300000.0,
+   "rev_est": 2351303459.0,
+   "rev_surprise_pct": 0.81,
    "sector": "Information Technology",
    "shares": 196934659,
    "ticker": "COHR",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1679788",
@@ -2179,26 +2143,22 @@
   {
    "cik": "1140859",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 4.66,
    "eps_est": 4.56,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 3.84,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 2.19,
    "eps_yearago": 3.84,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 4,
    "name": "Cencora",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 88354530000.0,
+   "rev_est": 88910598960.0,
+   "rev_surprise_pct": -0.63,
    "sector": "Health Care",
    "shares": 190827165,
    "ticker": "COR",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "909832",
@@ -2223,26 +2183,22 @@
   {
    "cik": "1175454",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 7.15,
    "eps_est": 6.74,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 5.41,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 6.08,
    "eps_yearago": 5.41,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 6,
    "name": "Corpay",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 1381930000.0,
+   "rev_est": 1385367202.0,
+   "rev_surprise_pct": -0.25,
    "sector": "Financials",
    "shares": 65659599,
    "ticker": "CPAY",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "900075",
@@ -2307,26 +2263,22 @@
   {
    "cik": "1100682",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 3.09,
    "eps_est": 2.98,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 2.43,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 3.69,
    "eps_yearago": 2.43,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 7,
    "name": "Charles River Laboratories",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 982730000.0,
+   "rev_est": 968279616.0,
+   "rev_surprise_pct": 1.49,
    "sector": "Health Care",
    "shares": 47738872,
    "ticker": "CRL",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "1108524",
@@ -2366,11 +2318,11 @@
    "sector": "Information Technology",
    "shares": 1023934842,
    "ticker": "CRWD",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "858877",
-   "date": "2026-11-11",
+   "date": "2026-11-12",
    "eps_actual": null,
    "eps_est": 1.15,
    "eps_pending": null,
@@ -2386,7 +2338,7 @@
    "sector": "Information Technology",
    "shares": 3942586873,
    "ticker": "CSCO",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "1057352",
@@ -2491,26 +2443,22 @@
   {
    "cik": "64803",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 2.09,
    "eps_est": 1.62,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 1.6,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 29.01,
    "eps_yearago": 1.6,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 9,
    "name": "CVS Health",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 108399000000.0,
+   "rev_est": 105741861120.0,
+   "rev_surprise_pct": 2.51,
    "sector": "Health Care",
    "shares": 1278970369,
    "ticker": "CVS",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "93410",
@@ -2608,33 +2556,29 @@
    "rev_est": 1898091807.0,
    "rev_surprise_pct": -1.59,
    "sector": "Industrials",
-   "shares": 135042975,
+   "shares": 132532338,
    "ticker": "DD",
    "time": "not-supplied"
   },
   {
    "cik": "1561550",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 0.33,
    "eps_est": 0.18,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 0.11,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 83.33,
    "eps_yearago": 0.11,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 10,
    "name": "Datadog",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 1197090000.0,
+   "rev_est": 1168693182.0,
+   "rev_surprise_pct": 2.43,
    "sector": "Information Technology",
    "shares": 359075024,
    "ticker": "DDOG",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "315189",
@@ -2818,7 +2762,7 @@
   },
   {
    "cik": "935703",
-   "date": "2026-12-02",
+   "date": "2026-11-24",
    "eps_actual": null,
    "eps_est": 0.88,
    "eps_pending": null,
@@ -2834,7 +2778,7 @@
    "sector": "Consumer Staples",
    "shares": 187630299,
    "ticker": "DLTR",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "765880",
@@ -2852,7 +2796,7 @@
    "rev_est": null,
    "rev_surprise_pct": null,
    "sector": "Real Estate",
-   "shares": 689527260,
+   "shares": 689543752,
    "ticker": "DOC",
    "time": "not-supplied"
   },
@@ -2940,13 +2884,13 @@
    "cik": "936340",
    "date": "2026-11-05",
    "eps_actual": null,
-   "eps_est": 2.22,
+   "eps_est": 2.1,
    "eps_pending": null,
    "eps_surprise_pct": null,
    "eps_yearago": 2.25,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 5,
+   "n_ests": 4,
    "name": "DTE Energy",
    "rev_actual": null,
    "rev_est": null,
@@ -3058,7 +3002,7 @@
   },
   {
    "cik": "1415404",
-   "date": "2026-11-05",
+   "date": "2026-11-06",
    "eps_actual": null,
    "eps_est": 0.02,
    "eps_pending": null,
@@ -3072,9 +3016,9 @@
    "rev_est": null,
    "rev_surprise_pct": null,
    "sector": "Communication Services",
-   "shares": 290815844,
+   "shares": 290978155,
    "ticker": "ECHO",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "31462",
@@ -3239,26 +3183,22 @@
   {
    "cik": "32604",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 1.86,
    "eps_est": 1.85,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 1.62,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 0.54,
    "eps_yearago": 1.62,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 7,
    "name": "Emerson Electric",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 5201000000.0,
+   "rev_est": 5169216117.0,
+   "rev_surprise_pct": 0.61,
    "sector": "Industrials",
    "shares": 557800000,
    "ticker": "EMR",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "821189",
@@ -3343,26 +3283,22 @@
   {
    "cik": "72741",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 0.92,
    "eps_est": 0.97,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 1.19,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": -5.15,
    "eps_yearago": 1.19,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 5,
    "name": "Eversource Energy",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 2978890000.0,
+   "rev_est": 3316512450.0,
+   "rev_surprise_pct": -10.18,
    "sector": "Utilities",
    "shares": 376674754,
    "ticker": "ES",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "920522",
@@ -3400,7 +3336,7 @@
    "rev_est": 8591447840.0,
    "rev_surprise_pct": 4.14,
    "sector": "Industrials",
-   "shares": 388400000,
+   "shares": 388500000,
    "ticker": "ETN",
    "time": "not-supplied"
   },
@@ -3447,26 +3383,22 @@
   {
    "cik": "1099800",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 0.8,
    "eps_est": 0.73,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 0.67,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 9.59,
    "eps_yearago": 0.67,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 9,
    "name": "Edwards Lifesciences",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 1715500000.0,
+   "rev_est": 1726379693.0,
+   "rev_surprise_pct": -0.63,
    "sector": "Health Care",
    "shares": 576400000,
    "ticker": "EW",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1109357",
@@ -3531,26 +3463,22 @@
   {
    "cik": "1324424",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 8.6,
    "eps_est": 8.09,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 7.03,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 6.3,
    "eps_yearago": 7.03,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 8,
    "name": "Expedia Group",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 4938000000.0,
+   "rev_est": 4831052815.0,
+   "rev_surprise_pct": 2.21,
    "sector": "Consumer Discretionary",
    "shares": 114495891,
    "ticker": "EXPE",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1289490",
@@ -3705,8 +3633,8 @@
    "n_ests": 2,
    "name": "FedEx Freight",
    "rev_actual": 2442000000.0,
-   "rev_est": 2263505256.0,
-   "rev_surprise_pct": 7.89,
+   "rev_est": 2419092180.0,
+   "rev_surprise_pct": 0.95,
    "sector": "Industrials",
    "shares": 149521266,
    "ticker": "FDXF",
@@ -3775,38 +3703,30 @@
   {
    "cik": "814547",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 9.61,
    "eps_est": 9.2,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 6.74,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 4.46,
    "eps_yearago": 6.74,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 4,
    "name": "Fair Isaac",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 657050000.0,
+   "rev_est": 666776937.0,
+   "rev_surprise_pct": -1.46,
    "sector": "Information Technology",
    "shares": 21597635,
    "ticker": "FICO",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1136893",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 1.61,
    "eps_est": 1.61,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 1.51,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 0.0,
    "eps_yearago": 1.51,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
@@ -3818,7 +3738,7 @@
    "sector": "Financials",
    "shares": 515705917,
    "ticker": "FIS",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "798354",
@@ -3856,7 +3776,7 @@
    "rev_est": 3405784763.0,
    "rev_surprise_pct": -3.58,
    "sector": "Financials",
-   "shares": 906892564,
+   "shares": 903645765,
    "ticker": "FITB",
    "time": "not-supplied"
   },
@@ -4236,7 +4156,7 @@
    "rev_est": 1350466281.0,
    "rev_surprise_pct": -4.12,
    "sector": "Industrials",
-   "shares": 59006361,
+   "shares": 58988982,
    "ticker": "GNRC",
    "time": "not-supplied"
   },
@@ -4343,26 +4263,22 @@
   {
    "cik": "277135",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 12.54,
    "eps_est": 11.64,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 10.21,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 7.73,
    "eps_yearago": 10.21,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 7,
    "name": "W. W. Grainger",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 5181000000.0,
+   "rev_est": 5132951300.0,
+   "rev_surprise_pct": 0.94,
    "sector": "Industrials",
    "shares": 47100942,
    "ticker": "GWW",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "45012",
@@ -4622,7 +4538,7 @@
    "sector": "Information Technology",
    "shares": 901790969,
    "ticker": "HPQ",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "48465",
@@ -4642,7 +4558,7 @@
    "sector": "Consumer Staples",
    "shares": 550350800,
    "ticker": "HRL",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "1000228",
@@ -4660,33 +4576,29 @@
    "rev_est": 3545631475.0,
    "rev_surprise_pct": -2.1,
    "sector": "Health Care",
-   "shares": 111446542,
+   "shares": 110538542,
    "ticker": "HSIC",
    "time": "not-supplied"
   },
   {
    "cik": "1070750",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 0.39,
    "eps_est": 0.38,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 0.35,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 2.63,
    "eps_yearago": 0.35,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 8,
    "name": "Host Hotels & Resorts",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 1347000000.0,
+   "rev_est": 1368697076.0,
+   "rev_surprise_pct": -1.59,
    "sector": "Real Estate",
    "shares": 685124399,
    "ticker": "HST",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "47111",
@@ -4884,7 +4796,7 @@
    "rev_est": 1927506533.0,
    "rev_surprise_pct": 0.75,
    "sector": "Materials",
-   "shares": 255149963,
+   "shares": 250391293,
    "ticker": "IFF",
    "time": "not-supplied"
   },
@@ -5104,7 +5016,7 @@
    "rev_est": 1530760765.0,
    "rev_surprise_pct": -1.7,
    "sector": "Information Technology",
-   "shares": 63148976,
+   "shares": 63081351,
    "ticker": "IT",
    "time": "not-supplied"
   },
@@ -5144,7 +5056,7 @@
    "rev_est": 1399688300.0,
    "rev_surprise_pct": -1.29,
    "sector": "Financials",
-   "shares": 441499780,
+   "shares": 439528938,
    "ticker": "IVZ",
    "time": "not-supplied"
   },
@@ -5284,7 +5196,7 @@
    "rev_est": 51729296017.0,
    "rev_surprise_pct": -1.59,
    "sector": "Financials",
-   "shares": 2658186195,
+   "shares": 2655609509,
    "ticker": "JPM",
    "time": "not-supplied"
   },
@@ -5324,7 +5236,7 @@
    "rev_est": 2066150000.0,
    "rev_surprise_pct": -0.68,
    "sector": "Financials",
-   "shares": 1067128554,
+   "shares": 1055979769,
    "ticker": "KEY",
    "time": "not-supplied"
   },
@@ -5351,26 +5263,22 @@
   {
    "cik": "1637459",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 0.53,
    "eps_est": 0.43,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 0.61,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 23.26,
    "eps_yearago": 0.61,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 8,
    "name": "Kraft Heinz",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 6115000000.0,
+   "rev_est": 6150725805.0,
+   "rev_surprise_pct": -0.58,
    "sector": "Consumer Staples",
    "shares": 1185823758,
    "ticker": "KHC",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "879101",
@@ -5548,7 +5456,7 @@
    "rev_est": 4808406816.0,
    "rev_surprise_pct": -3.71,
    "sector": "Industrials",
-   "shares": 125492209,
+   "shares": 121994697,
    "ticker": "LDOS",
    "time": "not-supplied"
   },
@@ -5668,7 +5576,7 @@
    "rev_est": null,
    "rev_surprise_pct": null,
    "sector": "Information Technology",
-   "shares": 90582856,
+   "shares": 90700000,
    "ticker": "LITE",
    "time": "not-supplied"
   },
@@ -5828,7 +5736,7 @@
    "rev_est": 3386536595.0,
    "rev_surprise_pct": -5.04,
    "sector": "Consumer Discretionary",
-   "shares": 626990133,
+   "shares": 626989045,
    "ticker": "LVS",
    "time": "not-supplied"
   },
@@ -5955,26 +5863,22 @@
   {
    "cik": "63908",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 3.57,
    "eps_est": 3.36,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 3.22,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 6.25,
    "eps_yearago": 3.22,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 11,
    "name": "McDonald's",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 7157000000.0,
+   "rev_est": 7357417406.0,
+   "rev_surprise_pct": -2.72,
    "sector": "Consumer Discretionary",
    "shares": 707641531,
    "ticker": "MCD",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "827054",
@@ -5999,26 +5903,22 @@
   {
    "cik": "927653",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 11.68,
    "eps_est": 10.69,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 9.86,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 9.26,
    "eps_yearago": 9.86,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 6,
    "name": "McKesson",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 110957000000.0,
+   "rev_est": 110974079936.0,
+   "rev_surprise_pct": -0.02,
    "sector": "Health Care",
    "shares": 116590363,
    "ticker": "MCK",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1059556",
@@ -6083,26 +5983,22 @@
   {
    "cik": "1099219",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 2.85,
    "eps_est": 2.71,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 2.34,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 5.17,
    "eps_yearago": 2.34,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 8,
    "name": "MetLife",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 19907000000.0,
+   "rev_est": 20175200460.0,
+   "rev_surprise_pct": -1.33,
    "sector": "Financials",
    "shares": 635476927,
    "ticker": "MET",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1326801",
@@ -6167,26 +6063,22 @@
   {
    "cik": "916076",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 5.47,
    "eps_est": 5.27,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 5.97,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 3.8,
    "eps_yearago": 5.97,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 2,
    "name": "Martin Marietta Materials",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 2369000000.0,
+   "rev_est": 2260684222.0,
+   "rev_surprise_pct": 4.79,
    "sector": "Materials",
    "shares": 71020331,
    "ticker": "MLM",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "66740",
@@ -6284,7 +6176,7 @@
    "rev_est": 46495403418.0,
    "rev_surprise_pct": 21.49,
    "sector": "Energy",
-   "shares": 280824763,
+   "shares": 272282280,
    "ticker": "MPC",
    "time": "not-supplied"
   },
@@ -6304,7 +6196,7 @@
    "rev_est": 1168060690.0,
    "rev_surprise_pct": 2.94,
    "sector": "Information Technology",
-   "shares": 49143000,
+   "shares": 48768000,
    "ticker": "MPWR",
    "time": "not-supplied"
   },
@@ -6451,26 +6343,22 @@
   {
    "cik": "68505",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 4.21,
    "eps_est": 3.99,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 3.69,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 5.51,
    "eps_yearago": 3.69,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 5,
    "name": "Motorola Solutions",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 3376000000.0,
+   "rev_est": 3296400963.0,
+   "rev_surprise_pct": 2.41,
    "sector": "Information Technology",
    "shares": 165493788,
    "ticker": "MSI",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "36270",
@@ -6875,26 +6763,22 @@
   {
    "cik": "1564708",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 0.28,
    "eps_est": 0.26,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 0.22,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 7.69,
    "eps_yearago": 0.22,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 3,
    "name": "News Corp (Class A)",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 2281000000.0,
+   "rev_est": 2318954292.0,
+   "rev_surprise_pct": -1.64,
    "sector": "Communication Services",
    "shares": 540446003,
    "ticker": "NWSA",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1413447",
@@ -6932,7 +6816,7 @@
    "rev_est": 1549572606.0,
    "rev_surprise_pct": 4.65,
    "sector": "Real Estate",
-   "shares": 946218033,
+   "shares": 950997048,
    "ticker": "O",
    "time": "not-supplied"
   },
@@ -7272,7 +7156,7 @@
    "rev_est": 16030810526.0,
    "rev_surprise_pct": 3.44,
    "sector": "Health Care",
-   "shares": 5699673589,
+   "shares": 5699853733,
    "ticker": "PFE",
    "time": "not-supplied"
   },
@@ -7432,7 +7316,7 @@
    "rev_est": 2226152254.0,
    "rev_surprise_pct": 3.92,
    "sector": "Information Technology",
-   "shares": 2402053480,
+   "shares": 2409497474,
    "ticker": "PLTR",
    "time": "not-supplied"
   },
@@ -7472,7 +7356,7 @@
    "rev_est": 6679512668.0,
    "rev_surprise_pct": -1.76,
    "sector": "Financials",
-   "shares": 398943667,
+   "shares": 396778009,
    "ticker": "PNC",
    "time": "not-supplied"
   },
@@ -7512,33 +7396,29 @@
    "rev_est": 1919229017.0,
    "rev_surprise_pct": 2.79,
    "sector": "Utilities",
-   "shares": 121197234,
+   "shares": 121201207,
    "ticker": "PNW",
    "time": "not-supplied"
   },
   {
    "cik": "1145197",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 1.99,
    "eps_est": 1.59,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 1.24,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 25.16,
    "eps_yearago": 1.24,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 8,
    "name": "Insulet Corporation",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 842000000.0,
+   "rev_est": 849338924.0,
+   "rev_surprise_pct": -0.86,
    "sector": "Health Care",
    "shares": 69354199,
    "ticker": "PODD",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "79879",
@@ -7643,26 +7523,22 @@
   {
    "cik": "857005",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 1.43,
    "eps_est": 1.59,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 3.1,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": -10.06,
    "eps_yearago": 3.1,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 5,
    "name": "PTC Inc.",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 673250000.0,
+   "rev_est": 668330130.0,
+   "rev_surprise_pct": 0.74,
    "sector": "Information Technology",
    "shares": 108506261,
    "ticker": "PTC",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1050915",
@@ -7707,50 +7583,42 @@
   {
    "cik": "2058873",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 1.46,
    "eps_est": 1.18,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 1.01,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 23.73,
    "eps_yearago": 1.01,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 3,
    "name": "Qnity Electronics",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 1556000000.0,
+   "rev_est": 1517241075.0,
+   "rev_surprise_pct": 2.55,
    "sector": "Information Technology",
    "shares": 209208543,
    "ticker": "Q",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "804328",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 1.45,
    "eps_est": 1.46,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 2.56,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": -0.68,
    "eps_yearago": 2.56,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 9,
    "name": "Qualcomm",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 10442000000.0,
+   "rev_est": 10318265215.0,
+   "rev_surprise_pct": 1.2,
    "sector": "Information Technology",
    "shares": 1050233921,
    "ticker": "QCOM",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "884887",
@@ -8356,13 +8224,13 @@
    "cik": "1032208",
    "date": "2026-11-05",
    "eps_actual": null,
-   "eps_est": 1.18,
+   "eps_est": 1.2,
    "eps_pending": null,
    "eps_surprise_pct": null,
    "eps_yearago": 1.11,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 5,
+   "n_ests": 4,
    "name": "Sempra",
    "rev_actual": null,
    "rev_est": null,
@@ -8375,14 +8243,10 @@
   {
    "cik": "1757898",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 2.94,
    "eps_est": 2.67,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 2.47,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 10.11,
    "eps_yearago": 2.47,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
@@ -8394,7 +8258,7 @@
    "sector": "Health Care",
    "shares": 97500110,
    "ticker": "STE",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1022671",
@@ -8499,26 +8363,22 @@
   {
    "cik": "93556",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 2.31,
    "eps_est": 1.54,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 1.43,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 50.0,
    "eps_yearago": 1.43,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 5,
    "name": "Stanley Black & Decker",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 3731600000.0,
+   "rev_est": 3777919786.0,
+   "rev_surprise_pct": -1.23,
    "sector": "Industrials",
    "shares": 151016641,
    "ticker": "SWK",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "4127",
@@ -8787,26 +8647,22 @@
   {
    "cik": "1973266",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 1.33,
    "eps_est": 1.2,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 0.5,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 10.83,
    "eps_yearago": 0.5,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 5,
    "name": "TKO Group Holdings",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 1360100000.0,
+   "rev_est": 1392715684.0,
+   "rev_surprise_pct": -2.34,
    "sector": "Communication Services",
    "shares": 189269713,
    "ticker": "TKO",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "97745",
@@ -8851,26 +8707,22 @@
   {
    "cik": "1811074",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 2.42,
    "eps_est": 2.35,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 1.76,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 2.98,
    "eps_yearago": 1.76,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 1,
    "name": "Texas Pacific Land Corporation",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 273390000.0,
+   "rev_est": 250480000.0,
+   "rev_surprise_pct": 9.15,
    "sector": "Energy",
    "shares": 68974683,
    "ticker": "TPL",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "1116132",
@@ -8896,13 +8748,13 @@
    "cik": "1389170",
    "date": "2026-11-05",
    "eps_actual": null,
-   "eps_est": 2.74,
+   "eps_est": 2.81,
    "eps_pending": null,
    "eps_surprise_pct": null,
    "eps_yearago": 2.2,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 8,
+   "n_ests": 7,
    "name": "Targa Resources",
    "rev_actual": null,
    "rev_est": null,
@@ -8915,26 +8767,22 @@
   {
    "cik": "864749",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 0.71,
    "eps_est": 0.73,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 0.7,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": -2.74,
    "eps_yearago": 0.7,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 4,
    "name": "Trimble Inc.",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 966800000.0,
+   "rev_est": 992072512.0,
+   "rev_surprise_pct": -2.55,
    "sector": "Information Technology",
    "shares": 233179848,
    "ticker": "TRMB",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "1113169",
@@ -9179,26 +9027,22 @@
   {
    "cik": "1543151",
    "date": "2026-11-04",
-   "eps_actual": null,
+   "eps_actual": 0.25,
    "eps_est": 0.94,
-   "eps_pending": {
-    "date": "2026-11-04",
-    "eps": 3.11,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": -73.4,
    "eps_yearago": 3.11,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 7,
    "name": "Uber",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 14766000000.0,
+   "rev_est": 14997971451.0,
+   "rev_surprise_pct": -1.55,
    "sector": "Industrials",
    "shares": 2042560121,
    "ticker": "UBER",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "74208",
@@ -9216,7 +9060,7 @@
    "rev_est": 432919239.0,
    "rev_surprise_pct": -1.93,
    "sector": "Real Estate",
-   "shares": 321264222,
+   "shares": 316888770,
    "ticker": "UDR",
    "time": "not-supplied"
   },
@@ -9276,7 +9120,7 @@
    "rev_est": 112517286035.0,
    "rev_surprise_pct": 0.16,
    "sector": "Health Care",
-   "shares": 897594847,
+   "shares": 896022611,
    "ticker": "UNH",
    "time": "not-supplied"
   },
@@ -9580,7 +9424,7 @@
    "rev_est": 3485765503.0,
    "rev_surprise_pct": -1.29,
    "sector": "Health Care",
-   "shares": 253460924,
+   "shares": 253537674,
    "ticker": "VRTX",
    "time": "not-supplied"
   },
@@ -9588,7 +9432,7 @@
    "cik": "1692819",
    "date": "2026-11-06",
    "eps_actual": null,
-   "eps_est": 2.77,
+   "eps_est": 2.89,
    "eps_pending": null,
    "eps_surprise_pct": null,
    "eps_yearago": 1.75,
@@ -10080,7 +9924,7 @@
    "rev_est": 6652859526.0,
    "rev_surprise_pct": 1.0,
    "sector": "Financials",
-   "shares": 600795000,
+   "shares": 604522000,
    "ticker": "XYZ",
    "time": "not-supplied"
   },
@@ -10122,7 +9966,7 @@
    "sector": "Health Care",
    "shares": 190737689,
    "ticker": "ZBH",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "877212",
@@ -10140,7 +9984,7 @@
    "rev_est": 1593772521.0,
    "rev_surprise_pct": 1.27,
    "sector": "Information Technology",
-   "shares": 47310660,
+   "shares": 47087454,
    "ticker": "ZBRA",
    "time": "not-supplied"
   },
@@ -10177,18 +10021,18 @@
   "window_start": "2026-09-01"
  },
  "eps": {
-  "above": 290,
-  "above_pct": 81.9,
+  "above": 321,
+  "above_pct": 81.7,
   "agg_method": "share-weighted (EPS x shares outstanding)",
-  "agg_surprise_pct": 4.44,
-  "beat": 280,
-  "beat_pct": 79.1,
-  "median_surprise_pct": 4.63,
-  "meet": 29,
-  "meet_pct": 8.2,
-  "miss": 45,
+  "agg_surprise_pct": 4.5,
+  "beat": 309,
+  "beat_pct": 78.6,
+  "median_surprise_pct": 4.7,
+  "meet": 34,
+  "meet_pct": 8.7,
+  "miss": 50,
   "miss_pct": 12.7,
-  "n": 354
+  "n": 393
  },
  "factset": {
   "benchmarks": {
@@ -11403,36 +11247,36 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 4, 2026 11:57 PM PT",
- "generated_at_utc": "2026-11-05T07:57:06+00:00",
+ "generated_at_pt": "Nov 5, 2026 7:14 AM PT",
+ "generated_at_utc": "2026-11-05T15:14:38+00:00",
  "growth": {
   "available": true,
   "coverage": 495,
   "min_coverage": 350,
-  "reporters_n": 354,
-  "reporters_pct": 27.8,
-  "value_pct": 28.8
+  "reporters_n": 393,
+  "reporters_pct": 25.5,
+  "value_pct": 29.0
  },
- "last_success_pt": "Nov 4, 2026 11:57 PM PT",
- "reported": 356,
- "reported_since_factset": 69,
+ "last_success_pt": "Nov 5, 2026 7:14 AM PT",
+ "reported": 395,
+ "reported_since_factset": 108,
  "revenue": {
-  "above": 153,
-  "above_pct": 43.5,
+  "above": 173,
+  "above_pct": 44.6,
   "agg_method": "sum of values",
-  "agg_surprise_pct": 0.82,
+  "agg_surprise_pct": 0.83,
   "available": true,
-  "beat": 107,
-  "beat_pct": 30.4,
-  "median_surprise_pct": -0.35,
-  "meet": 101,
-  "meet_pct": 28.7,
-  "miss": 144,
-  "miss_pct": 40.9,
-  "n": 352,
+  "beat": 122,
+  "beat_pct": 31.4,
+  "median_surprise_pct": -0.29,
+  "meet": 112,
+  "meet_pct": 28.9,
+  "miss": 154,
+  "miss_pct": 39.7,
+  "n": 388,
   "status": "ok"
  },
- "scheduled": 144,
+ "scheduled": 105,
  "season": "Q3 2026",
  "season_curves": [
   {
@@ -11917,7 +11761,7 @@
     23.7,
     23.7,
     23.8,
-    24.3,
+    24.4,
     24.7,
     24.8,
     24.9,
@@ -12705,7 +12549,7 @@
     26.0,
     26.0,
     26.0,
-    26.1,
+    26.0,
     26.1,
     26.1,
     26.1,
@@ -12740,7 +12584,7 @@
     31.7,
     31.7,
     31.8,
-    32.8,
+    32.7,
     34.3,
     34.6,
     34.6,
@@ -12775,20 +12619,20 @@
     36.8,
     36.8,
     36.8,
-    36.9,
-    36.9,
+    36.8,
+    36.8,
     36.8,
     36.8
    ],
    "growth_n": 485,
    "growth_pct": [
     24.6,
-    24.6,
-    24.6,
-    24.6,
-    24.6,
-    24.6,
-    24.6,
+    24.5,
+    24.5,
+    24.5,
+    24.5,
+    24.5,
+    24.5,
     24.5,
     24.6,
     24.6,
@@ -13020,8 +12864,8 @@
     53.1,
     53.1,
     46.8,
-    85.9,
-    78.0,
+    86.0,
+    78.1,
     73.2,
     73.2,
     73.2,
@@ -13035,13 +12879,13 @@
     49.5,
     43.9,
     45.5,
+    45.1,
+    45.1,
+    45.1,
+    45.1,
+    45.1,
     45.2,
     45.1,
-    45.1,
-    45.1,
-    45.1,
-    45.2,
-    45.2,
     45.1,
     45.1,
     45.1,
@@ -13164,11 +13008,11 @@
      "t": "WRB"
     },
     {
-     "pp": 0.11,
+     "pp": 0.1,
      "t": "COF"
     },
     {
-     "pp": 13.75,
+     "pp": 13.76,
      "t": "GOOG"
     },
     {
@@ -13209,7 +13053,7 @@
     },
     {
      "pp": 0.16,
-     "t": "MPC"
+     "t": "CAT"
     },
     {
      "pp": 0.4,
@@ -13368,8 +13212,8 @@
     81.6,
     81.1,
     82.1,
-    81.9,
-    81.9
+    81.7,
+    81.7
    ],
    "beats": [
     1,
@@ -13427,8 +13271,8 @@
     244,
     257,
     289,
-    290,
-    290
+    321,
+    321
    ],
    "day0": "2026-09-10",
    "expected_growth_ex_pct": 26.9,
@@ -13518,26 +13362,26 @@
     27.0,
     27.0,
     27.0,
+    27.0,
+    27.0,
+    27.0,
+    27.0,
+    27.0,
     27.1,
-    27.1,
-    27.1,
-    27.1,
-    27.1,
-    27.1,
+    27.4,
+    27.4,
+    27.4,
+    27.4,
+    27.4,
+    27.4,
+    27.4,
     27.4,
     27.5,
     27.5,
     27.5,
     27.5,
     27.5,
-    27.5,
-    27.5,
-    27.5,
-    27.5,
-    27.5,
-    27.5,
-    27.5,
-    27.8,
+    27.7,
     27.8,
     27.9,
     28.0,
@@ -13546,7 +13390,7 @@
     28.0,
     28.5,
     29.2,
-    29.6,
+    29.5,
     29.6,
     29.6,
     29.6,
@@ -13559,8 +13403,8 @@
     32.5,
     32.8,
     33.4,
-    33.4,
-    33.4
+    33.6,
+    33.6
    ],
    "growth_n": 493,
    "growth_pct": [
@@ -13585,11 +13429,11 @@
     24.9,
     24.9,
     25.2,
-    25.3,
-    25.3,
-    25.3,
-    25.3,
-    25.3,
+    25.2,
+    25.2,
+    25.2,
+    25.2,
+    25.2,
     25.3,
     25.3,
     25.3,
@@ -13599,7 +13443,7 @@
     25.3,
     25.5,
     25.6,
-    25.7,
+    25.6,
     25.7,
     25.7,
     25.7,
@@ -13610,17 +13454,17 @@
     27.2,
     27.2,
     27.2,
-    27.3,
+    27.2,
     27.6,
-    26.7,
+    26.6,
     27.5,
     28.0,
     28.0,
     28.0,
     28.3,
     28.9,
-    28.9,
-    28.9
+    29.1,
+    29.1
    ],
    "growth_universe": 498,
    "kickoff_day": 33,
@@ -13682,8 +13526,8 @@
     299,
     317,
     352,
-    354,
-    354
+    393,
+    393
    ],
    "reporters_growth_pct": [
     27.9,
@@ -13726,7 +13570,7 @@
     50.9,
     50.9,
     50.6,
-    44.7,
+    44.8,
     34.8,
     34.0,
     33.5,
@@ -13735,14 +13579,14 @@
     32.4,
     33.4,
     26.0,
-    24.1,
+    24.2,
     28.2,
     28.2,
     28.2,
     27.2,
     27.9,
-    27.9,
-    27.9
+    25.6,
+    25.6
    ],
    "top": [
     {
@@ -13882,8 +13726,8 @@
      "t": "PFE"
     },
     {
-     "pp": -0.0,
-     "t": "AMCR"
+     "pp": -0.22,
+     "t": "UBER"
     },
     null
    ]
@@ -13892,156 +13736,156 @@
  "sectors": [
   {
    "companies": 19,
-   "eps_above_pct": 90.0,
-   "eps_agg_surprise_pct": -8.43,
-   "eps_beat_pct": 90.0,
-   "eps_miss_pct": 10.0,
-   "eps_n": 10,
-   "reported": 10,
-   "rev_above_pct": 30.0,
-   "rev_agg_surprise_pct": -1.99,
-   "rev_beat_pct": 20.0,
-   "rev_n": 10,
+   "eps_above_pct": 92.3,
+   "eps_agg_surprise_pct": -8.03,
+   "eps_beat_pct": 92.3,
+   "eps_miss_pct": 7.7,
+   "eps_n": 13,
+   "reported": 13,
+   "rev_above_pct": 30.8,
+   "rev_agg_surprise_pct": -1.95,
+   "rev_beat_pct": 23.1,
+   "rev_n": 13,
    "sector": "Communication Services"
   },
   {
    "companies": 47,
-   "eps_above_pct": 63.6,
-   "eps_agg_surprise_pct": -0.48,
-   "eps_beat_pct": 63.6,
-   "eps_miss_pct": 30.3,
-   "eps_n": 33,
-   "reported": 33,
-   "rev_above_pct": 27.3,
-   "rev_agg_surprise_pct": -1.75,
-   "rev_beat_pct": 9.1,
-   "rev_n": 33,
+   "eps_above_pct": 65.7,
+   "eps_agg_surprise_pct": -0.02,
+   "eps_beat_pct": 65.7,
+   "eps_miss_pct": 28.6,
+   "eps_n": 35,
+   "reported": 35,
+   "rev_above_pct": 28.6,
+   "rev_agg_surprise_pct": -1.73,
+   "rev_beat_pct": 11.4,
+   "rev_n": 35,
    "sector": "Consumer Discretionary"
   },
   {
    "companies": 33,
    "eps_above_pct": 100.0,
-   "eps_agg_surprise_pct": 4.61,
-   "eps_beat_pct": 94.7,
+   "eps_agg_surprise_pct": 4.96,
+   "eps_beat_pct": 95.0,
    "eps_miss_pct": 0.0,
-   "eps_n": 19,
-   "reported": 19,
-   "rev_above_pct": 31.6,
-   "rev_agg_surprise_pct": -0.81,
-   "rev_beat_pct": 10.5,
-   "rev_n": 19,
+   "eps_n": 20,
+   "reported": 20,
+   "rev_above_pct": 30.0,
+   "rev_agg_surprise_pct": -0.8,
+   "rev_beat_pct": 10.0,
+   "rev_n": 20,
    "sector": "Consumer Staples"
   },
   {
    "companies": 21,
-   "eps_above_pct": 92.9,
-   "eps_agg_surprise_pct": 10.18,
-   "eps_beat_pct": 92.9,
-   "eps_miss_pct": 7.1,
-   "eps_n": 14,
-   "reported": 14,
-   "rev_above_pct": 92.9,
-   "rev_agg_surprise_pct": 12.08,
-   "rev_beat_pct": 85.7,
-   "rev_n": 14,
+   "eps_above_pct": 93.8,
+   "eps_agg_surprise_pct": 10.43,
+   "eps_beat_pct": 93.8,
+   "eps_miss_pct": 6.2,
+   "eps_n": 16,
+   "reported": 16,
+   "rev_above_pct": 93.8,
+   "rev_agg_surprise_pct": 12.07,
+   "rev_beat_pct": 87.5,
+   "rev_n": 16,
    "sector": "Energy"
   },
   {
    "companies": 76,
    "eps_above_pct": 80.3,
-   "eps_agg_surprise_pct": 5.12,
-   "eps_beat_pct": 75.8,
-   "eps_miss_pct": 10.6,
-   "eps_n": 66,
-   "reported": 67,
-   "rev_above_pct": 19.7,
-   "rev_agg_surprise_pct": -2.4,
-   "rev_beat_pct": 13.6,
-   "rev_n": 66,
+   "eps_agg_surprise_pct": 5.86,
+   "eps_beat_pct": 76.1,
+   "eps_miss_pct": 9.9,
+   "eps_n": 71,
+   "reported": 72,
+   "rev_above_pct": 21.4,
+   "rev_agg_surprise_pct": -1.91,
+   "rev_beat_pct": 15.7,
+   "rev_n": 70,
    "sector": "Financials"
   },
   {
    "companies": 60,
-   "eps_above_pct": 87.2,
-   "eps_agg_surprise_pct": 13.5,
-   "eps_beat_pct": 82.1,
-   "eps_miss_pct": 7.7,
-   "eps_n": 39,
-   "reported": 39,
-   "rev_above_pct": 61.5,
-   "rev_agg_surprise_pct": 1.68,
-   "rev_beat_pct": 38.5,
-   "rev_n": 39,
+   "eps_above_pct": 89.1,
+   "eps_agg_surprise_pct": 13.72,
+   "eps_beat_pct": 84.8,
+   "eps_miss_pct": 6.5,
+   "eps_n": 46,
+   "reported": 46,
+   "rev_above_pct": 57.8,
+   "rev_agg_surprise_pct": 1.27,
+   "rev_beat_pct": 37.8,
+   "rev_n": 45,
    "sector": "Health Care"
   },
   {
    "companies": 83,
-   "eps_above_pct": 86.8,
-   "eps_agg_surprise_pct": 7.17,
-   "eps_beat_pct": 82.4,
-   "eps_miss_pct": 11.8,
-   "eps_n": 68,
-   "reported": 68,
+   "eps_above_pct": 86.1,
+   "eps_agg_surprise_pct": 4.05,
+   "eps_beat_pct": 80.6,
+   "eps_miss_pct": 12.5,
+   "eps_n": 72,
+   "reported": 72,
    "rev_above_pct": 50.0,
-   "rev_agg_surprise_pct": 0.97,
-   "rev_beat_pct": 38.2,
-   "rev_n": 68,
+   "rev_agg_surprise_pct": 0.83,
+   "rev_beat_pct": 34.7,
+   "rev_n": 72,
    "sector": "Industrials"
   },
   {
    "companies": 76,
-   "eps_above_pct": 79.5,
-   "eps_agg_surprise_pct": 5.61,
-   "eps_beat_pct": 79.5,
-   "eps_miss_pct": 13.6,
-   "eps_n": 44,
-   "reported": 44,
-   "rev_above_pct": 53.5,
-   "rev_agg_surprise_pct": 1.19,
-   "rev_beat_pct": 44.2,
-   "rev_n": 43,
+   "eps_above_pct": 75.5,
+   "eps_agg_surprise_pct": 5.58,
+   "eps_beat_pct": 75.5,
+   "eps_miss_pct": 15.1,
+   "eps_n": 53,
+   "reported": 53,
+   "rev_above_pct": 57.7,
+   "rev_agg_surprise_pct": 1.26,
+   "rev_beat_pct": 46.2,
+   "rev_n": 52,
    "sector": "Information Technology"
   },
   {
    "companies": 24,
-   "eps_above_pct": 60.0,
-   "eps_agg_surprise_pct": 2.34,
-   "eps_beat_pct": 60.0,
-   "eps_miss_pct": 30.0,
-   "eps_n": 20,
-   "reported": 20,
-   "rev_above_pct": 55.0,
-   "rev_agg_surprise_pct": -0.39,
-   "rev_beat_pct": 25.0,
-   "rev_n": 20,
+   "eps_above_pct": 60.9,
+   "eps_agg_surprise_pct": 2.22,
+   "eps_beat_pct": 56.5,
+   "eps_miss_pct": 30.4,
+   "eps_n": 23,
+   "reported": 23,
+   "rev_above_pct": 60.9,
+   "rev_agg_surprise_pct": -0.25,
+   "rev_beat_pct": 34.8,
+   "rev_n": 23,
    "sector": "Materials"
   },
   {
    "companies": 30,
-   "eps_above_pct": 87.5,
-   "eps_agg_surprise_pct": 4.45,
-   "eps_beat_pct": 83.3,
+   "eps_above_pct": 88.0,
+   "eps_agg_surprise_pct": 4.41,
+   "eps_beat_pct": 84.0,
    "eps_miss_pct": 0.0,
-   "eps_n": 24,
-   "reported": 24,
-   "rev_above_pct": 39.1,
-   "rev_agg_surprise_pct": -0.93,
-   "rev_beat_pct": 34.8,
-   "rev_n": 23,
+   "eps_n": 25,
+   "reported": 25,
+   "rev_above_pct": 37.5,
+   "rev_agg_surprise_pct": -0.95,
+   "rev_beat_pct": 33.3,
+   "rev_n": 24,
    "sector": "Real Estate"
   },
   {
    "companies": 31,
-   "eps_above_pct": 82.4,
-   "eps_agg_surprise_pct": 6.17,
-   "eps_beat_pct": 82.4,
-   "eps_miss_pct": 17.6,
-   "eps_n": 17,
-   "reported": 18,
-   "rev_above_pct": 47.1,
-   "rev_agg_surprise_pct": -0.87,
-   "rev_beat_pct": 35.3,
-   "rev_n": 17,
+   "eps_above_pct": 78.9,
+   "eps_agg_surprise_pct": 5.81,
+   "eps_beat_pct": 78.9,
+   "eps_miss_pct": 21.1,
+   "eps_n": 19,
+   "reported": 20,
+   "rev_above_pct": 44.4,
+   "rev_agg_surprise_pct": -1.3,
+   "rev_beat_pct": 33.3,
+   "rev_n": 18,
    "sector": "Utilities"
   }
  ],
@@ -14064,6 +13908,16 @@
    "rev_surprise_pct": -3.37,
    "sector": "Financials",
    "ticker": "COIN"
+  },
+  {
+   "date": "2026-11-04",
+   "eps_actual": 0.33,
+   "eps_est": 0.18,
+   "eps_surprise_pct": 83.33,
+   "name": "Datadog",
+   "rev_surprise_pct": 2.43,
+   "sector": "Information Technology",
+   "ticker": "DDOG"
   },
   {
    "date": "2026-11-03",
@@ -14116,6 +13970,16 @@
    "ticker": "ELV"
   },
   {
+   "date": "2026-11-04",
+   "eps_actual": 2.31,
+   "eps_est": 1.54,
+   "eps_surprise_pct": 50.0,
+   "name": "Stanley Black & Decker",
+   "rev_surprise_pct": -1.23,
+   "sector": "Industrials",
+   "ticker": "SWK"
+  },
+  {
    "date": "2026-10-29",
    "eps_actual": 0.41,
    "eps_est": 0.28,
@@ -14134,26 +13998,6 @@
    "rev_surprise_pct": 16.99,
    "sector": "Energy",
    "ticker": "OKE"
-  },
-  {
-   "date": "2026-10-26",
-   "eps_actual": 2.86,
-   "eps_est": 1.99,
-   "eps_surprise_pct": 43.72,
-   "name": "Cincinnati Financial",
-   "rev_surprise_pct": -1.38,
-   "sector": "Financials",
-   "ticker": "CINF"
-  },
-  {
-   "date": "2026-10-29",
-   "eps_actual": 7.48,
-   "eps_est": 5.38,
-   "eps_surprise_pct": 39.03,
-   "name": "Lilly (Eli)",
-   "rev_surprise_pct": 6.84,
-   "sector": "Health Care",
-   "ticker": "LLY"
   }
  ],
  "top_misses": [
@@ -14166,6 +14010,16 @@
    "rev_surprise_pct": -1.19,
    "sector": "Consumer Discretionary",
    "ticker": "MGM"
+  },
+  {
+   "date": "2026-11-04",
+   "eps_actual": 0.25,
+   "eps_est": 0.94,
+   "eps_surprise_pct": -73.4,
+   "name": "Uber",
+   "rev_surprise_pct": -1.55,
+   "sector": "Industrials",
+   "ticker": "UBER"
   },
   {
    "date": "2026-10-27",
@@ -14246,16 +14100,6 @@
    "rev_surprise_pct": 3.23,
    "sector": "Consumer Discretionary",
    "ticker": "DHI"
-  },
-  {
-   "date": "2026-10-29",
-   "eps_actual": 6.03,
-   "eps_est": 6.8,
-   "eps_surprise_pct": -11.32,
-   "name": "Monolithic Power Systems",
-   "rev_surprise_pct": 2.94,
-   "sector": "Information Technology",
-   "ticker": "MPWR"
   }
  ],
  "universe": 500
