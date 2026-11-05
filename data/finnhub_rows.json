@@ -560,6 +560,17 @@
   "symbol": "BDX",
   "year": 2026
  },
+ "BEN|2026-11-06": {
+  "date": "2026-11-06",
+  "epsActual": null,
+  "epsEstimate": 0.7796,
+  "hour": "bmo",
+  "quarter": 4,
+  "revenueActual": null,
+  "revenueEstimate": 1879380730,
+  "symbol": "BEN",
+  "year": 2026
+ },
  "BE|2026-10-22": {
   "date": "2026-10-22",
   "epsActual": 0.94,
@@ -866,6 +877,17 @@
   "revenueActual": 5358060000,
   "revenueEstimate": 5013534742,
   "symbol": "CHRW",
+  "year": 2026
+ },
+ "CHTR|2026-11-06": {
+  "date": "2026-11-06",
+  "epsActual": null,
+  "epsEstimate": 9.2378,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 15082059996,
+  "symbol": "CHTR",
   "year": 2026
  },
  "CINF|2026-10-26": {
@@ -2309,6 +2331,17 @@
   "symbol": "HUBB",
   "year": 2026
  },
+ "HUM|2026-11-06": {
+  "date": "2026-11-06",
+  "epsActual": null,
+  "epsEstimate": -1.0127,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 41298861559,
+  "symbol": "HUM",
+  "year": 2026
+ },
  "HWM|2026-10-29": {
   "date": "2026-10-29",
   "epsActual": 1.46,
@@ -3123,6 +3156,17 @@
   "symbol": "MRK",
   "year": 2026
  },
+ "MRNA|2026-11-06": {
+  "date": "2026-11-06",
+  "epsActual": null,
+  "epsEstimate": -1.2755,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 902751816,
+  "symbol": "MRNA",
+  "year": 2026
+ },
  "MRSH|2026-10-15": {
   "date": "2026-10-15",
   "epsActual": 2.03,
@@ -3715,6 +3759,17 @@
   "revenueActual": 4353000000,
   "revenueEstimate": 4328937002,
   "symbol": "PPG",
+  "year": 2026
+ },
+ "PPL|2026-11-06": {
+  "date": "2026-11-06",
+  "epsActual": null,
+  "epsEstimate": 0.5368,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 2444801788,
+  "symbol": "PPL",
   "year": 2026
  },
  "PRU|2026-11-03": {
@@ -4661,6 +4716,17 @@
   "revenueActual": 4312800000,
   "revenueEstimate": 3797283779,
   "symbol": "VRT",
+  "year": 2026
+ },
+ "VST|2026-11-06": {
+  "date": "2026-11-06",
+  "epsActual": null,
+  "epsEstimate": 2.991,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 6084287722,
+  "symbol": "VST",
   "year": 2026
  },
  "VTRS|2026-11-05": {
