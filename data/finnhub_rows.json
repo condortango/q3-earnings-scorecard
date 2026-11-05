@@ -4390,11 +4390,11 @@
  },
  "TRGP|2026-11-05": {
   "date": "2026-11-05",
-  "epsActual": null,
+  "epsActual": 3.04,
   "epsEstimate": 2.7691,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 5598600000,
   "revenueEstimate": 4849723212,
   "symbol": "TRGP",
   "year": 2026
