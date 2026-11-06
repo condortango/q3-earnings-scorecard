@@ -2762,7 +2762,7 @@
   },
   {
    "cik": "935703",
-   "date": "2026-11-24",
+   "date": "2026-12-02",
    "eps_actual": null,
    "eps_est": 0.88,
    "eps_pending": null,
@@ -2778,7 +2778,7 @@
    "sector": "Consumer Staples",
    "shares": 187630299,
    "ticker": "DLTR",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "765880",
@@ -2884,13 +2884,13 @@
    "cik": "936340",
    "date": "2026-11-05",
    "eps_actual": null,
-   "eps_est": 2.22,
+   "eps_est": 2.1,
    "eps_pending": null,
    "eps_surprise_pct": null,
    "eps_yearago": 2.25,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 5,
+   "n_ests": 4,
    "name": "DTE Energy",
    "rev_actual": null,
    "rev_est": null,
@@ -4538,7 +4538,7 @@
    "sector": "Information Technology",
    "shares": 901790969,
    "ticker": "HPQ",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "48465",
@@ -8224,13 +8224,13 @@
    "cik": "1032208",
    "date": "2026-11-05",
    "eps_actual": null,
-   "eps_est": 1.18,
+   "eps_est": 1.2,
    "eps_pending": null,
    "eps_surprise_pct": null,
    "eps_yearago": 1.11,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 5,
+   "n_ests": 4,
    "name": "Sempra",
    "rev_actual": null,
    "rev_est": null,
@@ -8748,13 +8748,13 @@
    "cik": "1389170",
    "date": "2026-11-05",
    "eps_actual": null,
-   "eps_est": 2.74,
+   "eps_est": 2.81,
    "eps_pending": null,
    "eps_surprise_pct": null,
    "eps_yearago": 2.2,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 8,
+   "n_ests": 7,
    "name": "Targa Resources",
    "rev_actual": null,
    "rev_est": null,
@@ -11247,8 +11247,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 5, 2026 1:15 PM PT",
- "generated_at_utc": "2026-11-05T21:15:00+00:00",
+ "generated_at_pt": "Nov 5, 2026 4:10 PM PT",
+ "generated_at_utc": "2026-11-06T00:10:13+00:00",
  "growth": {
   "available": true,
   "coverage": 495,
@@ -11257,7 +11257,7 @@
   "reporters_pct": 25.5,
   "value_pct": 29.0
  },
- "last_success_pt": "Nov 5, 2026 1:15 PM PT",
+ "last_success_pt": "Nov 5, 2026 4:10 PM PT",
  "reported": 395,
  "reported_since_factset": 108,
  "revenue": {
@@ -13381,7 +13381,7 @@
     27.5,
     27.5,
     27.5,
-    27.7,
+    27.8,
     27.8,
     27.9,
     28.0,
