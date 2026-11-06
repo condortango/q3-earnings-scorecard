@@ -1690,7 +1690,7 @@
    "eps_yearago": 3.04,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 4,
+   "n_ests": 5,
    "name": "Constellation Energy",
    "rev_actual": null,
    "rev_est": null,
@@ -3670,7 +3670,7 @@
    "eps_yearago": 2.84,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 3,
+   "n_ests": 2,
    "name": "Ferguson Enterprises",
    "rev_actual": null,
    "rev_est": null,
@@ -8030,7 +8030,7 @@
    "eps_yearago": null,
    "eps_yearago_src": null,
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 3,
+   "n_ests": 2,
    "name": "Skydance",
    "rev_actual": null,
    "rev_est": null,
@@ -11282,8 +11282,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 6, 2026 12:37 PM PT",
- "generated_at_utc": "2026-11-06T20:37:30+00:00",
+ "generated_at_pt": "Nov 6, 2026 2:42 PM PT",
+ "generated_at_utc": "2026-11-06T22:42:23+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11292,7 +11292,7 @@
   "reporters_pct": 26.0,
   "value_pct": 30.5
  },
- "last_success_pt": "Nov 6, 2026 12:37 PM PT",
+ "last_success_pt": "Nov 6, 2026 2:42 PM PT",
  "reported": 435,
  "reported_since_factset": 0,
  "revenue": {
