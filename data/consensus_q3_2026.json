@@ -1291,6 +1291,12 @@
   },
   "2026-11-07": {
    "1415404": -0.42
+  },
+  "2026-11-09": {
+   "1091667": 9.08,
+   "1415404": null,
+   "2011641": null,
+   "2041610": 0.18
   }
  },
  "note": "Consensus EPS (Nasdaq calendar, Zacks) by company CIK, one entry per run day in Eastern time. Each day lists only the estimates that changed since the previous day (the first day in full); null means the company no longer has an estimate. Replay the days in order to rebuild the consensus as of any date.",
