@@ -243,14 +243,14 @@
  },
  "AMCR|2026-11-04": {
   "date": "2026-11-04",
-  "epsActual": 0.95,
-  "epsEstimate": 0.986,
+  "epsActual": null,
+  "epsEstimate": 0.9795,
   "hour": "amc",
-  "quarter": 3,
-  "revenueActual": 6129000000,
-  "revenueEstimate": 5866224000,
+  "quarter": 1,
+  "revenueActual": null,
+  "revenueEstimate": 6033862703,
   "symbol": "AMCR",
-  "year": 2026
+  "year": 2027
  },
  "AMD|2026-11-03": {
   "date": "2026-11-03",
@@ -4434,11 +4434,11 @@
  },
  "TDG|2026-11-10": {
   "date": "2026-11-10",
-  "epsActual": null,
+  "epsActual": 12.44,
   "epsEstimate": 12.3286,
   "hour": "bmo",
   "quarter": 4,
-  "revenueActual": null,
+  "revenueActual": 2988000000,
   "revenueEstimate": 2976769495,
   "symbol": "TDG",
   "year": 2026
