@@ -254,14 +254,14 @@
  },
  "AMCR|2026-11-04": {
   "date": "2026-11-04",
-  "epsActual": null,
-  "epsEstimate": 0.9795,
+  "epsActual": 0.95,
+  "epsEstimate": 0.986,
   "hour": "amc",
-  "quarter": 1,
-  "revenueActual": null,
-  "revenueEstimate": 6033862703,
+  "quarter": 3,
+  "revenueActual": 6129000000,
+  "revenueEstimate": 5866224000,
   "symbol": "AMCR",
-  "year": 2027
+  "year": 2026
  },
  "AMD|2026-11-03": {
   "date": "2026-11-03",
@@ -1871,12 +1871,12 @@
  },
  "FDXF|2026-10-29": {
   "date": "2026-10-29",
-  "epsActual": null,
-  "epsEstimate": 0.7183,
+  "epsActual": 1.49,
+  "epsEstimate": 1.3833,
   "hour": "amc",
-  "quarter": 4,
-  "revenueActual": null,
-  "revenueEstimate": 2375121408,
+  "quarter": 3,
+  "revenueActual": 2442000000,
+  "revenueEstimate": 2419092180,
   "symbol": "FDXF",
   "year": 2026
  },
