@@ -8489,7 +8489,11 @@
    "date": "2026-11-10",
    "eps_actual": null,
    "eps_est": 11.43,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-10",
+    "eps": 10.47,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 10.47,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -9920,8 +9924,8 @@
    "fiscal_quarter": "Sep/2026",
    "n_ests": 9,
    "name": "Block, Inc.",
-   "rev_actual": 6719360000.0,
-   "rev_est": 6652859526.0,
+   "rev_actual": 6719359000.0,
+   "rev_est": 6652773141.0,
    "rev_surprise_pct": 1.0,
    "sector": "Financials",
    "shares": 604522000,
@@ -9941,8 +9945,8 @@
    "n_ests": 4,
    "name": "Yum! Brands",
    "rev_actual": 2054000000.0,
-   "rev_est": 2076585250.0,
-   "rev_surprise_pct": -1.09,
+   "rev_est": 2069565750.0,
+   "rev_surprise_pct": -0.75,
    "sector": "Consumer Discretionary",
    "shares": 268258657,
    "ticker": "YUM",
@@ -11286,8 +11290,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 10, 2026 8:14 PM PT",
- "generated_at_utc": "2026-11-11T04:14:56+00:00",
+ "generated_at_pt": "Nov 10, 2026 11:46 PM PT",
+ "generated_at_utc": "2026-11-11T07:46:41+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11296,7 +11300,7 @@
   "reporters_pct": 26.6,
   "value_pct": 31.1
  },
- "last_success_pt": "Nov 10, 2026 8:14 PM PT",
+ "last_success_pt": "Nov 10, 2026 11:46 PM PT",
  "reported": 446,
  "reported_since_factset": 13,
  "revenue": {
@@ -11305,13 +11309,13 @@
   "agg_method": "sum of values",
   "agg_surprise_pct": 0.6,
   "available": true,
-  "beat": 141,
-  "beat_pct": 31.8,
+  "beat": 142,
+  "beat_pct": 32.0,
   "median_surprise_pct": -0.25,
   "meet": 130,
   "meet_pct": 29.3,
-  "miss": 173,
-  "miss_pct": 39.0,
+  "miss": 172,
+  "miss_pct": 38.7,
   "n": 444,
   "status": "ok"
  },
@@ -13257,6 +13261,7 @@
     82.6,
     82.6,
     82.8,
+    82.8,
     82.8
    ],
    "beats": [
@@ -13320,6 +13325,7 @@
     360,
     360,
     360,
+    367,
     367,
     367
    ],
@@ -13466,6 +13472,7 @@
     35.5,
     35.5,
     35.7,
+    35.7,
     35.7
    ],
    "growth_n": 491,
@@ -13531,12 +13538,13 @@
     30.6,
     30.6,
     30.9,
+    30.9,
     30.9
    ],
    "growth_universe": 496,
    "kickoff_day": 33,
    "label": "Q3 2026",
-   "last": "2026-11-10",
+   "last": "2026-11-11",
    "reported": [
     2,
     2,
@@ -13598,6 +13606,7 @@
     436,
     436,
     436,
+    443,
     443,
     443
    ],
@@ -13662,6 +13671,7 @@
     26.0,
     26.0,
     26.0,
+    26.3,
     26.3,
     26.3
    ],
@@ -13820,6 +13830,7 @@
      "pp": 0.08,
      "t": "OXY"
     },
+    null,
     null
    ]
   }
@@ -13891,7 +13902,7 @@
    "reported": 75,
    "rev_above_pct": 20.3,
    "rev_agg_surprise_pct": -1.82,
-   "rev_beat_pct": 10.8,
+   "rev_beat_pct": 12.2,
    "rev_n": 74,
    "sector": "Financials"
   },
