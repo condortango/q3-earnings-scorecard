@@ -8028,9 +8028,9 @@
    "cik": "2041610",
    "date": "2026-11-09",
    "eps_actual": 0.45,
-   "eps_est": 0.18,
+   "eps_est": 0.23,
    "eps_pending": null,
-   "eps_surprise_pct": 150.0,
+   "eps_surprise_pct": 95.65,
    "eps_yearago": null,
    "eps_yearago_src": null,
    "fiscal_quarter": "Sep/2026",
@@ -10024,7 +10024,7 @@
   "above": 367,
   "above_pct": 82.8,
   "agg_method": "share-weighted (EPS x shares outstanding)",
-  "agg_surprise_pct": 5.33,
+  "agg_surprise_pct": 5.29,
   "beat": 351,
   "beat_pct": 79.2,
   "median_surprise_pct": 5.15,
@@ -11286,8 +11286,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 10, 2026 2:04 PM PT",
- "generated_at_utc": "2026-11-10T22:04:07+00:00",
+ "generated_at_pt": "Nov 10, 2026 8:14 PM PT",
+ "generated_at_utc": "2026-11-11T04:14:56+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11296,7 +11296,7 @@
   "reporters_pct": 26.6,
   "value_pct": 31.1
  },
- "last_success_pt": "Nov 10, 2026 2:04 PM PT",
+ "last_success_pt": "Nov 10, 2026 8:14 PM PT",
  "reported": 446,
  "reported_since_factset": 13,
  "revenue": {
@@ -13828,7 +13828,7 @@
   {
    "companies": 19,
    "eps_above_pct": 94.1,
-   "eps_agg_surprise_pct": -3.99,
+   "eps_agg_surprise_pct": -4.3,
    "eps_beat_pct": 94.1,
    "eps_miss_pct": 5.9,
    "eps_n": 17,
@@ -14001,16 +14001,6 @@
    "ticker": "COIN"
   },
   {
-   "date": "2026-11-09",
-   "eps_actual": 0.45,
-   "eps_est": 0.18,
-   "eps_surprise_pct": 150.0,
-   "name": "Skydance",
-   "rev_surprise_pct": -56.83,
-   "sector": "Communication Services",
-   "ticker": "SKYD"
-  },
-  {
    "date": "2026-11-06",
    "eps_actual": 21.7,
    "eps_est": 9.08,
@@ -14029,6 +14019,16 @@
    "rev_surprise_pct": 45.44,
    "sector": "Health Care",
    "ticker": "MRNA"
+  },
+  {
+   "date": "2026-11-09",
+   "eps_actual": 0.45,
+   "eps_est": 0.23,
+   "eps_surprise_pct": 95.65,
+   "name": "Skydance",
+   "rev_surprise_pct": -56.83,
+   "sector": "Communication Services",
+   "ticker": "SKYD"
   },
   {
    "date": "2026-11-04",
