@@ -9494,7 +9494,7 @@
    "eps_yearago": null,
    "eps_yearago_src": null,
    "fiscal_quarter": "Sep/2026",
-   "n_ests": 2,
+   "n_ests": 1,
    "name": "Vylor",
    "rev_actual": null,
    "rev_est": null,
@@ -11282,8 +11282,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 11, 2026 7:07 AM PT",
- "generated_at_utc": "2026-11-11T15:07:32+00:00",
+ "generated_at_pt": "Nov 11, 2026 1:35 PM PT",
+ "generated_at_utc": "2026-11-11T21:35:16+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11292,7 +11292,7 @@
   "reporters_pct": 26.6,
   "value_pct": 31.1
  },
- "last_success_pt": "Nov 11, 2026 7:07 AM PT",
+ "last_success_pt": "Nov 11, 2026 1:35 PM PT",
  "reported": 448,
  "reported_since_factset": 14,
  "revenue": {

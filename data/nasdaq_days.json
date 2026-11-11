@@ -32945,7 +32945,7 @@
   ]
  },
  "2026-11-02": {
-  "fetched_at": "2026-11-11T15:07:36+00:00",
+  "fetched_at": "2026-11-11T21:35:21+00:00",
   "rows": [
    {
     "eps": "$2.05",
@@ -33170,13 +33170,13 @@
   ]
  },
  "2026-11-03": {
-  "fetched_at": "2026-11-11T15:07:40+00:00",
+  "fetched_at": "2026-11-11T21:35:22+00:00",
   "rows": [
    {
     "eps": "$1.84",
     "epsForecast": "$1.68",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$834,115,600,000",
+    "marketCap": "$844,989,330,000",
     "name": "Advanced Micro Devices, Inc.",
     "noOfEsts": "13",
     "surprise": "9.52",
@@ -33198,7 +33198,7 @@
     "eps": "$1.11",
     "epsForecast": "$0.99",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$235,207,606,000",
+    "marketCap": "$233,754,706,000",
     "name": "Arista Networks, Inc.",
     "noOfEsts": "9",
     "surprise": "12.12",
@@ -33209,7 +33209,7 @@
     "eps": "$0.87",
     "epsForecast": "$0.72",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$166,606,717,000",
+    "marketCap": "$167,347,700,000",
     "name": "Pfizer, Inc.",
     "noOfEsts": "5",
     "surprise": "20.83",
@@ -33220,7 +33220,7 @@
     "eps": "$3.68",
     "epsForecast": "$3.54",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$139,588,043,000",
+    "marketCap": "$137,614,475,000",
     "name": "Eaton Corporation, PLC",
     "noOfEsts": "10",
     "surprise": "3.95",
@@ -33231,7 +33231,7 @@
     "eps": "$4.66",
     "epsForecast": "$4.48",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$121,587,720,000",
+    "marketCap": "$118,441,861,000",
     "name": "Booking Holdings Inc.",
     "noOfEsts": "11",
     "surprise": "4.02",
@@ -33242,7 +33242,7 @@
     "eps": "$26.93",
     "epsForecast": "$25.74",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$106,157,416,000",
+    "marketCap": "$106,067,558,000",
     "name": "Marathon Petroleum Corporation",
     "noOfEsts": "5",
     "surprise": "4.62",
@@ -33253,7 +33253,7 @@
     "eps": "$1.82",
     "epsForecast": "$2.04",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$72,150,860,000",
+    "marketCap": "$72,469,692,000",
     "name": "Apollo Global Management, Inc.",
     "noOfEsts": "8",
     "surprise": "-10.78",
@@ -33264,7 +33264,7 @@
     "eps": "$2.21",
     "epsForecast": "$2.12",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$54,632,718,000",
+    "marketCap": "$54,648,771,000",
     "name": "AMTEK, Inc.",
     "noOfEsts": "7",
     "surprise": "4.25",
@@ -33275,7 +33275,7 @@
     "eps": "$1.11",
     "epsForecast": "$0.68",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$53,536,469,000",
+    "marketCap": "$51,734,991,000",
     "name": "Block, Inc.",
     "noOfEsts": "9",
     "surprise": "63.24",
@@ -33286,7 +33286,7 @@
     "eps": "$0.66",
     "epsForecast": "$0.63",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$50,268,914,000",
+    "marketCap": "$51,158,049,000",
     "name": "Keurig Dr Pepper Inc.",
     "noOfEsts": "5",
     "surprise": "4.76",
@@ -33297,7 +33297,7 @@
     "eps": "$4.10",
     "epsForecast": "$3.99",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$46,834,876,000",
+    "marketCap": "$46,718,943,000",
     "name": "Waters Corporation",
     "noOfEsts": "6",
     "surprise": "2.76",
@@ -33308,7 +33308,7 @@
     "eps": "$1.56",
     "epsForecast": "$1.47",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$43,157,451,000",
+    "marketCap": "$42,977,718,000",
     "name": "Yum! Brands, Inc.",
     "noOfEsts": "4",
     "surprise": "6.12",
@@ -33316,21 +33316,10 @@
     "time": "time-not-supplied"
    },
    {
-    "eps": "$3.77",
-    "epsForecast": "$3.31",
-    "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$41,863,152,000",
-    "name": "Prudential Financial, Inc.",
-    "noOfEsts": "5",
-    "surprise": "13.9",
-    "symbol": "PRU",
-    "time": "time-not-supplied"
-   },
-   {
     "eps": "$2.06",
     "epsForecast": "$1.85",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$41,283,289,000",
+    "marketCap": "$42,677,887,000",
     "name": "American International Group, Inc.",
     "noOfEsts": "7",
     "surprise": "11.35",
@@ -33338,10 +33327,21 @@
     "time": "time-not-supplied"
    },
    {
+    "eps": "$3.77",
+    "epsForecast": "$3.31",
+    "fiscalQuarterEnding": "Sep/2026",
+    "marketCap": "$42,291,900,000",
+    "name": "Prudential Financial, Inc.",
+    "noOfEsts": "5",
+    "surprise": "13.9",
+    "symbol": "PRU",
+    "time": "time-not-supplied"
+   },
+   {
     "eps": "$1.19",
     "epsForecast": "$1.17",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$38,584,181,000",
+    "marketCap": "$38,214,980,000",
     "name": "Sysco Corporation",
     "noOfEsts": "5",
     "surprise": "1.71",
@@ -33352,7 +33352,7 @@
     "eps": "$1.75",
     "epsForecast": "$1.72",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$33,795,672,100",
+    "marketCap": "$33,689,262,100",
     "name": "Fiserv, Inc.",
     "noOfEsts": "12",
     "surprise": "1.74",
@@ -33363,7 +33363,7 @@
     "eps": "$1.77",
     "epsForecast": "$1.63",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$33,238,196,200",
+    "marketCap": "$32,981,200,900",
     "name": "Archer-Daniels-Midland Company",
     "noOfEsts": "2",
     "surprise": "8.59",
@@ -33374,7 +33374,7 @@
     "eps": "$7.97",
     "epsForecast": "",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$29,444,079,600",
+    "marketCap": "$30,308,284,400",
     "name": "EchoStar Corporation",
     "noOfEsts": "N/A",
     "surprise": "N/A",
@@ -33385,7 +33385,7 @@
     "eps": "$2.65",
     "epsForecast": "$2.24",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$24,478,091,300",
+    "marketCap": "$24,426,446,800",
     "name": "Expeditors International of Washington, Inc.",
     "noOfEsts": "5",
     "surprise": "18.3",
@@ -33396,7 +33396,7 @@
     "eps": "$1.56",
     "epsForecast": "$1.37",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$21,754,853,400",
+    "marketCap": "$21,824,978,900",
     "name": "Broadridge Financial Solutions, Inc.",
     "noOfEsts": "3",
     "surprise": "13.87",
@@ -33407,7 +33407,7 @@
     "eps": "$0.83",
     "epsForecast": "$0.81",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$21,140,537,300",
+    "marketCap": "$20,825,042,900",
     "name": "International Flavors & Fragrances, Inc.",
     "noOfEsts": "6",
     "surprise": "2.47",
@@ -33418,7 +33418,7 @@
     "eps": "$2.09",
     "epsForecast": "$1.86",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$20,561,066,000",
+    "marketCap": "$20,791,672,800",
     "name": "DuPont de Nemours, Inc.",
     "noOfEsts": "6",
     "surprise": "12.37",
@@ -33429,7 +33429,7 @@
     "eps": "$1.70",
     "epsForecast": "$1.04",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$18,853,902,300",
+    "marketCap": "$18,319,929,300",
     "name": "Super Micro Computer, Inc.",
     "noOfEsts": "6",
     "surprise": "63.46",
@@ -33440,7 +33440,7 @@
     "eps": "$1.38",
     "epsForecast": "$1.29",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$17,934,166,000",
+    "marketCap": "$17,753,397,200",
     "name": "Revvity, Inc.",
     "noOfEsts": "6",
     "surprise": "6.98",
@@ -33451,7 +33451,7 @@
     "eps": "$1.10",
     "epsForecast": "$1.06",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$17,390,078,000",
+    "marketCap": "$17,384,871,900",
     "name": "Ball Corporation",
     "noOfEsts": "5",
     "surprise": "3.77",
@@ -33462,7 +33462,7 @@
     "eps": "$3.62",
     "epsForecast": "$3.04",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$16,561,999,900",
+    "marketCap": "$16,742,552,600",
     "name": "Leidos Holdings, Inc.",
     "noOfEsts": "5",
     "surprise": "19.08",
@@ -33473,7 +33473,7 @@
     "eps": "$6.15",
     "epsForecast": "$4.57",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$15,564,495,900",
+    "marketCap": "$15,807,376,400",
     "name": "Assurant, Inc.",
     "noOfEsts": "4",
     "surprise": "34.57",
@@ -33484,7 +33484,7 @@
     "eps": "$4.09",
     "epsForecast": "$4.21",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$15,383,942,100",
+    "marketCap": "$15,132,965,900",
     "name": "Zebra Technologies Corporation",
     "noOfEsts": "3",
     "surprise": "-2.85",
@@ -33495,7 +33495,7 @@
     "eps": "$3.49",
     "epsForecast": "$3.40",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$12,757,639,200",
+    "marketCap": "$12,842,479,600",
     "name": "Pinnacle West Capital Corporation",
     "noOfEsts": "4",
     "surprise": "2.65",
@@ -33506,7 +33506,7 @@
     "eps": "$1.01",
     "epsForecast": "$0.89",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$12,315,145,200",
+    "marketCap": "$12,297,303,000",
     "name": "Skyworks Solutions, Inc.",
     "noOfEsts": "7",
     "surprise": "13.48",
@@ -33514,21 +33514,10 @@
     "time": "time-not-supplied"
    },
    {
-    "eps": "$3.59",
-    "epsForecast": "$2.86",
-    "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$12,049,799,200",
-    "name": "Gartner, Inc.",
-    "noOfEsts": "4",
-    "surprise": "25.52",
-    "symbol": "IT",
-    "time": "time-not-supplied"
-   },
-   {
     "eps": "$2.28",
     "epsForecast": "$2.03",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$11,918,724,100",
+    "marketCap": "$12,196,502,500",
     "name": "Jack Henry & Associates, Inc.",
     "noOfEsts": "8",
     "surprise": "12.32",
@@ -33536,10 +33525,21 @@
     "time": "time-not-supplied"
    },
    {
+    "eps": "$3.59",
+    "epsForecast": "$2.86",
+    "fiscalQuarterEnding": "Sep/2026",
+    "marketCap": "$11,917,328,400",
+    "name": "Gartner, Inc.",
+    "noOfEsts": "4",
+    "surprise": "25.52",
+    "symbol": "IT",
+    "time": "time-not-supplied"
+   },
+   {
     "eps": "$0.87",
     "epsForecast": "",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$10,632,113,200",
+    "marketCap": "$10,646,384,600",
     "name": "The AES Corporation",
     "noOfEsts": "N/A",
     "surprise": "N/A",
@@ -33550,7 +33550,7 @@
     "eps": "$1.56",
     "epsForecast": "$1.34",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$9,772,713,000",
+    "marketCap": "$9,809,189,900",
     "name": "Henry Schein, Inc.",
     "noOfEsts": "8",
     "surprise": "16.42",
@@ -33561,7 +33561,7 @@
     "eps": "$1.42",
     "epsForecast": "$1.33",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$8,078,984,200",
+    "marketCap": "$8,010,158,100",
     "name": "Aptiv PLC",
     "noOfEsts": "6",
     "surprise": "6.77",
@@ -33572,7 +33572,7 @@
     "eps": "($0.19)",
     "epsForecast": "($0.03)",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$7,238,666,200",
+    "marketCap": "$7,308,604,900",
     "name": "Mosaic Company (The)",
     "noOfEsts": "5",
     "surprise": "-533.33",
@@ -33582,7 +33582,7 @@
   ]
  },
  "2026-11-04": {
-  "fetched_at": "2026-11-11T15:07:41+00:00",
+  "fetched_at": "2026-11-11T21:35:26+00:00",
   "rows": [
    {
     "eps": "$3.57",
@@ -34049,7 +34049,7 @@
   ]
  },
  "2026-11-05": {
-  "fetched_at": "2026-11-11T15:07:43+00:00",
+  "fetched_at": "2026-11-11T21:35:29+00:00",
   "rows": [
    {
     "eps": "$3.27",
@@ -34483,7 +34483,7 @@
   ]
  },
  "2026-11-06": {
-  "fetched_at": "2026-11-11T15:07:45+00:00",
+  "fetched_at": "2026-11-11T21:35:32+00:00",
   "rows": [
    {
     "eps": "$0.38",
@@ -34554,13 +34554,13 @@
   ]
  },
  "2026-11-09": {
-  "fetched_at": "2026-11-11T15:07:48+00:00",
+  "fetched_at": "2026-11-11T21:35:34+00:00",
   "rows": [
    {
     "eps": "$5.06",
     "epsForecast": "$3.90",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$97,820,721,000",
+    "marketCap": "$94,146,691,000",
     "name": "Constellation Energy Corporation",
     "noOfEsts": "5",
     "surprise": "29.74",
@@ -34571,7 +34571,7 @@
     "eps": "$1.62",
     "epsForecast": "$1.41",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$88,049,074,000",
+    "marketCap": "$89,972,269,000",
     "name": "KKR & Co. Inc.",
     "noOfEsts": "7",
     "surprise": "14.89",
@@ -34582,7 +34582,7 @@
     "eps": "$1.91",
     "epsForecast": "$1.43",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$55,739,781,000",
+    "marketCap": "$56,894,009,000",
     "name": "Occidental Petroleum Corporation",
     "noOfEsts": "10",
     "surprise": "33.57",
@@ -34593,7 +34593,7 @@
     "eps": "$3.43",
     "epsForecast": "$3.28",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$50,284,163,000",
+    "marketCap": "$50,240,193,000",
     "name": "Ferguson Enterprises Inc.",
     "noOfEsts": "4",
     "surprise": "4.57",
@@ -34601,21 +34601,10 @@
     "time": "time-not-supplied"
    },
    {
-    "eps": "$0.45",
-    "epsForecast": "$0.23",
-    "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$43,866,948,000",
-    "name": "Skydance Corporation",
-    "noOfEsts": "8",
-    "surprise": "95.65",
-    "symbol": "SKYD",
-    "time": "time-not-supplied"
-   },
-   {
     "eps": "$0.61",
     "epsForecast": "$0.49",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$38,779,744,000",
+    "marketCap": "$42,055,639,000",
     "name": "Take-Two Interactive Software, Inc.",
     "noOfEsts": "6",
     "surprise": "24.49",
@@ -34623,10 +34612,21 @@
     "time": "time-not-supplied"
    },
    {
+    "eps": "$0.45",
+    "epsForecast": "$0.23",
+    "fiscalQuarterEnding": "Sep/2026",
+    "marketCap": "$40,555,549,000",
+    "name": "Skydance Corporation",
+    "noOfEsts": "8",
+    "surprise": "95.65",
+    "symbol": "SKYD",
+    "time": "time-not-supplied"
+   },
+   {
     "eps": "$4.68",
     "epsForecast": "$3.44",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$20,474,501,100",
+    "marketCap": "$20,395,165,700",
     "name": "NRG Energy, Inc.",
     "noOfEsts": "3",
     "surprise": "36.05",
@@ -34636,13 +34636,13 @@
   ]
  },
  "2026-11-10": {
-  "fetched_at": "2026-11-11T15:07:52+00:00",
+  "fetched_at": "2026-11-11T21:35:37+00:00",
   "rows": [
    {
     "eps": "$11.88",
     "epsForecast": "$11.43",
     "fiscalQuarterEnding": "Sep/2026",
-    "marketCap": "$67,373,793,000",
+    "marketCap": "$67,743,592,000",
     "name": "Transdigm Group Incorporated",
     "noOfEsts": "5",
     "surprise": "3.94",
@@ -34652,7 +34652,7 @@
   ]
  },
  "2026-11-11": {
-  "fetched_at": "2026-11-11T15:07:54+00:00",
+  "fetched_at": "2026-11-11T21:35:39+00:00",
   "rows": [
    {
     "epsForecast": "($0.44)",
@@ -34661,7 +34661,7 @@
     "lastYearRptDt": "N/A",
     "marketCap": "$48,399,483,000",
     "name": "Vylor Inc.",
-    "noOfEsts": "2",
+    "noOfEsts": "1",
     "symbol": "VYLR",
     "time": "time-after-hours"
    },
@@ -34670,7 +34670,7 @@
     "fiscalQuarterEnding": "Sep/2026",
     "lastYearEPS": "$0.36",
     "lastYearRptDt": "11/05/2025",
-    "marketCap": "$11,440,917,500",
+    "marketCap": "$11,439,346,700",
     "name": "Bio-Techne Corp",
     "noOfEsts": "2",
     "symbol": "TECH",
@@ -34679,14 +34679,14 @@
   ]
  },
  "2026-11-12": {
-  "fetched_at": "2026-11-11T15:07:57+00:00",
+  "fetched_at": "2026-11-11T21:35:40+00:00",
   "rows": [
    {
     "epsForecast": "$1.15",
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$0.81",
     "lastYearRptDt": "11/12/2025",
-    "marketCap": "$388,936,204,000",
+    "marketCap": "$386,964,914,000",
     "name": "Cisco Systems, Inc.",
     "noOfEsts": "8",
     "symbol": "CSCO",
@@ -34697,7 +34697,7 @@
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$2.17",
     "lastYearRptDt": "11/13/2025",
-    "marketCap": "$294,067,536,000",
+    "marketCap": "$295,638,860,000",
     "name": "Applied Materials, Inc.",
     "noOfEsts": "10",
     "symbol": "AMAT",
@@ -34706,18 +34706,18 @@
   ]
  },
  "2026-11-13": {
-  "fetched_at": "2026-11-11T15:08:01+00:00",
+  "fetched_at": "2026-11-11T21:35:44+00:00",
   "rows": []
  },
  "2026-11-16": {
-  "fetched_at": "2026-11-11T15:08:04+00:00",
+  "fetched_at": "2026-11-11T21:35:45+00:00",
   "rows": [
    {
     "epsForecast": "$0.65",
     "fiscalQuarterEnding": "Sep/2026",
     "lastYearEPS": "$1.15",
     "lastYearRptDt": "11/10/2025",
-    "marketCap": "$21,062,357,000",
+    "marketCap": "$21,210,114,000",
     "name": "Tyson Foods, Inc.",
     "noOfEsts": "4",
     "symbol": "TSN",
@@ -34726,14 +34726,14 @@
   ]
  },
  "2026-11-17": {
-  "fetched_at": "2026-11-11T15:08:07+00:00",
+  "fetched_at": "2026-11-11T21:35:49+00:00",
   "rows": [
    {
     "epsForecast": "$2.49",
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$1.24",
     "lastYearRptDt": "11/19/2025",
-    "marketCap": "$4,305,946,940,000",
+    "marketCap": "$4,070,249,070,000",
     "name": "NVIDIA Corporation",
     "noOfEsts": "13",
     "symbol": "NVDA",
@@ -34744,7 +34744,7 @@
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$3.74",
     "lastYearRptDt": "11/18/2025",
-    "marketCap": "$352,603,472,000",
+    "marketCap": "$350,189,060,000",
     "name": "Home Depot, Inc. (The)",
     "noOfEsts": "11",
     "symbol": "HD",
@@ -34755,7 +34755,7 @@
     "fiscalQuarterEnding": "Sep/2026",
     "lastYearEPS": "$1.11",
     "lastYearRptDt": "11/13/2025",
-    "marketCap": "$205,682,950,000",
+    "marketCap": "$205,838,352,000",
     "name": "Walt Disney Company (The)",
     "noOfEsts": "9",
     "symbol": "DIS",
@@ -34764,14 +34764,14 @@
   ]
  },
  "2026-11-18": {
-  "fetched_at": "2026-11-11T15:08:08+00:00",
+  "fetched_at": "2026-11-11T21:35:52+00:00",
   "rows": [
    {
     "epsForecast": "$0.52",
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$0.53",
     "lastYearRptDt": "11/19/2025",
-    "marketCap": "$270,814,642,000",
+    "marketCap": "$267,107,090,000",
     "name": "Palo Alto Networks, Inc.",
     "noOfEsts": "15",
     "symbol": "PANW",
@@ -34782,7 +34782,7 @@
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$1.28",
     "lastYearRptDt": "11/19/2025",
-    "marketCap": "$151,939,416,000",
+    "marketCap": "$150,608,445,000",
     "name": "TJX Companies, Inc. (The)",
     "noOfEsts": "7",
     "symbol": "TJX",
@@ -34793,7 +34793,7 @@
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$3.06",
     "lastYearRptDt": "11/19/2025",
-    "marketCap": "$130,220,638,000",
+    "marketCap": "$130,091,598,000",
     "name": "Lowe's Companies, Inc.",
     "noOfEsts": "11",
     "symbol": "LOW",
@@ -34804,7 +34804,7 @@
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$1.78",
     "lastYearRptDt": "11/19/2025",
-    "marketCap": "$75,367,825,000",
+    "marketCap": "$73,496,125,000",
     "name": "Target Corporation",
     "noOfEsts": "12",
     "symbol": "TGT",
@@ -34815,7 +34815,7 @@
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$0.18",
     "lastYearRptDt": "12/02/2025",
-    "marketCap": "$34,269,089,800",
+    "marketCap": "$33,982,515,200",
     "name": "Everpure, Inc.",
     "noOfEsts": "8",
     "symbol": "P",
@@ -34826,7 +34826,7 @@
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$1.96",
     "lastYearRptDt": "11/19/2025",
-    "marketCap": "$30,820,454,400",
+    "marketCap": "$30,805,143,600",
     "name": "Williams-Sonoma, Inc.",
     "noOfEsts": "10",
     "symbol": "WSM",
@@ -34835,7 +34835,7 @@
   ]
  },
  "2026-11-19": {
-  "fetched_at": "2026-11-11T15:08:11+00:00",
+  "fetched_at": "2026-11-11T21:35:55+00:00",
   "rows": [
    {
     "epsForecast": "$0.64",
@@ -34906,11 +34906,11 @@
   ]
  },
  "2026-11-20": {
-  "fetched_at": "2026-11-11T15:08:14+00:00",
+  "fetched_at": "2026-11-11T21:35:58+00:00",
   "rows": []
  },
  "2026-11-23": {
-  "fetched_at": "2026-11-11T15:08:15+00:00",
+  "fetched_at": "2026-11-11T21:36:01+00:00",
   "rows": [
    {
     "epsForecast": "$1.17",
@@ -34948,7 +34948,7 @@
   ]
  },
  "2026-11-24": {
-  "fetched_at": "2026-11-11T15:08:19+00:00",
+  "fetched_at": "2026-11-11T21:36:05+00:00",
   "rows": [
    {
     "epsForecast": "$6.41",
@@ -35052,7 +35052,7 @@
   ]
  },
  "2026-11-25": {
-  "fetched_at": "2026-11-11T15:08:20+00:00",
+  "fetched_at": "2026-11-11T21:36:06+00:00",
   "rows": [
    {
     "epsForecast": "$4.07",
@@ -35068,19 +35068,19 @@
   ]
  },
  "2026-11-26": {
-  "fetched_at": "2026-11-11T15:08:21+00:00",
+  "fetched_at": "2026-11-11T21:36:08+00:00",
   "rows": []
  },
  "2026-11-27": {
-  "fetched_at": "2026-11-11T15:08:25+00:00",
+  "fetched_at": "2026-11-11T21:36:12+00:00",
   "rows": []
  },
  "2026-11-30": {
-  "fetched_at": "2026-11-11T15:08:28+00:00",
+  "fetched_at": "2026-11-11T21:36:14+00:00",
   "rows": []
  },
  "2026-12-01": {
-  "fetched_at": "2026-11-11T15:08:30+00:00",
+  "fetched_at": "2026-11-11T21:36:15+00:00",
   "rows": [
    {
     "epsForecast": "$0",
@@ -35129,7 +35129,7 @@
   ]
  },
  "2026-12-02": {
-  "fetched_at": "2026-11-11T15:08:33+00:00",
+  "fetched_at": "2026-11-11T21:36:17+00:00",
   "rows": [
    {
     "epsForecast": "$2.41",
@@ -35145,7 +35145,7 @@
   ]
  },
  "2026-12-03": {
-  "fetched_at": "2026-11-11T15:08:34+00:00",
+  "fetched_at": "2026-11-11T21:36:19+00:00",
   "rows": [
    {
     "epsForecast": "$1.16",
@@ -35216,15 +35216,15 @@
   ]
  },
  "2026-12-04": {
-  "fetched_at": "2026-11-11T15:08:38+00:00",
+  "fetched_at": "2026-11-11T21:36:21+00:00",
   "rows": []
  },
  "2026-12-07": {
-  "fetched_at": "2026-11-11T15:08:40+00:00",
+  "fetched_at": "2026-11-11T21:36:22+00:00",
   "rows": []
  },
  "2026-12-08": {
-  "fetched_at": "2026-11-11T15:08:41+00:00",
+  "fetched_at": "2026-11-11T21:36:25+00:00",
   "rows": [
    {
     "epsForecast": "$3.09",
@@ -35262,14 +35262,14 @@
   ]
  },
  "2026-12-09": {
-  "fetched_at": "2026-11-11T15:08:45+00:00",
+  "fetched_at": "2026-11-11T21:36:27+00:00",
   "rows": [
    {
     "epsForecast": "$3.45",
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$1.61",
     "lastYearRptDt": "12/11/2025",
-    "marketCap": "$1,525,079,210,000",
+    "marketCap": "$1,584,749,610,000",
     "name": "Broadcom Inc.",
     "noOfEsts": "10",
     "symbol": "AVGO",
@@ -35280,7 +35280,7 @@
     "fiscalQuarterEnding": "Nov/2026",
     "lastYearEPS": "$1.95",
     "lastYearRptDt": "12/10/2025",
-    "marketCap": "$362,213,343,000",
+    "marketCap": "$356,740,366,000",
     "name": "Oracle Corporation",
     "noOfEsts": "10",
     "symbol": "ORCL",
@@ -35291,7 +35291,7 @@
     "fiscalQuarterEnding": "Nov/2026",
     "lastYearEPS": "$4.55",
     "lastYearRptDt": "12/10/2025",
-    "marketCap": "$92,364,947,000",
+    "marketCap": "$92,123,644,000",
     "name": "Adobe Inc.",
     "noOfEsts": "12",
     "symbol": "ADBE",
@@ -35300,14 +35300,14 @@
   ]
  },
  "2026-12-10": {
-  "fetched_at": "2026-11-11T15:08:48+00:00",
+  "fetched_at": "2026-11-11T21:36:28+00:00",
   "rows": [
    {
     "epsForecast": "$4.87",
     "fiscalQuarterEnding": "Nov/2026",
     "lastYearEPS": "$4.34",
     "lastYearRptDt": "12/11/2025",
-    "marketCap": "$472,455,643,000",
+    "marketCap": "$472,437,916,000",
     "name": "Costco Wholesale Corporation",
     "noOfEsts": "10",
     "symbol": "COST",
@@ -35318,7 +35318,7 @@
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$0.64",
     "lastYearRptDt": "12/11/2025",
-    "marketCap": "$38,193,291,000",
+    "marketCap": "$38,586,098,000",
     "name": "Ciena Corporation",
     "noOfEsts": "8",
     "symbol": "CIEN",
@@ -35329,7 +35329,7 @@
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$2.59",
     "lastYearRptDt": "12/11/2025",
-    "marketCap": "$11,882,500,100",
+    "marketCap": "$11,654,416,400",
     "name": "lululemon athletica inc.",
     "noOfEsts": "10",
     "symbol": "LULU",
@@ -35338,22 +35338,22 @@
   ]
  },
  "2026-12-11": {
-  "fetched_at": "2026-11-11T15:08:52+00:00",
+  "fetched_at": "2026-11-11T21:36:31+00:00",
   "rows": []
  },
  "2026-12-14": {
-  "fetched_at": "2026-11-11T15:08:55+00:00",
+  "fetched_at": "2026-11-11T21:36:33+00:00",
   "rows": []
  },
  "2026-12-15": {
-  "fetched_at": "2026-11-11T15:08:56+00:00",
+  "fetched_at": "2026-11-11T21:36:34+00:00",
   "rows": [
    {
     "epsForecast": "$1.44",
     "fiscalQuarterEnding": "Nov/2026",
     "lastYearEPS": "$2.03",
     "lastYearRptDt": "12/16/2025",
-    "marketCap": "$21,786,904,600",
+    "marketCap": "$20,616,435,700",
     "name": "Lennar Corporation",
     "noOfEsts": "7",
     "symbol": "LEN",
@@ -35364,7 +35364,7 @@
     "fiscalQuarterEnding": "Oct/2026",
     "lastYearEPS": "$3.03",
     "lastYearRptDt": "12/10/2025",
-    "marketCap": "$18,037,682,200",
+    "marketCap": "$18,107,863,000",
     "name": "Nordson Corporation",
     "noOfEsts": "4",
     "symbol": "NDSN",
