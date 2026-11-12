@@ -8525,7 +8525,11 @@
    "date": "2026-11-11",
    "eps_actual": null,
    "eps_est": 0.4,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-11",
+    "eps": 0.36,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.36,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -11282,8 +11286,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 11, 2026 1:35 PM PT",
- "generated_at_utc": "2026-11-11T21:35:16+00:00",
+ "generated_at_pt": "Nov 12, 2026 12:23 AM PT",
+ "generated_at_utc": "2026-11-12T08:23:26+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11292,7 +11296,7 @@
   "reporters_pct": 26.6,
   "value_pct": 31.1
  },
- "last_success_pt": "Nov 11, 2026 1:35 PM PT",
+ "last_success_pt": "Nov 12, 2026 12:23 AM PT",
  "reported": 448,
  "reported_since_factset": 14,
  "revenue": {
@@ -13254,6 +13258,7 @@
     82.4,
     82.7,
     82.7,
+    82.7,
     82.7
    ],
    "beats": [
@@ -13318,6 +13323,7 @@
     360,
     360,
     367,
+    368,
     368,
     368
    ],
@@ -13465,6 +13471,7 @@
     35.5,
     35.7,
     35.7,
+    35.7,
     35.7
    ],
    "growth_n": 491,
@@ -13531,12 +13538,13 @@
     30.6,
     30.9,
     30.9,
+    30.9,
     30.9
    ],
    "growth_universe": 496,
    "kickoff_day": 33,
    "label": "Q3 2026",
-   "last": "2026-11-11",
+   "last": "2026-11-12",
    "reported": [
     2,
     2,
@@ -13599,6 +13607,7 @@
     437,
     437,
     444,
+    445,
     445,
     445
    ],
@@ -13663,6 +13672,7 @@
     26.0,
     26.0,
     26.0,
+    26.3,
     26.3,
     26.3,
     26.3
@@ -13826,6 +13836,7 @@
      "pp": 0.0,
      "t": "TDG"
     },
+    null,
     null
    ]
   }
