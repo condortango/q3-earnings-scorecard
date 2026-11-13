@@ -2590,7 +2590,7 @@
    "eps_yearago": 3.93,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Oct/2026",
-   "n_ests": 1,
+   "n_ests": null,
    "name": "Deere & Company",
    "rev_actual": null,
    "rev_est": null,
@@ -11317,8 +11317,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 13, 2026 1:00 PM PT",
- "generated_at_utc": "2026-11-13T21:00:35+00:00",
+ "generated_at_pt": "Nov 13, 2026 3:03 PM PT",
+ "generated_at_utc": "2026-11-13T23:03:55+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11327,7 +11327,7 @@
   "reporters_pct": 26.9,
   "value_pct": 31.2
  },
- "last_success_pt": "Nov 13, 2026 1:00 PM PT",
+ "last_success_pt": "Nov 13, 2026 3:03 PM PT",
  "reported": 453,
  "reported_since_factset": 0,
  "revenue": {
