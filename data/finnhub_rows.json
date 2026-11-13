@@ -243,11 +243,11 @@
  },
  "AMAT|2026-11-12": {
   "date": "2026-11-12",
-  "epsActual": null,
+  "epsActual": 4.16,
   "epsEstimate": 4.1345,
   "hour": "amc",
   "quarter": 4,
-  "revenueActual": null,
+  "revenueActual": 10409000000,
   "revenueEstimate": 10504570449,
   "symbol": "AMAT",
   "year": 2026
@@ -1189,11 +1189,11 @@
  },
  "CSCO|2026-11-12": {
   "date": "2026-11-12",
-  "epsActual": null,
+  "epsActual": 1.4,
   "epsEstimate": 1.3524,
   "hour": "amc",
   "quarter": 1,
-  "revenueActual": null,
+  "revenueActual": 18517000000,
   "revenueEstimate": 18497270172,
   "symbol": "CSCO",
   "year": 2027
