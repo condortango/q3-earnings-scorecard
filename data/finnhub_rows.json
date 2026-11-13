@@ -254,14 +254,14 @@
  },
  "AMCR|2026-11-04": {
   "date": "2026-11-04",
-  "epsActual": null,
-  "epsEstimate": 0.9852,
+  "epsActual": 0.95,
+  "epsEstimate": 0.986,
   "hour": "amc",
-  "quarter": 1,
-  "revenueActual": null,
-  "revenueEstimate": 6192472703,
+  "quarter": 3,
+  "revenueActual": 6129000000,
+  "revenueEstimate": 5866224000,
   "symbol": "AMCR",
-  "year": 2027
+  "year": 2026
  },
  "AMD|2026-11-03": {
   "date": "2026-11-03",
