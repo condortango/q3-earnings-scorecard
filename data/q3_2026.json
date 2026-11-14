@@ -2590,7 +2590,7 @@
    "eps_yearago": 3.93,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Oct/2026",
-   "n_ests": null,
+   "n_ests": 1,
    "name": "Deere & Company",
    "rev_actual": null,
    "rev_est": null,
@@ -11317,8 +11317,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 13, 2026 3:03 PM PT",
- "generated_at_utc": "2026-11-13T23:03:55+00:00",
+ "generated_at_pt": "Nov 13, 2026 11:38 PM PT",
+ "generated_at_utc": "2026-11-14T07:38:04+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11327,7 +11327,7 @@
   "reporters_pct": 26.9,
   "value_pct": 31.2
  },
- "last_success_pt": "Nov 13, 2026 3:03 PM PT",
+ "last_success_pt": "Nov 13, 2026 11:38 PM PT",
  "reported": 453,
  "reported_since_factset": 0,
  "revenue": {
@@ -13291,6 +13291,7 @@
     82.6,
     82.6,
     82.7,
+    82.7,
     82.7
    ],
    "beats": [
@@ -13357,6 +13358,7 @@
     368,
     369,
     369,
+    372,
     372,
     372
    ],
@@ -13514,6 +13516,7 @@
     35.7,
     35.7,
     35.7,
+    35.7,
     35.7
    ],
    "growth_n": 491,
@@ -13582,12 +13585,13 @@
     30.9,
     30.9,
     30.9,
+    30.9,
     30.9
    ],
    "growth_universe": 496,
    "kickoff_day": 33,
    "label": "Q3 2026",
-   "last": "2026-11-13",
+   "last": "2026-11-14",
    "reported": [
     2,
     2,
@@ -13652,6 +13656,7 @@
     446,
     447,
     447,
+    450,
     450,
     450
    ],
@@ -13719,6 +13724,7 @@
     26.3,
     26.3,
     26.3,
+    26.6,
     26.6,
     26.6
    ],
@@ -13886,6 +13892,7 @@
      "pp": 0.04,
      "t": "CSCO"
     },
+    null,
     null
    ]
   }

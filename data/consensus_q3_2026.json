@@ -1310,7 +1310,8 @@
    "60667": 2.86
   },
   "2026-11-12": {},
-  "2026-11-13": {}
+  "2026-11-13": {},
+  "2026-11-14": {}
  },
  "note": "Consensus EPS (Nasdaq calendar, Zacks) by company CIK, one entry per run day in Eastern time. Each day lists only the estimates that changed since the previous day (the first day in full); null means the company no longer has an estimate. Replay the days in order to rebuild the consensus as of any date.",
  "season": "Q3 2026"
