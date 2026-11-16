@@ -254,14 +254,14 @@
  },
  "AMCR|2026-11-04": {
   "date": "2026-11-04",
-  "epsActual": 0.95,
-  "epsEstimate": 0.986,
+  "epsActual": null,
+  "epsEstimate": 0.9852,
   "hour": "amc",
-  "quarter": 3,
-  "revenueActual": 6129000000,
-  "revenueEstimate": 5866224000,
+  "quarter": 1,
+  "revenueActual": null,
+  "revenueEstimate": 6192472703,
   "symbol": "AMCR",
-  "year": 2026
+  "year": 2027
  },
  "AMD|2026-11-03": {
   "date": "2026-11-03",
@@ -1374,6 +1374,17 @@
   "symbol": "DHR",
   "year": 2026
  },
+ "DIS|2026-11-17": {
+  "date": "2026-11-17",
+  "epsActual": null,
+  "epsEstimate": 1.693,
+  "hour": "bmo",
+  "quarter": 4,
+  "revenueActual": null,
+  "revenueEstimate": 25439119035,
+  "symbol": "DIS",
+  "year": 2026
+ },
  "DLR|2026-10-29": {
   "date": "2026-10-29",
   "epsActual": 0.48,
@@ -2330,6 +2341,17 @@
   "revenueEstimate": 19525238048,
   "symbol": "HCA",
   "year": 2026
+ },
+ "HD|2026-11-17": {
+  "date": "2026-11-17",
+  "epsActual": null,
+  "epsEstimate": 3.9568,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 44089172464,
+  "symbol": "HD",
+  "year": 2027
  },
  "HIG|2026-10-26": {
   "date": "2026-10-26",
@@ -3530,6 +3552,17 @@
   "symbol": "NUE",
   "year": 2026
  },
+ "NVDA|2026-11-17": {
+  "date": "2026-11-17",
+  "epsActual": null,
+  "epsEstimate": 2.5225,
+  "hour": "amc",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 111202869991,
+  "symbol": "NVDA",
+  "year": 2027
+ },
  "NVR|2026-10-22": {
   "date": "2026-10-22",
   "epsActual": 89.45,
@@ -4652,6 +4685,17 @@
   "symbol": "TSLA",
   "year": 2026
  },
+ "TSN|2026-11-16": {
+  "date": "2026-11-16",
+  "epsActual": 0.61,
+  "epsEstimate": 0.5885,
+  "hour": "bmo",
+  "quarter": 4,
+  "revenueActual": 14585000000,
+  "revenueEstimate": 14310637480,
+  "symbol": "TSN",
+  "year": 2026
+ },
  "TTWO|2026-11-09": {
   "date": "2026-11-09",
   "epsActual": 1,
@@ -5102,6 +5146,17 @@
   "revenueEstimate": 3864290007,
   "symbol": "WRB",
   "year": 2026
+ },
+ "WSM|2026-11-17": {
+  "date": "2026-11-17",
+  "epsActual": null,
+  "epsEstimate": 2.2008,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 2017797190,
+  "symbol": "WSM",
+  "year": 2027
  },
  "WST|2026-10-29": {
   "date": "2026-10-29",

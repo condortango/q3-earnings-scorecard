@@ -10,7 +10,7 @@
    "eps_yearago": 1.59,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Oct/2026",
-   "n_ests": 6,
+   "n_ests": 7,
    "name": "Agilent Technologies",
    "rev_actual": null,
    "rev_est": null,
@@ -4364,7 +4364,7 @@
    "cik": "354950",
    "date": "2026-11-17",
    "eps_actual": null,
-   "eps_est": 3.87,
+   "eps_est": 3.86,
    "eps_pending": null,
    "eps_surprise_pct": null,
    "eps_yearago": 3.74,
@@ -6730,7 +6730,7 @@
    "eps_yearago": 1.24,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Oct/2026",
-   "n_ests": 13,
+   "n_ests": 14,
    "name": "Nvidia",
    "rev_actual": null,
    "rev_est": null,
@@ -9222,7 +9222,7 @@
   },
   {
    "cik": "1393052",
-   "date": "2026-11-19",
+   "date": "2026-12-03",
    "eps_actual": null,
    "eps_est": 1.68,
    "eps_pending": null,
@@ -9238,7 +9238,7 @@
    "sector": "Health Care",
    "shares": 161908850,
    "ticker": "VEEV",
-   "time": "not-supplied"
+   "time": "after-hours"
   },
   {
    "cik": "1705696",
@@ -9742,7 +9742,7 @@
   },
   {
    "cik": "719955",
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "eps_actual": null,
    "eps_est": 2.17,
    "eps_pending": null,
@@ -9758,7 +9758,7 @@
    "sector": "Consumer Discretionary",
    "shares": 117779173,
    "ticker": "WSM",
-   "time": "not-supplied"
+   "time": "pre-market"
   },
   {
    "cik": "105770",
@@ -11317,8 +11317,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 13, 2026 11:38 PM PT",
- "generated_at_utc": "2026-11-14T07:38:04+00:00",
+ "generated_at_pt": "Nov 16, 2026 10:03 AM PT",
+ "generated_at_utc": "2026-11-16T18:03:55+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11327,7 +11327,7 @@
   "reporters_pct": 26.9,
   "value_pct": 31.2
  },
- "last_success_pt": "Nov 13, 2026 11:38 PM PT",
+ "last_success_pt": "Nov 16, 2026 10:03 AM PT",
  "reported": 453,
  "reported_since_factset": 0,
  "revenue": {
@@ -13292,6 +13292,8 @@
     82.6,
     82.7,
     82.7,
+    82.7,
+    82.7,
     82.7
    ],
    "beats": [
@@ -13360,10 +13362,12 @@
     369,
     372,
     372,
+    372,
+    372,
     372
    ],
    "day0": "2026-09-10",
-   "expected_growth_ex_pct": 27.8,
+   "expected_growth_ex_pct": 27.7,
    "expected_growth_pct": 25.5,
    "factset": [
     {
@@ -13505,13 +13509,15 @@
     33.4,
     33.4,
     33.4,
-    33.8,
+    33.7,
     34.4,
     34.6,
     35.0,
     35.4,
     35.4,
     35.4,
+    35.7,
+    35.7,
     35.7,
     35.7,
     35.7,
@@ -13564,9 +13570,9 @@
     26.9,
     27.6,
     27.9,
-    28.0,
-    28.0,
-    28.0,
+    27.9,
+    27.9,
+    27.9,
     28.0,
     28.3,
     27.4,
@@ -13586,12 +13592,14 @@
     30.9,
     30.9,
     30.9,
+    30.9,
+    30.9,
     30.9
    ],
    "growth_universe": 496,
    "kickoff_day": 33,
    "label": "Q3 2026",
-   "last": "2026-11-14",
+   "last": "2026-11-16",
    "reported": [
     2,
     2,
@@ -13656,6 +13664,8 @@
     446,
     447,
     447,
+    450,
+    450,
     450,
     450,
     450
@@ -13724,6 +13734,8 @@
     26.3,
     26.3,
     26.3,
+    26.6,
+    26.6,
     26.6,
     26.6,
     26.6
@@ -13892,6 +13904,8 @@
      "pp": 0.04,
      "t": "CSCO"
     },
+    null,
+    null,
     null,
     null
    ]
