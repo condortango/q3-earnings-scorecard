@@ -3233,8 +3233,8 @@
    "n_ests": 5,
    "name": "Equinix",
    "rev_actual": 2571000000.0,
-   "rev_est": 2613953184.0,
-   "rev_surprise_pct": -1.64,
+   "rev_est": 2617064214.0,
+   "rev_surprise_pct": -1.76,
    "sector": "Real Estate",
    "shares": 98988318,
    "ticker": "EQIX",
@@ -8604,7 +8604,7 @@
    "cik": "27419",
    "date": "2026-11-18",
    "eps_actual": null,
-   "eps_est": 2.03,
+   "eps_est": 2.04,
    "eps_pending": null,
    "eps_surprise_pct": null,
    "eps_yearago": 1.78,
@@ -11317,8 +11317,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 16, 2026 10:03 AM PT",
- "generated_at_utc": "2026-11-16T18:03:55+00:00",
+ "generated_at_pt": "Nov 16, 2026 3:31 PM PT",
+ "generated_at_utc": "2026-11-16T23:31:59+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11327,7 +11327,7 @@
   "reporters_pct": 26.9,
   "value_pct": 31.2
  },
- "last_success_pt": "Nov 16, 2026 10:03 AM PT",
+ "last_success_pt": "Nov 16, 2026 3:31 PM PT",
  "reported": 453,
  "reported_since_factset": 0,
  "revenue": {
@@ -14047,7 +14047,7 @@
    "eps_n": 30,
    "reported": 30,
    "rev_above_pct": 36.7,
-   "rev_agg_surprise_pct": -0.43,
+   "rev_agg_surprise_pct": -0.44,
    "rev_beat_pct": 33.3,
    "rev_n": 30,
    "sector": "Real Estate"
