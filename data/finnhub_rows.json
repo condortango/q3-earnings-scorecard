@@ -1387,11 +1387,11 @@
  },
  "DIS|2026-11-17": {
   "date": "2026-11-17",
-  "epsActual": null,
+  "epsActual": 1.77,
   "epsEstimate": 1.6909,
   "hour": "bmo",
   "quarter": 4,
-  "revenueActual": null,
+  "revenueActual": 25947000000,
   "revenueEstimate": 25434389599,
   "symbol": "DIS",
   "year": 2026
@@ -2355,11 +2355,11 @@
  },
  "HD|2026-11-17": {
   "date": "2026-11-17",
-  "epsActual": null,
+  "epsActual": 3.86,
   "epsEstimate": 3.9542,
   "hour": "bmo",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 43398000000,
   "revenueEstimate": 44075069385,
   "symbol": "HD",
   "year": 2027
