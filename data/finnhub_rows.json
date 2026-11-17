@@ -3576,11 +3576,11 @@
  },
  "NVDA|2026-11-17": {
   "date": "2026-11-17",
-  "epsActual": null,
+  "epsActual": 2.68,
   "epsEstimate": 2.525,
   "hour": "amc",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 115844000000,
   "revenueEstimate": 111282164311,
   "symbol": "NVDA",
   "year": 2027
