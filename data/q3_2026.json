@@ -2725,7 +2725,11 @@
    "date": "2026-11-17",
    "eps_actual": null,
    "eps_est": 1.67,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-17",
+    "eps": 1.11,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.11,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -4365,7 +4369,11 @@
    "date": "2026-11-17",
    "eps_actual": null,
    "eps_est": 3.86,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-17",
+    "eps": 3.74,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 3.74,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -6725,7 +6733,11 @@
    "date": "2026-11-17",
    "eps_actual": null,
    "eps_est": 2.49,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-17",
+    "eps": 1.24,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.24,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -11317,8 +11329,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 17, 2026 3:22 PM PT",
- "generated_at_utc": "2026-11-17T23:22:28+00:00",
+ "generated_at_pt": "Nov 18, 2026 12:35 AM PT",
+ "generated_at_utc": "2026-11-18T08:35:44+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11327,7 +11339,7 @@
   "reporters_pct": 26.8,
   "value_pct": 31.2
  },
- "last_success_pt": "Nov 17, 2026 3:22 PM PT",
+ "last_success_pt": "Nov 18, 2026 12:35 AM PT",
  "reported": 454,
  "reported_since_factset": 1,
  "revenue": {
@@ -13295,6 +13307,7 @@
     82.7,
     82.7,
     82.5,
+    82.5,
     82.5
    ],
    "beats": [
@@ -13361,6 +13374,7 @@
     368,
     369,
     369,
+    372,
     372,
     372,
     372,
@@ -13526,6 +13540,7 @@
     35.8,
     35.8,
     35.8,
+    35.8,
     35.8
    ],
    "growth_n": 491,
@@ -13598,12 +13613,13 @@
     30.9,
     30.9,
     30.9,
+    30.9,
     30.9
    ],
    "growth_universe": 496,
    "kickoff_day": 33,
    "label": "Q3 2026",
-   "last": "2026-11-17",
+   "last": "2026-11-18",
    "reported": [
     2,
     2,
@@ -13672,6 +13688,7 @@
     450,
     450,
     450,
+    451,
     451,
     451
    ],
@@ -13743,6 +13760,7 @@
     26.6,
     26.6,
     26.6,
+    26.5,
     26.5,
     26.5
    ],
@@ -13917,6 +13935,7 @@
      "pp": -0.0,
      "t": "TSN"
     },
+    null,
     null
    ]
   }

@@ -2595,6 +2595,17 @@
   "symbol": "INTC",
   "year": 2026
  },
+ "INTU|2026-11-19": {
+  "date": "2026-11-19",
+  "epsActual": null,
+  "epsEstimate": 2.7497,
+  "hour": "amc",
+  "quarter": 1,
+  "revenueActual": null,
+  "revenueEstimate": 4391554665,
+  "symbol": "INTU",
+  "year": 2027
+ },
  "INVH|2026-10-28": {
   "date": "2026-10-28",
   "epsActual": 0.27,
@@ -2769,6 +2780,17 @@
   "revenueActual": 7344000000,
   "revenueEstimate": 7403832603,
   "symbol": "KDP",
+  "year": 2026
+ },
+ "KEYS|2026-11-19": {
+  "date": "2026-11-19",
+  "epsActual": null,
+  "epsEstimate": 3.4385,
+  "hour": "amc",
+  "quarter": 4,
+  "revenueActual": null,
+  "revenueEstimate": 1984841460,
+  "symbol": "KEYS",
   "year": 2026
  },
  "KEY|2026-10-20": {
@@ -5201,6 +5223,17 @@
   "revenueEstimate": 2922083772,
   "symbol": "WMB",
   "year": 2026
+ },
+ "WMT|2026-11-19": {
+  "date": "2026-11-19",
+  "epsActual": null,
+  "epsEstimate": 0.6421,
+  "hour": "bmo",
+  "quarter": 3,
+  "revenueActual": null,
+  "revenueEstimate": 189143823120,
+  "symbol": "WMT",
+  "year": 2027
  },
  "WM|2026-10-27": {
   "date": "2026-10-27",
