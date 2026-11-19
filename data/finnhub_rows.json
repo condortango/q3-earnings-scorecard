@@ -3763,11 +3763,11 @@
  },
  "PANW|2026-11-18": {
   "date": "2026-11-18",
-  "epsActual": null,
+  "epsActual": 1.05,
   "epsEstimate": 0.9907,
   "hour": "amc",
   "quarter": 1,
-  "revenueActual": null,
+  "revenueActual": 3445000000,
   "revenueEstimate": 3373089754,
   "symbol": "PANW",
   "year": 2027
@@ -4082,11 +4082,11 @@
  },
  "P|2026-11-18": {
   "date": "2026-11-18",
-  "epsActual": null,
+  "epsActual": 0.86,
   "epsEstimate": 0.7871,
   "hour": "amc",
   "quarter": 3,
-  "revenueActual": null,
+  "revenueActual": 1459790000,
   "revenueEstimate": 1358374504,
   "symbol": "P",
   "year": 2027

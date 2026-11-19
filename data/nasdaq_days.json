@@ -34565,7 +34565,7 @@
   ]
  },
  "2026-11-09": {
-  "fetched_at": "2026-11-18T22:23:05+00:00",
+  "fetched_at": "2026-11-19T08:51:41+00:00",
   "rows": [
    {
     "eps": "$5.06",
@@ -34647,7 +34647,7 @@
   ]
  },
  "2026-11-10": {
-  "fetched_at": "2026-11-18T22:23:08+00:00",
+  "fetched_at": "2026-11-19T08:51:43+00:00",
   "rows": [
    {
     "eps": "$11.88",
@@ -34663,11 +34663,11 @@
   ]
  },
  "2026-11-11": {
-  "fetched_at": "2026-11-18T22:23:09+00:00",
+  "fetched_at": "2026-11-19T08:51:47+00:00",
   "rows": []
  },
  "2026-11-12": {
-  "fetched_at": "2026-11-18T22:23:12+00:00",
+  "fetched_at": "2026-11-19T08:51:49+00:00",
   "rows": [
    {
     "eps": "$1.21",
@@ -34705,11 +34705,11 @@
   ]
  },
  "2026-11-13": {
-  "fetched_at": "2026-11-18T22:23:14+00:00",
+  "fetched_at": "2026-11-19T08:51:51+00:00",
   "rows": []
  },
  "2026-11-16": {
-  "fetched_at": "2026-11-18T22:23:15+00:00",
+  "fetched_at": "2026-11-19T08:51:54+00:00",
   "rows": [
    {
     "eps": "$0.61",
@@ -34725,7 +34725,7 @@
   ]
  },
  "2026-11-17": {
-  "fetched_at": "2026-11-18T22:23:17+00:00",
+  "fetched_at": "2026-11-19T08:51:56+00:00",
   "rows": [
    {
     "eps": "$2.68",
@@ -34763,67 +34763,67 @@
   ]
  },
  "2026-11-18": {
-  "fetched_at": "2026-11-18T22:23:18+00:00",
+  "fetched_at": "2026-11-19T08:52:00+00:00",
   "rows": [
    {
+    "eps": "$0.53",
     "epsForecast": "$0.52",
     "fiscalQuarterEnding": "Oct/2026",
-    "lastYearEPS": "$0.53",
-    "lastYearRptDt": "11/19/2025",
     "marketCap": "$253,136,273,000",
     "name": "Palo Alto Networks, Inc.",
     "noOfEsts": "16",
+    "surprise": "N/A",
     "symbol": "PANW",
     "time": "time-after-hours"
    },
    {
+    "eps": "$1.28",
     "epsForecast": "$1.33",
     "fiscalQuarterEnding": "Oct/2026",
-    "lastYearEPS": "$1.28",
-    "lastYearRptDt": "11/19/2025",
     "marketCap": "$142,831,632,000",
     "name": "TJX Companies, Inc. (The)",
     "noOfEsts": "7",
+    "surprise": "N/A",
     "symbol": "TJX",
     "time": "time-pre-market"
    },
    {
+    "eps": "$3.06",
     "epsForecast": "$2.86",
     "fiscalQuarterEnding": "Oct/2026",
-    "lastYearEPS": "$3.06",
-    "lastYearRptDt": "11/19/2025",
     "marketCap": "$123,689,968,000",
     "name": "Lowe's Companies, Inc.",
     "noOfEsts": "11",
+    "surprise": "N/A",
     "symbol": "LOW",
     "time": "time-pre-market"
    },
    {
+    "eps": "$1.78",
     "epsForecast": "$2.05",
     "fiscalQuarterEnding": "Oct/2026",
-    "lastYearEPS": "$1.78",
-    "lastYearRptDt": "11/19/2025",
     "marketCap": "$72,473,960,000",
     "name": "Target Corporation",
     "noOfEsts": "13",
+    "surprise": "N/A",
     "symbol": "TGT",
     "time": "time-pre-market"
    },
    {
+    "eps": "$0.18",
     "epsForecast": "$0.28",
     "fiscalQuarterEnding": "Oct/2026",
-    "lastYearEPS": "$0.18",
-    "lastYearRptDt": "12/02/2025",
     "marketCap": "$33,919,201,300",
     "name": "Everpure, Inc.",
     "noOfEsts": "8",
+    "surprise": "N/A",
     "symbol": "P",
     "time": "time-after-hours"
    }
   ]
  },
  "2026-11-19": {
-  "fetched_at": "2026-11-18T22:23:20+00:00",
+  "fetched_at": "2026-11-19T08:52:02+00:00",
   "rows": [
    {
     "epsForecast": "$0.64",
@@ -34883,11 +34883,11 @@
   ]
  },
  "2026-11-20": {
-  "fetched_at": "2026-11-18T22:23:21+00:00",
+  "fetched_at": "2026-11-19T08:52:03+00:00",
   "rows": []
  },
  "2026-11-23": {
-  "fetched_at": "2026-11-18T22:23:22+00:00",
+  "fetched_at": "2026-11-19T08:52:06+00:00",
   "rows": [
    {
     "epsForecast": "$1.17",
@@ -34925,7 +34925,7 @@
   ]
  },
  "2026-11-24": {
-  "fetched_at": "2026-11-18T22:23:24+00:00",
+  "fetched_at": "2026-11-19T08:52:07+00:00",
   "rows": [
    {
     "epsForecast": "$6.41",
@@ -35029,7 +35029,7 @@
   ]
  },
  "2026-11-25": {
-  "fetched_at": "2026-11-18T22:23:27+00:00",
+  "fetched_at": "2026-11-19T08:52:08+00:00",
   "rows": [
    {
     "epsForecast": "$4.07",
@@ -35038,26 +35038,26 @@
     "lastYearRptDt": "N/A",
     "marketCap": "$175,048,901,000",
     "name": "Deere & Company",
-    "noOfEsts": "1",
+    "noOfEsts": "N/A",
     "symbol": "DE",
     "time": "time-pre-market"
    }
   ]
  },
  "2026-11-26": {
-  "fetched_at": "2026-11-18T22:23:31+00:00",
+  "fetched_at": "2026-11-19T08:52:11+00:00",
   "rows": []
  },
  "2026-11-27": {
-  "fetched_at": "2026-11-18T22:23:33+00:00",
+  "fetched_at": "2026-11-19T08:52:14+00:00",
   "rows": []
  },
  "2026-11-30": {
-  "fetched_at": "2026-11-18T22:23:36+00:00",
+  "fetched_at": "2026-11-19T08:52:18+00:00",
   "rows": []
  },
  "2026-12-01": {
-  "fetched_at": "2026-11-18T22:23:38+00:00",
+  "fetched_at": "2026-11-19T08:52:20+00:00",
   "rows": [
    {
     "epsForecast": "$0",
@@ -35117,7 +35117,7 @@
   ]
  },
  "2026-12-02": {
-  "fetched_at": "2026-11-18T22:23:40+00:00",
+  "fetched_at": "2026-11-19T08:52:23+00:00",
   "rows": [
    {
     "epsForecast": "$2.41",
@@ -35133,7 +35133,7 @@
   ]
  },
  "2026-12-03": {
-  "fetched_at": "2026-11-18T22:23:43+00:00",
+  "fetched_at": "2026-11-19T08:52:25+00:00",
   "rows": [
    {
     "epsForecast": "$1.68",
@@ -35215,15 +35215,15 @@
   ]
  },
  "2026-12-04": {
-  "fetched_at": "2026-11-18T22:23:46+00:00",
+  "fetched_at": "2026-11-19T08:52:27+00:00",
   "rows": []
  },
  "2026-12-07": {
-  "fetched_at": "2026-11-18T22:23:47+00:00",
+  "fetched_at": "2026-11-19T08:52:29+00:00",
   "rows": []
  },
  "2026-12-08": {
-  "fetched_at": "2026-11-18T22:23:51+00:00",
+  "fetched_at": "2026-11-19T08:52:31+00:00",
   "rows": [
    {
     "epsForecast": "$3.09",
@@ -35261,7 +35261,7 @@
   ]
  },
  "2026-12-09": {
-  "fetched_at": "2026-11-18T22:23:53+00:00",
+  "fetched_at": "2026-11-19T08:52:32+00:00",
   "rows": [
    {
     "epsForecast": "$3.45",
@@ -35299,7 +35299,7 @@
   ]
  },
  "2026-12-10": {
-  "fetched_at": "2026-11-18T22:23:54+00:00",
+  "fetched_at": "2026-11-19T08:52:35+00:00",
   "rows": [
    {
     "epsForecast": "$4.89",
@@ -35337,15 +35337,15 @@
   ]
  },
  "2026-12-11": {
-  "fetched_at": "2026-11-18T22:23:58+00:00",
+  "fetched_at": "2026-11-19T08:52:38+00:00",
   "rows": []
  },
  "2026-12-14": {
-  "fetched_at": "2026-11-18T22:24:00+00:00",
+  "fetched_at": "2026-11-19T08:52:39+00:00",
   "rows": []
  },
  "2026-12-15": {
-  "fetched_at": "2026-11-18T22:24:02+00:00",
+  "fetched_at": "2026-11-19T08:52:42+00:00",
   "rows": [
    {
     "epsForecast": "$1.44",

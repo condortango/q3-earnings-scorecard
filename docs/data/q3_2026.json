@@ -2590,7 +2590,7 @@
    "eps_yearago": 3.93,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Oct/2026",
-   "n_ests": 1,
+   "n_ests": null,
    "name": "Deere & Company",
    "rev_actual": null,
    "rev_est": null,
@@ -5645,7 +5645,11 @@
    "date": "2026-11-18",
    "eps_actual": null,
    "eps_est": 2.86,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-18",
+    "eps": 3.06,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 3.06,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -7005,7 +7009,11 @@
    "date": "2026-11-18",
    "eps_actual": null,
    "eps_est": 0.28,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-18",
+    "eps": 0.18,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.18,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -7025,7 +7033,11 @@
    "date": "2026-11-18",
    "eps_actual": null,
    "eps_est": 0.52,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-18",
+    "eps": 0.53,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.53,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8605,7 +8617,11 @@
    "date": "2026-11-18",
    "eps_actual": null,
    "eps_est": 2.05,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-18",
+    "eps": 1.78,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.78,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -8625,7 +8641,11 @@
    "date": "2026-11-18",
    "eps_actual": null,
    "eps_est": 1.33,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-18",
+    "eps": 1.28,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.28,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -11317,8 +11337,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 18, 2026 2:23 PM PT",
- "generated_at_utc": "2026-11-18T22:23:00+00:00",
+ "generated_at_pt": "Nov 19, 2026 12:51 AM PT",
+ "generated_at_utc": "2026-11-19T08:51:36+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11327,7 +11347,7 @@
   "reporters_pct": 31.3,
   "value_pct": 31.9
  },
- "last_success_pt": "Nov 18, 2026 2:23 PM PT",
+ "last_success_pt": "Nov 19, 2026 12:51 AM PT",
  "reported": 457,
  "reported_since_factset": 4,
  "revenue": {
@@ -13296,6 +13316,7 @@
     82.7,
     82.5,
     82.4,
+    82.4,
     82.4
    ],
    "beats": [
@@ -13367,6 +13388,7 @@
     372,
     372,
     372,
+    374,
     374,
     374
    ],
@@ -13529,6 +13551,7 @@
     35.7,
     35.7,
     36.6,
+    36.6,
     36.6
    ],
    "growth_n": 491,
@@ -13602,12 +13625,13 @@
     30.8,
     30.8,
     31.7,
+    31.7,
     31.7
    ],
    "growth_universe": 496,
    "kickoff_day": 33,
    "label": "Q3 2026",
-   "last": "2026-11-18",
+   "last": "2026-11-19",
    "reported": [
     2,
     2,
@@ -13677,6 +13701,7 @@
     450,
     450,
     451,
+    454,
     454,
     454
    ],
@@ -13749,6 +13774,7 @@
     26.6,
     26.6,
     26.5,
+    31.1,
     31.1,
     31.1
    ],
@@ -13927,6 +13953,7 @@
      "pp": 0.81,
      "t": "NVDA"
     },
+    null,
     null
    ]
   }
