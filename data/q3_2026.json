@@ -4865,7 +4865,11 @@
    "date": "2026-11-19",
    "eps_actual": null,
    "eps_est": 2.47,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-19",
+    "eps": 1.88,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.88,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5245,7 +5249,11 @@
    "date": "2026-11-19",
    "eps_actual": null,
    "eps_est": 3.09,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-19",
+    "eps": 1.65,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.65,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -7845,7 +7853,11 @@
    "date": "2026-11-19",
    "eps_actual": null,
    "eps_est": 1.85,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-19",
+    "eps": 1.58,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.58,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -9703,22 +9715,22 @@
   {
    "cik": "104169",
    "date": "2026-11-19",
-   "eps_actual": null,
+   "eps_actual": 0.65,
    "eps_est": 0.64,
    "eps_pending": null,
-   "eps_surprise_pct": null,
+   "eps_surprise_pct": 1.56,
    "eps_yearago": 0.62,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Oct/2026",
    "n_ests": 13,
    "name": "Walmart",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 188835000000.0,
+   "rev_est": 189143823120.0,
+   "rev_surprise_pct": -0.16,
    "sector": "Consumer Staples",
    "shares": 7933746241,
    "ticker": "WMT",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "11544",
@@ -9743,10 +9755,10 @@
   {
    "cik": "719955",
    "date": "2026-11-19",
-   "eps_actual": null,
+   "eps_actual": 2.19,
    "eps_est": 2.18,
    "eps_pending": null,
-   "eps_surprise_pct": null,
+   "eps_surprise_pct": 0.46,
    "eps_yearago": 1.96,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Oct/2026",
@@ -9758,7 +9770,7 @@
    "sector": "Consumer Discretionary",
    "shares": 117779173,
    "ticker": "WSM",
-   "time": "pre-market"
+   "time": "not-supplied"
   },
   {
    "cik": "105770",
@@ -10013,18 +10025,18 @@
   "window_start": "2026-09-01"
  },
  "eps": {
-  "above": 378,
+  "above": 380,
   "above_pct": 82.4,
   "agg_method": "share-weighted (EPS x shares outstanding)",
-  "agg_surprise_pct": 5.49,
-  "beat": 361,
-  "beat_pct": 78.6,
-  "median_surprise_pct": 5.0,
-  "meet": 42,
-  "meet_pct": 9.2,
+  "agg_surprise_pct": 5.46,
+  "beat": 362,
+  "beat_pct": 78.5,
+  "median_surprise_pct": 4.92,
+  "meet": 43,
+  "meet_pct": 9.3,
   "miss": 56,
-  "miss_pct": 12.2,
-  "n": 459
+  "miss_pct": 12.1,
+  "n": 461
  },
  "factset": {
   "benchmarks": {
@@ -11317,36 +11329,36 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 19, 2026 2:28 PM PT",
- "generated_at_utc": "2026-11-19T22:28:43+00:00",
+ "generated_at_pt": "Nov 20, 2026 12:37 AM PT",
+ "generated_at_utc": "2026-11-20T08:37:53+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
   "min_coverage": 350,
-  "reporters_n": 458,
-  "reporters_pct": 31.1,
+  "reporters_n": 460,
+  "reporters_pct": 30.9,
   "value_pct": 32.0
  },
- "last_success_pt": "Nov 19, 2026 2:28 PM PT",
- "reported": 462,
- "reported_since_factset": 9,
+ "last_success_pt": "Nov 20, 2026 12:37 AM PT",
+ "reported": 464,
+ "reported_since_factset": 11,
  "revenue": {
   "above": 215,
-  "above_pct": 46.7,
+  "above_pct": 46.6,
   "agg_method": "sum of values",
-  "agg_surprise_pct": 0.65,
+  "agg_surprise_pct": 0.62,
   "available": true,
   "beat": 147,
-  "beat_pct": 32.0,
+  "beat_pct": 31.9,
   "median_surprise_pct": -0.22,
-  "meet": 138,
-  "meet_pct": 30.0,
+  "meet": 139,
+  "meet_pct": 30.2,
   "miss": 175,
   "miss_pct": 38.0,
-  "n": 460,
+  "n": 461,
   "status": "ok"
  },
- "scheduled": 37,
+ "scheduled": 35,
  "season": "Q3 2026",
  "season_curves": [
   {
@@ -13297,6 +13309,7 @@
     82.5,
     82.4,
     82.4,
+    82.4,
     82.4
    ],
    "beats": [
@@ -13370,7 +13383,8 @@
     372,
     374,
     378,
-    378
+    380,
+    380
    ],
    "day0": "2026-09-10",
    "expected_growth_ex_pct": 27.7,
@@ -13532,6 +13546,7 @@
     35.7,
     36.6,
     36.6,
+    36.6,
     36.6
    ],
    "growth_n": 491,
@@ -13606,12 +13621,13 @@
     30.8,
     31.7,
     31.7,
+    31.7,
     31.7
    ],
    "growth_universe": 496,
    "kickoff_day": 33,
    "label": "Q3 2026",
-   "last": "2026-11-19",
+   "last": "2026-11-20",
    "reported": [
     2,
     2,
@@ -13683,7 +13699,8 @@
     451,
     454,
     459,
-    459
+    461,
+    461
    ],
    "reporters_growth_pct": [
     27.9,
@@ -13756,7 +13773,8 @@
     26.6,
     31.1,
     30.9,
-    30.9
+    30.7,
+    30.7
    ],
    "top": [
     {
@@ -13937,6 +13955,10 @@
      "pp": 0.02,
      "t": "LOW"
     },
+    {
+     "pp": 0.01,
+     "t": "WMT"
+    },
     null
    ]
   }
@@ -13958,12 +13980,12 @@
   },
   {
    "companies": 47,
-   "eps_above_pct": 66.7,
+   "eps_above_pct": 67.4,
    "eps_agg_surprise_pct": 0.63,
-   "eps_beat_pct": 64.3,
-   "eps_miss_pct": 26.2,
-   "eps_n": 42,
-   "reported": 42,
+   "eps_beat_pct": 62.8,
+   "eps_miss_pct": 25.6,
+   "eps_n": 43,
+   "reported": 43,
    "rev_above_pct": 35.7,
    "rev_agg_surprise_pct": -1.41,
    "rev_beat_pct": 9.5,
@@ -13972,16 +13994,16 @@
   },
   {
    "companies": 33,
-   "eps_above_pct": 92.0,
-   "eps_agg_surprise_pct": 4.72,
-   "eps_beat_pct": 84.0,
-   "eps_miss_pct": 4.0,
-   "eps_n": 25,
-   "reported": 25,
-   "rev_above_pct": 36.0,
-   "rev_agg_surprise_pct": -0.84,
-   "rev_beat_pct": 8.0,
-   "rev_n": 25,
+   "eps_above_pct": 92.3,
+   "eps_agg_surprise_pct": 4.26,
+   "eps_beat_pct": 84.6,
+   "eps_miss_pct": 3.8,
+   "eps_n": 26,
+   "reported": 26,
+   "rev_above_pct": 34.6,
+   "rev_agg_surprise_pct": -0.6,
+   "rev_beat_pct": 7.7,
+   "rev_n": 26,
    "sector": "Consumer Staples"
   },
   {
