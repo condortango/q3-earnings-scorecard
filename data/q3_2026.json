@@ -11356,8 +11356,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 20, 2026 2:49 PM PT",
- "generated_at_utc": "2026-11-20T22:49:45+00:00",
+ "generated_at_pt": "Nov 21, 2026 12:19 AM PT",
+ "generated_at_utc": "2026-11-21T08:19:49+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11366,7 +11366,7 @@
   "reporters_pct": 40.0,
   "value_pct": 40.7
  },
- "last_success_pt": "Nov 20, 2026 2:49 PM PT",
+ "last_success_pt": "Nov 21, 2026 12:19 AM PT",
  "reported": 467,
  "reported_since_factset": 0,
  "revenue": {
@@ -13337,6 +13337,7 @@
     82.4,
     82.4,
     82.5,
+    82.5,
     82.5
    ],
    "beats": [
@@ -13410,6 +13411,7 @@
     372,
     374,
     378,
+    383,
     383,
     383
    ],
@@ -13582,6 +13584,7 @@
     46.2,
     46.2,
     46.3,
+    46.3,
     46.3
    ],
    "growth_n": 491,
@@ -13657,12 +13660,13 @@
     40.4,
     40.5,
     40.5,
+    40.5,
     40.5
    ],
    "growth_universe": 496,
    "kickoff_day": 33,
    "label": "Q3 2026",
-   "last": "2026-11-20",
+   "last": "2026-11-21",
    "reported": [
     2,
     2,
@@ -13734,6 +13738,7 @@
     451,
     454,
     459,
+    464,
     464,
     464
    ],
@@ -13808,6 +13813,7 @@
     36.4,
     40.3,
     40.0,
+    39.8,
     39.8,
     39.8
    ],
@@ -13994,6 +14000,7 @@
      "pp": 0.02,
      "t": "INTU"
     },
+    null,
     null
    ]
   }
