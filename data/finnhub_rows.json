@@ -1418,6 +1418,17 @@
   "symbol": "DELL",
   "year": 2027
  },
+ "DE|2026-11-25": {
+  "date": "2026-11-25",
+  "epsActual": null,
+  "epsEstimate": 4.1688,
+  "hour": "bmo",
+  "quarter": 4,
+  "revenueActual": null,
+  "revenueEstimate": 10677445374,
+  "symbol": "DE",
+  "year": 2026
+ },
  "DGX|2026-10-22": {
   "date": "2026-10-22",
   "epsActual": 3,

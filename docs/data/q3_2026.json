@@ -5,7 +5,11 @@
    "date": "2026-11-23",
    "eps_actual": null,
    "eps_est": 1.72,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-23",
+    "eps": 1.59,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.59,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -2302,8 +2306,8 @@
   },
   {
    "cik": "1535527",
-   "date": "2026-12-01",
-   "eps_actual": null,
+   "date": "2026-11-23",
+   "eps_actual": 0.05,
    "eps_est": 0.0,
    "eps_pending": null,
    "eps_surprise_pct": null,
@@ -2318,7 +2322,7 @@
    "sector": "Information Technology",
    "shares": 1023934842,
    "ticker": "CRWD",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "858877",
@@ -4505,7 +4509,11 @@
    "date": "2026-11-23",
    "eps_actual": null,
    "eps_est": 1.18,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-23",
+    "eps": 0.54,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 0.54,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -5065,7 +5073,11 @@
    "date": "2026-11-23",
    "eps_actual": null,
    "eps_est": 2.11,
-   "eps_pending": null,
+   "eps_pending": {
+    "date": "2026-11-23",
+    "eps": 1.75,
+    "reason": "equals year-ago EPS; not confirmed by Finnhub"
+   },
    "eps_surprise_pct": null,
    "eps_yearago": 1.75,
    "eps_yearago_src": "nasdaq_last_year_eps",
@@ -10013,18 +10025,18 @@
   "window_start": "2026-09-01"
  },
  "eps": {
-  "above": 383,
-  "above_pct": 82.5,
+  "above": 384,
+  "above_pct": 82.6,
   "agg_method": "share-weighted (EPS x shares outstanding)",
-  "agg_surprise_pct": 5.5,
-  "beat": 365,
+  "agg_surprise_pct": 5.51,
+  "beat": 366,
   "beat_pct": 78.7,
   "median_surprise_pct": 4.96,
   "meet": 43,
-  "meet_pct": 9.3,
+  "meet_pct": 9.2,
   "miss": 56,
-  "miss_pct": 12.1,
-  "n": 464
+  "miss_pct": 12.0,
+  "n": 465
  },
  "factset": {
   "benchmarks": {
@@ -11356,19 +11368,19 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 23, 2026 5:55 PM PT",
- "generated_at_utc": "2026-11-24T01:55:52+00:00",
+ "generated_at_pt": "Nov 24, 2026 3:00 AM PT",
+ "generated_at_utc": "2026-11-24T11:00:27+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
   "min_coverage": 350,
-  "reporters_n": 463,
+  "reporters_n": 464,
   "reporters_pct": 40.0,
   "value_pct": 40.7
  },
- "last_success_pt": "Nov 23, 2026 5:55 PM PT",
- "reported": 467,
- "reported_since_factset": 0,
+ "last_success_pt": "Nov 24, 2026 3:00 AM PT",
+ "reported": 468,
+ "reported_since_factset": 1,
  "revenue": {
   "above": 216,
   "above_pct": 46.5,
@@ -11385,7 +11397,7 @@
   "n": 465,
   "status": "ok"
  },
- "scheduled": 32,
+ "scheduled": 31,
  "season": "Q3 2026",
  "season_curves": [
   {
@@ -13340,7 +13352,8 @@
     82.5,
     82.5,
     82.5,
-    82.5
+    82.6,
+    82.6
    ],
    "beats": [
     1,
@@ -13417,7 +13430,8 @@
     383,
     383,
     383,
-    383
+    384,
+    384
    ],
    "day0": "2026-09-10",
    "expected_growth_ex_pct": 36.7,
@@ -13591,6 +13605,7 @@
     46.3,
     46.3,
     46.3,
+    46.3,
     46.3
    ],
    "growth_n": 491,
@@ -13669,12 +13684,13 @@
     40.5,
     40.5,
     40.5,
+    40.5,
     40.5
    ],
    "growth_universe": 496,
    "kickoff_day": 33,
    "label": "Q3 2026",
-   "last": "2026-11-23",
+   "last": "2026-11-24",
    "reported": [
     2,
     2,
@@ -13750,7 +13766,8 @@
     464,
     464,
     464,
-    464
+    465,
+    465
    ],
    "reporters_growth_pct": [
     27.9,
@@ -13823,6 +13840,7 @@
     36.4,
     40.3,
     40.0,
+    39.8,
     39.8,
     39.8,
     39.8,
@@ -14015,6 +14033,10 @@
     null,
     null,
     null,
+    {
+     "pp": 0.01,
+     "t": "CRWD"
+    },
     null
    ]
   }
@@ -14120,12 +14142,12 @@
   },
   {
    "companies": 76,
-   "eps_above_pct": 77.4,
-   "eps_agg_surprise_pct": 6.25,
-   "eps_beat_pct": 77.4,
-   "eps_miss_pct": 14.5,
-   "eps_n": 62,
-   "reported": 62,
+   "eps_above_pct": 77.8,
+   "eps_agg_surprise_pct": 6.27,
+   "eps_beat_pct": 77.8,
+   "eps_miss_pct": 14.3,
+   "eps_n": 63,
+   "reported": 63,
    "rev_above_pct": 56.5,
    "rev_agg_surprise_pct": 1.65,
    "rev_beat_pct": 43.5,
