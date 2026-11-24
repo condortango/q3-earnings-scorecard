@@ -3,26 +3,22 @@
   {
    "cik": "1090872",
    "date": "2026-11-23",
-   "eps_actual": null,
+   "eps_actual": 1.86,
    "eps_est": 1.72,
-   "eps_pending": {
-    "date": "2026-11-23",
-    "eps": 1.59,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 8.14,
    "eps_yearago": 1.59,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Oct/2026",
    "n_ests": 7,
    "name": "Agilent Technologies",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 2040000000.0,
+   "rev_est": 2027654878.0,
+   "rev_surprise_pct": 0.61,
    "sector": "Health Care",
    "shares": 281928854,
    "ticker": "A",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "320193",
@@ -4507,26 +4503,22 @@
   {
    "cik": "1645590",
    "date": "2026-11-23",
-   "eps_actual": null,
+   "eps_actual": 1.37,
    "eps_est": 1.18,
-   "eps_pending": {
-    "date": "2026-11-23",
-    "eps": 0.54,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 16.1,
    "eps_yearago": 0.54,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Oct/2026",
    "n_ests": 7,
    "name": "Hewlett Packard Enterprise",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 14547000000.0,
+   "rev_est": 14641233901.0,
+   "rev_surprise_pct": -0.64,
    "sector": "Information Technology",
    "shares": 1327464779,
    "ticker": "HPE",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "47217",
@@ -5071,26 +5063,22 @@
   {
    "cik": "52988",
    "date": "2026-11-23",
-   "eps_actual": null,
+   "eps_actual": 2.2,
    "eps_est": 2.11,
-   "eps_pending": {
-    "date": "2026-11-23",
-    "eps": 1.75,
-    "reason": "equals year-ago EPS; not confirmed by Finnhub"
-   },
-   "eps_surprise_pct": null,
+   "eps_pending": null,
+   "eps_surprise_pct": 4.27,
    "eps_yearago": 1.75,
    "eps_yearago_src": "nasdaq_last_year_eps",
    "fiscal_quarter": "Sep/2026",
    "n_ests": 3,
    "name": "Jacobs Solutions",
-   "rev_actual": null,
-   "rev_est": null,
-   "rev_surprise_pct": null,
+   "rev_actual": 4712280000.0,
+   "rev_est": 2606261955.0,
+   "rev_surprise_pct": 80.81,
    "sector": "Industrials",
-   "shares": 117038611,
+   "shares": 116151741,
    "ticker": "J",
-   "time": "after-hours"
+   "time": "not-supplied"
   },
   {
    "cik": "728535",
@@ -9096,7 +9084,7 @@
    "cik": "1403568",
    "date": "2026-12-03",
    "eps_actual": null,
-   "eps_est": 5.61,
+   "eps_est": 5.62,
    "eps_pending": null,
    "eps_surprise_pct": null,
    "eps_yearago": 5.14,
@@ -10025,18 +10013,18 @@
   "window_start": "2026-09-01"
  },
  "eps": {
-  "above": 384,
-  "above_pct": 82.6,
+  "above": 387,
+  "above_pct": 82.7,
   "agg_method": "share-weighted (EPS x shares outstanding)",
-  "agg_surprise_pct": 5.51,
-  "beat": 366,
-  "beat_pct": 78.7,
-  "median_surprise_pct": 4.96,
+  "agg_surprise_pct": 5.53,
+  "beat": 369,
+  "beat_pct": 78.8,
+  "median_surprise_pct": 5.0,
   "meet": 43,
   "meet_pct": 9.2,
   "miss": 56,
   "miss_pct": 12.0,
-  "n": 465
+  "n": 468
  },
  "factset": {
   "benchmarks": {
@@ -11368,36 +11356,36 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 24, 2026 3:00 AM PT",
- "generated_at_utc": "2026-11-24T11:00:27+00:00",
+ "generated_at_pt": "Nov 24, 2026 3:39 PM PT",
+ "generated_at_utc": "2026-11-24T23:39:54+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
   "min_coverage": 350,
-  "reporters_n": 464,
-  "reporters_pct": 40.0,
-  "value_pct": 40.7
+  "reporters_n": 467,
+  "reporters_pct": 40.1,
+  "value_pct": 40.8
  },
- "last_success_pt": "Nov 24, 2026 3:00 AM PT",
- "reported": 468,
- "reported_since_factset": 1,
+ "last_success_pt": "Nov 24, 2026 3:39 PM PT",
+ "reported": 471,
+ "reported_since_factset": 4,
  "revenue": {
-  "above": 216,
-  "above_pct": 46.5,
+  "above": 218,
+  "above_pct": 46.6,
   "agg_method": "sum of values",
-  "agg_surprise_pct": 0.61,
+  "agg_surprise_pct": 0.65,
   "available": true,
-  "beat": 147,
+  "beat": 148,
   "beat_pct": 31.6,
   "median_surprise_pct": -0.22,
-  "meet": 141,
-  "meet_pct": 30.3,
+  "meet": 143,
+  "meet_pct": 30.6,
   "miss": 177,
-  "miss_pct": 38.1,
-  "n": 465,
+  "miss_pct": 37.8,
+  "n": 468,
   "status": "ok"
  },
- "scheduled": 31,
+ "scheduled": 28,
  "season": "Q3 2026",
  "season_curves": [
   {
@@ -13352,8 +13340,8 @@
     82.5,
     82.5,
     82.5,
-    82.6,
-    82.6
+    82.7,
+    82.7
    ],
    "beats": [
     1,
@@ -13430,8 +13418,8 @@
     383,
     383,
     383,
-    384,
-    384
+    387,
+    387
    ],
    "day0": "2026-09-10",
    "expected_growth_ex_pct": 36.7,
@@ -13684,8 +13672,8 @@
     40.5,
     40.5,
     40.5,
-    40.5,
-    40.5
+    40.6,
+    40.6
    ],
    "growth_universe": 496,
    "kickoff_day": 33,
@@ -13766,8 +13754,8 @@
     464,
     464,
     464,
-    465,
-    465
+    468,
+    468
    ],
    "reporters_growth_pct": [
     27.9,
@@ -13844,8 +13832,8 @@
     39.8,
     39.8,
     39.8,
-    39.8,
-    39.8
+    39.9,
+    39.9
    ],
    "top": [
     {
@@ -14034,8 +14022,8 @@
     null,
     null,
     {
-     "pp": 0.01,
-     "t": "CRWD"
+     "pp": 0.04,
+     "t": "HPE"
     },
     null
    ]
@@ -14114,44 +14102,44 @@
   },
   {
    "companies": 60,
-   "eps_above_pct": 89.3,
-   "eps_agg_surprise_pct": 14.29,
-   "eps_beat_pct": 85.7,
-   "eps_miss_pct": 7.1,
-   "eps_n": 56,
-   "reported": 56,
-   "rev_above_pct": 60.7,
+   "eps_above_pct": 89.5,
+   "eps_agg_surprise_pct": 14.25,
+   "eps_beat_pct": 86.0,
+   "eps_miss_pct": 7.0,
+   "eps_n": 57,
+   "reported": 57,
+   "rev_above_pct": 61.4,
    "rev_agg_surprise_pct": 0.96,
-   "rev_beat_pct": 39.3,
-   "rev_n": 56,
+   "rev_beat_pct": 38.6,
+   "rev_n": 57,
    "sector": "Health Care"
   },
   {
    "companies": 83,
-   "eps_above_pct": 84.8,
+   "eps_above_pct": 85.0,
    "eps_agg_surprise_pct": 3.84,
-   "eps_beat_pct": 79.7,
-   "eps_miss_pct": 13.9,
-   "eps_n": 79,
-   "reported": 79,
-   "rev_above_pct": 49.4,
-   "rev_agg_surprise_pct": 0.69,
-   "rev_beat_pct": 34.2,
-   "rev_n": 79,
+   "eps_beat_pct": 80.0,
+   "eps_miss_pct": 13.8,
+   "eps_n": 80,
+   "reported": 80,
+   "rev_above_pct": 50.0,
+   "rev_agg_surprise_pct": 1.11,
+   "rev_beat_pct": 35.0,
+   "rev_n": 80,
    "sector": "Industrials"
   },
   {
    "companies": 76,
-   "eps_above_pct": 77.8,
-   "eps_agg_surprise_pct": 6.27,
-   "eps_beat_pct": 77.8,
-   "eps_miss_pct": 14.3,
-   "eps_n": 63,
-   "reported": 63,
-   "rev_above_pct": 56.5,
-   "rev_agg_surprise_pct": 1.65,
-   "rev_beat_pct": 43.5,
-   "rev_n": 62,
+   "eps_above_pct": 78.1,
+   "eps_agg_surprise_pct": 6.33,
+   "eps_beat_pct": 78.1,
+   "eps_miss_pct": 14.1,
+   "eps_n": 64,
+   "reported": 64,
+   "rev_above_pct": 55.6,
+   "rev_agg_surprise_pct": 1.6,
+   "rev_beat_pct": 42.9,
+   "rev_n": 63,
    "sector": "Information Technology"
   },
   {
