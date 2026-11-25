@@ -1420,11 +1420,11 @@
  },
  "DE|2026-11-25": {
   "date": "2026-11-25",
-  "epsActual": null,
+  "epsActual": 3.89,
   "epsEstimate": 4.1688,
   "hour": "bmo",
   "quarter": 4,
-  "revenueActual": null,
+  "revenueActual": 10514000000,
   "revenueEstimate": 10677445374,
   "symbol": "DE",
   "year": 2026
