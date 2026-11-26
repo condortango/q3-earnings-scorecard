@@ -11356,8 +11356,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 25, 2026 3:22 PM PT",
- "generated_at_utc": "2026-11-25T23:22:26+00:00",
+ "generated_at_pt": "Nov 26, 2026 1:36 AM PT",
+ "generated_at_utc": "2026-11-26T09:36:54+00:00",
  "growth": {
   "available": true,
   "coverage": 493,
@@ -11366,7 +11366,7 @@
   "reporters_pct": 40.6,
   "value_pct": 41.2
  },
- "last_success_pt": "Nov 25, 2026 3:22 PM PT",
+ "last_success_pt": "Nov 26, 2026 1:36 AM PT",
  "reported": 480,
  "reported_since_factset": 13,
  "revenue": {
@@ -13342,6 +13342,7 @@
     82.5,
     82.7,
     82.6,
+    82.6,
     82.6
    ],
    "beats": [
@@ -13420,6 +13421,7 @@
     383,
     383,
     387,
+    394,
     394,
     394
    ],
@@ -13597,6 +13599,7 @@
     46.4,
     46.4,
     46.8,
+    46.8,
     46.8
    ],
    "growth_n": 490,
@@ -13677,12 +13680,13 @@
     40.6,
     40.6,
     41.0,
+    41.0,
     41.0
    ],
    "growth_universe": 495,
    "kickoff_day": 33,
    "label": "Q3 2026",
-   "last": "2026-11-25",
+   "last": "2026-11-26",
    "reported": [
     2,
     2,
@@ -13759,6 +13763,7 @@
     464,
     464,
     468,
+    477,
     477,
     477
    ],
@@ -13838,6 +13843,7 @@
     39.8,
     39.8,
     39.9,
+    40.4,
     40.4,
     40.4
    ],
@@ -14035,6 +14041,7 @@
      "pp": 0.27,
      "t": "DELL"
     },
+    null,
     null
    ]
   }
