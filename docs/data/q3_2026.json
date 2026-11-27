@@ -176,7 +176,7 @@
    "rev_est": 4364793608.0,
    "rev_surprise_pct": 0.2,
    "sector": "Information Technology",
-   "shares": 484565465,
+   "shares": 482676413,
    "ticker": "ADI",
    "time": "not-supplied"
   },
@@ -236,7 +236,7 @@
    "rev_est": 2176420430.0,
    "rev_surprise_pct": -0.75,
    "sector": "Information Technology",
-   "shares": 209000000,
+   "shares": 208000000,
    "ticker": "ADSK",
    "time": "not-supplied"
   },
@@ -3656,7 +3656,7 @@
    "rev_est": 4380836509.0,
    "rev_surprise_pct": 4.02,
    "sector": "Utilities",
-   "shares": 578893330,
+   "shares": 579010043,
    "ticker": "FE",
    "time": "not-supplied"
   },
@@ -5656,7 +5656,7 @@
    "rev_est": 22631671212.0,
    "rev_surprise_pct": 0.55,
    "sector": "Consumer Discretionary",
-   "shares": 561054019,
+   "shares": 561047916,
    "ticker": "LOW",
    "time": "not-supplied"
   },
@@ -8616,7 +8616,7 @@
    "rev_est": 26815677760.0,
    "rev_surprise_pct": 0.94,
    "sector": "Consumer Staples",
-   "shares": 454296736,
+   "shares": 452742139,
    "ticker": "TGT",
    "time": "not-supplied"
   },
@@ -11356,8 +11356,8 @@
   "stale_reason": null,
   "status": "ok"
  },
- "generated_at_pt": "Nov 27, 2026 1:43 AM PT",
- "generated_at_utc": "2026-11-27T09:43:04+00:00",
+ "generated_at_pt": "Nov 27, 2026 2:59 PM PT",
+ "generated_at_utc": "2026-11-27T22:59:09+00:00",
  "growth": {
   "available": true,
   "coverage": 494,
@@ -11366,7 +11366,7 @@
   "reporters_pct": 40.5,
   "value_pct": 41.1
  },
- "last_success_pt": "Nov 27, 2026 1:43 AM PT",
+ "last_success_pt": "Nov 27, 2026 2:59 PM PT",
  "reported": 481,
  "reported_since_factset": 14,
  "revenue": {
@@ -12827,7 +12827,7 @@
     57.1,
     57.1,
     57.1,
-    57.0,
+    57.1,
     57.1
    ],
    "growth_universe": 491,
